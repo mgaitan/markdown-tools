@@ -3706,5 +3706,17 @@
     "article_link": "https://lobste.rs/s/xm0hkw/what_are_you_doing_this_week",
     "discussion_link": "https://lobste.rs/s/xm0hkw/what_are_you_doing_this_week",
     "title": "What are you doing this week?"
+  },
+  "@lobstersgram:627": {
+    "telegraph_link": "https://telegra.ph/Signing-TLS-handshakes-inside-a-TPM--Bruno-Schaatsbergen-09-07",
+    "article_link": "https://bschaatsbergen.com/posts/go-tpm-tls/",
+    "discussion_link": "https://lobste.rs/s/vospwq/signing_tls_handshakes_inside_tpm",
+    "title": "Signing TLS handshakes inside a TPM"
+  },
+  "@lobstersgram:628": {
+    "telegraph_link": "https://telegra.ph/iczeliabzip3--A-better-and-stronger-spiritual-successor-to-BZip2-09-07",
+    "article_link": "https://github.com/iczelia/bzip3",
+    "discussion_link": "https://lobste.rs/s/9coxwz/bzip3_better_stronger_spiritual",
+    "title": "bzip3: A better and stronger spiritual successor to BZip2"
   }
 }
