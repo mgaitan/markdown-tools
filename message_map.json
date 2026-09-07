@@ -3664,5 +3664,29 @@
     "article_link": "https://www.typetheoryforall.com/episodes/pl-education-in-the-age-of-ai",
     "discussion_link": "https://lobste.rs/s/eoaw1h/pl_education_age_ai_interview_with",
     "title": "PL Education in the Age of AI: Interview with Shriram Krishnamurthi"
+  },
+  "@lobstersgram:620": {
+    "telegraph_link": "https://telegra.ph/Hammock-Driven-Development---Rich-Hickey-09-07",
+    "article_link": "https://www.youtube.com/watch?v=f84n5oFoZBc&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/0htvw0/hammock_driven_development_2010",
+    "title": "\"Hammock Driven Development\" (2010)"
+  },
+  "@lobstersgram:621": {
+    "telegraph_link": "https://telegra.ph/Untangling-Lifetimes-The-Arena-Allocator---by-Ryan-Fleury-09-07",
+    "article_link": "https://www.dgtlgrove.com/p/untangling-lifetimes-the-arena-allocator",
+    "discussion_link": "https://lobste.rs/s/rlbbmo/untangling_lifetimes_arena_allocator",
+    "title": "Untangling Lifetimes: The Arena Allocator (2022)"
+  },
+  "@lobstersgram:622": {
+    "telegraph_link": "https://telegra.ph/Posting-about-online-presentations--Lobsters-09-07",
+    "article_link": "https://lobste.rs/s/qsjwv4/posting_about_online_presentations",
+    "discussion_link": "https://lobste.rs/s/qsjwv4/posting_about_online_presentations",
+    "title": "Posting about online presentations"
+  },
+  "@lobstersgram:623": {
+    "telegraph_link": "https://telegra.ph/Internationalization-i18n-and-Localization-l10n--Suhas-Kashyap-09-07",
+    "article_link": "https://www.kashyapsuhas.com/blog/i18n-l10n",
+    "discussion_link": "https://lobste.rs/s/mqbqbz/internationalization_localization",
+    "title": "Internationalization and Localization"
   }
 }
