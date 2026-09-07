@@ -3658,5 +3658,11 @@
     "article_link": "https://theconsensus.dev/p/2026/09/06/data-races-and-the-limits-of-threadsanitizer-in-c-and-go.html",
     "discussion_link": "https://lobste.rs/s/mcnj6l/data_races_limits_threadsanitizer_c_go",
     "title": "Data races and the limits of ThreadSanitizer in C and Go"
+  },
+  "@lobstersgram:618": {
+    "telegraph_link": "https://telegra.ph/Type-Theory-Forall-09-07",
+    "article_link": "https://www.typetheoryforall.com/episodes/pl-education-in-the-age-of-ai",
+    "discussion_link": "https://lobste.rs/s/eoaw1h/pl_education_age_ai_interview_with",
+    "title": "PL Education in the Age of AI: Interview with Shriram Krishnamurthi"
   }
 }
