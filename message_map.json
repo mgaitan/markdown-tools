@@ -3718,5 +3718,23 @@
     "article_link": "https://github.com/iczelia/bzip3",
     "discussion_link": "https://lobste.rs/s/9coxwz/bzip3_better_stronger_spiritual",
     "title": "bzip3: A better and stronger spiritual successor to BZip2"
+  },
+  "@lobstersgram:629": {
+    "telegraph_link": "https://telegra.ph/Conquering-Entropy-Cultivating-Trust---Pejibaye-Blog-09-07",
+    "article_link": "https://kaeruct.github.io/posts/2026/09/06/conquering-entropy-cultivating-trust/",
+    "discussion_link": "https://lobste.rs/s/ift0hu/conquering_entropy_cultivating_trust",
+    "title": "Conquering Entropy: Cultivating Trust"
+  },
+  "@lobstersgram:630": {
+    "telegraph_link": "https://telegra.ph/The-Shortest-IPv6-Addresses---ache-09-07",
+    "article_link": "https://ache.one/notes/vanity-ipv6",
+    "discussion_link": "https://lobste.rs/s/vdalin/shortest_ipv6_addresses",
+    "title": "The shortest IPv6 addresses"
+  },
+  "@lobstersgram:631": {
+    "telegraph_link": "https://telegra.ph/A-faster-way-to-convert-a-timestamp--Hour-Min-Sec-09-07-2",
+    "article_link": "https://www.benjoffe.com/fast-time-of-day",
+    "discussion_link": "https://lobste.rs/s/wolwwd/faster_way_convert_timestamp_hour_min_sec",
+    "title": "A faster way to convert a timestamp to Hour, Min, Sec"
   }
 }
