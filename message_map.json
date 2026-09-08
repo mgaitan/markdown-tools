@@ -3748,5 +3748,29 @@
     "article_link": "https://www.grepular.com/Hardening_Container_Images",
     "discussion_link": "https://lobste.rs/s/8hz82r/hardening_container_images",
     "title": "Hardening Container Images"
+  },
+  "@lobstersgram:634": {
+    "telegraph_link": "https://telegra.ph/This-Month-in-Ladybird---August-2026---Ladybird-09-08-2",
+    "article_link": "https://ladybird.org/newsletter/2026-08-31/",
+    "discussion_link": "https://lobste.rs/s/npyzwy/this_month_ladybird_august_2026",
+    "title": "This Month in Ladybird - August 2026"
+  },
+  "@lobstersgram:635": {
+    "telegraph_link": "https://telegra.ph/The-state-of-European-cloud-providers-in-2026--crescentrose-09-08",
+    "article_link": "https://crescentro.se/posts/euro-cloud-providers-2026/",
+    "discussion_link": "https://lobste.rs/s/6licoy/state_european_cloud_providers_2026",
+    "title": "The state of European cloud providers in 2026"
+  },
+  "@lobstersgram:636": {
+    "telegraph_link": "https://telegra.ph/Type-inference-has-usability-problems---Austin-Z-Henley-09-08",
+    "article_link": "https://austinhenley.com/blog/typeinference.html",
+    "discussion_link": "https://lobste.rs/s/mfhss4/type_inference_has_usability_problems",
+    "title": "Type inference has usability problems (2019)"
+  },
+  "@lobstersgram:637": {
+    "telegraph_link": "https://telegra.ph/My-Nix-Config-Is-Intimate--The-Cat-House-09-08",
+    "article_link": "https://www.scd31.com/posts/nix-files-are-intimate",
+    "discussion_link": "https://lobste.rs/s/aepn8g/my_nix_config_is_intimate",
+    "title": "My Nix Config Is Intimate"
   }
 }
