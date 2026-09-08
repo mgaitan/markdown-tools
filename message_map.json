@@ -3820,5 +3820,35 @@
     "article_link": "https://lambdaland.org/posts/2026-09-06-bedrock-v2/",
     "discussion_link": "https://lobste.rs/s/sukgeg/emacs_bedrock_2_0_released",
     "title": "Emacs Bedrock 2.0 Released"
+  },
+  "@lobstersgram:646": {
+    "telegraph_link": "https://telegra.ph/Reverse-engineering-my-e-scooter-and-rewriting-the-firmware-in-rust--Blog-09-08",
+    "article_link": "https://bensimms.moe/reverse-engineering-scooter/",
+    "discussion_link": "https://lobste.rs/s/pdr2bo/reverse_engineering_my_e_scooter",
+    "title": "Reverse engineering my e-scooter and rewriting the firmware in rust"
+  },
+  "@lobstersgram:647": {
+    "telegraph_link": "https://telegra.ph/Rust-When-Empty-Isnt-Bottom--ettolrach-09-08",
+    "article_link": "https://ettolrach.com/blog/rust_when_empty_isnt_bottom.html",
+    "discussion_link": "https://lobste.rs/s/lf3est/rust_when_empty_isn_t_bottom",
+    "title": "Rust: When Empty Isn't Bottom"
+  },
+  "@lobstersgram:648": {
+    "telegraph_link": "https://telegra.ph/What-makes-BigTechCompanys-products-bad-anyway--MONDTECH-MAGAZINE-09-08",
+    "article_link": "https://herecomesthemoon.net/2026/09/why-is-big-tech-bad/",
+    "discussion_link": "https://lobste.rs/s/wlcg5w/what_makes_bigtechcompany_s_products_bad",
+    "title": "What makes $BigTechCompany's products bad, anyway?"
+  },
+  "@lobstersgram:649": {
+    "telegraph_link": "https://telegra.ph/How-to-get-a-free-arpa-domain--Ethan-Hawksley-09-08",
+    "article_link": "https://hawksley.dev/blog/get-free-arpa-domain",
+    "discussion_link": "https://lobste.rs/s/eu78rh/how_get_free_arpa_domain",
+    "title": "How to get a free .arpa domain"
+  },
+  "@lobstersgram:650": {
+    "telegraph_link": "https://telegra.ph/Bitap-my-favorite-string-matching-algorithm--Joes-Blog-09-08",
+    "article_link": "https://jo3-l.dev/posts/bitap/",
+    "discussion_link": "https://lobste.rs/s/aguhup/bitap_my_favorite_string_matching",
+    "title": "Bitap: my favorite string matching algorithm"
   }
 }
