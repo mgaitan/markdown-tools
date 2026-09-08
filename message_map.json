@@ -3736,5 +3736,17 @@
     "article_link": "https://www.benjoffe.com/fast-time-of-day",
     "discussion_link": "https://lobste.rs/s/wolwwd/faster_way_convert_timestamp_hour_min_sec",
     "title": "A faster way to convert a timestamp to Hour, Min, Sec"
+  },
+  "@lobstersgram:632": {
+    "telegraph_link": "https://telegra.ph/What-are-you-using-as-a-task-manager-and-as-a-people-manager--Lobsters-09-08",
+    "article_link": "https://lobste.rs/s/0t6c5f/what_are_you_using_as_task_manager_as",
+    "discussion_link": "https://lobste.rs/s/0t6c5f/what_are_you_using_as_task_manager_as",
+    "title": "What are you using as a task manager and as a people manager?"
+  },
+  "@lobstersgram:633": {
+    "telegraph_link": "https://telegra.ph/Hardening-Container-Images---grepularcom-09-08",
+    "article_link": "https://www.grepular.com/Hardening_Container_Images",
+    "discussion_link": "https://lobste.rs/s/8hz82r/hardening_container_images",
+    "title": "Hardening Container Images"
   }
 }
