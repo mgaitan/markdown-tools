@@ -3796,5 +3796,29 @@
     "article_link": "https://mcpherrin.ca/2026/09/07/rsa.html",
     "discussion_link": "https://lobste.rs/s/wl0mln/i_ve_factored_rsa_keys_certificate",
     "title": "I’ve factored the RSA keys of a Certificate Authority…from the 90s"
+  },
+  "@lobstersgram:642": {
+    "telegraph_link": "https://telegra.ph/Serving-Web-from-volatile-Dial-up-IP--MRo-Blog-09-08",
+    "article_link": "https://blog.mro.name/2026/09/web-from-dial-up/",
+    "discussion_link": "https://lobste.rs/s/uhzuen/serving_web_from_volatile_dial_up_ip",
+    "title": "Serving Web from volatile Dial-up IP"
+  },
+  "@lobstersgram:643": {
+    "telegraph_link": "https://telegra.ph/The-Depths-of-JavaScript-Minesweeper-in-247-Bytes-09-08",
+    "article_link": "https://yui.dev/blog/minesweeper-in-247-bytes",
+    "discussion_link": "https://lobste.rs/s/dlxqqr/depths_javascript_minesweeper_247_bytes",
+    "title": "The Depths of JavaScript: Minesweeper in 247 Bytes"
+  },
+  "@lobstersgram:644": {
+    "telegraph_link": "https://telegra.ph/tristanbuckmaster-Today-Levent-Alpöge-and-I-have-made-public-three---Mastodon-09-08",
+    "article_link": "https://mastodon.social/@tristanbuckmaster/117233413705701198",
+    "discussion_link": "https://lobste.rs/s/ki3ylq/finite_time_blowup_with_smooth_forcing",
+    "title": "Finite-time blowup with smooth forcing for 3D incompressible Euler, Boussinesq, and IPM"
+  },
+  "@lobstersgram:645": {
+    "telegraph_link": "https://telegra.ph/Lambda-Land--Bedrock-20-Released-09-08-6",
+    "article_link": "https://lambdaland.org/posts/2026-09-06-bedrock-v2/",
+    "discussion_link": "https://lobste.rs/s/sukgeg/emacs_bedrock_2_0_released",
+    "title": "Emacs Bedrock 2.0 Released"
   }
 }
