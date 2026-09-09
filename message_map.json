@@ -3952,5 +3952,23 @@
     "article_link": "https://jordivillar.com/blog/every-millisecond-counts",
     "discussion_link": "https://lobste.rs/s/uiyfpl/every_millisecond_counts",
     "title": "Every Millisecond Counts"
+  },
+  "@lobstersgram:668": {
+    "telegraph_link": "https://telegra.ph/The-State-of-Allocators-in-2026---6-Months-Later-09-09-2",
+    "article_link": "https://cetra3.github.io/blog/state-of-allocators-2026-part-2/",
+    "discussion_link": "https://lobste.rs/s/9tck4q/state_allocators_2026_6_months_later",
+    "title": "The State of Allocators in 2026 - 6 Months Later"
+  },
+  "@lobstersgram:669": {
+    "telegraph_link": "https://telegra.ph/Why-Emacs-Consult-async-searches-feel-slow-and-how-to-speed-them-up-consult-fd-consult-find-consult-grep-consult-ripgrep--James--09-09-2",
+    "article_link": "https://www.jamescherti.com/emacs-consult-speed-async-searche-grep-ripgrep-fd-find/",
+    "discussion_link": "https://lobste.rs/s/ffvipw/why_emacs_consult_async_searches_feel",
+    "title": "Why Emacs Consult async searches feel slow and how to speed them up"
+  },
+  "@lobstersgram:670": {
+    "telegraph_link": "https://telegra.ph/Ricky-Mondello--Switching-Password-Managers-in-2026-09-09",
+    "article_link": "https://rmondello.com/2026/09/07/switching-password-managers-2026/",
+    "discussion_link": "https://lobste.rs/s/ikzvtv/switching_password_managers_2026",
+    "title": "Switching Password Managers in 2026"
   }
 }
