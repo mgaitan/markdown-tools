@@ -3874,5 +3874,29 @@
     "article_link": "https://www.scd31.com/posts/extreme-server-side-rendering",
     "discussion_link": "https://lobste.rs/s/tprfej/extreme_server_side_rendering",
     "title": "Extreme Server Side Rendering"
+  },
+  "@lobstersgram:655": {
+    "telegraph_link": "https://telegra.ph/Serving-LLMs-on-Tenstorrent-Hardware-Inside-the-vLLM-TT-Plugin--vLLM-Blog-09-09",
+    "article_link": "https://vllm.ai/blog/2026-09-07-vllm-tt-plugin",
+    "discussion_link": "https://lobste.rs/s/twvlv6/serving_llms_on_tenstorrent_hardware",
+    "title": "Serving LLMs on Tenstorrent Hardware: Inside the vLLM TT Plugin"
+  },
+  "@lobstersgram:656": {
+    "telegraph_link": "https://telegra.ph/software-for-humans-09-09-2",
+    "article_link": "https://clankerfree.org/",
+    "discussion_link": "https://lobste.rs/s/8mgfan/software_for_humans",
+    "title": "software for humans"
+  },
+  "@lobstersgram:657": {
+    "telegraph_link": "https://telegra.ph/Solaris-Turnstiles---RDMSR-09-09",
+    "article_link": "https://rdmsr.github.io/writing/turnstiles/",
+    "discussion_link": "https://lobste.rs/s/wrt9wm/solaris_turnstiles",
+    "title": "Solaris Turnstiles"
+  },
+  "@lobstersgram:658": {
+    "telegraph_link": "https://telegra.ph/I-changed-my-license---Henri-Bergius-in-Alofi-Niue-09-09",
+    "article_link": "https://bergie.iki.fi/blog/eupl/",
+    "discussion_link": "https://lobste.rs/s/4ntizu/i_changed_my_license_eupl",
+    "title": "I changed my license to EUPL"
   }
 }
