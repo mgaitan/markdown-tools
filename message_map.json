@@ -3922,5 +3922,35 @@
     "article_link": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
     "discussion_link": "https://lobste.rs/s/lxiabq/benchmarking_qwen3_8_27b_quantizations_4",
     "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses"
+  },
+  "@lobstersgram:663": {
+    "telegraph_link": "https://telegra.ph/Why-Is-This-Robot-Slowly-Dropping-The-Object-09-09",
+    "article_link": "https://www.youtube.com/watch?v=DqMjxcfm4Ek&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/ml3mgf/why_is_this_robot_slowly_dropping_object",
+    "title": "Why is this robot slowly dropping the object?"
+  },
+  "@lobstersgram:664": {
+    "telegraph_link": "https://telegra.ph/A-Design-Space-Exploration-of-AsyncAwait-09-09-2",
+    "article_link": "https://cel.cs.brown.edu/blog/design-space-async-await/",
+    "discussion_link": "https://lobste.rs/s/rghafd/design_space_exploration_async_await",
+    "title": "A Design Space Exploration of Async/Await"
+  },
+  "@lobstersgram:665": {
+    "telegraph_link": "https://telegra.ph/ID-design-and-primary-keys-pt-1--Anchors-and-links-09-09",
+    "article_link": "https://anchorsandlinks.com/posts/primary-keys/",
+    "discussion_link": "https://lobste.rs/s/tiltfq/id_design_primary_keys",
+    "title": "ID design and primary keys"
+  },
+  "@lobstersgram:666": {
+    "telegraph_link": "https://telegra.ph/洪-民憙-Hong-Minhee-Email-decoupled-from-where-and-how-A-cross-runtime-cross-provider-email-library-for-JavaScript-and-TypeScript-09-09",
+    "article_link": "https://hackers.pub/@hongminhee/2026/upyo-email-decoupled-from-where-and-how",
+    "discussion_link": "https://lobste.rs/s/wdwg2b/email_decoupled_from_where_how_cross",
+    "title": "Email, decoupled from where and how: A cross-runtime, cross-provider email library for JS & TS"
+  },
+  "@lobstersgram:667": {
+    "telegraph_link": "https://telegra.ph/Every-Millisecond-Counts---Jordi-Villar-09-09-2",
+    "article_link": "https://jordivillar.com/blog/every-millisecond-counts",
+    "discussion_link": "https://lobste.rs/s/uiyfpl/every_millisecond_counts",
+    "title": "Every Millisecond Counts"
   }
 }
