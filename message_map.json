@@ -3850,5 +3850,29 @@
     "article_link": "https://jo3-l.dev/posts/bitap/",
     "discussion_link": "https://lobste.rs/s/aguhup/bitap_my_favorite_string_matching",
     "title": "Bitap: my favorite string matching algorithm"
+  },
+  "@lobstersgram:651": {
+    "telegraph_link": "https://telegra.ph/NetBSD-Blog-09-09-2",
+    "article_link": "https://blog.netbsd.org/tnf/entry/gsoc2026_testing_compat_linux_2",
+    "discussion_link": "https://lobste.rs/s/im7lnc/netbsd_gsoc_2026_testing_compat_linux",
+    "title": "NetBSD GSoC 2026 Testing Compat Linux Syscall testing"
+  },
+  "@lobstersgram:652": {
+    "telegraph_link": "https://telegra.ph/Sloc-Cloc-and-Code---Did-I-just-get-Buster-Scrugged--Ben-E-C-Boyter-09-09",
+    "article_link": "https://boyter.org/posts/did-i-just-get-buster-scrugged/",
+    "discussion_link": "https://lobste.rs/s/biulze/sloc_cloc_code_did_i_just_get_buster",
+    "title": "Sloc Cloc and Code - Did I just get Buster Scrugged?"
+  },
+  "@lobstersgram:653": {
+    "telegraph_link": "https://telegra.ph/Jellyfin-120--Jellyfin-09-09",
+    "article_link": "https://jellyfin.org/posts/jellyfin-release-12.0/",
+    "discussion_link": "https://lobste.rs/s/blba3b/jellyfin_12_0",
+    "title": "Jellyfin 12.0"
+  },
+  "@lobstersgram:654": {
+    "telegraph_link": "https://telegra.ph/EXTREME-SERVER-SIDE-RENDERING--The-Cat-House-09-09",
+    "article_link": "https://www.scd31.com/posts/extreme-server-side-rendering",
+    "discussion_link": "https://lobste.rs/s/tprfej/extreme_server_side_rendering",
+    "title": "Extreme Server Side Rendering"
   }
 }
