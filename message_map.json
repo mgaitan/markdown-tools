@@ -3898,5 +3898,29 @@
     "article_link": "https://bergie.iki.fi/blog/eupl/",
     "discussion_link": "https://lobste.rs/s/4ntizu/i_changed_my_license_eupl",
     "title": "I changed my license to EUPL"
+  },
+  "@lobstersgram:659": {
+    "telegraph_link": "https://telegra.ph/Introducing-CUDA-Rust-Two-Tracks-for-Writing-GPU-Kernels--NVIDIA-Technical-Blog-09-09",
+    "article_link": "https://developer.nvidia.com/blog/introducing-cuda-rust-two-tracks-for-writing-gpu-kernels/",
+    "discussion_link": "https://lobste.rs/s/mlqqpn/introducing_cuda_rust_two_tracks_for",
+    "title": "Introducing CUDA Rust: Two Tracks for Writing GPU Kernels"
+  },
+  "@lobstersgram:660": {
+    "telegraph_link": "https://telegra.ph/Playing-with-Emacs--Dilips-Log-09-09",
+    "article_link": "https://idlip.in/posts/playing-emacs/",
+    "discussion_link": "https://lobste.rs/s/jrkqiz/playing_with_emacs",
+    "title": "Playing with Emacs"
+  },
+  "@lobstersgram:661": {
+    "telegraph_link": "https://telegra.ph/Why-Function-Arguments-Are-Not-Function-Colors---iRi-09-09",
+    "article_link": "https://jerf.org/iri/post/2026/func_args_are_not_colors/",
+    "discussion_link": "https://lobste.rs/s/tsfs3w/why_function_arguments_are_not_function",
+    "title": "Why Function Arguments Are Not Function Colors"
+  },
+  "@lobstersgram:662": {
+    "telegraph_link": "https://telegra.ph/Benchmarking-Qwen38-27B-quantizations-4-bit-holds-up-1-bit-collapses---Quesma-Blog-09-09",
+    "article_link": "https://quesma.com/blog/qwen38-27b-quantizations-benchmarked/",
+    "discussion_link": "https://lobste.rs/s/lxiabq/benchmarking_qwen3_8_27b_quantizations_4",
+    "title": "Benchmarking Qwen3.8 27B quantizations: 4-bit holds up, 1-bit collapses"
   }
 }
