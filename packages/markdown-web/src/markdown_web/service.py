@@ -45,6 +45,8 @@ TELEGRAPH_API_URL = "https://api.telegra.ph"
 TELEGRAPH_PAGE_LIST_LIMIT = 200
 TELEGRAPH_REQUEST_TIMEOUT = 20
 TELEGRAPH_PAGE_HOST = "telegra.ph"
+FIRECRAWL_PARSE_URL = "https://api.firecrawl.dev/v2/parse"
+FIRECRAWL_PARSE_TIMEOUT = 300
 PREVIEW_TITLE_PREFIX = "[Preview] "
 PREVIEW_TTL_SECONDS = 7 * 24 * 60 * 60
 MAX_DOCUMENT_BYTES = 50 * 1024 * 1024
@@ -330,10 +332,38 @@ def _convert_document(data: bytes, filename: str) -> str:
         markdown = anydoc.to_markdown_bytes(data, document_format)
     except (anydoc.ConvertError, OSError, ValueError) as exc:
         if document_format == "pdf" and _is_ocr_error(exc):
+            if os.getenv("FIRECRAWL_API_KEY"):
+                return _convert_pdf_with_hosted_ocr(data, filename)
             return _convert_pdf_pages(data, exc)
         raise DocumentConversionError(exc) from exc
     if not markdown.strip():
         raise EmptyDocumentContentError
+    return markdown
+
+
+def _convert_pdf_with_hosted_ocr(data: bytes, filename: str) -> str:
+    """Convert an OCR-required PDF with Firecrawl Parse after local AnyDoc fails."""
+    api_key = os.environ["FIRECRAWL_API_KEY"]
+    options = {
+        "formats": ["markdown"],
+        "parsers": [{"type": "pdf", "mode": "auto"}],
+    }
+    try:
+        response = requests.post(
+            os.getenv("FIRECRAWL_PARSE_URL", FIRECRAWL_PARSE_URL),
+            headers={"Authorization": f"Bearer {api_key}"},
+            data={"options": json.dumps(options)},
+            files={"file": (filename, data, "application/pdf")},
+            timeout=FIRECRAWL_PARSE_TIMEOUT,
+        )
+        response.raise_for_status()
+        payload = response.json()
+    except (requests.RequestException, ValueError) as exc:
+        raise DocumentConversionError(exc) from exc
+
+    markdown = payload.get("data", {}).get("markdown") if isinstance(payload, dict) else None
+    if not isinstance(markdown, str) or not markdown.strip():
+        raise DocumentConversionError(ValueError("Firecrawl did not return Markdown"))
     return markdown
 
 

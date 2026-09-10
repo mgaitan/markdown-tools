@@ -72,6 +72,10 @@ h1 {
   cursor: pointer;
 }
 .file-button:hover { color: #111; background: #e7e7e7; }
+.file-button img { width: 18px; height: 18px; opacity: .78; }
+.file-button:hover img { opacity: 1; }
+.file-button.is-recording { background: #f3e7e7; }
+.file-button.is-recording img { opacity: 1; filter: invert(22%) sepia(35%) saturate(1259%) hue-rotate(314deg) brightness(88%) contrast(88%); }
 .file-input { display: none !important; }
 
 input, textarea {
@@ -188,6 +192,8 @@ textarea:focus { border-color: #999; box-shadow: 0 2px 8px rgb(0 0 0 / 6%); }
 }
 .markdown-toolbar button:hover, .markdown-toolbar select:hover { border-color: #afb8c1; background: #fff; }
 .markdown-toolbar select { min-width: 38px; padding: 3px; }
+.markdown-toolbar .toolbar-record-button { flex: 0 0 30px; width: 30px; height: 30px; border-radius: 5px; background: transparent; }
+.markdown-toolbar .toolbar-record-button:hover { background: #fff; }
 .toolbar-divider { width: 1px; height: 20px; margin: 0 4px; background: #d8dee4; }
 .markdown-editor textarea { display: block; min-height: 460px; border: 0; border-radius: 0; padding-right: 52px; padding-bottom: 52px; box-shadow: none; }
 .markdown-editor textarea:focus { border: 0; box-shadow: none; }

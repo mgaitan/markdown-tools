@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import pytest
@@ -214,6 +215,59 @@ def test_prepare_content_keeps_readable_pdf_pages_when_some_need_ocr(monkeypatch
 
     assert f"se omitieron las páginas {ocr_page} porque requieren OCR" in result.markdown
     assert result.markdown.count("Readable page") == readable_pages
+
+
+def test_prepare_content_uses_hosted_ocr_for_scanned_pdf(monkeypatch: pytest.MonkeyPatch) -> None:
+    class FakeResponse:
+        def raise_for_status(self) -> None:
+            return None
+
+        def json(self) -> dict[str, object]:
+            return {"success": True, "data": {"markdown": "# OCR report\n\nRecovered text"}}
+
+    seen: dict[str, object] = {}
+
+    def fake_post(url: str, **kwargs: object) -> FakeResponse:
+        seen["url"] = url
+        seen.update(kwargs)
+        return FakeResponse()
+
+    monkeypatch.setenv("FIRECRAWL_API_KEY", "firecrawl-key")
+    monkeypatch.setattr(
+        service.anydoc,
+        "to_markdown_bytes",
+        lambda _data, _document_format: (_ for _ in ()).throw(service.anydoc.UnsupportedError("pages 1 of 1 need OCR")),
+    )
+    monkeypatch.setattr(service.requests, "post", fake_post)
+
+    result = service.prepare_content(SourceRequest(document=b"document", filename="report.pdf"))
+
+    assert "Recovered text" in result.markdown
+    assert seen["url"] == service.FIRECRAWL_PARSE_URL
+    assert seen["headers"] == {"Authorization": "Bearer firecrawl-key"}
+    assert json.loads(seen["data"]["options"]) == {
+        "formats": ["markdown"],
+        "parsers": [{"type": "pdf", "mode": "auto"}],
+    }
+    assert seen["files"] == {"file": ("report.pdf", b"document", "application/pdf")}
+    assert seen["timeout"] == service.FIRECRAWL_PARSE_TIMEOUT
+
+
+def test_prepare_content_reports_hosted_ocr_failure(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("FIRECRAWL_API_KEY", "firecrawl-key")
+    monkeypatch.setattr(
+        service.anydoc,
+        "to_markdown_bytes",
+        lambda _data, _document_format: (_ for _ in ()).throw(service.anydoc.UnsupportedError("pages 1 of 1 need OCR")),
+    )
+    monkeypatch.setattr(
+        service.requests,
+        "post",
+        lambda *_args, **_kwargs: (_ for _ in ()).throw(requests.ConnectionError("unavailable")),
+    )
+
+    with pytest.raises(service.DocumentConversionError, match="unavailable"):
+        service.prepare_content(SourceRequest(document=b"document", filename="report.pdf"))
 
 
 def test_prepare_content_keeps_markdown_front_matter() -> None:

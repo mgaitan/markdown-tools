@@ -24,7 +24,7 @@
     <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="/static/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/static/logo.png">
-    <link rel="stylesheet" href="/static/styles.css?v=16">
+    <link rel="stylesheet" href="/static/styles.css?v=17">
   </head>
   <body>
     <main class="page">
@@ -36,7 +36,8 @@
               <label class="sr-only" for="source-url">URL, file, or Markdown</label>
               <input id="source-url" name="url" type="text" placeholder="Paste a URL, drop a file or insert markdown content" autofocus autocomplete="off" spellcheck="false">
               <button id="file-button" class="file-button" type="button" aria-label="Choose a file" title="Choose a file">&#8593;</button>
-              <input id="source-file" class="file-input" type="file" accept=".pdf,.doc,.docx,.epub,.ppt,.pptx,.xls,.xlsx,.odt,.ods,.odp,.rtf,.csv,image/png,image/jpeg,image/webp">
+              <button id="record-button" class="file-button" type="button" aria-label="Record audio" title="Record audio" aria-pressed="false"><img src="/static/microphone.svg" alt=""></button>
+              <input id="source-file" class="file-input" type="file" accept=".pdf,.doc,.docx,.epub,.ppt,.pptx,.xls,.xlsx,.odt,.ods,.odp,.rtf,.csv,image/png,image/jpeg,image/webp,audio/*,.flac,.mp3,.mp4,.mpeg,.mpga,.m4a,.ogg,.wav,.webm">
             </div>
             <div class="source-action-field">
               <button id="source-action-button" class="source-action-button button button-primary" type="submit" name="action" value="process">Process</button>
@@ -62,6 +63,7 @@
                   <button id="result-action-menu-button" class="source-action-menu-button" type="button" aria-label="Choose editor action" aria-haspopup="menu" aria-expanded="false">⌄</button>
                   <div id="result-action-menu" class="source-action-menu" role="menu" hidden>
                     <button type="button" role="menuitem" data-result-action="epub">Download EPUB</button>
+                    <button type="button" role="menuitem" data-result-action="markdown">Download Markdown</button>
                   </div>
                 </div>
               </div>
@@ -89,6 +91,7 @@
                 <button type="button" data-markdown-action="code-block" aria-label="Code block" title="Code block">&#123;&#125;</button>
                 <button type="button" data-markdown-action="horizontal-rule" aria-label="Horizontal rule" title="Horizontal rule">&#8212;</button>
                 <span class="toolbar-divider" aria-hidden="true"></span>
+                <button id="toolbar-record-button" class="file-button toolbar-record-button" type="button" aria-label="Record audio into document" title="Record audio into document" aria-pressed="false"><img src="/static/microphone.svg" alt=""></button>
                 <button id="metadata-button" type="button" aria-label="Publication metadata" title="Publication metadata">Meta</button>
                 <button id="expand-editor" class="editor-expand-button" type="button" aria-label="Maximize editor" title="Maximize editor">&#x2922;</button>
               </div>
@@ -167,6 +170,8 @@
       const sourceActionMenu = document.querySelector("#source-action-menu");
       const editorImageFile = document.querySelector("#editor-image-file");
       const fileButton = document.querySelector("#file-button");
+      const recordButton = document.querySelector("#record-button");
+      const toolbarRecordButton = document.querySelector("#toolbar-record-button");
       const sourceLabel = document.querySelector("#result-source");
       const status = document.querySelector("#status");
       const publishStatus = document.querySelector("#publish-status");
@@ -186,6 +191,7 @@
       let previewId = "";
       let previewing = false;
       let imageUploading = false;
+      let audioRecorder = null;
       let sourceSubmitting = false;
       let epubSubmitting = false;
       let mode = "process";
@@ -392,11 +398,44 @@
         updateMarkdown(`${prefix}![](${url})${suffix}`, start, end);
       }
 
+      function insertTranscription(text) {
+        const start = output.selectionStart;
+        const end = output.selectionEnd;
+        const before = output.value.slice(0, start);
+        const after = output.value.slice(end);
+        const prefix = before && !/\n\s*\n$/.test(before) ? "\n\n" : "";
+        const suffix = after && !/^\s*\n\s*\n/.test(after) ? "\n\n" : "";
+        updateMarkdown(`${prefix}${text}${suffix}`, start, end);
+      }
+
       function isImageFile(file) {
         return Boolean(file) && (
           ["image/png", "image/jpeg", "image/webp"].includes(file.type) ||
           /\.(?:png|jpe?g|webp)$/i.test(file.name)
         );
+      }
+
+      function isAudioFile(file) {
+        return Boolean(file) && (
+          file.type.startsWith("audio/") ||
+          /\.(?:flac|mp3|mp4|mpeg|mpga|m4a|ogg|wav|webm)$/i.test(file.name)
+        );
+      }
+
+      async function transcribeAudio(file, insertAtCursor = false) {
+        setPreviewMode(false);
+        setStatus("Transcribing audio...");
+        try {
+          const data = new FormData();
+          data.append("file", file);
+          const response = await fetch("/transcriptions", {method: "POST", body: data});
+          if (!response.ok) throw new Error(await responseError(response, "Audio transcription failed"));
+          const result = await response.json();
+          if (insertAtCursor) insertTranscription(result.text);
+          else showMarkdownEditor(result.text, file.name || "Audio transcription");
+        } catch (error) {
+          setStatus(error.message, true);
+        }
       }
 
       async function uploadImage(file, insertAtCursor = false, publishAfterUpload = false) {
@@ -599,6 +638,10 @@
           await uploadImage(file);
           return false;
         }
+        if (file && isAudioFile(file)) {
+          await transcribeAudio(file);
+          return false;
+        }
         if (file) currentUrl = "";
         setPreviewMode(false);
         setStatus("Processing…");
@@ -665,6 +708,18 @@
         }
       }
 
+      function downloadMarkdown() {
+        const title = parseFrontmatter(output.value).fields.title || sourceLabel.textContent || "document";
+        const filename = title.trim().replace(/[^A-Za-z0-9._-]+/g, "-").replace(/^-+|-+$/g, "") || "document";
+        const target = URL.createObjectURL(new Blob([output.value], {type: "text/markdown;charset=utf-8"}));
+        const link = document.createElement("a");
+        link.href = target;
+        link.download = `${filename}.md`;
+        link.click();
+        URL.revokeObjectURL(target);
+        setPublishStatus("Markdown downloaded");
+      }
+
       async function publishSource(url, file) {
         if (sourceSubmitting) return;
         if (!url && !file) {
@@ -683,6 +738,10 @@
         try {
           if (file && isImageFile(file)) {
             await uploadImage(file, false, true);
+            return;
+          }
+          if (file && isAudioFile(file)) {
+            await transcribeAudio(file);
             return;
           }
           let response;
@@ -720,6 +779,50 @@
       }
 
       fileButton.addEventListener("click", () => sourceFile.click());
+      async function recordAudio(insertAtCursor = false) {
+        if (audioRecorder) {
+          if (audioRecorder.state === "recording") audioRecorder.stop();
+          return;
+        }
+        if (!navigator.mediaDevices?.getUserMedia || !window.MediaRecorder) {
+          setStatus("Audio recording is not supported by this browser", true);
+          return;
+        }
+        const button = insertAtCursor ? toolbarRecordButton : recordButton;
+        let stream;
+        try {
+          stream = await navigator.mediaDevices.getUserMedia({audio: true});
+          const chunks = [];
+          const recorder = new MediaRecorder(stream);
+          audioRecorder = recorder;
+          recorder.addEventListener("dataavailable", (event) => {
+            if (event.data.size) chunks.push(event.data);
+          });
+          recorder.addEventListener("stop", async () => {
+            stream.getTracks().forEach((track) => track.stop());
+            button.classList.remove("is-recording");
+            button.setAttribute("aria-pressed", "false");
+            button.setAttribute("aria-label", insertAtCursor ? "Record audio into document" : "Record audio");
+            button.title = insertAtCursor ? "Record audio into document" : "Record audio";
+            const type = recorder.mimeType || "audio/webm";
+            audioRecorder = null;
+            if (chunks.length) await transcribeAudio(new File(chunks, "recording.webm", {type}), insertAtCursor);
+          });
+          recorder.start();
+          button.classList.add("is-recording");
+          button.setAttribute("aria-pressed", "true");
+          button.setAttribute("aria-label", "Stop recording");
+          button.title = "Stop recording";
+          setStatus("Recording...");
+        } catch (error) {
+          stream?.getTracks().forEach((track) => track.stop());
+          audioRecorder = null;
+          setStatus(error.message || "Microphone access was not granted", true);
+        }
+      }
+
+      recordButton.addEventListener("click", () => recordAudio());
+      toolbarRecordButton.addEventListener("click", () => recordAudio(true));
       sourceFile.addEventListener("change", () => {
         const file = sourceFile.files[0];
         if (file) {
@@ -819,6 +922,7 @@
         button.addEventListener("click", async () => {
           closeResultActionMenu();
           if (button.dataset.resultAction === "epub") await downloadEpub();
+          if (button.dataset.resultAction === "markdown") downloadMarkdown();
         });
       });
       document.addEventListener("click", (event) => {

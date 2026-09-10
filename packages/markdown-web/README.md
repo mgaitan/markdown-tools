@@ -35,10 +35,14 @@ PowerPoint, Excel, OpenDocument, RTF, EPUB, and CSV files to Markdown. Uploads
 are limited to 50 MB. URLs ending in one of those document extensions are
 converted through the same path.
 
-When a PDF contains a mixture of readable and scanned pages, the service
-keeps the pages AnyDoc can convert and adds a visible Markdown warning listing
-the pages omitted because they require OCR. The warning is visible in the resulting
-Markdown and in the published Telegraph page.
+Document conversion is local by default. When AnyDoc detects that a PDF needs
+OCR and `FIRECRAWL_API_KEY` is configured, the service sends that PDF to
+Firecrawl Parse with the PDF parser in `auto` mode, which keeps text extraction
+as the default and uses hosted OCR where necessary. Firecrawl's API receives
+the complete PDF: it cannot receive only the scanned pages. Documents that
+convert locally never leave the service. Without the key, PDFs with a mixture
+of readable and scanned pages keep their readable pages and include a visible
+Markdown warning listing the omitted pages.
 
 The target URL should be URL-encoded when it contains characters that have a
 meaning to the web server. POST endpoints accept JSON with a URL, raw HTML, or
@@ -82,6 +86,20 @@ limited to 20 MB; Redis-backed quotas allow up to 10 uploads per IP per hour
 and 50 MB globally per UTC day. Image uploads also require the R2 settings
 `R2_ACCOUNT_ID`, `R2_BUCKET_NAME`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`,
 and `R2_PUBLIC_BASE_URL`.
+
+Audio files can be uploaded from the home page or recorded with its microphone
+button. `POST /transcriptions` returns `{"text": "..."}` and accepts files up
+to 25 MB. By default it uses Groq's OpenAI-compatible transcription endpoint
+with `whisper-large-v3-turbo`; set `GROQ_API_KEY` to enable it. To use another
+compatible provider or model, configure `TRANSCRIPTION_API_KEY`,
+`TRANSCRIPTION_API_URL`, and `TRANSCRIPTION_MODEL` instead.
+
+The editor action menu can download the current document as Markdown or EPUB.
+
+```bash
+curl -X POST http://127.0.0.1:8000/transcriptions \
+  -F 'file=@recording.webm'
+```
 
 Markdown front matter can also set `notify_telegram` to a comma-separated list
 of Telegram user or channel IDs. After the Telegraph URL is created, the web
@@ -151,6 +169,16 @@ token is never included in the bookmarklet.
 ```bash
 uv run pytest packages/markdown-web/tests
 uv run ruff check packages/markdown-web
+```
+
+For FastAPI Cloud, add the key as a secret from `packages/markdown-web/`:
+
+```bash
+printf '%s' "$GROQ_API_KEY" |
+  uv run fastapi cloud env set GROQ_API_KEY --value-stdin --secret .
+
+printf '%s' "$FIRECRAWL_API_KEY" |
+  uv run fastapi cloud env set FIRECRAWL_API_KEY --value-stdin --secret .
 ```
 
 MIT

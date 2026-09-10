@@ -28,6 +28,7 @@ from markdown_web.schemas import (
     TelegraphJobResponse,
     TelegraphPreviewResponse,
     TelegraphResponse,
+    TranscriptionResponse,
 )
 from markdown_web.service import (
     SourceError,
@@ -37,6 +38,13 @@ from markdown_web.service import (
     prepare_content,
     preview_content,
     publish_content,
+)
+from markdown_web.transcription import (
+    MAX_AUDIO_UPLOAD_BYTES,
+    TranscriptionError,
+    TranscriptionProviderError,
+    TranscriptionUnavailableError,
+    transcriber_from_environment,
 )
 
 load_dotenv()
@@ -115,6 +123,30 @@ def _image_upload_openapi() -> dict[str, object]:
     }
 
 
+def _transcription_openapi() -> dict[str, object]:
+    """Describe the audio upload accepted by the transcription route."""
+    return {
+        "requestBody": {
+            "required": True,
+            "content": {
+                "multipart/form-data": {
+                    "schema": {
+                        "type": "object",
+                        "required": ["file"],
+                        "properties": {
+                            "file": {
+                                "type": "string",
+                                "format": "binary",
+                                "description": "Audio file up to 25 MB",
+                            }
+                        },
+                    }
+                }
+            },
+        }
+    }
+
+
 def _path_source(url: str, request: Request) -> str:
     if request.url.query:
         return f"{url}?{request.url.query}"
@@ -181,6 +213,16 @@ def _handle_image_error(exc: Exception) -> HTTPException:
         return HTTPException(status_code=422, detail=str(exc))
     if isinstance(exc, assets.ImageStorageError):
         return HTTPException(status_code=502, detail=str(exc))
+    return HTTPException(status_code=502, detail=str(exc))
+
+
+def _handle_transcription_error(exc: Exception) -> HTTPException:
+    if isinstance(exc, TranscriptionUnavailableError):
+        return HTTPException(status_code=503, detail=str(exc))
+    if isinstance(exc, TranscriptionProviderError):
+        return HTTPException(status_code=502, detail=str(exc))
+    if isinstance(exc, TranscriptionError):
+        return HTTPException(status_code=422, detail=str(exc))
     return HTTPException(status_code=502, detail=str(exc))
 
 
@@ -283,6 +325,27 @@ async def image_upload(request: Request) -> JSONResponse:
     except Exception as exc:
         raise _handle_image_error(exc) from exc
     return JSONResponse({"url": target})
+
+
+@app.post("/transcriptions", response_model=TranscriptionResponse, openapi_extra=_transcription_openapi())
+async def transcription(request: Request) -> JSONResponse:
+    content_type = request.headers.get("content-type", "").split(";", 1)[0]
+    if content_type != "multipart/form-data":
+        raise HTTPException(status_code=415, detail="Upload audio as multipart form data")
+    form = await request.form()
+    upload = form.get("file")
+    if not isinstance(upload, UploadFile):
+        raise HTTPException(status_code=400, detail="Include an audio file in the file field")
+    data = await upload.read(MAX_AUDIO_UPLOAD_BYTES + 1)
+    if not data:
+        raise HTTPException(status_code=422, detail="Audio file is empty")
+    if len(data) > MAX_AUDIO_UPLOAD_BYTES:
+        raise HTTPException(status_code=422, detail="Audio file exceeds the 25 MB limit")
+    try:
+        text = transcriber_from_environment().transcribe(data, upload.filename or "audio", upload.content_type or "")
+    except Exception as exc:
+        raise _handle_transcription_error(exc) from exc
+    return JSONResponse({"text": text})
 
 
 @app.get("/about", response_class=HTMLResponse)

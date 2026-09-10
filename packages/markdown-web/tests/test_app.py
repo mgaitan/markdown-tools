@@ -52,6 +52,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     assert 'id="preview-button"' in response.text
     assert 'id="result-action-menu-button" class="source-action-menu-button" type="button"' in response.text
     assert 'data-result-action="epub">Download EPUB</button>' in response.text
+    assert 'data-result-action="markdown">Download Markdown</button>' in response.text
     assert 'id="preview-pane" class="preview-pane" hidden' in response.text
     assert 'id="preview-frame" class="preview-frame"' in response.text
     assert "Back to edit" in response.text
@@ -63,6 +64,8 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     assert 'data-markdown-action="image"' in response.text
     assert 'data-markdown-action="code-block"' in response.text
     assert 'id="metadata-button"' in response.text
+    assert 'id="toolbar-record-button"' in response.text
+    assert 'aria-label="Record audio into document"' in response.text
     assert 'id="metadata-dialog"' in response.text
     assert '<select id="metadata-type" name="type">' in response.text
     assert 'id="metadata-telegram"' in response.text
@@ -84,10 +87,14 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
         )
     )
     assert 'aria-label="Choose a file"' in response.text
-    assert (
-        'accept=".pdf,.doc,.docx,.epub,.ppt,.pptx,.xls,.xlsx,.odt,.ods,.odp,.rtf,.csv,image/png,image/jpeg,image/webp"'
-        in response.text
-    )
+    assert 'id="record-button"' in response.text
+    assert 'aria-label="Record audio"' in response.text
+    assert 'src="/static/microphone.svg"' in response.text
+    assert "audio/*" in response.text
+    assert 'fetch("/transcriptions"' in response.text
+    assert "navigator.mediaDevices.getUserMedia" in response.text
+    assert "insertTranscription(result.text)" in response.text
+    assert "function downloadMarkdown()" in response.text
     assert 'id="editor-image-file"' in response.text
     assert 'fetch("/images"' in response.text
     assert 'property="og:title" content="Write, convert, and publish Markdown"' in response.text
@@ -102,6 +109,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
     assert client.get("/static/favicon.svg").status_code == HTTP_200_OK
+    assert client.get("/static/microphone.svg").status_code == HTTP_200_OK
     assert client.get("/static/logo.png").status_code == HTTP_200_OK
     assert client.get("/static/social-card.png").status_code == HTTP_200_OK
     assert client.get("/static/styles.css").status_code == HTTP_200_OK
@@ -132,6 +140,7 @@ def test_home_has_source_action_dropdown() -> None:
             'id="submit-publish" class="source-action-button button button-primary" type="submit">Publish</button>',
             'id="result-action-menu-button" class="source-action-menu-button" type="button"',
             'data-result-action="epub">Download EPUB</button>',
+            'data-result-action="markdown">Download Markdown</button>',
         )
     )
 
@@ -342,6 +351,49 @@ def test_post_image_upload_returns_public_url(monkeypatch: pytest.MonkeyPatch) -
     assert response.json() == {"url": "https://media.example/images/photo.webp"}
     assert seen["data"] == b"image-bytes"
     assert isinstance(seen["client_ip"], str)
+
+
+def test_post_transcription_returns_text(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, object] = {}
+
+    class FakeTranscriber:
+        def transcribe(self, data: bytes, filename: str, content_type: str) -> str:
+            seen.update(data=data, filename=filename, content_type=content_type)
+            return "A transcribed recording"
+
+    monkeypatch.setattr(app_module, "transcriber_from_environment", lambda: FakeTranscriber())
+
+    response = client.post("/transcriptions", files={"file": ("recording.webm", b"audio", "audio/webm")})
+
+    assert response.status_code == HTTP_200_OK
+    assert response.json() == {"text": "A transcribed recording"}
+    assert seen == {"data": b"audio", "filename": "recording.webm", "content_type": "audio/webm"}
+
+
+def test_post_transcription_requires_configured_provider(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        app_module,
+        "transcriber_from_environment",
+        lambda: (_ for _ in ()).throw(app_module.TranscriptionUnavailableError()),
+    )
+
+    response = client.post("/transcriptions", files={"file": ("recording.webm", b"audio", "audio/webm")})
+
+    assert response.status_code == HTTP_503_SERVICE_UNAVAILABLE
+    assert response.json() == {"detail": "Audio transcription is not configured"}
+
+
+def test_post_transcription_rejects_empty_and_large_files() -> None:
+    empty = client.post("/transcriptions", files={"file": ("recording.webm", b"", "audio/webm")})
+    too_large = client.post(
+        "/transcriptions",
+        files={"file": ("recording.webm", b"x" * (app_module.MAX_AUDIO_UPLOAD_BYTES + 1), "audio/webm")},
+    )
+
+    assert empty.status_code == HTTP_422_UNPROCESSABLE_CONTENT
+    assert empty.json() == {"detail": "Audio file is empty"}
+    assert too_large.status_code == HTTP_422_UNPROCESSABLE_CONTENT
+    assert too_large.json() == {"detail": "Audio file exceeds the 25 MB limit"}
 
 
 def test_post_telegraph_returns_json_and_accepts_bearer_token(monkeypatch: pytest.MonkeyPatch) -> None:

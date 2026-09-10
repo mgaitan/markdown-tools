@@ -31,6 +31,11 @@ flowchart TD
     LOB[lobstersgram]
     TG[Telegram]
     TPH[Telegraph]
+    GROQ[Groq / Whisper]
+    ANYDOC[Firecrawl AnyDoc]
+    R2[Cloudflare R2]
+    REDIS[Redis]
+    CLOUD[FastAPI Cloud]
 
     MT --> MTHIS
     MT --> MDT
@@ -40,6 +45,11 @@ flowchart TD
     WEB --> MTHIS
     WEB --> MDT
     WEB --> MDE
+    WEB -.-> GROQ
+    WEB -.-> ANYDOC
+    WEB -.-> R2
+    WEB -.-> REDIS
+    WEB -.-> CLOUD
     LOB --> MTHIS
     LOB --> MDT
     WEB -.-> TPH
@@ -47,7 +57,7 @@ flowchart TD
     LOB -.-> TPH
     LOB -.-> TG
     classDef external stroke-dasharray: 5 5
-    class TG,TPH external
+    class TG,TPH,GROQ,ANYDOC,R2,REDIS,CLOUD external
 ```
 
 ## Documentation

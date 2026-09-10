@@ -48,6 +48,12 @@ class ImageUploadResponse(BaseModel):
     url: str
 
 
+class TranscriptionResponse(BaseModel):
+    """Response returned after transcribing an audio file."""
+
+    text: str
+
+
 class TelegraphPreviewResponse(BaseModel):
     """Response returned after creating or updating a Telegraph preview."""
 

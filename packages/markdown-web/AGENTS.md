@@ -78,6 +78,14 @@ printf '%s' "$TELEGRAM_WEB_BOT_TOKEN" |
   uv run fastapi cloud env set TELEGRAM_WEB_BOT_TOKEN --value-stdin --secret
 ```
 
+Audio transcription uses `GROQ_API_KEY` by default. The provider endpoint and
+model can be changed with `TRANSCRIPTION_API_KEY`, `TRANSCRIPTION_API_URL`, and
+`TRANSCRIPTION_MODEL`.
+
+Document conversion uses AnyDoc locally. Set `FIRECRAWL_API_KEY` to use
+Firecrawl Parse as an OCR fallback only when a PDF cannot be read locally. The
+hosted API receives the complete PDF because it does not support page selection.
+
 After changing a cloud environment variable, deploy again if the platform does
 not automatically restart the app. Check the public URL and deployment logs
 after each deploy.
