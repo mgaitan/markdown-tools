@@ -55,11 +55,13 @@ templates = Jinja2Templates(directory=str(PACKAGE_DIR / "templates"))
 app.mount("/static", StaticFiles(directory=PACKAGE_DIR / "static"), name="static")
 SITE_URL = os.getenv("SITE_URL", "https://markdown.fastapicloud.dev").rstrip("/")
 LLMS_PATH = PACKAGE_DIR / "templates" / "llms.txt"
+SERVICE_WORKER_PATH = PACKAGE_DIR / "static" / "service-worker.js"
 try:
     APP_VERSION = version("markdown-web")
 except PackageNotFoundError:  # pragma: no cover - the package is installed in supported environments
     APP_VERSION = "unknown"
 APP_COMMIT = os.getenv("APP_COMMIT", "unknown")
+AUDIO_FILE_SUFFIXES = frozenset({".flac", ".m4a", ".mp3", ".mp4", ".mpeg", ".mpga", ".ogg", ".wav", ".webm"})
 
 
 def _source_request_openapi() -> dict[str, object]:
@@ -266,15 +268,111 @@ def _authorization_token(request: Request) -> str:
     return token if scheme.lower() == "bearer" else ""
 
 
+def _home_response(
+    request: Request,
+    *,
+    shared_markdown: str = "",
+    shared_label: str = "",
+    share_error: str = "",
+) -> HTMLResponse:
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={
+            "site_url": SITE_URL,
+            "shared_markdown": shared_markdown,
+            "shared_label": shared_label,
+            "share_error": share_error,
+        },
+    )
+
+
+def _is_audio_upload(upload: UploadFile) -> bool:
+    return (upload.content_type or "").startswith("audio/") or Path(
+        upload.filename or ""
+    ).suffix.lower() in AUDIO_FILE_SUFFIXES
+
+
+async def _transcribe_upload(upload: UploadFile) -> str:
+    data = await upload.read(MAX_AUDIO_UPLOAD_BYTES + 1)
+    if not data:
+        raise HTTPException(status_code=422, detail="Audio file is empty")
+    if len(data) > MAX_AUDIO_UPLOAD_BYTES:
+        raise HTTPException(status_code=422, detail="Audio file exceeds the 25 MB limit")
+    try:
+        transcriber = transcriber_from_environment()
+        return await run_in_threadpool(
+            transcriber.transcribe,
+            data,
+            upload.filename or "audio",
+            upload.content_type or "",
+        )
+    except Exception as exc:
+        raise _handle_transcription_error(exc) from exc
+
+
+async def _shared_content(request: Request) -> tuple[str, str]:
+    """Process a Web Share Target payload into Markdown for the home screen."""
+    form = await request.form()
+    upload = form.get("file")
+    if isinstance(upload, UploadFile):
+        filename = upload.filename or "Shared file"
+        if _is_audio_upload(upload):
+            return await _transcribe_upload(upload), f"Transcript: {filename}"
+        try:
+            prepared = await run_in_threadpool(
+                prepare_content,
+                SourceRequest(document=await upload.read(), filename=filename),
+            )
+        except Exception as exc:
+            raise _handle_source_error(exc) from exc
+        return prepared.markdown, filename
+
+    url = str(form.get("url", "")).strip()
+    text = str(form.get("text", "")).strip()
+    title = str(form.get("title", "")).strip()
+    if url:
+        try:
+            prepared = await run_in_threadpool(
+                prepare_content,
+                SourceRequest(url=url, metadata=SourceMetadata(title=title)),
+            )
+        except Exception as exc:
+            raise _handle_source_error(exc) from exc
+        return prepared.markdown, title or url
+    if text:
+        return text, title or "Shared text"
+    raise HTTPException(status_code=422, detail="Share an audio file, document, URL, or text")
+
+
 @app.get("/", response_class=HTMLResponse)
 def home(request: Request) -> HTMLResponse:
-    return templates.TemplateResponse(request=request, name="index.html", context={"site_url": SITE_URL})
+    return _home_response(request)
+
+
+@app.post("/share", response_class=HTMLResponse, include_in_schema=False)
+async def share_target(request: Request) -> HTMLResponse:
+    """Receive Android and desktop PWA shares and open their result in the editor."""
+    try:
+        markdown, label = await _shared_content(request)
+    except HTTPException as exc:
+        return _home_response(request, share_error=str(exc.detail))
+    return _home_response(request, shared_markdown=markdown, shared_label=label)
 
 
 @app.get("/health/")
 def health(response: Response) -> dict[str, str]:
     response.headers["Cache-Control"] = "no-store"
     return {"status": "ok", "commit": APP_COMMIT, "version": APP_VERSION}
+
+
+@app.get("/service-worker.js", include_in_schema=False)
+def service_worker() -> Response:
+    return Response(
+        SERVICE_WORKER_PATH.read_text(encoding="utf-8"),
+        media_type="application/javascript",
+        headers={"Cache-Control": "no-cache"},
+    )
 
 
 @app.get("/md/{url:path}", response_class=PlainTextResponse)
@@ -336,15 +434,7 @@ async def transcription(request: Request) -> JSONResponse:
     upload = form.get("file")
     if not isinstance(upload, UploadFile):
         raise HTTPException(status_code=400, detail="Include an audio file in the file field")
-    data = await upload.read(MAX_AUDIO_UPLOAD_BYTES + 1)
-    if not data:
-        raise HTTPException(status_code=422, detail="Audio file is empty")
-    if len(data) > MAX_AUDIO_UPLOAD_BYTES:
-        raise HTTPException(status_code=422, detail="Audio file exceeds the 25 MB limit")
-    try:
-        text = transcriber_from_environment().transcribe(data, upload.filename or "audio", upload.content_type or "")
-    except Exception as exc:
-        raise _handle_transcription_error(exc) from exc
+    text = await _transcribe_upload(upload)
     return JSONResponse({"text": text})
 
 

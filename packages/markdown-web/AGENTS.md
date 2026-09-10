@@ -86,6 +86,10 @@ Document conversion uses AnyDoc locally. Set `FIRECRAWL_API_KEY` to use
 Firecrawl Parse as an OCR fallback only when a PDF cannot be read locally. The
 hosted API receives the complete PDF because it does not support page selection.
 
+The web app is installable as a PWA. Its Web Share Target receives audio and
+supported documents through `POST /share`; the route processes the share before
+rendering the editor, so do not persist shared content in browser storage.
+
 After changing a cloud environment variable, deploy again if the platform does
 not automatically restart the app. Check the public URL and deployment logs
 after each deploy.

@@ -94,6 +94,11 @@ with `whisper-large-v3-turbo`; set `GROQ_API_KEY` to enable it. To use another
 compatible provider or model, configure `TRANSCRIPTION_API_KEY`,
 `TRANSCRIPTION_API_URL`, and `TRANSCRIPTION_MODEL` instead.
 
+Install the home page as a PWA to use it as an Android share target. Sharing an
+audio file transcribes it into the editor; sharing a supported document converts
+it to Markdown. Shared text and URLs open in the editor too. The PWA needs an
+internet connection to process shared content.
+
 The editor action menu can download the current document as Markdown or EPUB.
 
 ```bash

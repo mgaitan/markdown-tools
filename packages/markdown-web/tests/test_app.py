@@ -108,11 +108,21 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
         'name="twitter:image" content="https://markdown.fastapicloud.dev/static/social-card.png?v=2"' in response.text
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
+    assert 'rel="manifest" href="/static/manifest.webmanifest"' in response.text
+    assert 'navigator.serviceWorker.register("/service-worker.js")' in response.text
+    assert "const sharedMarkdown" in response.text
     assert client.get("/static/favicon.svg").status_code == HTTP_200_OK
     assert client.get("/static/microphone.svg").status_code == HTTP_200_OK
     assert client.get("/static/logo.png").status_code == HTTP_200_OK
     assert client.get("/static/social-card.png").status_code == HTTP_200_OK
     assert client.get("/static/styles.css").status_code == HTTP_200_OK
+    manifest = client.get("/static/manifest.webmanifest")
+    assert manifest.status_code == HTTP_200_OK
+    assert manifest.json()["share_target"]["action"] == "/share"
+    assert "audio/*" in manifest.json()["share_target"]["params"]["files"][0]["accept"]
+    service_worker = client.get("/service-worker.js")
+    assert service_worker.status_code == HTTP_200_OK
+    assert service_worker.headers["cache-control"] == "no-cache"
 
 
 def test_home_places_editor_control_in_toolbar() -> None:
@@ -123,6 +133,48 @@ def test_home_places_editor_control_in_toolbar() -> None:
         'title="Publication metadata">Meta</button>\n'
         '                <button id="expand-editor"' in response.text
     )
+
+
+def test_share_target_transcribes_audio(monkeypatch: pytest.MonkeyPatch) -> None:
+    class FakeTranscriber:
+        def transcribe(self, data: bytes, filename: str, content_type: str) -> str:
+            assert data == b"audio"
+            assert filename == "note.webm"
+            assert content_type == "audio/webm"
+            return "Shared transcript"
+
+    monkeypatch.setattr(app_module, "transcriber_from_environment", lambda: FakeTranscriber())
+
+    response = client.post("/share", files={"file": ("note.webm", b"audio", "audio/webm")})
+
+    assert response.status_code == HTTP_200_OK
+    assert 'const sharedMarkdown = "Shared transcript"' in response.text
+    assert 'const sharedLabel = "Transcript: note.webm"' in response.text
+
+
+def test_share_target_converts_document(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, object] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# Shared document\n\nBody")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post("/share", files={"file": ("report.pdf", b"document", "application/pdf")})
+
+    assert response.status_code == HTTP_200_OK
+    assert seen["source"].document == b"document"
+    assert seen["source"].filename == "report.pdf"
+    assert "Shared document" in response.text
+
+
+def test_share_target_opens_shared_text() -> None:
+    response = client.post("/share", data={"title": "Note", "text": "# Shared note\n\nBody"})
+
+    assert response.status_code == HTTP_200_OK
+    assert "Shared note" in response.text
+    assert 'const sharedLabel = "Note"' in response.text
 
 
 def test_home_has_source_action_dropdown() -> None:

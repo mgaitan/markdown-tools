@@ -1,0 +1,68 @@
+{
+  "id": "/",
+  "name": "Markdown Web",
+  "short_name": "Markdown",
+  "description": "Write, convert, and publish Markdown.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/static/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "file",
+          "accept": [
+            "audio/*",
+            ".flac",
+            ".m4a",
+            ".mp3",
+            ".mp4",
+            ".mpeg",
+            ".mpga",
+            ".ogg",
+            ".wav",
+            ".webm",
+            ".pdf",
+            ".doc",
+            ".docx",
+            ".docm",
+            ".ppt",
+            ".pptx",
+            ".pptm",
+            ".xls",
+            ".xlsx",
+            ".xlsm",
+            ".odt",
+            ".ods",
+            ".odp",
+            ".rtf",
+            ".epub",
+            ".csv"
+          ]
+        }
+      ]
+    }
+  }
+}

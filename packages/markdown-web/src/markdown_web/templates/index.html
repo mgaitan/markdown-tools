@@ -24,6 +24,8 @@
     <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="/static/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/static/logo.png">
+    <link rel="manifest" href="/static/manifest.webmanifest">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/styles.css?v=17">
   </head>
   <body>
@@ -200,6 +202,9 @@
       const SOURCE_ACTION_KEY = "markdown-web-source-action";
       const SOURCE_PLACEHOLDER = "Paste a URL, drop a file or insert markdown content";
       const MARKDOWN_START_RE = /(^\s*(?:#{1,6}\s|>\s|[-*+]\s|\d+\.\s|```|~~~|!\[|\[|\*\*|__))/;
+      const sharedMarkdown = {{ shared_markdown | tojson }};
+      const sharedLabel = {{ shared_label | tojson }};
+      const shareError = {{ share_error | tojson }};
 
       function setStatus(message, error = false) {
         status.textContent = message;
@@ -1037,7 +1042,18 @@
       });
 
       restoreSourceAction();
-      restoreDraft();
+      if (sharedMarkdown) {
+        clearDraft();
+        showMarkdownEditor(sharedMarkdown, sharedLabel);
+        setStatus("Shared content imported");
+      } else {
+        restoreDraft();
+        if (shareError) setStatus(shareError, true);
+      }
+
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js"));
+      }
 
     </script>
   </body>
