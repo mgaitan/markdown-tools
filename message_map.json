@@ -4072,5 +4072,23 @@
     "article_link": "https://vale.rocks/posts/html-boilerplate",
     "discussion_link": "https://lobste.rs/s/6tcc4t/my_html_boilerplate",
     "title": "My HTML Boilerplate"
+  },
+  "@lobstersgram:688": {
+    "telegraph_link": "https://telegra.ph/Antiquated-CSS-and-why-we-needed-it---Max-Glenister-09-10",
+    "article_link": "https://blog.omgmog.net/post/antiquated-css/",
+    "discussion_link": "https://lobste.rs/s/i22m5l/antiquated_css_why_we_needed_it",
+    "title": "Antiquated CSS and why we needed it"
+  },
+  "@lobstersgram:689": {
+    "telegraph_link": "https://telegra.ph/JEP-544-Ahead-of-Time-Code-Compilation-09-10-5",
+    "article_link": "https://openjdk.org/jeps/544",
+    "discussion_link": "https://lobste.rs/s/whzj8z/jep_544_ahead_time_code_compilation",
+    "title": "JEP 544: Ahead-of-Time Code Compilation"
+  },
+  "@lobstersgram:690": {
+    "telegraph_link": "https://telegra.ph/Making-Social-Media-Social-09-10",
+    "article_link": "https://tante.cc/2026/09/10/making-social-media-social/",
+    "discussion_link": "https://lobste.rs/s/39c9xe/making_social_media_social",
+    "title": "Making Social Media Social"
   }
 }
