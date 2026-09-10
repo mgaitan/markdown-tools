@@ -4018,5 +4018,35 @@
     "article_link": "https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/",
     "discussion_link": "https://lobste.rs/s/zffgb8/decade_rustls",
     "title": "A decade of rustls"
+  },
+  "@lobstersgram:679": {
+    "telegraph_link": "https://telegra.ph/Package-Manager-Trends--Andrew-Nesbitt-09-10",
+    "article_link": "https://nesbitt.io/2026/09/10/package-manager-trends.html",
+    "discussion_link": "https://lobste.rs/s/qwbyxh/package_manager_trends",
+    "title": "Package Manager Trends"
+  },
+  "@lobstersgram:680": {
+    "telegraph_link": "https://telegra.ph/Decoding-the-NEC-V20-Microcode-09-10-2",
+    "article_link": "https://martypc.blogspot.com/2026/09/decoding-nec-v20-microcode.html",
+    "discussion_link": "https://lobste.rs/s/dfby97/decoding_nec_v20_microcode",
+    "title": "Decoding the NEC V20 Microcode"
+  },
+  "@lobstersgram:681": {
+    "telegraph_link": "https://telegra.ph/Announcing-the-first-Guix-Science-release-09-10",
+    "article_link": "https://hpc.guix.info/blog/2026/09/guix-science-first-release/",
+    "discussion_link": "https://lobste.rs/s/vkxhni/announcing_first_guix_science_release",
+    "title": "Announcing the first Guix-Science release"
+  },
+  "@lobstersgram:682": {
+    "telegraph_link": "https://telegra.ph/Guest-Post-Rust-Is-Tier-1-Language-at-Microsoft-09-10",
+    "article_link": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft/",
+    "discussion_link": "https://lobste.rs/s/eerwba/rust_is_tier_1_language_at_microsoft",
+    "title": "Rust Is Tier-1 Language at Microsoft"
+  },
+  "@lobstersgram:683": {
+    "telegraph_link": "https://telegra.ph/I-Dont-Want-to-Interact-With-Stochastic-Parrots-09-10-7",
+    "article_link": "https://ploum.net/2026-09-09-ai_policy.html",
+    "discussion_link": "https://lobste.rs/s/rdhsu9/i_don_t_want_interact_with_stochastic",
+    "title": "I Don’t Want to Interact With Stochastic Parrots"
   }
 }
