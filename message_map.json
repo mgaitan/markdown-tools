@@ -4000,5 +4000,23 @@
     "article_link": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
     "discussion_link": "https://lobste.rs/s/pxreik/how_build_f_king_printer",
     "title": "How to build a f**king printer"
+  },
+  "@lobstersgram:676": {
+    "telegraph_link": "https://telegra.ph/How-to-avoid-correctness-space-leaks-on-a-lazy-setting-in-haskell-09-10-2",
+    "article_link": "https://epicandmonicisnotiso.blogspot.com/2023/04/how-to-avoid-correctness-space-leaks-on.html",
+    "discussion_link": "https://lobste.rs/s/oclcr7/how_avoid_correctness_space_leaks_on_lazy",
+    "title": "How to avoid correctness space leaks on a lazy setting in Haskell (2023)"
+  },
+  "@lobstersgram:677": {
+    "telegraph_link": "https://telegra.ph/Essay-001-ON-WHAT-THE-PANOPTICON-CANNOT-SEE-09-10",
+    "article_link": "https://www.metanoia-research.com/essay-001-on-what-the-panopticon-cannot-see/",
+    "discussion_link": "https://lobste.rs/s/ittbn0/on_what_panopticon_cannot_see",
+    "title": "On What The Panopticon Cannot See"
+  },
+  "@lobstersgram:678": {
+    "telegraph_link": "https://telegra.ph/rustls-A-Decade-of-Rustls-09-10-3",
+    "article_link": "https://rustls.dev/blog/2026-09-08-a-decade-of-rustls/",
+    "discussion_link": "https://lobste.rs/s/zffgb8/decade_rustls",
+    "title": "A decade of rustls"
   }
 }
