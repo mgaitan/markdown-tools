@@ -4048,5 +4048,29 @@
     "article_link": "https://ploum.net/2026-09-09-ai_policy.html",
     "discussion_link": "https://lobste.rs/s/rdhsu9/i_don_t_want_interact_with_stochastic",
     "title": "I Don’t Want to Interact With Stochastic Parrots"
+  },
+  "@lobstersgram:684": {
+    "telegraph_link": "https://telegra.ph/Conversations-with-JJ--Laurenzs-Blog-09-10",
+    "article_link": "https://laurmaedje.github.io/posts/jj/",
+    "discussion_link": "https://lobste.rs/s/nbmbxj/conversations_with_jj",
+    "title": "Conversations with JJ"
+  },
+  "@lobstersgram:685": {
+    "telegraph_link": "https://telegra.ph/What-comes-after-git--ERSC-09-10",
+    "article_link": "https://ersc.io/blog/what-comes-after-git",
+    "discussion_link": "https://lobste.rs/s/ez6ivp/what_comes_after_git",
+    "title": "What comes after git"
+  },
+  "@lobstersgram:686": {
+    "telegraph_link": "https://telegra.ph/Bad-Vibes-Coding---Spectre-Collie-09-10",
+    "article_link": "https://spectrecollie.com/2026/09/05/bad-vibes-coding/",
+    "discussion_link": "https://lobste.rs/s/ifvdvx/bad_vibes_coding",
+    "title": "Bad Vibes Coding"
+  },
+  "@lobstersgram:687": {
+    "telegraph_link": "https://telegra.ph/My-HTML-Boilerplate--ValeRocks-09-10",
+    "article_link": "https://vale.rocks/posts/html-boilerplate",
+    "discussion_link": "https://lobste.rs/s/6tcc4t/my_html_boilerplate",
+    "title": "My HTML Boilerplate"
   }
 }
