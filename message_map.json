@@ -3970,5 +3970,35 @@
     "article_link": "https://rmondello.com/2026/09/07/switching-password-managers-2026/",
     "discussion_link": "https://lobste.rs/s/ikzvtv/switching_password_managers_2026",
     "title": "Switching Password Managers in 2026"
+  },
+  "@lobstersgram:671": {
+    "telegraph_link": "https://telegra.ph/SystemIO-conflicts-are-not-firmware-bugs-09-10",
+    "article_link": "https://codon.org.uk/~mjg59/blog/p/systemio-conflicts-are-not-firmware-bugs/",
+    "discussion_link": "https://lobste.rs/s/jz8fmz/systemio_conflicts_are_not_firmware_bugs",
+    "title": "SystemIO conflicts are not firmware bugs"
+  },
+  "@lobstersgram:672": {
+    "telegraph_link": "https://telegra.ph/Review-a-pull-request-by-booting-it--Farid-Zakarias-Blog-09-10",
+    "article_link": "https://fzakaria.com/2026/09/09/review-a-pull-request-by-booting-it",
+    "discussion_link": "https://lobste.rs/s/7lii0g/review_pull_request_by_booting_it",
+    "title": "Review a pull request by booting it"
+  },
+  "@lobstersgram:673": {
+    "telegraph_link": "https://telegra.ph/Better-AI-code-comment-detector-09-10",
+    "article_link": "https://entropicthoughts.com/better-ai-comment-classifier",
+    "discussion_link": "https://lobste.rs/s/o9cyiv/better_ai_code_comment_detector",
+    "title": "Better AI code comment detector"
+  },
+  "@lobstersgram:674": {
+    "telegraph_link": "https://telegra.ph/The-purpose-of-DNS-is-to-spread-scams---Terence-Edens-Blog-09-10",
+    "article_link": "https://shkspr.mobi/blog/2026/09/the-purpose-of-dns-is-to-spread-scams/",
+    "discussion_link": "https://lobste.rs/s/veafpx/purpose_dns_is_spread_scams",
+    "title": "The purpose of DNS is to spread scams"
+  },
+  "@lobstersgram:675": {
+    "telegraph_link": "https://telegra.ph/How-to-build-a-fking-printer--Nishant-Joshi-09-10",
+    "article_link": "https://nishantjosh.dev/blogs/how-to-build-a-fking-printer/",
+    "discussion_link": "https://lobste.rs/s/pxreik/how_build_f_king_printer",
+    "title": "How to build a f**king printer"
   }
 }
