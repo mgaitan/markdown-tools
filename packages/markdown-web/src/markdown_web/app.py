@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
@@ -62,6 +63,10 @@ except PackageNotFoundError:  # pragma: no cover - the package is installed in s
     APP_VERSION = "unknown"
 APP_COMMIT = os.getenv("APP_COMMIT", "unknown")
 AUDIO_FILE_SUFFIXES = frozenset({".flac", ".m4a", ".mp3", ".mp4", ".mpeg", ".mpga", ".ogg", ".wav", ".webm"})
+SHARE_GOOGLE_TEXT_URL_RE = re.compile(
+    r"^(?P<text>(?:(?![a-z][a-z0-9+.-]*://)[^\r\n])+?)\s+(?P<url>https?://share\.google/[^\s<>\"']+)\s*$",
+    re.IGNORECASE,
+)
 
 
 def _source_request_openapi() -> dict[str, object]:
@@ -335,6 +340,8 @@ async def _shared_content(request: Request) -> tuple[str, str]:
         parsed_text_url = urlparse(text)
         if parsed_text_url.scheme in {"http", "https"} and parsed_text_url.netloc:
             url = text
+        elif share_url := SHARE_GOOGLE_TEXT_URL_RE.fullmatch(text):
+            url = share_url["url"]
     if url:
         try:
             prepared = await run_in_threadpool(

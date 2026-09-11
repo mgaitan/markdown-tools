@@ -201,6 +201,52 @@ def test_share_target_extracts_url_sent_as_text(monkeypatch: pytest.MonkeyPatch)
     assert "Extracted article" in response.text
 
 
+def test_share_target_extracts_share_google_url_from_android_text(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, object] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# Extracted article\n\nBody")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post(
+        "/share",
+        data={
+            "text": "Article title - A short article description https://share.google/abc123?hl=en  ",
+        },
+    )
+
+    assert response.status_code == HTTP_200_OK
+    assert seen["source"].url == "https://share.google/abc123?hl=en"
+    assert "Extracted article" in response.text
+
+
+@pytest.mark.parametrize(
+    "text",
+    (
+        "Article title - Description https://example.com/related https://share.google/abc123",
+        "First paragraph.\n\nArticle title - Description https://share.google/abc123",
+    ),
+)
+def test_share_target_keeps_nonstandard_share_google_text_as_text(
+    monkeypatch: pytest.MonkeyPatch, text: str
+) -> None:
+    called = False
+
+    def fake_prepare(_source: SourceRequest) -> PreparedContent:
+        nonlocal called
+        called = True
+        return _prepared()
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post("/share", data={"text": text})
+
+    assert response.status_code == HTTP_200_OK
+    assert not called
+
+
 def test_home_has_source_action_dropdown() -> None:
     response = client.get("/")
 
