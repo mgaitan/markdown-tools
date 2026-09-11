@@ -29,7 +29,6 @@ def test_captured_thread_and_media(host: str, download: bool, mocker: MockerFixt
     assert "https://pbs.twimg.com/media/chart.jpg" in body
     assert body.count("https://video.twimg.com/demo.mp4") == 1
     assert "https://pbs.twimg.com/media/final.jpg" in body
-    assert "/alice/status/1003" in body
     for noise in [
         "Trending",
         "profile_images",
@@ -41,6 +40,7 @@ def test_captured_thread_and_media(host: str, download: bool, mocker: MockerFixt
         "recommended",
         "Subscribe",
         "blob:",
+        "/alice/status/1003",
     ]:
         assert noise not in body
     assert fetch.call_count == int(download)
@@ -79,6 +79,31 @@ def test_x_collection_supports_current_post_markup_without_test_ids_or_time() ->
 
     assert result and "First current post" in result and "Second current post" in result
     assert "Reader response" not in result
+
+
+def test_current_x_markup_keeps_only_thread_text() -> None:
+    html = """
+    <main>
+      <article>
+        <img src="https://pbs.twimg.com/profile_images/alice.jpg" alt="@alice">
+        <a href="https://x.com/alice">Alice</a><a href="/alice/status/1001">4 September</a>
+        <div dir="auto">First current post with <a href="https://example.org/source">a source</a>.</div>
+        <a href="https://t.co/card"><img src="https://pbs.twimg.com/card_img/preview.jpg" alt="Card preview"></a>
+        <a href="/alice/status/1001">500 Views</a><button>Reply Repost Like</button>
+      </article>
+      <article>
+        <a href="https://x.com/alice">Alice</a><a href="/alice/status/1002">4 September</a>
+        <div dir="auto">Second current post.</div>
+      </article>
+    </main>
+    """
+
+    result = apply_domain_rule(html, "https://x.com/alice/status/1001")
+
+    assert result and "First current post" in result and "Second current post" in result
+    assert "a source" in result
+    for noise in ["profile_images", "Card preview", "500 Views", "Reply Repost Like", "4 September"]:
+        assert noise not in result
 
 
 def test_collection_requires_requested_post_and_skips_unusable_cells() -> None:

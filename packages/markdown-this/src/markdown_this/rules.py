@@ -112,7 +112,25 @@ def _collect_posts(body: Tag, rule: DomainRule, url: str) -> str | None:
     for _author, group in groupby(posts.items(), key=lambda item: item[1][0]):
         captured = dict(group)
         if target in captured:
-            parts = [str(node) for _author, node in captured.values()]
+            parts = (
+                [_x_post_html(node) for _author, node in captured.values()]
+                if "x.com" in rule.hosts
+                else [str(node) for _author, node in captured.values()]
+            )
             # ponytail: a DOM snapshot cannot prove that unseen replies do not exist.
-            return '<meta name="extraction_scope" content="captured-posts">' + "<hr>".join(parts)
+            return '<meta name="extraction_scope" content="captured-posts">' + "\n".join(part for part in parts if part)
     return None
+
+
+def _x_post_html(node: Tag) -> str:
+    """Keep an X post's written content and attached media, not its interface chrome."""
+    text = node.select_one('[data-testid="tweetText"]') or node.select_one('div[dir="auto"]') or node.find("p")
+    if text is None:
+        return ""
+
+    parts = [str(text)]
+    images = list(node.select('[data-testid="tweetPhoto"] img'))
+    images.extend(image for link in node.select('a[href*="/status/"][href*="/photo/"]') if (image := link.find("img")))
+    parts.extend(str(image) for image in dict.fromkeys(images))
+    parts.extend(str(video) for video in node.find_all("video"))
+    return "<section>" + "".join(parts) + "</section>"
