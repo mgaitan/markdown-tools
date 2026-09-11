@@ -181,6 +181,26 @@ def test_share_target_opens_shared_text() -> None:
     assert 'const sharedLabel = "Note"' in response.text
 
 
+def test_share_target_extracts_url_sent_as_text(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, object] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# Extracted article\n\nBody")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post(
+        "/share",
+        data={"title": "Article", "text": "https://example.com/article"},
+    )
+
+    assert response.status_code == HTTP_200_OK
+    assert seen["source"].url == "https://example.com/article"
+    assert seen["source"].metadata.title == "Article"
+    assert "Extracted article" in response.text
+
+
 def test_home_has_source_action_dropdown() -> None:
     response = client.get("/")
 

@@ -6,7 +6,7 @@ import json
 import os
 from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
-from urllib.parse import parse_qs
+from urllib.parse import parse_qs, urlparse
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request, Response
@@ -331,6 +331,10 @@ async def _shared_content(request: Request) -> tuple[str, str]:
     url = str(form.get("url", "")).strip()
     text = str(form.get("text", "")).strip()
     title = str(form.get("title", "")).strip()
+    if not url:
+        parsed_text_url = urlparse(text)
+        if parsed_text_url.scheme in {"http", "https"} and parsed_text_url.netloc:
+            url = text
     if url:
         try:
             prepared = await run_in_threadpool(
