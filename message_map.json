@@ -4168,5 +4168,35 @@
     "article_link": "https://slugcat.systems/post/26-09-10-yaml-spec/",
     "discussion_link": "https://lobste.rs/s/bsvc7a/it_s_not_yaml_spec_s_fault",
     "title": "It's not the YAML spec's fault, but"
+  },
+  "@lobstersgram:704": {
+    "telegraph_link": "https://telegra.ph/Everything-Is-a-Trust-Decision--nrdxp-09-11",
+    "article_link": "https://nrd.sh/blog/everything-is-a-trust-decision.html",
+    "discussion_link": "https://lobste.rs/s/fjljdg/everything_is_trust_decision",
+    "title": "Everything is a Trust Decision"
+  },
+  "@lobstersgram:705": {
+    "telegraph_link": "https://telegra.ph/rusttestsuiparserbastion-of-the-turbofishrs-at-main--rust-langrust--GitHub-09-11",
+    "article_link": "https://github.com/rust-lang/rust/blob/main/tests/ui/parser/bastion-of-the-turbofish.rs",
+    "discussion_link": "https://lobste.rs/s/b6oxoj/bastion_turbofish",
+    "title": "Bastion of the Turbofish"
+  },
+  "@lobstersgram:706": {
+    "telegraph_link": "https://telegra.ph/Cookie-monster-09-11",
+    "article_link": "https://codeberg.org/ChiPass/ChiPass/releases/tag/v2026.09.0",
+    "discussion_link": "https://lobste.rs/s/mcioou/chipass_release_2026_09_0",
+    "title": "ChiPass Release 2026.09.0"
+  },
+  "@lobstersgram:707": {
+    "telegraph_link": "https://telegra.ph/evergarden-09-11-2",
+    "article_link": "https://evergarden.moe/",
+    "discussion_link": "https://lobste.rs/s/cegf7n/evergarden",
+    "title": "evergarden"
+  },
+  "@lobstersgram:708": {
+    "telegraph_link": "https://telegra.ph/A-rant-about-phishing-Its-not-the-users-fault-and-not-DNS-either-09-11-2",
+    "article_link": "https://maurycyz.com/misc/domains/",
+    "discussion_link": "https://lobste.rs/s/9szn91/rant_about_phishing_it_s_not_user_s_fault",
+    "title": "A rant about phishing: It's not the user's fault (and not DNS either)"
   }
 }
