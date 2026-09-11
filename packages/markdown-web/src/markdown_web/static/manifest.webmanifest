@@ -44,6 +44,7 @@
             ".ogg",
             ".wav",
             ".webm",
+            "application/pdf",
             ".pdf",
             ".doc",
             ".docx",

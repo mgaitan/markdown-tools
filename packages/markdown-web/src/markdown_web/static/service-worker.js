@@ -1,7 +1,7 @@
-const CACHE_NAME = "markdown-web-shell-v4";
+const CACHE_NAME = "markdown-web-shell-v5";
 const APP_SHELL = [
   "/",
-  "/static/manifest.webmanifest",
+  "/static/manifest.webmanifest?v=2",
   "/static/styles.css?v=20",
   "/static/logo.png",
   "/static/icon-192.png",
@@ -14,7 +14,12 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    caches
+      .keys()
+      .then((cacheNames) => Promise.all(cacheNames.filter((name) => name !== CACHE_NAME).map((name) => caches.delete(name))))
+      .then(() => self.clients.claim())
+  );
 });
 
 self.addEventListener("fetch", (event) => {
@@ -34,6 +39,8 @@ self.addEventListener("fetch", (event) => {
     return;
   }
   if (url.pathname.startsWith("/static/")) {
-    event.respondWith(caches.match(event.request).then((cached) => cached || fetch(event.request)));
+    event.respondWith(
+      caches.open(CACHE_NAME).then((cache) => cache.match(event.request).then((cached) => cached || fetch(event.request)))
+    );
   }
 });

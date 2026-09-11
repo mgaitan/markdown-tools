@@ -117,7 +117,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
         'name="twitter:image" content="https://markdown.fastapicloud.dev/static/social-card.png?v=2"' in response.text
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
-    assert 'rel="manifest" href="/static/manifest.webmanifest"' in response.text
+    assert 'rel="manifest" href="/static/manifest.webmanifest?v=2"' in response.text
     assert 'navigator.serviceWorker.register("/service-worker.js")' in response.text
     assert 'id="install-prompt"' in response.text
     assert 'id="install-button"' in response.text
@@ -133,9 +133,11 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     assert manifest.status_code == HTTP_200_OK
     assert manifest.json()["share_target"]["action"] == "/share"
     assert "audio/*" in manifest.json()["share_target"]["params"]["files"][0]["accept"]
+    assert "application/pdf" in manifest.json()["share_target"]["params"]["files"][0]["accept"]
     service_worker = client.get("/service-worker.js")
     assert service_worker.status_code == HTTP_200_OK
     assert service_worker.headers["cache-control"] == "no-cache"
+    assert 'const CACHE_NAME = "markdown-web-shell-v5";' in service_worker.text
 
 
 def test_home_places_editor_control_in_toolbar() -> None:
@@ -238,9 +240,7 @@ def test_share_target_extracts_share_google_url_from_android_text(monkeypatch: p
         "First paragraph.\n\nArticle title - Description https://share.google/abc123",
     ),
 )
-def test_share_target_keeps_nonstandard_share_google_text_as_text(
-    monkeypatch: pytest.MonkeyPatch, text: str
-) -> None:
+def test_share_target_keeps_nonstandard_share_google_text_as_text(monkeypatch: pytest.MonkeyPatch, text: str) -> None:
     called = False
 
     def fake_prepare(_source: SourceRequest) -> PreparedContent:
@@ -279,7 +279,7 @@ def test_home_has_source_action_dropdown() -> None:
 def test_home_limits_install_prompt_to_mobile_viewports() -> None:
     response = client.get("/")
 
-    assert 'function isMobileViewport() {' in response.text
+    assert "function isMobileViewport() {" in response.text
     assert 'window.matchMedia("(max-width: 560px)").matches' in response.text
     assert "isMobileViewport() && !isInstalledApp()" in response.text
 
