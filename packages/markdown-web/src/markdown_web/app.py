@@ -634,7 +634,7 @@ def bookmarklet_capture(request: Request, action: str) -> HTMLResponse:
 @app.get("/bookmarklet/", response_class=HTMLResponse)
 def bookmarklet_form(request: Request) -> HTMLResponse:
     try:
-        bookmarks = build_bookmarklets(str(request.base_url).rstrip("/"))
+        bookmarks = build_bookmarklets(SITE_URL)
     except Exception as exc:
         raise _handle_source_error(exc) from exc
     return templates.TemplateResponse(

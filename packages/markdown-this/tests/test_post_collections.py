@@ -95,6 +95,7 @@ def test_current_x_markup_keeps_only_thread_text() -> None:
         <a href="https://x.com/alice">Alice</a><a href="/alice/status/1002">4 September</a>
         <div dir="auto">Second current post.</div>
       </article>
+      <article><a href="/alice/status/1003">4 September</a></article>
     </main>
     """
 

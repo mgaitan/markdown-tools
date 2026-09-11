@@ -39,6 +39,14 @@ def test_bookmarklet_capture_receiver_rejects_unknown_action() -> None:
     assert client.get("/bookmarklet/capture", params={"action": "epub"}).status_code == HTTP_404_NOT_FOUND
 
 
+def test_bookmarklet_page_uses_the_public_service_url() -> None:
+    response = client.get("/bookmarklets/")
+
+    assert "https://markdown.fastapicloud.dev/md" in response.text
+    assert "https://markdown.fastapicloud.dev/bookmarklet/capture?action=md" in response.text
+    assert "http://testserver/md" not in response.text
+
+
 def _prepared(markdown: str = "# Title\n\nBody") -> PreparedContent:
     return PreparedContent("Title", markdown, "Fallback", SourceMetadata())
 
