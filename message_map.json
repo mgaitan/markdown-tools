@@ -4144,5 +4144,29 @@
     "article_link": "https://gleamgathering.com/",
     "discussion_link": "https://lobste.rs/s/y3teyg/gleam_gathering_2027",
     "title": "Gleam Gathering 2027"
+  },
+  "@lobstersgram:700": {
+    "telegraph_link": "https://telegra.ph/Reverse-engineering-an-ASIC---Per-aspera-ad-astra-09-11",
+    "article_link": "https://kjartanvandriel.github.io/asic/",
+    "discussion_link": "https://lobste.rs/s/5nmyv0/reverse_engineering_asic",
+    "title": "Reverse engineering an ASIC"
+  },
+  "@lobstersgram:701": {
+    "telegraph_link": "https://telegra.ph/What-algorithm-did-Windows-XP-use-to-choose-your-initial-user-picture---The-Old-New-Thing-09-11",
+    "article_link": "https://devblogs.microsoft.com/oldnewthing/20260909-00/?p=112683",
+    "discussion_link": "https://lobste.rs/s/izt4a2/what_algorithm_did_windows_xp_use_choose",
+    "title": "What algorithm did Windows XP use to choose your initial user picture?"
+  },
+  "@lobstersgram:702": {
+    "telegraph_link": "https://telegra.ph/Xteink-X4-Pro-review--Abstract-Nonsense-09-11",
+    "article_link": "https://abstractnonsense.xyz/microblog/2026-09-07-xteink-x4-pro-review/",
+    "discussion_link": "https://lobste.rs/s/aiikt1/xteink_x4_pro_review",
+    "title": "Xteink X4 Pro review"
+  },
+  "@lobstersgram:703": {
+    "telegraph_link": "https://telegra.ph/Its-not-the-YAML-specs-fault-but--PJB-blog-09-11",
+    "article_link": "https://slugcat.systems/post/26-09-10-yaml-spec/",
+    "discussion_link": "https://lobste.rs/s/bsvc7a/it_s_not_yaml_spec_s_fault",
+    "title": "It's not the YAML spec's fault, but"
   }
 }
