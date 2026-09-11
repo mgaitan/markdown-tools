@@ -4198,5 +4198,29 @@
     "article_link": "https://maurycyz.com/misc/domains/",
     "discussion_link": "https://lobste.rs/s/9szn91/rant_about_phishing_it_s_not_user_s_fault",
     "title": "A rant about phishing: It's not the user's fault (and not DNS either)"
+  },
+  "@lobstersgram:709": {
+    "telegraph_link": "https://telegra.ph/Declaration---Math-and-AI-09-11-2",
+    "article_link": "https://mathandai.org/",
+    "discussion_link": "https://lobste.rs/s/oossfd/severe_misalignment_ai_mathematics",
+    "title": "A Severe Misalignment of AI in Mathematics"
+  },
+  "@lobstersgram:710": {
+    "telegraph_link": "https://telegra.ph/If-coding-is-solved-what-now-Measuring-the-sloppiness-of-code--EARENDIL-09-11-3",
+    "article_link": "https://earendil.com/posts/measuring-code-sloppiness/",
+    "discussion_link": "https://lobste.rs/s/wxc7t7/measuring_sloppiness_code",
+    "title": "Measuring the sloppiness of code"
+  },
+  "@lobstersgram:711": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-09-11",
+    "article_link": "https://lobste.rs/s/vc0brm/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/vc0brm/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:712": {
+    "telegraph_link": "https://telegra.ph/Power-grab-09-11-5",
+    "article_link": "https://tante.cc/2026/09/11/power-grab/",
+    "discussion_link": "https://lobste.rs/s/be7tgu/power_grab",
+    "title": "Power grab"
   }
 }
