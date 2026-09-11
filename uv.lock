@@ -1056,7 +1056,7 @@ requires-dist = [
 
 [[package]]
 name = "md-to-telegraph"
-version = "0.1.9"
+version = "0.1.10"
 source = { editable = "packages/md-to-telegraph" }
 dependencies = [
     { name = "mistletoe" },
