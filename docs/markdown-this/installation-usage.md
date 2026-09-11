@@ -18,6 +18,10 @@ title, markdown, fallback_text, intro = extract_main_content(
 
 The source can be a URL, `Path`, path string, or raw HTML string.
 
+`is_html_source` identifies raw HTML that starts with a complete document or a
+structural fragment: `article`, `body`, `main`, `section`, or `div`. It returns
+false for Markdown or prose that merely contains HTML later in the text.
+
 ## CLI
 
 ```bash

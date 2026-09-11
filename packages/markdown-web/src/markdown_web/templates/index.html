@@ -213,6 +213,7 @@
       const INSTALL_PROMPT_DISMISS_MS = 7 * 24 * 60 * 60 * 1000;
       const SOURCE_PLACEHOLDER = "Paste a URL, drop a file or insert markdown content";
       const MARKDOWN_START_RE = /(^\s*(?:#{1,6}\s|>\s|[-*+]\s|\d+\.\s|```|~~~|!\[|\[|\*\*|__))/;
+      const HTML_SOURCE_RE = /^\s*<(?:!doctype\s+html\b|html\b|article\b|body\b|main\b|section\b|div\b)/i;
       const sharedMarkdown = {{ shared_markdown | tojson }};
       const sharedLabel = {{ shared_label | tojson }};
       const shareError = {{ share_error | tojson }};
@@ -648,6 +649,10 @@
         return ["http://", "https://"].some((prefix) => prefix.startsWith(lower) || lower.startsWith(prefix));
       }
 
+      function isHtmlDocument(value) {
+        return HTML_SOURCE_RE.test(value);
+      }
+
       function showMarkdownEditor(markdown, label = "Markdown") {
         setPreviewMode(false);
         currentUrl = "";
@@ -664,14 +669,14 @@
         output.focus();
       }
 
-      async function processSource(url, file) {
-        if (!url && !file) {
+      async function processSource(url, file, html = "") {
+        if (!url && !file && !html) {
           setStatus("Paste a URL, choose a document, or insert Markdown", true);
           sourceInput.focus();
           return false;
         }
-        if (url && file) {
-          setStatus("Choose a URL or a document, not both", true);
+        if ([url, file, html].filter(Boolean).length > 1) {
+          setStatus("Choose one source at a time", true);
           return false;
         }
         if (file && isImageFile(file)) {
@@ -691,13 +696,19 @@
             const data = new FormData();
             data.append("file", file);
             response = await fetch("/md", {method: "POST", body: data});
+          } else if (html) {
+            response = await fetch("/md", {
+              method: "POST",
+              headers: {"Content-Type": "text/html"},
+              body: html,
+            });
           } else {
             response = await fetch("/md/" + encodeURIComponent(url));
           }
           if (!response.ok) throw new Error(await responseError(response, "Processing failed"));
           output.value = await response.text();
           previewId = "";
-          sourceLabel.textContent = url || file.name;
+          sourceLabel.textContent = html ? "Pasted HTML" : url || file.name;
           sourceEntry.hidden = true;
           result.hidden = false;
           newButton.hidden = false;
@@ -883,6 +894,10 @@
           return;
         }
         clearSelectedFile();
+        if (isHtmlDocument(value)) {
+          processSource("", null, value);
+          return;
+        }
         if (
           !isHttpUrl(value.trim()) &&
           (MARKDOWN_START_RE.test(value) || (value.trim().length > 1 && !isUrlPrefix(value.trim())))
@@ -912,6 +927,10 @@
         if (!text || isHttpUrl(text.trim())) return;
         if (event.target === output || event.target === sourceInput || event.target.isContentEditable) return;
         event.preventDefault();
+        if (isHtmlDocument(text)) {
+          processSource("", null, text);
+          return;
+        }
         showMarkdownEditor(text, "Pasted Markdown");
       });
       dropZone.addEventListener("dragover", (event) => {

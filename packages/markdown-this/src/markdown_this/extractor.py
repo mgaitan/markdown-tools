@@ -36,6 +36,7 @@ from markdown_this.rules import apply_domain_rule
 from markdown_this.structured import extract_fusion_article
 
 logger = getLogger(__name__)
+HTML_SOURCE_RE = re.compile(r"^\s*<(?:!doctype\s+html\b|html\b|article\b|body\b|main\b|section\b|div\b)", re.IGNORECASE)
 SpecialUrlExtractor = Callable[[str, int], tuple[str, str] | None]
 
 AD_NEGATIVE_KEYWORDS = re.compile(
@@ -77,6 +78,11 @@ def _finalize_content(
 def _is_http_url(source: str) -> bool:
     parsed = urllib.parse.urlparse(source)
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def is_html_source(source: str) -> bool:
+    """Return whether *source* starts with an HTML document or structural fragment."""
+    return bool(HTML_SOURCE_RE.match(source))
 
 
 def _existing_path(source: str) -> Path | None:

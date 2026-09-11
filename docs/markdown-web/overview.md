@@ -34,6 +34,11 @@ The home page accepts a URL, Markdown, or a file. A selected or dropped file
 starts processing automatically. Markdown can be edited before conversion, and
 the draft is kept in the browser while the page remains open.
 
+HTML uploads with `.html` or `.htm` extensions are extracted as HTML. Pasted
+HTML is extracted when it starts with a complete document or a structural
+fragment (`article`, `body`, `main`, `section`, or `div`); Markdown and prose
+that contain HTML later in the text remain Markdown.
+
 The source action is remembered per browser:
 
 - **Process** extracts or converts the source and opens the result for review.

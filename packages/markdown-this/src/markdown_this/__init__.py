@@ -1,6 +1,6 @@
 """Convert web pages and supported special URLs to Markdown."""
 
-from markdown_this.extractor import ContentDownloadError, extract_main_content
+from markdown_this.extractor import ContentDownloadError, extract_main_content, is_html_source
 from markdown_this.fetchers import (
     _github_repo_match,
     fetch_arxiv_abstract,
@@ -53,6 +53,7 @@ __all__ = [
     "fetch_media_oembed",
     "fetch_url",
     "fetch_youtube_video",
+    "is_html_source",
     "make_images_absolute",
     "markdown_to_text",
     "preprocess_figures",

@@ -5,7 +5,7 @@ from __future__ import annotations
 import unittest.mock
 from pathlib import Path
 
-from markdown_this import extract_main_content, split_front_matter
+from markdown_this import extract_main_content, is_html_source, split_front_matter
 from markdown_this import extractor as extractor_module
 from pytest_mock import MockerFixture
 
@@ -15,6 +15,17 @@ def _document(*, mocker: MockerFixture) -> unittest.mock.Mock:
         summary=mocker.Mock(return_value="<article><p>Readable body.</p></article>"),
         title=mocker.Mock(return_value="Readable title"),
     )
+
+
+def test_is_html_source_recognizes_documents_and_structural_fragments() -> None:
+    assert is_html_source("<!doctype html><html><body>Document</body></html>")
+    assert is_html_source("  <article><p>Article</p></article>")
+    assert is_html_source("<body>Body</body>")
+    assert is_html_source("<main>Main</main>")
+    assert is_html_source("<section>Section</section>")
+    assert is_html_source("<div>Content</div>")
+    assert not is_html_source("# Markdown\n\n<article>Embedded HTML</article>")
+    assert not is_html_source("Text before <div>Embedded HTML</div>")
 
 
 def test_extract_main_content_accepts_path_object(tmp_path: Path, *, mocker: MockerFixture) -> None:

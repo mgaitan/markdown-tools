@@ -15,6 +15,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, PlainTextResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from markdown_this import is_html_source
 from md_to_epub import EpubBuildError
 from md_to_telegraph import TelegraphContentError
 from starlette.concurrency import run_in_threadpool
@@ -63,6 +64,7 @@ except PackageNotFoundError:  # pragma: no cover - the package is installed in s
     APP_VERSION = "unknown"
 APP_COMMIT = os.getenv("APP_COMMIT", "unknown")
 AUDIO_FILE_SUFFIXES = frozenset({".flac", ".m4a", ".mp3", ".mp4", ".mpeg", ".mpga", ".ogg", ".wav", ".webm"})
+HTML_FILE_SUFFIXES = frozenset({".htm", ".html"})
 SHARE_GOOGLE_TEXT_URL_RE = re.compile(
     r"^(?P<text>(?:(?![a-z][a-z0-9+.-]*://)[^\r\n])+?)\s+(?P<url>https?://share\.google/[^\s<>\"']+)\s*$",
     re.IGNORECASE,
@@ -176,7 +178,10 @@ async def _request_data(request: Request) -> SourceRequest:
             date=request.headers.get("x-published-date", ""),
             image=request.headers.get("x-image-url", ""),
         )
-        return SourceRequest(html=body.decode("utf-8"), metadata=metadata)
+        content = body.decode("utf-8")
+        if content_type == "text/html" or is_html_source(content):
+            return SourceRequest(html=content, metadata=metadata)
+        return SourceRequest(markdown=content, metadata=metadata)
     if content_type == "application/x-www-form-urlencoded":
         values = {key: items[-1] for key, items in parse_qs(body.decode("utf-8")).items() if items}
         metadata = SourceMetadata(
@@ -199,7 +204,10 @@ async def _request_data(request: Request) -> SourceRequest:
             date=str(form.get("date", "")),
             image=str(form.get("image", "")),
         )
-        return SourceRequest(document=await upload.read(), filename=upload.filename or "", metadata=metadata)
+        content = await upload.read()
+        if _is_html_upload(upload):
+            return SourceRequest(html=content.decode("utf-8", errors="replace"), metadata=metadata)
+        return SourceRequest(document=content, filename=upload.filename or "", metadata=metadata)
     raise HTTPException(status_code=415, detail="Use JSON, HTML, form-urlencoded, or multipart form data")
 
 
@@ -298,6 +306,12 @@ def _is_audio_upload(upload: UploadFile) -> bool:
     ).suffix.lower() in AUDIO_FILE_SUFFIXES
 
 
+def _is_html_upload(upload: UploadFile) -> bool:
+    return (upload.content_type or "").split(";", 1)[0] == "text/html" or Path(
+        upload.filename or ""
+    ).suffix.lower() in HTML_FILE_SUFFIXES
+
+
 async def _transcribe_upload(upload: UploadFile) -> str:
     data = await upload.read(MAX_AUDIO_UPLOAD_BYTES + 1)
     if not data:
@@ -324,10 +338,16 @@ async def _shared_content(request: Request) -> tuple[str, str]:
         filename = upload.filename or "Shared file"
         if _is_audio_upload(upload):
             return await _transcribe_upload(upload), f"Transcript: {filename}"
+        content = await upload.read()
+        source = (
+            SourceRequest(html=content.decode("utf-8", errors="replace"))
+            if _is_html_upload(upload)
+            else SourceRequest(document=content, filename=filename)
+        )
         try:
             prepared = await run_in_threadpool(
                 prepare_content,
-                SourceRequest(document=await upload.read(), filename=filename),
+                source,
             )
         except Exception as exc:
             raise _handle_source_error(exc) from exc

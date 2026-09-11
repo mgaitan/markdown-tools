@@ -440,6 +440,42 @@ def test_post_markdown_accepts_raw_html_metadata(monkeypatch: pytest.MonkeyPatch
     assert seen["source"].metadata.url == "https://example.com"
 
 
+def test_post_markdown_detects_structural_html_fragment_in_plain_text(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, SourceRequest] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# From HTML")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post("/md", content="<article><p>From HTML</p></article>", headers={"content-type": "text/plain"})
+
+    assert response.status_code == HTTP_200_OK
+    assert seen["source"].html == "<article><p>From HTML</p></article>"
+    assert seen["source"].markdown is None
+
+
+def test_post_markdown_keeps_plain_text_with_embedded_html_as_markdown(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, SourceRequest] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# Markdown")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post(
+        "/md",
+        content="# Heading\n\n<article>Embedded HTML</article>",
+        headers={"content-type": "text/plain"},
+    )
+
+    assert response.status_code == HTTP_200_OK
+    assert seen["source"].markdown == "# Heading\n\n<article>Embedded HTML</article>"
+    assert seen["source"].html is None
+
+
 def test_post_markdown_accepts_document_upload(monkeypatch: pytest.MonkeyPatch) -> None:
     seen: dict[str, SourceRequest] = {}
 
@@ -455,6 +491,23 @@ def test_post_markdown_accepts_document_upload(monkeypatch: pytest.MonkeyPatch) 
     assert response.text == "# From document"
     assert seen["source"].document == b"document"
     assert seen["source"].filename == "report.epub"
+
+
+def test_post_markdown_accepts_html_upload(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, SourceRequest] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# From HTML file")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+
+    response = client.post("/md", files={"file": ("article.html", b"<h1>From HTML</h1>", "text/html")})
+
+    assert response.status_code == HTTP_200_OK
+    assert response.text == "# From HTML file"
+    assert seen["source"].html == "<h1>From HTML</h1>"
+    assert seen["source"].document is None
 
 
 def test_post_image_upload_returns_public_url(monkeypatch: pytest.MonkeyPatch) -> None:
