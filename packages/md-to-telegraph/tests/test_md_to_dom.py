@@ -221,6 +221,34 @@ def test_block_heading_h3_maps_to_strong_paragraph() -> None:
     assert result == [{"tag": "p", "children": [{"tag": "strong", "children": ["Section"]}]}]
 
 
+def test_table_is_preserved_as_raw_markdown_code() -> None:
+    markdown = "| Name | Score |\n| :--- | ---: |\n| Alice | 10 |\n| Bob | 9 |"
+
+    assert md_to_telegraph(markdown) == [
+        {
+            "tag": "pre",
+            "children": [
+                {
+                    "tag": "code",
+                    "children": [
+                        "| Name | Score |",
+                        {"tag": "br"},
+                        "| :--- | ---: |",
+                        {"tag": "br"},
+                        "| Alice | 10 |",
+                        {"tag": "br"},
+                        "| Bob | 9 |",
+                    ],
+                }
+            ],
+        }
+    ]
+
+
+def test_table_without_rows_is_preserved_as_raw_markdown_code() -> None:
+    assert text_content(md_to_telegraph("| Name |\n| --- |")) == "| Name || --- |"
+
+
 def test_block_heading_h4_and_deeper_map_to_strong_paragraph() -> None:
     """h4 and deeper headings are also rendered as strong paragraphs."""
     for prefix in ("#### ", "##### ", "###### "):

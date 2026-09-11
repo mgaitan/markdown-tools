@@ -11,3 +11,7 @@
 
 This package should not fetch source articles or know about Telegram. It
 accepts Markdown and publishes Telegraph pages.
+
+Telegraph has no table node. Markdown tables are therefore preserved as their
+original Markdown inside a `pre/code` block rather than being flattened or
+sent as invalid Telegraph content.

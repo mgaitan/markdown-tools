@@ -16,8 +16,9 @@ class TelegraphDomRenderer(BaseRenderer):
     Convert a mistletoe AST into Telegraph DOM nodes.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, source_lines: list[str] | None = None) -> None:
         super().__init__(span_token.HTMLSpan, block_token.HTMLBlock)
+        self.source_lines = source_lines or []
 
     def render_document(self, token: block_token.Document) -> NodeList:
         nodes: NodeList = []
@@ -102,6 +103,15 @@ class TelegraphDomRenderer(BaseRenderer):
             code_dict.setdefault("attrs", {})["class"] = "language-" + token.language
         return {"tag": "pre", "children": [code_dict]}
 
+    def render_table(self, token: block_token.Table) -> dict[str, object]:
+        """Preserve tables as raw Markdown because Telegraph has no table node."""
+        last_line = token.children[-1].line_number if token.children else token.line_number + 1
+        table_markdown = "\n".join(self.source_lines[token.line_number - 1 : last_line])
+        return {
+            "tag": "pre",
+            "children": [{"tag": "code", "children": self.code_children_from_text(table_markdown)}],
+        }
+
     def render_quote(self, token: block_token.Quote) -> dict[str, object]:
         return {"tag": "blockquote", "children": self.render_inner(token)}
 
@@ -135,8 +145,9 @@ class TelegraphDomRenderer(BaseRenderer):
 
 
 def md_to_telegraph(markdown_text: str) -> NodeList:
-    with TelegraphDomRenderer() as renderer:
-        return renderer.render(Document(HTML_COMMENT_RE.sub("", markdown_text)))
+    markdown_without_comments = HTML_COMMENT_RE.sub(lambda match: "\n" * match.group().count("\n"), markdown_text)
+    with TelegraphDomRenderer(markdown_without_comments.splitlines()) as renderer:
+        return renderer.render(Document(markdown_without_comments))
 
 
 def content_to_telegraph(markdown_text: str, fallback_text: str = "") -> NodeList:
