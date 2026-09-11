@@ -47,6 +47,14 @@ configuration does not currently enforce 100% coverage for `lobstersgram`.
   metadata and package-specific runtime dependencies in the child package's
   `pyproject.toml`.
 
+## Cost-Conscious Integrations
+
+- Prioritize local, open-source, browser-native, and free-tier capabilities.
+- Before introducing a paid API, API credential, or metered dependency, verify
+  its cost and look for a free approach using tools already available in the
+  workspace. Ask for explicit approval before choosing a paid path.
+- Keep a no-cost fallback when an optional external integration is unavailable.
+
 ## Releases
 
 Packages are versioned and released independently. Bump a package from the

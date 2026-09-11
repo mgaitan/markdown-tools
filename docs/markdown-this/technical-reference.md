@@ -34,9 +34,13 @@ outside the posts stops collection before recommendations. X and Twitter
 use this rule mechanism; no X-specific fetcher or DOM parser is registered.
 
 Supply rendered HTML with `source_url=` (the bookmarklet does this already).
-Images, video/audio URLs and video posters pass through common normalization.
-Browser-local `blob:` URLs are not portable; their posters and post permalinks
-remain available instead.
+On an X/Twitter status page it progressively scrolls and retains same-author
+post cards before the virtualized page removes them. This requires neither an
+X API token nor a server-side browser. It is best-effort: the capture can only
+include posts delivered to that browser and author identity cannot prove a
+reply relationship. Images, video/audio URLs and video posters pass through
+common normalization. Browser-local `blob:` URLs are not portable; their
+posters and post permalinks remain available instead.
 
 The output declares `extraction_scope: captured-posts`. It contains only the
 posts available in that HTML snapshot, not a verified complete thread. The

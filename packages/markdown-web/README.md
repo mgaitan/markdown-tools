@@ -169,6 +169,12 @@ by JavaScript or pages the server cannot access itself. Publishing uses the
 server's `TELEGRAPH_API_TOKEN` (or its automatically created account); the raw
 token is never included in the bookmarklet.
 
+On an X/Twitter status page, the bookmarklet progressively scrolls and keeps
+the rendered posts from the status author's thread before X virtualizes them
+away. This uses no X API or credentials. It is best-effort: it can only retain
+the posts X serves to the browser, and cannot prove that a same-author post is
+part of the requested reply chain.
+
 ## Development
 
 ```bash
