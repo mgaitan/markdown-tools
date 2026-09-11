@@ -20,7 +20,7 @@
     <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="/static/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/static/logo.png">
-    <link rel="stylesheet" href="/static/styles.css?v=21">
+    <link rel="stylesheet" href="/static/styles.css?v=22">
   </head>
   <body>
     <main class="page narrow">
@@ -32,9 +32,9 @@
         <li>Click the bookmark you saved.</li>
       </ol>
       <div class="bookmarklet-list">
-        <a class="button button-secondary" href="{{ bookmarklets.markdown }}">Save as Markdown</a>
-        <a class="button button-secondary" href="{{ bookmarklets.edit }}">Edit as markdown</a>
-        <a class="button button-secondary" href="{{ bookmarklets.telegraph }}">Publish to Telegraph</a>
+        <a href="{{ bookmarklets.markdown }}">Save as Markdown</a>
+        <a href="{{ bookmarklets.edit }}">Edit as markdown</a>
+        <a href="{{ bookmarklets.telegraph }}">Publish to Telegraph</a>
       </div>
       <p class="note">These bookmarklets are permanent: they use the server's Telegraph account without an expiring session key. The bookmarklet sends the current page's HTML directly from your browser, so it can process pages the server cannot access itself, including JavaScript-rendered pages or pages available only to you.</p>
     </main>

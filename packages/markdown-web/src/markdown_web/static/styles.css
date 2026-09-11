@@ -303,7 +303,8 @@ dialog p { margin: 0 0 22px; color: #666; }
 .bookmarklet-form .button { justify-self: start; margin-top: 12px; }
 .bookmarklet-instructions { max-width: 560px; margin: 28px 0 0; padding-left: 24px; }
 .bookmarklet-instructions li { margin: 10px 0; padding-left: 4px; }
-.bookmarklet-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
+.bookmarklet-list { display: grid; gap: 12px; margin-top: 36px; }
+.bookmarklet-list a { justify-self: start; }
 .note { margin-top: 36px; }
 
 .about-list { margin: 32px 0; padding-left: 24px; }
