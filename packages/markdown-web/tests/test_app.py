@@ -150,6 +150,21 @@ def test_home_places_editor_control_in_toolbar() -> None:
     )
 
 
+def test_home_offers_bounded_local_draft_management() -> None:
+    response = client.get("/")
+
+    assert 'id="toolbar-save-draft"' in response.text
+    assert 'id="footer-drafts-button"' in response.text
+    assert 'id="draft-list" class="draft-list"' in response.text
+    assert 'id="save-before-replace"' in response.text
+    assert 'const SAVED_DRAFTS_KEY = "markdown-web-saved-drafts";' in response.text
+    assert "const MAX_SAVED_DRAFTS = 20;" in response.text
+    assert "function requestReplacement(action, label)" in response.text
+    assert "function openSavedDraft(id)" in response.text
+    assert "function deleteSavedDraft(id)" in response.text
+    assert "requestReplacement(() => {" in response.text
+
+
 def test_share_target_transcribes_audio(monkeypatch: pytest.MonkeyPatch) -> None:
     class FakeTranscriber:
         def transcribe(self, data: bytes, filename: str, content_type: str) -> str:

@@ -94,6 +94,7 @@
                 <button type="button" data-markdown-action="horizontal-rule" aria-label="Horizontal rule" title="Horizontal rule">&#8212;</button>
                 <span class="toolbar-divider" aria-hidden="true"></span>
                 <button id="toolbar-record-button" class="file-button toolbar-record-button" type="button" aria-label="Record audio into document" title="Record audio into document" aria-pressed="false"><img src="/static/microphone.svg" alt=""></button>
+                <button id="toolbar-save-draft" type="button" aria-label="Save draft" title="Save draft">Save</button>
                 <button id="metadata-button" type="button" aria-label="Publication metadata" title="Publication metadata">Meta</button>
                 <button id="expand-editor" class="editor-expand-button" type="button" aria-label="Maximize editor" title="Maximize editor">&#x2922;</button>
               </div>
@@ -111,13 +112,34 @@
 
     <dialog id="new-dialog" aria-labelledby="new-dialog-title">
       <form method="dialog">
-        <h2 id="new-dialog-title">Start a new document?</h2>
-        <p>This will discard the current content.</p>
+        <h2 id="new-dialog-title">Save current work?</h2>
+        <p id="new-dialog-message">Starting a new document will replace the current content.</p>
         <div class="dialog-actions">
           <button class="button button-secondary" value="cancel">Cancel</button>
-          <button id="confirm-new" class="button button-primary" value="confirm">New</button>
+          <button id="save-before-replace" class="button button-secondary" value="save">Save draft</button>
+          <button id="confirm-new" class="button button-primary" value="discard">Discard</button>
         </div>
       </form>
+    </dialog>
+
+    <dialog id="draft-dialog" aria-labelledby="draft-dialog-title">
+      <form id="draft-form" method="dialog">
+        <h2 id="draft-dialog-title">Save draft</h2>
+        <label class="metadata-field">Name<input id="draft-name" name="name" type="text" maxlength="80" autocomplete="off" required></label>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel">Cancel</button>
+          <button id="confirm-draft" class="button button-primary" value="save">Save</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="drafts-dialog" aria-labelledby="drafts-dialog-title">
+      <h2 id="drafts-dialog-title">Drafts</h2>
+      <p id="drafts-empty" hidden>No saved drafts yet.</p>
+      <ul id="draft-list" class="draft-list"></ul>
+      <div class="dialog-actions">
+        <button id="close-drafts" class="button button-secondary" type="button">Close</button>
+      </div>
     </dialog>
 
     <dialog id="metadata-dialog" aria-labelledby="metadata-dialog-title">
@@ -153,6 +175,7 @@
       <a href="/bookmarklets/">Bookmarklets</a>
       <a href="/t/published/">Published</a>
       <a href="/docs">API</a>
+      <button id="footer-drafts-button" class="footer-drafts-button" type="button">Drafts</button>
       <a href="https://github.com/mgaitan/markdown-tools/tree/master/packages/markdown-web">GitHub</a>
     </footer>
 
@@ -190,6 +213,18 @@
       const newButton = document.querySelector("#new-button");
       const newDialog = document.querySelector("#new-dialog");
       const confirmNew = document.querySelector("#confirm-new");
+      const saveBeforeReplace = document.querySelector("#save-before-replace");
+      const newDialogTitle = document.querySelector("#new-dialog-title");
+      const newDialogMessage = document.querySelector("#new-dialog-message");
+      const toolbarSaveDraftButton = document.querySelector("#toolbar-save-draft");
+      const footerDraftsButton = document.querySelector("#footer-drafts-button");
+      const draftDialog = document.querySelector("#draft-dialog");
+      const draftForm = document.querySelector("#draft-form");
+      const draftName = document.querySelector("#draft-name");
+      const draftsDialog = document.querySelector("#drafts-dialog");
+      const draftList = document.querySelector("#draft-list");
+      const draftsEmpty = document.querySelector("#drafts-empty");
+      const closeDrafts = document.querySelector("#close-drafts");
       const metadataButton = document.querySelector("#metadata-button");
       const metadataDialog = document.querySelector("#metadata-dialog");
       const metadataForm = document.querySelector("#metadata-form");
@@ -208,6 +243,9 @@
       let mode = "process";
       let sourceAction = "process";
       const DRAFT_KEY = "markdown-web-draft";
+      const SAVED_DRAFTS_KEY = "markdown-web-saved-drafts";
+      const ACTIVE_SAVED_DRAFT_KEY = "markdown-web-active-saved-draft";
+      const MAX_SAVED_DRAFTS = 20;
       const SOURCE_ACTION_KEY = "markdown-web-source-action";
       const INSTALL_PROMPT_DISMISS_KEY = "markdown-web-install-prompt-dismissed-at";
       const INSTALL_PROMPT_DISMISS_MS = 7 * 24 * 60 * 60 * 1000;
@@ -219,6 +257,11 @@
       const shareError = {{ share_error | tojson }};
       let deferredInstallPrompt = null;
       let markdownCodeMirror = null;
+      let activeSavedDraftId = "";
+      let pendingReplacement = null;
+      let draftSaveAfter = null;
+      let draftNameTargetId = "";
+      let draftNameMode = "save";
 
       async function initializeMarkdownEditor() {
         try {
@@ -658,15 +701,66 @@
         }
       });
 
-      function saveDraft() {
-        const draft = mode === "publish"
+      function draftSnapshot() {
+        return mode === "publish"
           ? {mode, markdown: markdownValue(), url: currentUrl, label: sourceLabel.textContent, preview_id: previewId}
           : {mode, value: sourceInput.value};
+      }
+
+      function hasDraftContent() {
+        return mode === "publish" ? Boolean(markdownValue().trim()) : Boolean(sourceInput.value.trim());
+      }
+
+      function readSavedDrafts() {
         try {
-          localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
+          const drafts = JSON.parse(localStorage.getItem(SAVED_DRAFTS_KEY) || "[]");
+          return Array.isArray(drafts) ? drafts.filter((draft) => draft && typeof draft === "object") : [];
+        } catch {
+          return [];
+        }
+      }
+
+      function writeSavedDrafts(drafts) {
+        try {
+          localStorage.setItem(SAVED_DRAFTS_KEY, JSON.stringify(drafts));
+          return true;
+        } catch {
+          setStatus("Draft storage is unavailable", true);
+          return false;
+        }
+      }
+
+      function persistActiveSavedDraft() {
+        try {
+          if (activeSavedDraftId) localStorage.setItem(ACTIVE_SAVED_DRAFT_KEY, activeSavedDraftId);
+          else localStorage.removeItem(ACTIVE_SAVED_DRAFT_KEY);
+        } catch {
+          // The recoverable draft still works when this preference cannot be stored.
+        }
+      }
+
+      function saveDraft() {
+        const draft = draftSnapshot();
+        try {
+          if (hasDraftContent()) {
+            localStorage.setItem(DRAFT_KEY, JSON.stringify({...draft, active_saved_draft_id: activeSavedDraftId}));
+          } else {
+            localStorage.removeItem(DRAFT_KEY);
+          }
         } catch {
           // Draft persistence is best effort when storage is unavailable.
         }
+
+        if (!activeSavedDraftId || draft.mode !== "publish") return;
+        const drafts = readSavedDrafts();
+        const index = drafts.findIndex((item) => item.id === activeSavedDraftId);
+        if (index < 0) {
+          activeSavedDraftId = "";
+          persistActiveSavedDraft();
+          return;
+        }
+        drafts[index] = {...drafts[index], ...draft, updated_at: Date.now()};
+        writeSavedDrafts(drafts);
       }
 
       function clearDraft() {
@@ -677,10 +771,184 @@
         }
       }
 
+      function savedDraftById(id) {
+        return readSavedDrafts().find((draft) => draft.id === id) || null;
+      }
+
+      function suggestDraftName() {
+        const title = markdownValue().match(/^#\s+(.+)$/m)?.[1]?.trim();
+        return title || sourceLabel.textContent || "Untitled draft";
+      }
+
+      function openDraftNameDialog(afterSave = null, target = null, renameOnly = false) {
+        if (renameOnly) {
+          draftSaveAfter = afterSave;
+          draftNameTargetId = target.id;
+          draftNameMode = "rename";
+          draftName.value = target.name || "Untitled draft";
+          draftDialog.showModal();
+          draftName.select();
+          return;
+        }
+        if (!hasDraftContent()) {
+          setStatus("Add some content before saving a draft", true);
+          return;
+        }
+        const existing = target || savedDraftById(activeSavedDraftId);
+        if (!existing && readSavedDrafts().length >= MAX_SAVED_DRAFTS) {
+          setStatus(`You can keep up to ${MAX_SAVED_DRAFTS} drafts. Delete one to save another.`, true);
+          return;
+        }
+        draftSaveAfter = afterSave;
+        draftNameTargetId = existing?.id || "";
+        draftNameMode = "save";
+        draftName.value = existing?.name || suggestDraftName();
+        draftDialog.showModal();
+        draftName.select();
+      }
+
+      function saveNamedDraft(name, targetId = "") {
+        const normalizedName = name.trim();
+        if (!normalizedName) return false;
+        const draft = draftSnapshot();
+        if (draft.mode !== "publish" || !draft.markdown.trim()) return false;
+        const drafts = readSavedDrafts();
+        const id = targetId || crypto.randomUUID();
+        const index = drafts.findIndex((item) => item.id === id);
+        const saved = {id, name: normalizedName, ...draft, updated_at: Date.now()};
+        if (index >= 0) drafts[index] = saved;
+        else drafts.unshift(saved);
+        if (!writeSavedDrafts(drafts)) return false;
+        activeSavedDraftId = id;
+        persistActiveSavedDraft();
+        saveDraft();
+        renderDraftList();
+        return true;
+      }
+
+      function renameSavedDraft(id, name) {
+        const normalizedName = name.trim();
+        if (!normalizedName) return false;
+        const drafts = readSavedDrafts();
+        const index = drafts.findIndex((draft) => draft.id === id);
+        if (index < 0) return false;
+        drafts[index] = {...drafts[index], name: normalizedName, updated_at: Date.now()};
+        if (!writeSavedDrafts(drafts)) return false;
+        renderDraftList();
+        return true;
+      }
+
+      function formatDraftTime(value) {
+        const time = Number(value);
+        return Number.isFinite(time) ? new Date(time).toLocaleString() : "Saved locally";
+      }
+
+      function renderDraftList() {
+        const drafts = readSavedDrafts().sort((left, right) => Number(right.updated_at) - Number(left.updated_at));
+        draftList.replaceChildren();
+        draftsEmpty.hidden = Boolean(drafts.length);
+        for (const draft of drafts) {
+          const item = document.createElement("li");
+          item.className = "draft-item";
+          const open = document.createElement("button");
+          open.className = "draft-open";
+          open.type = "button";
+          open.textContent = draft.name || "Untitled draft";
+          open.title = open.textContent;
+          open.addEventListener("click", () => requestReplacement(() => openSavedDraft(draft.id), "Open draft"));
+          const updated = document.createElement("span");
+          updated.className = "draft-updated";
+          updated.textContent = formatDraftTime(draft.updated_at);
+          const summary = document.createElement("div");
+          summary.append(open, updated);
+          const rename = document.createElement("button");
+          rename.className = "draft-action";
+          rename.type = "button";
+          rename.textContent = "Rename";
+          rename.addEventListener("click", () => openDraftNameDialog(null, draft, true));
+          const remove = document.createElement("button");
+          remove.className = "draft-action";
+          remove.type = "button";
+          remove.textContent = "Delete";
+          remove.addEventListener("click", () => deleteSavedDraft(draft.id));
+          item.append(summary, rename, remove);
+          draftList.append(item);
+        }
+      }
+
+      function openSavedDraft(id) {
+        const draft = savedDraftById(id);
+        if (!draft || typeof draft.markdown !== "string") return;
+        activeSavedDraftId = id;
+        persistActiveSavedDraft();
+        showMarkdownEditor(
+          draft.markdown,
+          draft.label || draft.name || "Draft",
+          id,
+          typeof draft.url === "string" ? draft.url : "",
+          typeof draft.preview_id === "string" ? draft.preview_id : ""
+        );
+        draftsDialog.close();
+      }
+
+      function deleteSavedDraft(id) {
+        const drafts = readSavedDrafts().filter((draft) => draft.id !== id);
+        if (!writeSavedDrafts(drafts)) return;
+        if (activeSavedDraftId === id) {
+          activeSavedDraftId = "";
+          persistActiveSavedDraft();
+          saveDraft();
+        }
+        renderDraftList();
+      }
+
+      function hasUnsavedWork() {
+        return hasDraftContent() && !activeSavedDraftId;
+      }
+
+      function requestReplacement(action, label) {
+        if (!hasUnsavedWork()) {
+          action();
+          return;
+        }
+        pendingReplacement = action;
+        newDialogTitle.textContent = "Save current work?";
+        newDialogMessage.textContent = `${label} will replace the current content.`;
+        newDialog.showModal();
+      }
+
+      function runPendingReplacement() {
+        const action = pendingReplacement;
+        pendingReplacement = null;
+        if (action) action();
+      }
+
+      function resetDocument() {
+        clearDraft();
+        activeSavedDraftId = "";
+        persistActiveSavedDraft();
+        setPreviewMode(false);
+        currentUrl = "";
+        previewId = "";
+        mode = "process";
+        sourceInput.value = "";
+        setMarkdownValue("");
+        sourceLabel.textContent = "";
+        clearSelectedFile();
+        result.hidden = true;
+        sourceEntry.hidden = false;
+        newButton.hidden = true;
+        setEditorFullscreen(false);
+        setPublishStatus("");
+        setStatus("");
+        sourceInput.focus();
+      }
+
       function restoreDraft() {
         let draft;
         try {
           draft = JSON.parse(localStorage.getItem(DRAFT_KEY) || "null");
+          activeSavedDraftId = localStorage.getItem(ACTIVE_SAVED_DRAFT_KEY) || "";
         } catch {
           return;
         }
@@ -688,6 +956,7 @@
         if (draft.mode === "publish" && typeof draft.markdown === "string" && draft.markdown) {
           currentUrl = typeof draft.url === "string" ? draft.url : "";
           previewId = typeof draft.preview_id === "string" ? draft.preview_id : "";
+          activeSavedDraftId = typeof draft.active_saved_draft_id === "string" ? draft.active_saved_draft_id : activeSavedDraftId;
           mode = "publish";
           setMarkdownValue(draft.markdown);
           sourceLabel.textContent = typeof draft.label === "string" && draft.label
@@ -748,10 +1017,12 @@
         return HTML_SOURCE_RE.test(value);
       }
 
-      function showMarkdownEditor(markdown, label = "Markdown") {
+      function showMarkdownEditor(markdown, label = "Markdown", savedDraftId = "", sourceUrl = "", savedPreviewId = "") {
         setPreviewMode(false);
-        currentUrl = "";
-        previewId = "";
+        activeSavedDraftId = savedDraftId;
+        persistActiveSavedDraft();
+        currentUrl = sourceUrl;
+        previewId = savedPreviewId;
         setMarkdownValue(markdown);
         sourceLabel.textContent = label;
         sourceEntry.hidden = true;
@@ -1188,33 +1459,49 @@
       });
 
       output.addEventListener("input", saveDraft);
-      newButton.addEventListener("click", () => newDialog.showModal());
+      toolbarSaveDraftButton.addEventListener("click", () => openDraftNameDialog());
+      function openDraftsDialog() {
+        renderDraftList();
+        draftsDialog.showModal();
+      }
+      footerDraftsButton.addEventListener("click", openDraftsDialog);
+      closeDrafts.addEventListener("click", () => draftsDialog.close());
+      draftForm.addEventListener("submit", (event) => {
+        if (event.submitter?.value !== "save") return;
+        event.preventDefault();
+        const saved = draftNameMode === "rename"
+          ? renameSavedDraft(draftNameTargetId, draftName.value)
+          : saveNamedDraft(draftName.value, draftNameTargetId);
+        if (!saved) return;
+        draftDialog.close();
+        const afterSave = draftSaveAfter;
+        draftSaveAfter = null;
+        draftNameTargetId = "";
+        draftNameMode = "save";
+        if (afterSave) afterSave();
+      });
+      newButton.addEventListener("click", () => requestReplacement(resetDocument, "Starting a new document"));
       confirmNew.addEventListener("click", () => {
         clearDraft();
-        setPreviewMode(false);
-        currentUrl = "";
-        previewId = "";
-        mode = "process";
-        sourceInput.value = "";
-        setMarkdownValue("");
-        sourceLabel.textContent = "";
-        clearSelectedFile();
-        result.hidden = true;
-        sourceEntry.hidden = false;
-        newButton.hidden = true;
-        setEditorFullscreen(false);
-        setPublishStatus("");
-        setStatus("");
-        sourceInput.focus();
+        activeSavedDraftId = "";
+        persistActiveSavedDraft();
+        newDialog.close();
+        runPendingReplacement();
+      });
+
+      saveBeforeReplace.addEventListener("click", () => {
+        newDialog.close();
+        openDraftNameDialog(runPendingReplacement);
       });
 
       restoreSourceAction();
+      restoreDraft();
       if (sharedMarkdown) {
-        clearDraft();
-        showMarkdownEditor(sharedMarkdown, sharedLabel);
-        setStatus("Shared content imported");
+        requestReplacement(() => {
+          showMarkdownEditor(sharedMarkdown, sharedLabel);
+          setStatus("Shared content imported");
+        }, "Shared content");
       } else {
-        restoreDraft();
         if (shareError) setStatus(shareError, true);
       }
 
