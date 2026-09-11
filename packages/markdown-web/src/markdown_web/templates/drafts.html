@@ -17,6 +17,16 @@
       <p id="drafts-empty" class="note" hidden>No saved drafts yet.</p>
       <ul id="draft-list" class="draft-list" aria-live="polite"></ul>
     </main>
+    <dialog id="rename-draft-dialog" aria-labelledby="rename-draft-dialog-title">
+      <form id="rename-draft-form" method="dialog">
+        <h2 id="rename-draft-dialog-title">Rename draft</h2>
+        <label class="metadata-field">Name<input id="rename-draft-name" name="name" type="text" maxlength="80" autocomplete="off" required></label>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel">Cancel</button>
+          <button class="button button-primary" value="save">Save</button>
+        </div>
+      </form>
+    </dialog>
     <footer class="footer">
       <a href="/">Home</a>
       <a href="/about">About</a>
@@ -31,6 +41,10 @@
       const ACTIVE_SAVED_DRAFT_KEY = "markdown-web-active-saved-draft";
       const draftList = document.querySelector("#draft-list");
       const draftsEmpty = document.querySelector("#drafts-empty");
+      const renameDraftDialog = document.querySelector("#rename-draft-dialog");
+      const renameDraftForm = document.querySelector("#rename-draft-form");
+      const renameDraftName = document.querySelector("#rename-draft-name");
+      let renamingDraftId = "";
 
       function readSavedDrafts() {
         try {
@@ -55,16 +69,25 @@
         return Number.isFinite(time) ? new Date(time).toLocaleString() : "Saved locally";
       }
 
-      function renameSavedDraft(id) {
+      function openRenameDraftDialog(id) {
         const draft = readSavedDrafts().find((item) => item.id === id);
         if (!draft) return;
-        const name = window.prompt("Draft name", draft.name || "Untitled draft")?.trim();
-        if (!name) return;
+        renamingDraftId = id;
+        renameDraftName.value = draft.name || "Untitled draft";
+        renameDraftDialog.showModal();
+        renameDraftName.select();
+      }
+
+      function renameSavedDraft(id, name) {
+        const normalizedName = name.trim();
+        if (!normalizedName) return false;
         const drafts = readSavedDrafts();
         const index = drafts.findIndex((item) => item.id === id);
-        if (index < 0) return;
-        drafts[index] = {...drafts[index], name, updated_at: Date.now()};
-        if (writeSavedDrafts(drafts)) renderDraftList();
+        if (index < 0) return false;
+        drafts[index] = {...drafts[index], name: normalizedName, updated_at: Date.now()};
+        if (!writeSavedDrafts(drafts)) return false;
+        renderDraftList();
+        return true;
       }
 
       function deleteSavedDraft(id) {
@@ -101,12 +124,16 @@
           const rename = document.createElement("button");
           rename.className = "draft-action";
           rename.type = "button";
-          rename.textContent = "Rename";
-          rename.addEventListener("click", () => renameSavedDraft(draft.id));
+          rename.setAttribute("aria-label", "Rename draft");
+          rename.title = "Rename draft";
+          rename.innerHTML = "&#9998;";
+          rename.addEventListener("click", () => openRenameDraftDialog(draft.id));
           const remove = document.createElement("button");
           remove.className = "draft-action";
           remove.type = "button";
-          remove.textContent = "Delete";
+          remove.setAttribute("aria-label", "Delete draft");
+          remove.title = "Delete draft";
+          remove.innerHTML = "&#128465;";
           remove.addEventListener("click", () => deleteSavedDraft(draft.id));
           item.append(summary, rename, remove);
           draftList.append(item);
@@ -114,6 +141,13 @@
       }
 
       renderDraftList();
+      renameDraftForm.addEventListener("submit", (event) => {
+        if (event.submitter?.value !== "save") return;
+        event.preventDefault();
+        if (!renameSavedDraft(renamingDraftId, renameDraftName.value)) return;
+        renamingDraftId = "";
+        renameDraftDialog.close();
+      });
     </script>
   </body>
 </html>

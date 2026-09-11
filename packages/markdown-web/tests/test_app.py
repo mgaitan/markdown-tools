@@ -192,7 +192,11 @@ def test_drafts_page_lists_local_draft_management() -> None:
 
     assert response.status_code == HTTP_200_OK
     assert 'id="draft-list" class="draft-list"' in response.text
+    assert 'id="rename-draft-dialog"' in response.text
     assert 'const SAVED_DRAFTS_KEY = "markdown-web-saved-drafts";' in response.text
+    assert "window.prompt" not in response.text
+    assert 'rename.setAttribute("aria-label", "Rename draft")' in response.text
+    assert 'remove.setAttribute("aria-label", "Delete draft")' in response.text
     assert 'href="/bookmarklets/">Bookmarklets</a>' in response.text
 
 

@@ -297,7 +297,7 @@ dialog p { margin: 0 0 22px; color: #666; }
 .draft-open { display: block; min-width: 0; overflow: hidden; color: #333; text-overflow: ellipsis; white-space: nowrap; }
 .draft-open:hover { text-decoration: underline; }
 .draft-updated { display: block; margin-top: 2px; color: #777; font: 12px/1.3 system-ui, sans-serif; }
-.draft-action { border: 0; padding: 4px; color: #555; background: transparent; font: 13px/1 system-ui, sans-serif; cursor: pointer; }
+.draft-action { display: grid; width: 28px; height: 28px; place-items: center; border: 0; padding: 0; color: #555; background: transparent; font: 16px/1 system-ui, sans-serif; cursor: pointer; }
 .draft-action:hover { color: #111; text-decoration: underline; }
 
 .lede { color: #666; font-size: 18px; }
