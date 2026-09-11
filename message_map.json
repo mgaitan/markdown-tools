@@ -4222,5 +4222,17 @@
     "article_link": "https://tante.cc/2026/09/11/power-grab/",
     "discussion_link": "https://lobste.rs/s/be7tgu/power_grab",
     "title": "Power grab"
+  },
+  "@lobstersgram:713": {
+    "telegraph_link": "https://telegra.ph/Retrospectively-Reverse-Engineering-Apples-Neural-Engine--Eileen-Yoon-09-11",
+    "article_link": "https://eiln.github.io/posts/ane.html",
+    "discussion_link": "https://lobste.rs/s/mzgtjg/retrospectively_reverse_engineering",
+    "title": "Retrospectively Reverse-Engineering Apple's Neural Engine"
+  },
+  "@lobstersgram:714": {
+    "telegraph_link": "https://telegra.ph/A-Severe-Misalignment-of-AI-in-Mathematics--Whats-new-09-11-2",
+    "article_link": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/",
+    "discussion_link": "https://lobste.rs/s/xsbz3l/severe_misalignment_ai_mathematics",
+    "title": "A Severe Misalignment of AI in Mathematics"
   }
 }
