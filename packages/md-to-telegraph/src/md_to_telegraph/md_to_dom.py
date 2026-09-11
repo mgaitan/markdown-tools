@@ -1,4 +1,5 @@
 import re
+from html.parser import HTMLParser
 
 from mistletoe import Document, block_token, span_token
 from mistletoe.base_renderer import BaseRenderer
@@ -9,6 +10,105 @@ type NodeList = list[Node]
 HEADING_LEVEL_PRIMARY = 1
 HEADING_LEVEL_SECONDARY = 2
 HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+HTML_TAG_RE = re.compile(
+    r"</?(?:a|article|b|blockquote|br|code|del|div|em|figure|figcaption|h[1-6]|hr|i|img|li|main|ol|p|pre|s|section|span|strong|strike|ul)\b",
+    re.IGNORECASE,
+)
+
+
+class _HtmlToTelegraphParser(HTMLParser):
+    """Translate the HTML subset commonly embedded in Markdown into Telegraph nodes."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.nodes: NodeList = []
+        self._children: list[NodeList] = [self.nodes]
+        self._tags: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        tag = tag.lower()
+        attrs_dict = {key.lower(): value or "" for key, value in attrs}
+        if tag == "img":
+            self._append_image(attrs_dict)
+            return
+        if tag in {"br", "hr"}:
+            self._children[-1].append({"tag": tag})
+            return
+
+        self._tags.append(tag)
+        children: NodeList = []
+        self._children.append(children)
+        self._children[-2].append(self._node_for_tag(tag, attrs_dict, children))
+
+    def _append_image(self, attrs: dict[str, str]) -> None:
+        if src := attrs.get("src"):
+            image_attrs: dict[str, object] = {"src": src}
+            if alt := attrs.get("alt"):
+                image_attrs["alt"] = alt
+            self._children[-1].append({"tag": "img", "attrs": image_attrs})
+
+    @staticmethod
+    def _node_for_tag(tag: str, attrs: dict[str, str], children: NodeList) -> dict[str, object]:
+        if tag == "a" and (href := attrs.get("href")):
+            return {"tag": "a", "attrs": {"href": href}, "children": children}
+        tags = {
+            "b": "strong",
+            "strong": "strong",
+            "i": "em",
+            "em": "em",
+            "s": "del",
+            "strike": "del",
+            "del": "del",
+            "h1": "h3",
+            "h2": "h4",
+        }
+        if node_tag := tags.get(tag):
+            return {"tag": node_tag, "children": children}
+        if tag in {"h3", "h4", "h5", "h6"}:
+            return {"tag": "p", "children": [{"tag": "strong", "children": children}]}
+        if tag in {"p", "blockquote", "code", "li", "ol", "pre", "ul"}:
+            return {"tag": tag, "children": children}
+        return {"tag": "", "children": children}
+
+    def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self.handle_starttag(tag, attrs)
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._tags and self._tags[-1] == tag.lower():
+            self._tags.pop()
+            self._children.pop()
+
+    def handle_data(self, data: str) -> None:
+        if data:
+            self._children[-1].append(data)
+
+
+def _html_to_telegraph_nodes(html: str) -> NodeList:
+    """Convert HTML embedded in Markdown, retaining only Telegraph-supported structure."""
+    if not HTML_TAG_RE.search(html):
+        return [html]
+
+    parser = _HtmlToTelegraphParser()
+    parser.feed(html)
+    parser.close()
+    return _unwrap_html_nodes(parser.nodes)
+
+
+def _unwrap_html_nodes(nodes: NodeList) -> NodeList:
+    """Remove transparent HTML containers while preserving their children."""
+    result: NodeList = []
+    for node in nodes:
+        if not isinstance(node, dict):
+            result.append(node)
+            continue
+        children = node.get("children")
+        if node.get("tag") == "" and isinstance(children, list):
+            result.extend(_unwrap_html_nodes(children))
+            continue
+        if isinstance(children, list):
+            node["children"] = _unwrap_html_nodes(children)
+        result.append(node)
+    return result
 
 
 class TelegraphDomRenderer(BaseRenderer):
@@ -26,7 +126,10 @@ class TelegraphDomRenderer(BaseRenderer):
             rendered = self.render(child)
             if rendered is None:
                 continue
-            nodes.append(rendered)
+            if isinstance(rendered, list):
+                nodes.extend(rendered)
+            else:
+                nodes.append(rendered)
         return nodes
 
     def render_paragraph(self, token: block_token.Paragraph) -> dict[str, object] | None:
@@ -118,8 +221,8 @@ class TelegraphDomRenderer(BaseRenderer):
     def render_thematic_break(self, token: block_token.ThematicBreak) -> dict[str, object]:
         return {"tag": "hr"}
 
-    def render_html_block(self, token: block_token.HTMLBlock) -> str:
-        return token.content
+    def render_html_block(self, token: block_token.HTMLBlock) -> NodeList:
+        return _html_to_telegraph_nodes(token.content)
 
     def render_html_span(self, token: span_token.HTMLSpan) -> str:
         return token.content

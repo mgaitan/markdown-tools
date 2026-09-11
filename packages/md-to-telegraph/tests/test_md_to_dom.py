@@ -190,12 +190,53 @@ def test_inline_code_inside_link() -> None:
     assert link["children"] == [{"tag": "code", "children": ["code"]}]
 
 
-def test_inline_html_span_passthrough() -> None:
-    """Raw HTML spans are passed through as plain strings."""
-    md = "<b>raw html</b>"
-    result = md_to_telegraph(md)
-    full = text_content(result)
-    assert "<b>" in full or "raw html" in full
+def test_embedded_html_heading_maps_to_telegraph_heading() -> None:
+    result = md_to_telegraph('<h1 align="center">WhisperX</h1>')
+
+    assert result == [{"tag": "h3", "children": ["WhisperX"]}]
+
+
+def test_embedded_html_image_keeps_supported_attributes_only() -> None:
+    result = md_to_telegraph(
+        '<img width="1216" align="center" alt="whisperx-arch" src="https://example.com/pipeline.png">'
+    )
+
+    assert result == [
+        {
+            "tag": "img",
+            "attrs": {"src": "https://example.com/pipeline.png", "alt": "whisperx-arch"},
+        }
+    ]
+
+
+def test_embedded_html_heading_with_attributes_maps_to_telegraph_heading() -> None:
+    result = md_to_telegraph('<h2 align="left" id="setup">Setup</h2>')
+
+    assert result == [{"tag": "h4", "children": ["Setup"]}]
+
+
+def test_embedded_html_deep_heading_maps_to_strong_paragraph() -> None:
+    assert md_to_telegraph("<h3>Details</h3>") == [
+        {"tag": "p", "children": [{"tag": "strong", "children": ["Details"]}]}
+    ]
+
+
+def test_embedded_html_container_keeps_supported_children() -> None:
+    assert md_to_telegraph('<div><a href="https://example.com">Read</a><br><hr></div>') == [
+        {"tag": "a", "attrs": {"href": "https://example.com"}, "children": ["Read"]},
+        {"tag": "br"},
+        {"tag": "hr"},
+    ]
+
+
+def test_embedded_html_self_closing_image_without_alt() -> None:
+    assert md_to_telegraph('<img src="https://example.com/pipeline.png"/>') == [
+        {"tag": "img", "attrs": {"src": "https://example.com/pipeline.png"}}
+    ]
+
+
+def test_unsupported_html_block_is_left_unchanged() -> None:
+    assert md_to_telegraph("<aside>Note</aside>") == ["<aside>Note</aside>"]
 
 
 # ---------------------------------------------------------------------------
@@ -420,13 +461,11 @@ def test_nbsp_only_paragraph_in_blockquote_is_skipped() -> None:
 # ---------------------------------------------------------------------------
 
 
-def test_html_block_passthrough() -> None:
-    """An HTML block (e.g. <pre>…</pre>) is passed through as a raw string."""
+def test_html_block_is_converted_to_telegraph_node() -> None:
+    """An HTML block (e.g. <pre>…</pre>) maps to its Telegraph equivalent."""
     md = "<pre>\ncode here\n</pre>"
     result = md_to_telegraph(md)
-    assert len(result) == 1
-    assert isinstance(result[0], str)
-    assert "code here" in result[0]
+    assert result == [{"tag": "pre", "children": ["\ncode here\n"]}]
 
 
 def test_html_span_passthrough() -> None:
