@@ -267,6 +267,14 @@ def test_home_has_source_action_dropdown() -> None:
     )
 
 
+def test_home_limits_install_prompt_to_mobile_viewports() -> None:
+    response = client.get("/")
+
+    assert 'function isMobileViewport() {' in response.text
+    assert 'window.matchMedia("(max-width: 560px)").matches' in response.text
+    assert "isMobileViewport() && !isInstalledApp()" in response.text
+
+
 def test_home_guards_direct_publication() -> None:
     response = client.get("/")
 

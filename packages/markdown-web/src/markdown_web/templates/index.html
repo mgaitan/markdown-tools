@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="/static/logo.png">
     <link rel="manifest" href="/static/manifest.webmanifest">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/static/styles.css?v=17">
+    <link rel="stylesheet" href="/static/styles.css?v=18">
   </head>
   <body>
     <main class="page">
@@ -43,7 +43,7 @@
             </div>
             <div class="source-action-field">
               <button id="source-action-button" class="source-action-button button button-primary" type="submit" name="action" value="process">Process</button>
-              <button id="source-action-menu-button" class="source-action-menu-button" type="button" aria-label="Choose source action" aria-haspopup="menu" aria-expanded="false">⌄</button>
+              <button id="source-action-menu-button" class="source-action-menu-button" type="button" aria-label="Choose source action" aria-haspopup="menu" aria-expanded="false"></button>
               <div id="source-action-menu" class="source-action-menu" role="menu" hidden>
                 <button type="button" role="menuitem" data-source-action="process">Process</button>
                 <button type="button" role="menuitem" data-source-action="publish">Publish</button>
@@ -62,7 +62,7 @@
                 <button id="preview-button" class="button button-secondary" type="button">Preview</button>
                 <div class="source-action-field result-action-field">
                   <button id="submit-publish" class="source-action-button button button-primary" type="submit">Publish</button>
-                  <button id="result-action-menu-button" class="source-action-menu-button" type="button" aria-label="Choose editor action" aria-haspopup="menu" aria-expanded="false">⌄</button>
+                  <button id="result-action-menu-button" class="source-action-menu-button" type="button" aria-label="Choose editor action" aria-haspopup="menu" aria-expanded="false"></button>
                   <div id="result-action-menu" class="source-action-menu" role="menu" hidden>
                     <button type="button" role="menuitem" data-result-action="epub">Download EPUB</button>
                     <button type="button" role="menuitem" data-result-action="markdown">Download Markdown</button>
@@ -221,6 +221,10 @@
 
       function isInstalledApp() {
         return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+      }
+
+      function isMobileViewport() {
+        return window.matchMedia("(max-width: 560px)").matches;
       }
 
       function installPromptWasDismissed() {
@@ -1041,7 +1045,7 @@
       window.addEventListener("beforeinstallprompt", (event) => {
         event.preventDefault();
         deferredInstallPrompt = event;
-        if (!isInstalledApp() && !installPromptWasDismissed()) installPrompt.hidden = false;
+        if (isMobileViewport() && !isInstalledApp() && !installPromptWasDismissed()) installPrompt.hidden = false;
       });
       installButton.addEventListener("click", async () => {
         if (!deferredInstallPrompt) return;

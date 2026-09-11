@@ -112,14 +112,25 @@ input:focus, textarea:focus { border-bottom-color: #333; }
 .source-action-field { position: relative; display: flex; flex: 0 0 auto; }
 .source-action-button { border-radius: 18px 0 0 18px; }
 .source-action-menu-button {
+  display: grid;
+  place-items: center;
   width: 30px;
   border: 1px solid #333;
   border-left-color: #777;
   border-radius: 0 18px 18px 0;
+  padding: 0;
   color: #fff;
   background: #333;
-  font: 16px/1 system-ui, sans-serif;
   cursor: pointer;
+}
+.source-action-menu-button::before {
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  border: solid currentColor;
+  border-width: 0 1.5px 1.5px 0;
+  content: "";
+  transform: rotate(45deg);
 }
 .source-action-menu-button:hover { opacity: .7; }
 .source-action-menu-button:disabled { cursor: wait; opacity: .55; }
@@ -241,7 +252,7 @@ body.editor-fullscreen .editor-expand-button {
   bottom: max(16px, env(safe-area-inset-bottom));
   left: max(16px, env(safe-area-inset-left));
   z-index: 20;
-  display: flex;
+  display: none;
   align-items: center;
   gap: 10px;
   width: fit-content;
@@ -310,5 +321,9 @@ pre { overflow-x: auto; margin: 24px 0; border: 1px solid #eee; padding: 16px; f
   .metadata-grid { grid-template-columns: 1fr; }
   .metadata-wide { grid-column: auto; }
   .footer { padding: 0 20px 20px; }
-  .install-prompt { right: max(12px, env(safe-area-inset-right)); left: max(12px, env(safe-area-inset-left)); }
+  .install-prompt:not([hidden]) {
+    right: max(12px, env(safe-area-inset-right));
+    left: max(12px, env(safe-area-inset-left));
+    display: flex;
+  }
 }
