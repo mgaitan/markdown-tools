@@ -60,6 +60,15 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     assert "window.open" not in response.text
     assert "payload.preview_id = previewId" in response.text
     assert 'id="markdown-toolbar" class="markdown-toolbar"' in response.text
+    assert "@codemirror/lang-markdown@6.5.2" in response.text
+    assert "@codemirror/language@6.12.4" in response.text
+    assert "@codemirror/commands@6.11.0" in response.text
+    assert "@codemirror/search@6.7.2" in response.text
+    assert "commands.indentWithTab" in response.text
+    assert "autocomplete.closeBrackets()" in response.text
+    assert "language.syntaxHighlighting(language.defaultHighlightStyle" in response.text
+    assert "search.search({top: true})" in response.text
+    assert "lineNumbers" not in response.text
     assert 'data-markdown-action="bold"' in response.text
     assert 'data-markdown-action="image"' in response.text
     assert 'data-markdown-action="code-block"' in response.text
