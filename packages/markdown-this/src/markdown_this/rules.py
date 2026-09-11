@@ -33,8 +33,9 @@ DOMAIN_RULES: tuple[DomainRule, ...] = (
     ),
     DomainRule(
         hosts=("x.com", "twitter.com"),
-        body_selectors=('[data-testid="primaryColumn"]',),
-        item_selector='article[data-testid="tweet"]',
+        body_selectors=('[data-testid="primaryColumn"]', "main"),
+        item_selector="article",
+        permalink_selector='a[href*="/status/"]',
         strip_selectors=('[role="group"]', '[data-testid="UserAvatar-Container"]', '[data-testid="caret"]'),
     ),
 )

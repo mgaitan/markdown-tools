@@ -66,6 +66,21 @@ def test_collection_target_ignores_x_media_suffix() -> None:
     assert result and "Second observation" in result and "Discover more" not in result
 
 
+def test_x_collection_supports_current_post_markup_without_test_ids_or_time() -> None:
+    html = """
+    <main><h2>Post</h2>
+      <article><a href="/alice/status/1001">4 September</a><p>First current post</p></article>
+      <article><a href="/alice/status/1002">4 September</a><p>Second current post</p></article>
+      <article><a href="/bob/status/2000">4 September</a><p>Reader response</p></article>
+    </main>
+    """
+
+    result = apply_domain_rule(html, "https://x.com/alice/status/1001")
+
+    assert result and "First current post" in result and "Second current post" in result
+    assert "Reader response" not in result
+
+
 def test_collection_requires_requested_post_and_skips_unusable_cells() -> None:
     rule = DomainRule(hosts=("forum.example",), body_selectors=("main",), item_selector="article")
     html = '<main><article>No permalink</article><article><a href="javascript:bad"><time>Bad</time></a></article>'

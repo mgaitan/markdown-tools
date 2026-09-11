@@ -11,6 +11,6 @@ def test_build_bookmarklets_use_server_endpoints_without_expiring_keys() -> None
     assert "fetch(" not in result["markdown"]
     assert "X-Bookmarklet-Key" not in result["markdown"]
     assert "TELEGRAPH_API_TOKEN" not in result["markdown"]
-    assert 'article[data-testid="tweet"]' in result["markdown"]
+    assert "document.querySelectorAll('article')" in result["markdown"]
     assert "scrollBy(0,innerHeight*.8)" in result["markdown"]
     assert "new Map()" in result["markdown"]
