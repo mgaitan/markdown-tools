@@ -4090,5 +4090,29 @@
     "article_link": "https://tante.cc/2026/09/10/making-social-media-social/",
     "discussion_link": "https://lobste.rs/s/39c9xe/making_social_media_social",
     "title": "Making Social Media Social"
+  },
+  "@lobstersgram:691": {
+    "telegraph_link": "https://telegra.ph/Release-v020--aaronmallenphlex-hanami--GitHub-09-11",
+    "article_link": "https://github.com/aaronmallen/phlex-hanami/releases/tag/0.2.0",
+    "discussion_link": "https://lobste.rs/s/kpwrwb/phlex_hanami_v0_2_0",
+    "title": "phlex-hanami v0.2.0"
+  },
+  "@lobstersgram:692": {
+    "telegraph_link": "https://telegra.ph/An-untrusted-site-can-freeze-a-Mac-using-WebGPU-09-11",
+    "article_link": "https://auberon.xyz/blog/posts/deathray/",
+    "discussion_link": "https://lobste.rs/s/l0sqnt/untrusted_site_can_freeze_mac_using",
+    "title": "An untrusted site can freeze a Mac using WebGPU"
+  },
+  "@lobstersgram:693": {
+    "telegraph_link": "https://telegra.ph/The-terrible-menu-bar-in-the-Windows-11-Notepad---Reupens-blog-09-11",
+    "article_link": "https://blog.yuo.be/2026/09/10/the-terrible-menu-bar-in-the-windows-11-notepad/",
+    "discussion_link": "https://lobste.rs/s/ol8vsp/terrible_menu_bar_windows_11_notepad",
+    "title": "The terrible menu bar in the Windows 11 Notepad"
+  },
+  "@lobstersgram:694": {
+    "telegraph_link": "https://telegra.ph/Soft-deprecating-rematch--Hugo-van-Kemenade-09-11",
+    "article_link": "https://hugovk.dev/blog/2026/soft-deprecating-re.match/",
+    "discussion_link": "https://lobste.rs/s/u7dr96/soft_deprecating_re_match",
+    "title": "Soft-deprecating re.match()"
   }
 }
