@@ -16,6 +16,20 @@ from starlette.status import (
 client = TestClient(app_module.app)
 
 
+@pytest.mark.parametrize(("action", "target"), [("md", "/md"), ("t", "/t/bookmarklet")])
+def test_bookmarklet_capture_receiver_accepts_x_messages(action: str, target: str) -> None:
+    response = client.get("/bookmarklet/capture", params={"action": action})
+
+    assert response.status_code == HTTP_200_OK
+    assert f'form.action = "{target}"' in response.text
+    assert "event.source !== window.opener" in response.text
+    assert 'capture?.type !== "markdown-bookmarklet"' in response.text
+
+
+def test_bookmarklet_capture_receiver_rejects_unknown_action() -> None:
+    assert client.get("/bookmarklet/capture", params={"action": "epub"}).status_code == HTTP_404_NOT_FOUND
+
+
 def _prepared(markdown: str = "# Title\n\nBody") -> PreparedContent:
     return PreparedContent("Title", markdown, "Fallback", SourceMetadata())
 

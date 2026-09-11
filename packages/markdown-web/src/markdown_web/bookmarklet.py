@@ -5,12 +5,14 @@ from __future__ import annotations
 from urllib.parse import quote
 
 
-def _script(url: str, action: str) -> str:
-    endpoint = quote(url, safe=":/@?=&")
-    target = "'_blank'" if action == "md" else "'_self'"
+def _script(base_url: str, action: str) -> str:
+    endpoint = quote(base_url + ("/md" if action == "md" else "/t/bookmarklet"), safe=":/@?=&")
+    receiver = quote(base_url + f"/bookmarklet/capture?action={action}", safe=":/@?=&")
+    form_target = "'_blank'" if action == "md" else "'_self'"
     capture = (
         "const q=location.pathname.match(/^\\/([^/]+)\\/status\\/([^/?#]+)/);"
         "const x=/^(?:www\\.|m\\.)?(?:x\\.com|twitter\\.com)$/i.test(location.hostname)&&q;"
+        "const r=x?window.open('" + receiver + "','_blank'):null;"
         "const h=x?await(async()=>{"
         "const s=new Map(),w=()=>new Promise(r=>setTimeout(r,700)),p=()=>{"
         "document.querySelectorAll('article').forEach(a=>{"
@@ -32,10 +34,14 @@ def _script(url: str, action: str) -> str:
         "f.append(x)});"
     )
     result = (
+        "if(x){if(!r){alert('Allow pop-ups to capture this X thread');return}"
+        "r.postMessage({type:'markdown-bookmarklet',html:h,title:document.title,source_url:location.href},'"
+        + base_url
+        + "');return}"
         "const f=document.createElement('form');f.method='POST';f.action='"
         + endpoint
         + "';f.target="
-        + target
+        + form_target
         + ";"
         + fields
         + "document.body.append(f);f.submit()"
@@ -46,4 +52,4 @@ def _script(url: str, action: str) -> str:
 def build_bookmarklets(base_url: str) -> dict[str, str]:
     """Return permanent bookmarklet URLs for Markdown and Telegraph."""
     root = base_url.rstrip("/")
-    return {"markdown": _script(root + "/md", "md"), "telegraph": _script(root + "/t/bookmarklet", "t")}
+    return {"markdown": _script(root, "md"), "telegraph": _script(root, "t")}

@@ -14,3 +14,5 @@ def test_build_bookmarklets_use_server_endpoints_without_expiring_keys() -> None
     assert "document.querySelectorAll('article')" in result["markdown"]
     assert "scrollBy(0,innerHeight*.8)" in result["markdown"]
     assert "new Map()" in result["markdown"]
+    assert "window.open('https://markdown.example/bookmarklet/capture?action=md','_blank')" in result["markdown"]
+    assert "postMessage({type:'markdown-bookmarklet'" in result["markdown"]

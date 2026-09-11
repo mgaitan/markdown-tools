@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Processing capture</title>
+  </head>
+  <body>
+    <p>Processing capture...</p>
+    <script>
+      const xOrigins = new Set(["https://x.com", "https://www.x.com", "https://m.x.com", "https://twitter.com", "https://www.twitter.com", "https://m.twitter.com"]);
+      window.addEventListener("message", (event) => {
+        const capture = event.data;
+        if (event.source !== window.opener || !xOrigins.has(event.origin) || capture?.type !== "markdown-bookmarklet") return;
+        if (typeof capture.html !== "string" || typeof capture.title !== "string" || typeof capture.source_url !== "string") return;
+        const form = document.createElement("form");
+        form.method = "POST";
+        form.action = "{{ target }}";
+        for (const [name, value] of Object.entries({html: capture.html, title: capture.title, source_url: capture.source_url})) {
+          const field = document.createElement("textarea");
+          field.name = name;
+          field.value = value;
+          form.append(field);
+        }
+        document.body.append(form);
+        form.submit();
+      });
+    </script>
+  </body>
+</html>
