@@ -118,7 +118,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
     assert 'rel="manifest" href="/static/manifest.webmanifest?v=2"' in response.text
-    assert 'navigator.serviceWorker.register("/service-worker.js")' in response.text
+    assert 'navigator.serviceWorker.register("/service-worker.js?v=2")' in response.text
     assert 'id="install-prompt"' in response.text
     assert 'id="install-button"' in response.text
     assert 'window.addEventListener("beforeinstallprompt"' in response.text
