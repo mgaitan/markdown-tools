@@ -20,7 +20,7 @@
     <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
     <link rel="alternate icon" href="/static/logo.png" type="image/png">
     <link rel="apple-touch-icon" href="/static/logo.png">
-    <link rel="stylesheet" href="/static/styles.css?v=7">
+    <link rel="stylesheet" href="/static/styles.css?v=21">
   </head>
   <body>
     <main class="page narrow">
@@ -34,6 +34,7 @@
         <li><code>POST /t/preview</code> creates or updates a Telegraph preview; send its <code>preview_id</code> to publish the same page later.</li>
         <li><a href="/t/published/">/t/published/</a> lists the pages published on <a href="https://telegra.ph">Telegraph</a> by this service.</li>
         <li><a href="/t/jobs">/t/jobs</a> publishes a long Markdown brief in stages; poll its <code>run_url</code> until the job is complete.</li>
+        <li><a href="/drafts/">Drafts</a> are stored locally in this browser; reopen, rename, or delete them there.</li>
         <li><a href="/bookmarklets/">Bookmarklets</a> send the current page's HTML from your browser, so they can process pages the server cannot reach on its own.</li>
         <li>Markdown front matter may include <code>notify_telegram</code> with comma-separated Telegram user or channel IDs; after publication, <a href="https://t.me/MarkdownTelegraphBot">@MarkdownTelegraphBot</a> sends only the Telegraph link to those recipients.</li>
       </ul>
@@ -51,6 +52,7 @@
     <footer class="footer">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/drafts/">Drafts</a>
       <a href="/bookmarklets/">Bookmarklets</a>
       <a href="/t/published/">Published</a>
       <a href="/docs">API</a>

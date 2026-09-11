@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import markdown_web.app as app_module
 import pytest
 from fastapi.testclient import TestClient
@@ -14,6 +16,13 @@ from starlette.status import (
 )
 
 client = TestClient(app_module.app)
+
+
+@pytest.mark.parametrize("template_name", ["index.html", "about.html", "bookmarklet.html", "log.html", "drafts.html"])
+def test_footers_link_to_drafts_before_bookmarklets(template_name: str) -> None:
+    template = (Path(app_module.__file__).parent / "templates" / template_name).read_text(encoding="utf-8")
+
+    assert 'href="/drafts/">Drafts</a>\n      <a href="/bookmarklets/">Bookmarklets</a>' in template
 
 
 @pytest.mark.parametrize(("action", "target"), [("md", "/md"), ("t", "/t/bookmarklet")])
@@ -132,7 +141,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
     assert 'rel="manifest" href="/static/manifest.webmanifest?v=2"' in response.text
-    assert 'navigator.serviceWorker.register("/service-worker.js?v=2")' in response.text
+    assert 'navigator.serviceWorker.register("/service-worker.js?v=3")' in response.text
     assert 'id="install-prompt"' in response.text
     assert 'id="install-button"' in response.text
     assert 'window.addEventListener("beforeinstallprompt"' in response.text
@@ -151,7 +160,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     service_worker = client.get("/service-worker.js")
     assert service_worker.status_code == HTTP_200_OK
     assert service_worker.headers["cache-control"] == "no-cache"
-    assert 'const CACHE_NAME = "markdown-web-shell-v5";' in service_worker.text
+    assert 'const CACHE_NAME = "markdown-web-shell-v6";' in service_worker.text
 
 
 def test_home_places_editor_control_in_toolbar() -> None:
@@ -168,15 +177,23 @@ def test_home_offers_bounded_local_draft_management() -> None:
     response = client.get("/")
 
     assert 'id="toolbar-save-draft"' in response.text
-    assert 'id="footer-drafts-button"' in response.text
-    assert 'id="draft-list" class="draft-list"' in response.text
+    assert 'href="/drafts/">Drafts</a>\n      <a href="/bookmarklets/">Bookmarklets</a>' in response.text
     assert 'id="save-before-replace"' in response.text
     assert 'const SAVED_DRAFTS_KEY = "markdown-web-saved-drafts";' in response.text
     assert "const MAX_SAVED_DRAFTS = 20;" in response.text
     assert "function requestReplacement(action, label)" in response.text
     assert "function openSavedDraft(id)" in response.text
-    assert "function deleteSavedDraft(id)" in response.text
+    assert 'new URLSearchParams(window.location.search).get("draft")' in response.text
     assert "requestReplacement(() => {" in response.text
+
+
+def test_drafts_page_lists_local_draft_management() -> None:
+    response = client.get("/drafts/")
+
+    assert response.status_code == HTTP_200_OK
+    assert 'id="draft-list" class="draft-list"' in response.text
+    assert 'const SAVED_DRAFTS_KEY = "markdown-web-saved-drafts";' in response.text
+    assert 'href="/bookmarklets/">Bookmarklets</a>' in response.text
 
 
 def test_share_target_transcribes_audio(monkeypatch: pytest.MonkeyPatch) -> None:

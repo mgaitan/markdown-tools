@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="/static/logo.png">
     <link rel="manifest" href="/static/manifest.webmanifest?v=2">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/static/styles.css?v=20">
+    <link rel="stylesheet" href="/static/styles.css?v=21">
   </head>
   <body>
     <main class="page">
@@ -133,15 +133,6 @@
       </form>
     </dialog>
 
-    <dialog id="drafts-dialog" aria-labelledby="drafts-dialog-title">
-      <h2 id="drafts-dialog-title">Drafts</h2>
-      <p id="drafts-empty" hidden>No saved drafts yet.</p>
-      <ul id="draft-list" class="draft-list"></ul>
-      <div class="dialog-actions">
-        <button id="close-drafts" class="button button-secondary" type="button">Close</button>
-      </div>
-    </dialog>
-
     <dialog id="metadata-dialog" aria-labelledby="metadata-dialog-title">
       <form id="metadata-form" method="dialog">
         <h2 id="metadata-dialog-title">Publication metadata</h2>
@@ -172,10 +163,10 @@
     <footer class="footer">
       <a href="/">Home</a>
       <a href="/about">About</a>
+      <a href="/drafts/">Drafts</a>
       <a href="/bookmarklets/">Bookmarklets</a>
       <a href="/t/published/">Published</a>
       <a href="/docs">API</a>
-      <button id="footer-drafts-button" class="footer-drafts-button" type="button">Drafts</button>
       <a href="https://github.com/mgaitan/markdown-tools/tree/master/packages/markdown-web">GitHub</a>
     </footer>
 
@@ -217,14 +208,9 @@
       const newDialogTitle = document.querySelector("#new-dialog-title");
       const newDialogMessage = document.querySelector("#new-dialog-message");
       const toolbarSaveDraftButton = document.querySelector("#toolbar-save-draft");
-      const footerDraftsButton = document.querySelector("#footer-drafts-button");
       const draftDialog = document.querySelector("#draft-dialog");
       const draftForm = document.querySelector("#draft-form");
       const draftName = document.querySelector("#draft-name");
-      const draftsDialog = document.querySelector("#drafts-dialog");
-      const draftList = document.querySelector("#draft-list");
-      const draftsEmpty = document.querySelector("#drafts-empty");
-      const closeDrafts = document.querySelector("#close-drafts");
       const metadataButton = document.querySelector("#metadata-button");
       const metadataDialog = document.querySelector("#metadata-dialog");
       const metadataForm = document.querySelector("#metadata-form");
@@ -261,7 +247,6 @@
       let pendingReplacement = null;
       let draftSaveAfter = null;
       let draftNameTargetId = "";
-      let draftNameMode = "save";
 
       async function initializeMarkdownEditor() {
         try {
@@ -780,28 +765,18 @@
         return title || sourceLabel.textContent || "Untitled draft";
       }
 
-      function openDraftNameDialog(afterSave = null, target = null, renameOnly = false) {
-        if (renameOnly) {
-          draftSaveAfter = afterSave;
-          draftNameTargetId = target.id;
-          draftNameMode = "rename";
-          draftName.value = target.name || "Untitled draft";
-          draftDialog.showModal();
-          draftName.select();
-          return;
-        }
+      function openDraftNameDialog(afterSave = null) {
         if (!hasDraftContent()) {
           setStatus("Add some content before saving a draft", true);
           return;
         }
-        const existing = target || savedDraftById(activeSavedDraftId);
+        const existing = savedDraftById(activeSavedDraftId);
         if (!existing && readSavedDrafts().length >= MAX_SAVED_DRAFTS) {
           setStatus(`You can keep up to ${MAX_SAVED_DRAFTS} drafts. Delete one to save another.`, true);
           return;
         }
         draftSaveAfter = afterSave;
         draftNameTargetId = existing?.id || "";
-        draftNameMode = "save";
         draftName.value = existing?.name || suggestDraftName();
         draftDialog.showModal();
         draftName.select();
@@ -822,63 +797,15 @@
         activeSavedDraftId = id;
         persistActiveSavedDraft();
         saveDraft();
-        renderDraftList();
         return true;
-      }
-
-      function renameSavedDraft(id, name) {
-        const normalizedName = name.trim();
-        if (!normalizedName) return false;
-        const drafts = readSavedDrafts();
-        const index = drafts.findIndex((draft) => draft.id === id);
-        if (index < 0) return false;
-        drafts[index] = {...drafts[index], name: normalizedName, updated_at: Date.now()};
-        if (!writeSavedDrafts(drafts)) return false;
-        renderDraftList();
-        return true;
-      }
-
-      function formatDraftTime(value) {
-        const time = Number(value);
-        return Number.isFinite(time) ? new Date(time).toLocaleString() : "Saved locally";
-      }
-
-      function renderDraftList() {
-        const drafts = readSavedDrafts().sort((left, right) => Number(right.updated_at) - Number(left.updated_at));
-        draftList.replaceChildren();
-        draftsEmpty.hidden = Boolean(drafts.length);
-        for (const draft of drafts) {
-          const item = document.createElement("li");
-          item.className = "draft-item";
-          const open = document.createElement("button");
-          open.className = "draft-open";
-          open.type = "button";
-          open.textContent = draft.name || "Untitled draft";
-          open.title = open.textContent;
-          open.addEventListener("click", () => requestReplacement(() => openSavedDraft(draft.id), "Open draft"));
-          const updated = document.createElement("span");
-          updated.className = "draft-updated";
-          updated.textContent = formatDraftTime(draft.updated_at);
-          const summary = document.createElement("div");
-          summary.append(open, updated);
-          const rename = document.createElement("button");
-          rename.className = "draft-action";
-          rename.type = "button";
-          rename.textContent = "Rename";
-          rename.addEventListener("click", () => openDraftNameDialog(null, draft, true));
-          const remove = document.createElement("button");
-          remove.className = "draft-action";
-          remove.type = "button";
-          remove.textContent = "Delete";
-          remove.addEventListener("click", () => deleteSavedDraft(draft.id));
-          item.append(summary, rename, remove);
-          draftList.append(item);
-        }
       }
 
       function openSavedDraft(id) {
         const draft = savedDraftById(id);
-        if (!draft || typeof draft.markdown !== "string") return;
+        if (!draft || typeof draft.markdown !== "string") {
+          setStatus("That draft is no longer available", true);
+          return;
+        }
         activeSavedDraftId = id;
         persistActiveSavedDraft();
         showMarkdownEditor(
@@ -888,18 +815,6 @@
           typeof draft.url === "string" ? draft.url : "",
           typeof draft.preview_id === "string" ? draft.preview_id : ""
         );
-        draftsDialog.close();
-      }
-
-      function deleteSavedDraft(id) {
-        const drafts = readSavedDrafts().filter((draft) => draft.id !== id);
-        if (!writeSavedDrafts(drafts)) return;
-        if (activeSavedDraftId === id) {
-          activeSavedDraftId = "";
-          persistActiveSavedDraft();
-          saveDraft();
-        }
-        renderDraftList();
       }
 
       function hasUnsavedWork() {
@@ -1460,24 +1375,15 @@
 
       output.addEventListener("input", saveDraft);
       toolbarSaveDraftButton.addEventListener("click", () => openDraftNameDialog());
-      function openDraftsDialog() {
-        renderDraftList();
-        draftsDialog.showModal();
-      }
-      footerDraftsButton.addEventListener("click", openDraftsDialog);
-      closeDrafts.addEventListener("click", () => draftsDialog.close());
       draftForm.addEventListener("submit", (event) => {
         if (event.submitter?.value !== "save") return;
         event.preventDefault();
-        const saved = draftNameMode === "rename"
-          ? renameSavedDraft(draftNameTargetId, draftName.value)
-          : saveNamedDraft(draftName.value, draftNameTargetId);
+        const saved = saveNamedDraft(draftName.value, draftNameTargetId);
         if (!saved) return;
         draftDialog.close();
         const afterSave = draftSaveAfter;
         draftSaveAfter = null;
         draftNameTargetId = "";
-        draftNameMode = "save";
         if (afterSave) afterSave();
       });
       newButton.addEventListener("click", () => requestReplacement(resetDocument, "Starting a new document"));
@@ -1496,17 +1402,20 @@
 
       restoreSourceAction();
       restoreDraft();
+      const requestedDraftId = new URLSearchParams(window.location.search).get("draft");
       if (sharedMarkdown) {
         requestReplacement(() => {
           showMarkdownEditor(sharedMarkdown, sharedLabel);
           setStatus("Shared content imported");
         }, "Shared content");
+      } else if (requestedDraftId) {
+        requestReplacement(() => openSavedDraft(requestedDraftId), "Open draft");
       } else {
         if (shareError) setStatus(shareError, true);
       }
 
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=2"));
+        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=3"));
       }
 
     </script>

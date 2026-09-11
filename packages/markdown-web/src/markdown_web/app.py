@@ -474,6 +474,11 @@ def about(request: Request) -> HTMLResponse:
     return templates.TemplateResponse(request=request, name="about.html", context={"site_url": SITE_URL})
 
 
+@app.get("/drafts/", response_class=HTMLResponse, include_in_schema=False)
+def drafts(request: Request) -> HTMLResponse:
+    return templates.TemplateResponse(request=request, name="drafts.html", context={"site_url": SITE_URL})
+
+
 @app.get("/llms.txt", response_class=PlainTextResponse, include_in_schema=False)
 def llms() -> PlainTextResponse:
     body = LLMS_PATH.read_text(encoding="utf-8").replace("{{ site_url }}", SITE_URL)

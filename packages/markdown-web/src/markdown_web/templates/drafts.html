@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drafts | Markdown</title>
+    <meta name="description" content="Saved Markdown drafts in this browser.">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/static/logo.png" type="image/png">
+    <link rel="apple-touch-icon" href="/static/logo.png">
+    <link rel="stylesheet" href="/static/styles.css?v=21">
+  </head>
+  <body>
+    <main class="page narrow">
+      <h1>Drafts</h1>
+      <p id="drafts-empty" class="note" hidden>No saved drafts yet.</p>
+      <ul id="draft-list" class="draft-list" aria-live="polite"></ul>
+    </main>
+    <footer class="footer">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/drafts/">Drafts</a>
+      <a href="/bookmarklets/">Bookmarklets</a>
+      <a href="/t/published/">Published</a>
+      <a href="/docs">API</a>
+      <a href="https://github.com/mgaitan/markdown-tools/tree/master/packages/markdown-web">GitHub</a>
+    </footer>
+    <script>
+      const SAVED_DRAFTS_KEY = "markdown-web-saved-drafts";
+      const ACTIVE_SAVED_DRAFT_KEY = "markdown-web-active-saved-draft";
+      const draftList = document.querySelector("#draft-list");
+      const draftsEmpty = document.querySelector("#drafts-empty");
+
+      function readSavedDrafts() {
+        try {
+          const drafts = JSON.parse(localStorage.getItem(SAVED_DRAFTS_KEY) || "[]");
+          return Array.isArray(drafts) ? drafts.filter((draft) => draft && typeof draft === "object") : [];
+        } catch {
+          return [];
+        }
+      }
+
+      function writeSavedDrafts(drafts) {
+        try {
+          localStorage.setItem(SAVED_DRAFTS_KEY, JSON.stringify(drafts));
+          return true;
+        } catch {
+          return false;
+        }
+      }
+
+      function formatDraftTime(value) {
+        const time = Number(value);
+        return Number.isFinite(time) ? new Date(time).toLocaleString() : "Saved locally";
+      }
+
+      function renameSavedDraft(id) {
+        const draft = readSavedDrafts().find((item) => item.id === id);
+        if (!draft) return;
+        const name = window.prompt("Draft name", draft.name || "Untitled draft")?.trim();
+        if (!name) return;
+        const drafts = readSavedDrafts();
+        const index = drafts.findIndex((item) => item.id === id);
+        if (index < 0) return;
+        drafts[index] = {...drafts[index], name, updated_at: Date.now()};
+        if (writeSavedDrafts(drafts)) renderDraftList();
+      }
+
+      function deleteSavedDraft(id) {
+        if (!window.confirm("Delete this draft?")) return;
+        const drafts = readSavedDrafts().filter((draft) => draft.id !== id);
+        if (!writeSavedDrafts(drafts)) return;
+        try {
+          if (localStorage.getItem(ACTIVE_SAVED_DRAFT_KEY) === id) {
+            localStorage.removeItem(ACTIVE_SAVED_DRAFT_KEY);
+          }
+        } catch {
+          // The draft list can still be updated when this preference cannot be stored.
+        }
+        renderDraftList();
+      }
+
+      function renderDraftList() {
+        const drafts = readSavedDrafts().sort((left, right) => Number(right.updated_at) - Number(left.updated_at));
+        draftList.replaceChildren();
+        draftsEmpty.hidden = Boolean(drafts.length);
+        for (const draft of drafts) {
+          const item = document.createElement("li");
+          item.className = "draft-item";
+          const summary = document.createElement("div");
+          const open = document.createElement("a");
+          open.className = "draft-open";
+          open.href = `/?draft=${encodeURIComponent(draft.id)}`;
+          open.textContent = draft.name || "Untitled draft";
+          open.title = open.textContent;
+          const updated = document.createElement("span");
+          updated.className = "draft-updated";
+          updated.textContent = formatDraftTime(draft.updated_at);
+          summary.append(open, updated);
+          const rename = document.createElement("button");
+          rename.className = "draft-action";
+          rename.type = "button";
+          rename.textContent = "Rename";
+          rename.addEventListener("click", () => renameSavedDraft(draft.id));
+          const remove = document.createElement("button");
+          remove.className = "draft-action";
+          remove.type = "button";
+          remove.textContent = "Delete";
+          remove.addEventListener("click", () => deleteSavedDraft(draft.id));
+          item.append(summary, rename, remove);
+          draftList.append(item);
+        }
+      }
+
+      renderDraftList();
+    </script>
+  </body>
+</html>
