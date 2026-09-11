@@ -208,6 +208,10 @@ textarea:focus { border-color: #999; box-shadow: 0 2px 8px rgb(0 0 0 / 6%); }
 .toolbar-divider { width: 1px; height: 20px; margin: 0 4px; background: #d8dee4; }
 .markdown-editor textarea { display: block; min-height: 460px; border: 0; border-radius: 0; padding-right: 52px; padding-bottom: 52px; box-shadow: none; }
 .markdown-editor textarea:focus { border: 0; box-shadow: none; }
+.markdown-editor .cm-editor { height: 460px; color: #24292f; }
+.markdown-editor .cm-scroller { overflow: auto; font: 15px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.markdown-editor .cm-content { padding: 12px 16px 52px; }
+.markdown-editor .cm-focused { outline: 0; }
 .preview-pane { overflow: hidden; min-height: 680px; border: 1px solid #d0d7de; border-radius: 6px; background: #fff; }
 .preview-frame { display: block; width: 100%; min-height: 680px; border: 0; background: #fff; }
 .editor-expand-button { display: grid; flex: 0 0 30px; width: 30px; height: 30px; margin-left: auto; place-items: center; border: 1px solid #d0d7de; border-radius: 5px; color: #24292f; background: #fff; font: 18px/1 system-ui, sans-serif; cursor: pointer; }
@@ -225,6 +229,7 @@ body.editor-fullscreen .result { height: 100vh; height: 100dvh; }
 body.editor-fullscreen .markdown-editor { height: 100vh; height: 100dvh; border: 0; border-radius: 0; display: flex; flex-direction: column; }
 body.editor-fullscreen .markdown-toolbar { flex: 0 0 auto; border-radius: 0; padding-right: 52px; }
 body.editor-fullscreen .markdown-editor textarea { flex: 1; min-height: 0; resize: none; }
+body.editor-fullscreen .markdown-editor .cm-editor { flex: 1; height: auto; }
 body.editor-fullscreen .editor-expand-button {
   position: fixed;
   top: 8px;

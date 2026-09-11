@@ -26,7 +26,7 @@
     <link rel="apple-touch-icon" href="/static/logo.png">
     <link rel="manifest" href="/static/manifest.webmanifest">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/static/styles.css?v=18">
+    <link rel="stylesheet" href="/static/styles.css?v=20">
   </head>
   <body>
     <main class="page">
@@ -218,6 +218,56 @@
       const sharedLabel = {{ shared_label | tojson }};
       const shareError = {{ share_error | tojson }};
       let deferredInstallPrompt = null;
+      let markdownCodeMirror = null;
+
+      async function initializeMarkdownEditor() {
+        try {
+          const [state, view, markdownLanguage, language, commands, autocomplete, search] = await Promise.all([
+            import("https://esm.sh/@codemirror/state@6.7.4"),
+            import("https://esm.sh/@codemirror/view@6.43.11"),
+            import("https://esm.sh/@codemirror/lang-markdown@6.5.2"),
+            import("https://esm.sh/@codemirror/language@6.12.4"),
+            import("https://esm.sh/@codemirror/commands@6.11.0"),
+            import("https://esm.sh/@codemirror/autocomplete@6.20.3"),
+            import("https://esm.sh/@codemirror/search@6.7.2"),
+          ]);
+          const host = document.createElement("div");
+          host.className = "markdown-codemirror";
+          output.after(host);
+          markdownCodeMirror = new view.EditorView({
+            state: state.EditorState.create({
+              doc: output.value,
+              extensions: [
+                markdownLanguage.markdown(),
+                language.syntaxHighlighting(language.defaultHighlightStyle, {fallback: true}),
+                view.EditorView.lineWrapping,
+                commands.history(),
+                autocomplete.closeBrackets(),
+                search.search({top: true}),
+                search.highlightSelectionMatches(),
+                view.EditorView.updateListener.of((update) => {
+                  if (!update.docChanged) return;
+                  output.value = update.state.doc.toString();
+                  output.dispatchEvent(new Event("input", {bubbles: true}));
+                }),
+                view.keymap.of([
+                  commands.indentWithTab,
+                  ...autocomplete.closeBracketsKeymap,
+                  ...commands.defaultKeymap,
+                  ...commands.historyKeymap,
+                  ...search.searchKeymap,
+                ]),
+              ],
+            }),
+            parent: host,
+          });
+          output.hidden = true;
+        } catch {
+          // Keep the textarea usable when CodeMirror cannot be loaded.
+        }
+      }
+
+      void initializeMarkdownEditor();
 
       function isInstalledApp() {
         return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
@@ -314,7 +364,50 @@
         }
       }
 
+      function markdownValue() {
+        return markdownCodeMirror ? markdownCodeMirror.state.doc.toString() : output.value;
+      }
+
+      function setMarkdownValue(value) {
+        if (markdownCodeMirror) {
+          markdownCodeMirror.dispatch({
+            changes: {from: 0, to: markdownCodeMirror.state.doc.length, insert: value},
+          });
+          return;
+        }
+        output.value = value;
+        output.dispatchEvent(new Event("input", {bubbles: true}));
+      }
+
+      function markdownSelection() {
+        if (!markdownCodeMirror) return {start: output.selectionStart, end: output.selectionEnd};
+        return {start: markdownCodeMirror.state.selection.main.from, end: markdownCodeMirror.state.selection.main.to};
+      }
+
+      function setMarkdownSelection(start, end) {
+        if (markdownCodeMirror) {
+          markdownCodeMirror.dispatch({selection: {anchor: start, head: end}});
+          markdownCodeMirror.focus();
+          return;
+        }
+        output.setSelectionRange(start, end);
+        output.focus();
+      }
+
+      function focusMarkdown() {
+        if (markdownCodeMirror) markdownCodeMirror.focus();
+        else output.focus();
+      }
+
       function updateMarkdown(value, start, end) {
+        if (markdownCodeMirror) {
+          markdownCodeMirror.dispatch({
+            changes: {from: start, to: end, insert: value},
+            selection: {anchor: start + value.length},
+          });
+          markdownCodeMirror.focus();
+          return;
+        }
         output.setRangeText(value, start, end, "end");
         output.dispatchEvent(new Event("input", {bubbles: true}));
         output.focus();
@@ -342,7 +435,7 @@
       }
 
       function updateFrontmatter(values) {
-        const parsed = parseFrontmatter(output.value);
+        const parsed = parseFrontmatter(markdownValue());
         const lines = [...parsed.lines];
         for (const field of metadataFields) {
           const value = values[field].trim();
@@ -356,16 +449,15 @@
         }
         const body = parsed.body.replace(/^\r?\n/, "");
         if (!lines.length) {
-          output.value = body;
+          setMarkdownValue(body);
         } else {
-          output.value = `---\n${lines.join("\n")}\n---${body ? `\n${body}` : "\n"}`;
+          setMarkdownValue(`---\n${lines.join("\n")}\n---${body ? `\n${body}` : "\n"}`);
         }
-        output.dispatchEvent(new Event("input", {bubbles: true}));
-        output.focus();
+        focusMarkdown();
       }
 
       function openMetadataDialog() {
-        const parsed = parseFrontmatter(output.value);
+        const parsed = parseFrontmatter(markdownValue());
         for (const field of metadataFields) {
           const control = metadataForm.elements[field];
           const value = parsed.fields[field] || "";
@@ -383,50 +475,46 @@
         expandEditorButton.textContent = expanded ? "×" : "⤢";
         expandEditorButton.setAttribute("aria-label", expanded ? "Exit full-screen editor" : "Maximize editor");
         expandEditorButton.title = expanded ? "Exit full-screen editor" : "Maximize editor";
-        if (expanded) output.focus();
+        if (expanded) focusMarkdown();
       }
 
       function wrapSelection(before, after, placeholder) {
-        const start = output.selectionStart;
-        const end = output.selectionEnd;
-        const selected = output.value.slice(start, end) || placeholder;
+        const {start, end} = markdownSelection();
+        const selected = markdownValue().slice(start, end) || placeholder;
         updateMarkdown(before + selected + after, start, end);
-        output.setSelectionRange(start + before.length, start + before.length + selected.length);
+        setMarkdownSelection(start + before.length, start + before.length + selected.length);
       }
 
       function prefixLines(prefix, numbered = false) {
-        const start = output.selectionStart;
-        const end = output.selectionEnd;
-        const selected = output.value.slice(start, end) || "list item";
+        const {start, end} = markdownSelection();
+        const selected = markdownValue().slice(start, end) || "list item";
         const lines = selected.split("\n").map((line, index) => {
           const marker = numbered ? `${index + 1}. ` : prefix;
           return `${marker}${line.replace(/^\s*(?:[-*+] |\d+\. |> )/, "")}`;
         });
         updateMarkdown(lines.join("\n"), start, end);
-        output.setSelectionRange(start, start + lines.join("\n").length);
+        setMarkdownSelection(start, start + lines.join("\n").length);
       }
 
       function applyHeading(level) {
         if (!level) return;
-        const start = output.selectionStart;
-        const end = output.selectionEnd;
-        const selected = output.value.slice(start, end) || "Heading";
+        const {start, end} = markdownSelection();
+        const selected = markdownValue().slice(start, end) || "Heading";
         const heading = `${"#".repeat(Number(level))} `;
         const lines = selected.split("\n").map((line) => `${heading}${line.replace(/^\s*#{1,6}\s*/, "")}`);
         const replacement = lines.join("\n");
         updateMarkdown(replacement, start, end);
-        output.setSelectionRange(start + heading.length, start + replacement.length);
+        setMarkdownSelection(start + heading.length, start + replacement.length);
       }
 
       function addLink() {
         const url = window.prompt("URL", "https://");
         if (!url) return;
-        const start = output.selectionStart;
-        const end = output.selectionEnd;
-        const selected = output.value.slice(start, end) || "link text";
+        const {start, end} = markdownSelection();
+        const selected = markdownValue().slice(start, end) || "link text";
         const replacement = `[${selected}](${url})`;
         updateMarkdown(replacement, start, end);
-        output.setSelectionRange(start + 1, start + 1 + selected.length);
+        setMarkdownSelection(start + 1, start + 1 + selected.length);
       }
 
       function addImage() {
@@ -434,20 +522,20 @@
       }
 
       function insertImage(url) {
-        const start = output.selectionStart;
-        const end = output.selectionEnd;
-        const before = output.value.slice(0, start);
-        const after = output.value.slice(end);
+        const {start, end} = markdownSelection();
+        const markdown = markdownValue();
+        const before = markdown.slice(0, start);
+        const after = markdown.slice(end);
         const prefix = before && !before.endsWith("\n") ? "\n\n" : "";
         const suffix = after && !after.startsWith("\n") ? "\n\n" : "";
         updateMarkdown(`${prefix}![](${url})${suffix}`, start, end);
       }
 
       function insertTranscription(text) {
-        const start = output.selectionStart;
-        const end = output.selectionEnd;
-        const before = output.value.slice(0, start);
-        const after = output.value.slice(end);
+        const {start, end} = markdownSelection();
+        const markdown = markdownValue();
+        const before = markdown.slice(0, start);
+        const after = markdown.slice(end);
         const prefix = before && !/\n\s*\n$/.test(before) ? "\n\n" : "";
         const suffix = after && !/^\s*\n\s*\n/.test(after) ? "\n\n" : "";
         updateMarkdown(`${prefix}${text}${suffix}`, start, end);
@@ -540,7 +628,10 @@
         if (action === "image") addImage();
         if (action === "code") wrapSelection("`", "`", "code");
         if (action === "code-block") wrapSelection("```\n", "\n```", "code");
-        if (action === "horizontal-rule") updateMarkdown("\n\n---\n\n", output.selectionStart, output.selectionEnd);
+        if (action === "horizontal-rule") {
+          const {start, end} = markdownSelection();
+          updateMarkdown("\n\n---\n\n", start, end);
+        }
       });
 
       document.querySelector("#heading-action").addEventListener("change", (event) => {
@@ -569,7 +660,7 @@
 
       function saveDraft() {
         const draft = mode === "publish"
-          ? {mode, markdown: output.value, url: currentUrl, label: sourceLabel.textContent, preview_id: previewId}
+          ? {mode, markdown: markdownValue(), url: currentUrl, label: sourceLabel.textContent, preview_id: previewId}
           : {mode, value: sourceInput.value};
         try {
           localStorage.setItem(DRAFT_KEY, JSON.stringify(draft));
@@ -597,7 +688,8 @@
         if (draft.mode === "publish" && typeof draft.markdown === "string" && draft.markdown) {
           currentUrl = typeof draft.url === "string" ? draft.url : "";
           previewId = typeof draft.preview_id === "string" ? draft.preview_id : "";
-          output.value = draft.markdown;
+          mode = "publish";
+          setMarkdownValue(draft.markdown);
           sourceLabel.textContent = typeof draft.label === "string" && draft.label
             ? draft.label
             : currentUrl || "Markdown";
@@ -605,7 +697,6 @@
           result.hidden = false;
           newButton.hidden = false;
           setPublishStatus("");
-          mode = "publish";
           return;
         }
         if (draft.mode === "process" && typeof draft.value === "string" && draft.value) {
@@ -661,7 +752,7 @@
         setPreviewMode(false);
         currentUrl = "";
         previewId = "";
-        output.value = markdown;
+        setMarkdownValue(markdown);
         sourceLabel.textContent = label;
         sourceEntry.hidden = true;
         result.hidden = false;
@@ -670,7 +761,7 @@
         mode = "publish";
         setStatus("");
         saveDraft();
-        output.focus();
+        focusMarkdown();
       }
 
       async function processSource(url, file, html = "") {
@@ -710,7 +801,7 @@
             response = await fetch("/md/" + encodeURIComponent(url));
           }
           if (!response.ok) throw new Error(await responseError(response, "Processing failed"));
-          output.value = await response.text();
+          setMarkdownValue(await response.text());
           previewId = "";
           sourceLabel.textContent = html ? "Pasted HTML" : url || file.name;
           sourceEntry.hidden = true;
@@ -735,7 +826,7 @@
         resultActionMenuButton.disabled = true;
         setPublishStatus("Building EPUB…");
         try {
-          const payload = {markdown: output.value};
+          const payload = {markdown: markdownValue()};
           if (currentUrl) payload.metadata = {url: currentUrl};
           const response = await fetch("/epub", {
             method: "POST",
@@ -764,9 +855,10 @@
       }
 
       function downloadMarkdown() {
-        const title = parseFrontmatter(output.value).fields.title || sourceLabel.textContent || "document";
+        const markdown = markdownValue();
+        const title = parseFrontmatter(markdown).fields.title || sourceLabel.textContent || "document";
         const filename = title.trim().replace(/[^A-Za-z0-9._-]+/g, "-").replace(/^-+|-+$/g, "") || "document";
-        const target = URL.createObjectURL(new Blob([output.value], {type: "text/markdown;charset=utf-8"}));
+        const target = URL.createObjectURL(new Blob([markdown], {type: "text/markdown;charset=utf-8"}));
         const link = document.createElement("a");
         link.href = target;
         link.download = `${filename}.md`;
@@ -1007,7 +1099,7 @@
           previewButton.disabled = true;
           setPublishStatus("Publishing…");
           try {
-            const payload = {markdown: output.value};
+            const payload = {markdown: markdownValue()};
             if (currentUrl) payload.metadata = {url: currentUrl};
             if (previewId) payload.preview_id = previewId;
             const response = await fetch("/t", {
@@ -1038,7 +1130,7 @@
       });
 
       document.querySelector("#copy-button").addEventListener("click", async () => {
-        await navigator.clipboard.writeText(output.value);
+        await navigator.clipboard.writeText(markdownValue());
         setStatus("Copied");
       });
 
@@ -1070,7 +1162,7 @@
         publishButton.disabled = true;
         setPublishStatus("Previewing…");
         try {
-          const payload = {markdown: output.value};
+          const payload = {markdown: markdownValue()};
           if (currentUrl) payload.metadata = {url: currentUrl};
           if (previewId) payload.preview_id = previewId;
           const response = await fetch("/t/preview", {
@@ -1104,7 +1196,7 @@
         previewId = "";
         mode = "process";
         sourceInput.value = "";
-        output.value = "";
+        setMarkdownValue("");
         sourceLabel.textContent = "";
         clearSelectedFile();
         result.hidden = true;
