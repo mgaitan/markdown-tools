@@ -618,12 +618,23 @@ async def telegraph_from_bookmarklet(request: Request) -> RedirectResponse:
     return RedirectResponse(target, status_code=303)
 
 
+@app.post("/bookmarklet/edit", response_class=HTMLResponse, include_in_schema=False)
+async def editor_from_bookmarklet(request: Request) -> HTMLResponse:
+    source = await _request_data(request)
+    try:
+        prepared = await run_in_threadpool(prepare_content, source)
+    except Exception as exc:
+        raise _handle_source_error(exc) from exc
+    label = source.metadata.title or source.metadata.url or "Bookmarklet"
+    return _home_response(request, shared_markdown=prepared.markdown, shared_label=label)
+
+
 @app.get("/bookmarklet/capture", response_class=HTMLResponse, include_in_schema=False)
 def bookmarklet_capture(request: Request, action: str) -> HTMLResponse:
     """Receive an X bookmarklet capture after its cross-origin page traversal."""
-    if action not in {"md", "t"}:
+    if action not in {"md", "edit", "t"}:
         raise HTTPException(status_code=404, detail="Unknown bookmarklet action")
-    target = "/md" if action == "md" else "/t/bookmarklet"
+    target = {"md": "/md", "edit": "/bookmarklet/edit", "t": "/t/bookmarklet"}[action]
     return templates.TemplateResponse(
         request=request,
         name="bookmarklet_capture.html",

@@ -6,9 +6,10 @@ from urllib.parse import quote
 
 
 def _script(base_url: str, action: str) -> str:
-    endpoint = quote(base_url + ("/md" if action == "md" else "/t/bookmarklet"), safe=":/@?=&")
+    targets = {"md": "/md", "edit": "/bookmarklet/edit", "t": "/t/bookmarklet"}
+    endpoint = quote(base_url + targets[action], safe=":/@?=&")
     receiver = quote(base_url + f"/bookmarklet/capture?action={action}", safe=":/@?=&")
-    form_target = "'_blank'" if action == "md" else "'_self'"
+    form_target = "'_blank'" if action in {"md", "edit"} else "'_self'"
     capture = (
         "const q=location.pathname.match(/^\\/([^/]+)\\/status\\/([^/?#]+)/);"
         "const x=/^(?:www\\.|m\\.)?(?:x\\.com|twitter\\.com)$/i.test(location.hostname)&&q;"
@@ -52,4 +53,4 @@ def _script(base_url: str, action: str) -> str:
 def build_bookmarklets(base_url: str) -> dict[str, str]:
     """Return permanent bookmarklet URLs for Markdown and Telegraph."""
     root = base_url.rstrip("/")
-    return {"markdown": _script(root, "md"), "telegraph": _script(root, "t")}
+    return {"markdown": _script(root, "md"), "edit": _script(root, "edit"), "telegraph": _script(root, "t")}

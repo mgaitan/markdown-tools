@@ -106,7 +106,7 @@ input:focus, textarea:focus { border-bottom-color: #333; }
 }
 
 .button-primary { background: #333; color: #fff; }
-.button:hover, .bookmarklet:hover { opacity: .7; }
+.button:hover { opacity: .7; }
 .button:disabled { cursor: wait; opacity: .55; }
 
 .source-action-field { position: relative; display: flex; flex: 0 0 auto; }
@@ -303,8 +303,7 @@ dialog p { margin: 0 0 22px; color: #666; }
 .bookmarklet-form .button { justify-self: start; margin-top: 12px; }
 .bookmarklet-instructions { max-width: 560px; margin: 28px 0 0; padding-left: 24px; }
 .bookmarklet-instructions li { margin: 10px 0; padding-left: 4px; }
-.bookmarklet-list { display: grid; gap: 16px; margin-top: 36px; }
-.bookmarklet { display: inline-block; width: fit-content; border-bottom: 1px solid #333; padding-bottom: 4px; text-decoration: none; }
+.bookmarklet-list { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
 .note { margin-top: 36px; }
 
 .about-list { margin: 32px 0; padding-left: 24px; }

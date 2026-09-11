@@ -27,13 +27,14 @@
       <h1>Save the bookmarklets</h1>
       <p class="lede">Save these links as browser bookmarks to run them on the page you are reading.</p>
       <ol class="bookmarklet-instructions">
-        <li>Drag either link below onto your browser's bookmarks bar.</li>
+        <li>Drag a link below onto your browser's bookmarks bar.</li>
         <li>Open an article you want to save.</li>
-        <li>Click the bookmark you saved. Markdown opens in a new tab; Telegraph publishes the page and opens it.</li>
+        <li>Click the bookmark you saved.</li>
       </ol>
       <div class="bookmarklet-list">
-        <a class="bookmarklet" href="{{ bookmarklets.markdown }}">Save as Markdown</a>
-        <a class="bookmarklet" href="{{ bookmarklets.telegraph }}">Publish to Telegraph</a>
+        <a class="button button-secondary" href="{{ bookmarklets.markdown }}">Save as Markdown</a>
+        <a class="button button-secondary" href="{{ bookmarklets.edit }}">Edit as markdown</a>
+        <a class="button button-secondary" href="{{ bookmarklets.telegraph }}">Publish to Telegraph</a>
       </div>
       <p class="note">These bookmarklets are permanent: they use the server's Telegraph account without an expiring session key. The bookmarklet sends the current page's HTML directly from your browser, so it can process pages the server cannot access itself, including JavaScript-rendered pages or pages available only to you.</p>
     </main>

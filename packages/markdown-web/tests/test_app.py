@@ -25,7 +25,10 @@ def test_footers_link_to_drafts_before_bookmarklets(template_name: str) -> None:
     assert 'href="/drafts/">Drafts</a>\n      <a href="/bookmarklets/">Bookmarklets</a>' in template
 
 
-@pytest.mark.parametrize(("action", "target"), [("md", "/md"), ("t", "/t/bookmarklet")])
+@pytest.mark.parametrize(
+    ("action", "target"),
+    [("md", "/md"), ("edit", "/bookmarklet/edit"), ("t", "/t/bookmarklet")],
+)
 def test_bookmarklet_capture_receiver_accepts_x_messages(action: str, target: str) -> None:
     response = client.get("/bookmarklet/capture", params={"action": action})
 
@@ -45,6 +48,25 @@ def test_bookmarklet_page_uses_the_public_service_url() -> None:
     assert "https://markdown.fastapicloud.dev/md" in response.text
     assert "https://markdown.fastapicloud.dev/bookmarklet/capture?action=md" in response.text
     assert "http://testserver/md" not in response.text
+
+
+def test_bookmarklet_edit_opens_prepared_markdown(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, SourceRequest] = {}
+
+    def fake_prepare(source: SourceRequest) -> PreparedContent:
+        seen["source"] = source
+        return _prepared("# Edited")
+
+    monkeypatch.setattr(app_module, "prepare_content", fake_prepare)
+    response = client.post(
+        "/bookmarklet/edit",
+        data={"html": "<h1>Source</h1>", "title": "Source title", "source_url": "https://example.com/source"},
+    )
+
+    assert response.status_code == HTTP_200_OK
+    assert seen["source"].html == "<h1>Source</h1>"
+    assert seen["source"].metadata.url == "https://example.com/source"
+    assert 'const sharedMarkdown = "# Edited";' in response.text
 
 
 def _prepared(markdown: str = "# Title\n\nBody") -> PreparedContent:
@@ -867,7 +889,7 @@ def test_bookmarklet_form_does_not_expose_token(monkeypatch: pytest.MonkeyPatch)
     assert "javascript:" in response.text
     assert "secret-token" not in response.text
     assert "Generate bookmarklets" not in response.text
-    assert "Drag either link" in response.text
+    assert "Drag a link" in response.text
 
 
 def test_invalid_post_source_returns_client_error() -> None:
