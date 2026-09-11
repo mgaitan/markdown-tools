@@ -235,6 +235,42 @@ body.editor-fullscreen .editor-expand-button {
 .footer a { margin: 0 4px; }
 .result .text-button { margin-top: 12px; }
 
+.install-prompt {
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  left: max(16px, env(safe-area-inset-left));
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  max-width: calc(100% - 32px);
+  margin: 0 auto;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 8px 8px 8px 14px;
+  color: #24292f;
+  background: #fff;
+  box-shadow: 0 6px 18px rgb(0 0 0 / 14%);
+  font: 600 14px/1 system-ui, sans-serif;
+}
+.install-prompt .button { min-height: 32px; padding: 6px 12px; }
+.install-prompt-close {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border: 0;
+  border-radius: 4px;
+  color: #57606a;
+  background: transparent;
+  font: 22px/1 system-ui, sans-serif;
+  cursor: pointer;
+}
+.install-prompt-close:hover { color: #24292f; background: #f6f8fa; }
+body.editor-fullscreen .install-prompt { display: none; }
+
 dialog { width: min(400px, calc(100% - 40px)); border: 1px solid #ddd; border-radius: 6px; padding: 24px; color: #333; background: #fff; font: 16px/1.5 Georgia, "Times New Roman", serif; }
 dialog::backdrop { background: rgb(0 0 0 / 18%); }
 dialog h2 { margin: 0 0 8px; font-size: 21px; font-weight: 400; }
@@ -274,4 +310,5 @@ pre { overflow-x: auto; margin: 24px 0; border: 1px solid #eee; padding: 16px; f
   .metadata-grid { grid-template-columns: 1fr; }
   .metadata-wide { grid-column: auto; }
   .footer { padding: 0 20px 20px; }
+  .install-prompt { right: max(12px, env(safe-area-inset-right)); left: max(12px, env(safe-area-inset-left)); }
 }

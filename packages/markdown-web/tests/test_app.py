@@ -110,6 +110,10 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
     assert 'rel="manifest" href="/static/manifest.webmanifest"' in response.text
     assert 'navigator.serviceWorker.register("/service-worker.js")' in response.text
+    assert 'id="install-prompt"' in response.text
+    assert 'id="install-button"' in response.text
+    assert 'window.addEventListener("beforeinstallprompt"' in response.text
+    assert "deferredInstallPrompt.prompt()" in response.text
     assert "const sharedMarkdown" in response.text
     assert client.get("/static/favicon.svg").status_code == HTTP_200_OK
     assert client.get("/static/microphone.svg").status_code == HTTP_200_OK

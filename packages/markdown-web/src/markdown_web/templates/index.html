@@ -156,6 +156,12 @@
       <a href="https://github.com/mgaitan/markdown-tools/tree/master/packages/markdown-web">GitHub</a>
     </footer>
 
+    <aside id="install-prompt" class="install-prompt" aria-label="Install Markdown Web" hidden>
+      <span>Install Markdown</span>
+      <button id="install-button" class="button button-primary" type="button">Install</button>
+      <button id="dismiss-install-prompt" class="install-prompt-close" type="button" aria-label="Dismiss install prompt" title="Dismiss">&times;</button>
+    </aside>
+
     <script>
       const form = document.querySelector("#process-form");
       const sourceEntry = document.querySelector("#source-entry");
@@ -188,6 +194,9 @@
       const metadataDialog = document.querySelector("#metadata-dialog");
       const metadataForm = document.querySelector("#metadata-form");
       const expandEditorButton = document.querySelector("#expand-editor");
+      const installPrompt = document.querySelector("#install-prompt");
+      const installButton = document.querySelector("#install-button");
+      const dismissInstallPromptButton = document.querySelector("#dismiss-install-prompt");
       const metadataFields = ["title", "author", "url", "date", "type", "image", "notify_telegram"];
       let currentUrl = "";
       let previewId = "";
@@ -200,11 +209,37 @@
       let sourceAction = "process";
       const DRAFT_KEY = "markdown-web-draft";
       const SOURCE_ACTION_KEY = "markdown-web-source-action";
+      const INSTALL_PROMPT_DISMISS_KEY = "markdown-web-install-prompt-dismissed-at";
+      const INSTALL_PROMPT_DISMISS_MS = 7 * 24 * 60 * 60 * 1000;
       const SOURCE_PLACEHOLDER = "Paste a URL, drop a file or insert markdown content";
       const MARKDOWN_START_RE = /(^\s*(?:#{1,6}\s|>\s|[-*+]\s|\d+\.\s|```|~~~|!\[|\[|\*\*|__))/;
       const sharedMarkdown = {{ shared_markdown | tojson }};
       const sharedLabel = {{ shared_label | tojson }};
       const shareError = {{ share_error | tojson }};
+      let deferredInstallPrompt = null;
+
+      function isInstalledApp() {
+        return window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+      }
+
+      function installPromptWasDismissed() {
+        try {
+          return Date.now() - Number(localStorage.getItem(INSTALL_PROMPT_DISMISS_KEY) || 0) < INSTALL_PROMPT_DISMISS_MS;
+        } catch {
+          return false;
+        }
+      }
+
+      function hideInstallPrompt(remember = false) {
+        installPrompt.hidden = true;
+        if (remember) {
+          try {
+            localStorage.setItem(INSTALL_PROMPT_DISMISS_KEY, String(Date.now()));
+          } catch {
+            // The prompt remains dismissible when storage is unavailable.
+          }
+        }
+      }
 
       function setStatus(message, error = false) {
         status.textContent = message;
@@ -982,6 +1017,23 @@
       document.querySelector("#copy-button").addEventListener("click", async () => {
         await navigator.clipboard.writeText(output.value);
         setStatus("Copied");
+      });
+
+      window.addEventListener("beforeinstallprompt", (event) => {
+        event.preventDefault();
+        deferredInstallPrompt = event;
+        if (!isInstalledApp() && !installPromptWasDismissed()) installPrompt.hidden = false;
+      });
+      installButton.addEventListener("click", async () => {
+        if (!deferredInstallPrompt) return;
+        installPrompt.hidden = true;
+        await deferredInstallPrompt.prompt();
+        deferredInstallPrompt = null;
+      });
+      dismissInstallPromptButton.addEventListener("click", () => hideInstallPrompt(true));
+      window.addEventListener("appinstalled", () => {
+        deferredInstallPrompt = null;
+        hideInstallPrompt();
       });
 
       previewButton.addEventListener("click", async () => {
