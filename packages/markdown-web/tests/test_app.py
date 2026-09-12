@@ -170,7 +170,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
         'name="twitter:image" content="https://markdown.fastapicloud.dev/static/social-card.png?v=2"' in response.text
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
-    assert 'rel="manifest" href="/static/manifest.webmanifest?v=2"' in response.text
+    assert 'rel="manifest" href="/static/manifest.webmanifest?v=3"' in response.text
     assert 'navigator.serviceWorker.register("/service-worker.js?v=3")' in response.text
     assert 'id="install-prompt"' in response.text
     assert 'id="install-button"' in response.text
@@ -185,6 +185,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     manifest = client.get("/static/manifest.webmanifest")
     assert manifest.status_code == HTTP_200_OK
     assert manifest.json()["share_target"]["action"] == "/share"
+    assert "image/*" in manifest.json()["share_target"]["params"]["files"][0]["accept"]
     assert "audio/*" in manifest.json()["share_target"]["params"]["files"][0]["accept"]
     assert "application/pdf" in manifest.json()["share_target"]["params"]["files"][0]["accept"]
     service_worker = client.get("/service-worker.js")

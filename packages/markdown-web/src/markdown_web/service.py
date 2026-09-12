@@ -34,6 +34,8 @@ from md_to_telegraph import (
     split_markdown_pages,
 )
 from md_to_telegraph.markdown import extract_leading_title
+from PIL import Image, ImageOps
+from PIL.Image import UnidentifiedImageError
 from pypdf import PdfReader, PdfWriter
 
 from markdown_web.schemas import SourceMetadata, SourceRequest
@@ -321,12 +323,30 @@ def _is_document_url(url: str) -> bool:
     return suffix in DOCUMENT_EXTENSIONS
 
 
+IMAGE_EXTENSIONS = frozenset({"bmp", "gif", "heic", "heif", "jpeg", "jpg", "png", "tif", "tiff", "webp"})
+
+
+def _image_to_pdf(data: bytes, filename: str) -> bytes:
+    try:
+        with Image.open(io.BytesIO(data)) as source_image:
+            image = ImageOps.exif_transpose(source_image).convert("RGB")
+            output = io.BytesIO()
+            image.save(output, format="PDF")
+            return output.getvalue()
+    except (OSError, UnidentifiedImageError, ValueError) as exc:
+        raise DocumentConversionError(exc) from exc
+
+
 def _convert_document(data: bytes, filename: str) -> str:
     if not data:
         raise EmptyDocumentError
     if len(data) > MAX_DOCUMENT_BYTES:
         raise DocumentTooLargeError
     extension = Path(filename).suffix.lower().lstrip(".")
+    if extension in IMAGE_EXTENSIONS:
+        data = _image_to_pdf(data, filename)
+        filename = f"{Path(filename).stem}.pdf"
+        extension = "pdf"
     document_format = anydoc.format_from_extension(extension) if extension else None
     try:
         markdown = anydoc.to_markdown_bytes(data, document_format)
