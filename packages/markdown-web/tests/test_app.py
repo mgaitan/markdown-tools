@@ -159,6 +159,8 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     assert "function downloadMarkdown()" in response.text
     assert 'id="editor-image-file"' in response.text
     assert 'fetch("/images"' in response.text
+    assert 'fetch("/ocr/images"' in response.text
+    assert "OCR this image" in response.text
     assert 'property="og:title" content="Write, convert, and publish Markdown"' in response.text
     assert (
         'property="og:description" content="Write Markdown, convert web pages and documents, and publish to Telegraph."'
@@ -605,6 +607,23 @@ def test_post_markdown_accepts_html_upload(monkeypatch: pytest.MonkeyPatch) -> N
     assert response.text == "# From HTML file"
     assert seen["source"].html == "<h1>From HTML</h1>"
     assert seen["source"].document is None
+
+
+def test_post_image_ocr_returns_text(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, object] = {}
+
+    def fake_ocr(data: bytes, filename: str) -> str:
+        seen["data"] = data
+        seen["filename"] = filename
+        return "Detected text"
+
+    monkeypatch.setattr(app_module, "ocr_image", fake_ocr)
+
+    response = client.post("/ocr/images", files={"file": ("photo.png", b"image-bytes", "image/png")})
+
+    assert response.status_code == HTTP_200_OK
+    assert response.json() == {"text": "Detected text"}
+    assert seen == {"data": b"image-bytes", "filename": "photo.png"}
 
 
 def test_post_image_upload_returns_public_url(monkeypatch: pytest.MonkeyPatch) -> None:

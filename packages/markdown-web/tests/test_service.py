@@ -1,3 +1,4 @@
+import io
 import json
 from pathlib import Path
 
@@ -6,6 +7,7 @@ import requests
 from markdown_web import service
 from markdown_web.schemas import SourceMetadata, SourceRequest
 from md_to_epub import Chapter
+from PIL import Image
 from pytest_mock import MockerFixture
 
 TEST_PAGE_LIMIT = 80
@@ -147,6 +149,27 @@ def test_prepare_content_accepts_raw_html(mocker: MockerFixture) -> None:
     assert result.title == "HTML title"
     extract.assert_called_once_with("<h1>HTML title</h1>", source_url="https://example.com")
     assert "url: https://example.com" in result.markdown
+
+
+def test_ocr_image_converts_image_to_pdf(monkeypatch: pytest.MonkeyPatch) -> None:
+    seen: dict[str, object] = {}
+
+    monkeypatch.setenv("FIRECRAWL_API_KEY", "firecrawl-key")
+
+    def fake_convert(data: bytes, filename: str) -> str:
+        seen["data"] = data
+        seen["filename"] = filename
+        return "Detected text"
+
+    monkeypatch.setattr(service, "_convert_pdf_with_hosted_ocr", fake_convert)
+    image_data = io.BytesIO()
+    Image.new("RGB", (1, 1), "white").save(image_data, format="PNG")
+
+    result = service.ocr_image(image_data.getvalue(), "photo.png")
+
+    assert result == "Detected text"
+    assert seen["data"].startswith(b"%PDF")
+    assert seen["filename"] == "photo.pdf"
 
 
 def test_prepare_content_converts_uploaded_document(monkeypatch: pytest.MonkeyPatch) -> None:

@@ -34,6 +34,8 @@ from md_to_telegraph import (
     split_markdown_pages,
 )
 from md_to_telegraph.markdown import extract_leading_title
+from PIL import Image, ImageOps
+from PIL.Image import UnidentifiedImageError
 from pypdf import PdfReader, PdfWriter
 
 from markdown_web.schemas import SourceMetadata, SourceRequest
@@ -319,6 +321,29 @@ def _require_source(request: SourceRequest) -> str:
 def _is_document_url(url: str) -> bool:
     suffix = Path(urlparse(url).path).suffix.lower().lstrip(".")
     return suffix in DOCUMENT_EXTENSIONS
+
+
+IMAGE_EXTENSIONS = frozenset({"bmp", "gif", "heic", "heif", "jpeg", "jpg", "png", "tif", "tiff", "webp"})
+
+
+def _image_to_pdf(data: bytes) -> bytes:
+    try:
+        with Image.open(io.BytesIO(data)) as source_image:
+            image = ImageOps.exif_transpose(source_image).convert("RGB")
+            output = io.BytesIO()
+            image.save(output, format="PDF")
+            return output.getvalue()
+    except (OSError, UnidentifiedImageError, ValueError) as exc:
+        raise DocumentConversionError(exc) from exc
+
+
+def ocr_image(data: bytes, filename: str) -> str:
+    """Extract text from an uploaded image through the configured OCR fallback."""
+    if not os.getenv("FIRECRAWL_API_KEY"):
+        raise DocumentConversionError(RuntimeError("Image OCR requires FIRECRAWL_API_KEY"))
+    pdf = _image_to_pdf(data)
+    pdf_filename = f"{Path(filename).stem or 'image'}.pdf"
+    return _convert_pdf_with_hosted_ocr(pdf, pdf_filename)
 
 
 def _convert_document(data: bytes, filename: str) -> str:

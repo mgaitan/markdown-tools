@@ -106,6 +106,10 @@
             </div>
           </section>
           <p id="status" class="status" role="status"></p>
+          <label id="image-ocr-option" class="image-ocr-option" hidden>
+            <input id="ocr-image-checkbox" type="checkbox">
+            OCR this image
+          </label>
         </form>
       </section>
     </main>
@@ -196,6 +200,8 @@
       const toolbarRecordButton = document.querySelector("#toolbar-record-button");
       const sourceLabel = document.querySelector("#result-source");
       const status = document.querySelector("#status");
+      const imageOcrOption = document.querySelector("#image-ocr-option");
+      const ocrImageCheckbox = document.querySelector("#ocr-image-checkbox");
       const publishStatus = document.querySelector("#publish-status");
       const publishButton = document.querySelector("#submit-publish");
       const previewButton = document.querySelector("#preview-button");
@@ -604,6 +610,8 @@
         imageUploading = true;
         previewButton.disabled = true;
         publishButton.disabled = true;
+        imageOcrOption.hidden = false;
+        ocrImageCheckbox.checked = false;
         setStatus("Uploading image…");
         try {
           const data = new FormData();
@@ -611,12 +619,27 @@
           const response = await fetch("/images", {method: "POST", body: data});
           if (!response.ok) throw new Error(await responseError(response, "Image upload failed"));
           const result = await response.json();
+          let ocrText = "";
+          let ocrError = "";
+          if (ocrImageCheckbox.checked) {
+            setStatus("OCR image…");
+            try {
+              const ocrData = new FormData();
+              ocrData.append("file", file);
+              const ocrResponse = await fetch("/ocr/images", {method: "POST", body: ocrData});
+              if (!ocrResponse.ok) throw new Error(await responseError(ocrResponse, "Image OCR failed"));
+              ocrText = (await ocrResponse.json()).text || "";
+            } catch (error) {
+              ocrError = error.message;
+            }
+          }
+          const imageMarkdown = `![](${result.url})${ocrText ? `\\n\\n${ocrText}` : ""}`;
           if (publishAfterUpload) {
             const response = await fetch("/t", {
               method: "POST",
               headers: {"Content-Type": "application/json"},
               body: JSON.stringify({
-                markdown: `![](${result.url})`,
+                markdown: imageMarkdown,
                 metadata: {title: file.name || "Image"}
               })
             });
@@ -629,13 +652,16 @@
           } else if (insertAtCursor) {
             if (previewing) setPreviewMode(false);
             insertImage(result.url);
+            if (ocrText) insertTranscription(ocrText);
           } else {
-            showMarkdownEditor(`![](${result.url})`, file.name || "Pasted image");
+            showMarkdownEditor(imageMarkdown, file.name || "Pasted image");
           }
-          setStatus("");
+          setStatus(ocrError, Boolean(ocrError));
         } catch (error) {
           setStatus(error.message, true);
         } finally {
+          imageOcrOption.hidden = true;
+          ocrImageCheckbox.checked = false;
           imageUploading = false;
           previewButton.disabled = false;
           publishButton.disabled = false;

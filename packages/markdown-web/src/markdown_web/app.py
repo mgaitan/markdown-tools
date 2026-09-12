@@ -37,6 +37,7 @@ from markdown_web.service import (
     build_epub_content,
     fetch_telegraph_preview,
     list_published_pages,
+    ocr_image,
     prepare_content,
     preview_content,
     publish_content,
@@ -454,6 +455,23 @@ async def image_upload(request: Request) -> JSONResponse:
     except Exception as exc:
         raise _handle_image_error(exc) from exc
     return JSONResponse({"url": target})
+
+
+@app.post("/ocr/images", response_model=TranscriptionResponse)
+async def image_ocr(request: Request) -> JSONResponse:
+    content_type = request.headers.get("content-type", "").split(";", 1)[0]
+    if content_type != "multipart/form-data":
+        raise HTTPException(status_code=415, detail="Upload an image as multipart form data")
+    form = await request.form()
+    upload = form.get("file")
+    if not isinstance(upload, UploadFile):
+        raise HTTPException(status_code=400, detail="Include an image in the file field")
+    data = await upload.read(assets.MAX_IMAGE_UPLOAD_BYTES + 1)
+    try:
+        text = await run_in_threadpool(ocr_image, data, upload.filename or "image")
+    except Exception as exc:
+        raise _handle_source_error(exc) from exc
+    return JSONResponse({"text": text})
 
 
 @app.post("/transcriptions", response_model=TranscriptionResponse, openapi_extra=_transcription_openapi())

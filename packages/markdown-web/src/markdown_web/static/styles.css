@@ -306,6 +306,8 @@ dialog p { margin: 0 0 22px; color: #666; }
 .bookmarklet-list { display: grid; gap: 12px; margin-top: 36px; }
 .bookmarklet-list a { justify-self: start; }
 .note { margin-top: 36px; }
+.image-ocr-option { display: inline-flex; align-items: center; gap: 6px; margin-top: 4px; color: #666; font-size: 14px; }
+.image-ocr-option input { width: auto; }
 
 .about-list { margin: 32px 0; padding-left: 24px; }
 .about-list li { margin: 14px 0; padding-left: 4px; }
