@@ -4246,5 +4246,11 @@
     "article_link": "https://www.rubyhack.ai/",
     "discussion_link": "https://lobste.rs/s/wajtsa/openai_agents_carried_out_undisclosed",
     "title": "OpenAI agents carried out an undisclosed attack on RubyGems"
+  },
+  "@lobstersgram:717": {
+    "telegraph_link": "https://telegra.ph/Pandas-Should-Go-Extinct--Eddies-Blog-09-12-2",
+    "article_link": "https://eddie.codes/posts/pandas-should-go-extinct/",
+    "discussion_link": "https://lobste.rs/s/imdwmj/pandas_should_go_extinct",
+    "title": "Pandas Should Go Extinct"
   }
 }
