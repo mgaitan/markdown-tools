@@ -141,7 +141,10 @@ def _x_post_html(node: Tag) -> str:
         ):
             link.string = f"@{handle}"
 
-    parts = [str(text)]
+    for block in text.find_all(["div", "p"]):
+        block.unwrap()
+    text_html = re.sub(r">\s+<", "><", str(text))
+    parts = [text_html]
     images = list(node.select('[data-testid="tweetPhoto"] img'))
     images.extend(image for link in node.select('a[href*="/status/"][href*="/photo/"]') if (image := link.find("img")))
     parts.extend(str(image) for image in dict.fromkeys(images))

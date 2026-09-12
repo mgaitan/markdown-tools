@@ -87,7 +87,11 @@ def test_current_x_markup_keeps_only_thread_text() -> None:
       <article>
         <img src="https://pbs.twimg.com/profile_images/alice.jpg" alt="@alice">
         <a href="https://x.com/alice">Alice</a><a href="/alice/status/1001">4 September</a>
-        <div dir="auto">First current post with <a href="https://example.org/source">a source</a> and <a href="https://x.com/FastAPIcloud">https://x.com/FastAPIcloud</a>.</div>
+        <div dir="auto">
+          First current post with <a href="https://example.org/source">a source</a>
+          and <a href="https://x.com/FastAPIcloud"><span>https://x.com/FastAPIcloud</span></a>
+          for the hosting.
+        </div>
         <a href="https://t.co/card"><img src="https://pbs.twimg.com/card_img/preview.jpg" alt="Card preview"></a>
         <a href="/alice/status/1001">500 Views</a><button>Reply Repost Like</button>
       </article>
@@ -107,6 +111,7 @@ def test_current_x_markup_keeps_only_thread_text() -> None:
     markdown = extract_main_content(html, source_url="https://x.com/alice/status/1001")[1]
     assert "[@FastAPIcloud](https://x.com/FastAPIcloud)" in markdown
     assert "[@https://x.com/FastAPIcloud]" not in markdown
+    assert "[@FastAPIcloud](https://x.com/FastAPIcloud)\n\nfor" not in markdown
     for noise in ["profile_images", "Card preview", "500 Views", "Reply Repost Like", "4 September"]:
         assert noise not in result
 
