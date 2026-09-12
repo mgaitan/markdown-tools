@@ -4300,5 +4300,23 @@
     "article_link": "https://elijahpotter.dev/articles/useful-things-agents-can-do-that-are-not-writing-code",
     "discussion_link": "https://lobste.rs/s/ub8q3s/useful_things_agents_can_do_are_not",
     "title": "Useful Things Agents Can Do That Are Not Writing Code"
+  },
+  "@lobstersgram:726": {
+    "telegraph_link": "https://telegra.ph/prydts-site-09-12-2",
+    "article_link": "https://prydt.xyz/blog/a-few-good-ideas-in-pl/",
+    "discussion_link": "https://lobste.rs/s/er0hfp/few_good_ideas_programming_languages",
+    "title": "A Few Good Ideas in Programming Languages"
+  },
+  "@lobstersgram:727": {
+    "telegraph_link": "https://telegra.ph/Fuck-it-make-it-anyway--Joel-Auterson-09-12-2",
+    "article_link": "https://www.joelotter.com/posts/2026/09/make-it-anyway/",
+    "discussion_link": "https://lobste.rs/s/1hpzyz/make_it_anyway",
+    "title": "Make it anyway"
+  },
+  "@lobstersgram:728": {
+    "telegraph_link": "https://telegra.ph/iterate-think-thoughts-Managing-Complex-Application-State-with-Reactive-Data-Flows-09-12",
+    "article_link": "https://yogthos.net/posts/2026-09-12-reactive-dataflow.html",
+    "discussion_link": "https://lobste.rs/s/co3jkg/managing_complex_application_state_with",
+    "title": "Managing Complex Application State with Reactive Data Flows"
   }
 }
