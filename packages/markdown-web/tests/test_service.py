@@ -159,28 +159,6 @@ def test_prepare_content_converts_uploaded_document(monkeypatch: pytest.MonkeyPa
     assert result.fallback_text == "Report\n\nBody"
 
 
-def test_prepare_content_converts_shared_image_for_ocr(monkeypatch: pytest.MonkeyPatch) -> None:
-    seen: dict[str, object] = {}
-
-    def fake_image_to_pdf(data: bytes, filename: str) -> bytes:
-        seen["image"] = (data, filename)
-        return b"pdf"
-
-    monkeypatch.setattr(service, "_image_to_pdf", fake_image_to_pdf)
-    monkeypatch.setattr(service, "_convert_pdf_with_hosted_ocr", lambda data, filename: "# OCR\n\nRecovered text")
-    monkeypatch.setattr(
-        service.anydoc,
-        "to_markdown_bytes",
-        lambda _data, _format: (_ for _ in ()).throw(service.anydoc.UnsupportedError("pages 1 of 1 need OCR")),
-    )
-    monkeypatch.setenv("FIRECRAWL_API_KEY", "firecrawl-key")
-
-    result = service.prepare_content(SourceRequest(document=b"image", filename="photo.jpg"))
-
-    assert seen["image"] == (b"image", "photo.jpg")
-    assert "Recovered text" in result.markdown
-
-
 def test_prepare_content_downloads_document_url(monkeypatch: pytest.MonkeyPatch) -> None:
     class FakeResponse:
         content = b"document"

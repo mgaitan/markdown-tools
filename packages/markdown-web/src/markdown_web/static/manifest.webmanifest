@@ -34,7 +34,6 @@
         {
           "name": "file",
           "accept": [
-            "image/*",
             "audio/*",
             ".flac",
             ".m4a",
