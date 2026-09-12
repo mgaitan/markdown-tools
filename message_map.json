@@ -4318,5 +4318,35 @@
     "article_link": "https://yogthos.net/posts/2026-09-12-reactive-dataflow.html",
     "discussion_link": "https://lobste.rs/s/co3jkg/managing_complex_application_state_with",
     "title": "Managing Complex Application State with Reactive Data Flows"
+  },
+  "@lobstersgram:729": {
+    "telegraph_link": "https://telegra.ph/Microcode-in-Intels-8087-floating-point-chip-the-scale-instruction-09-12-3",
+    "article_link": "https://www.righto.com/2026/09/8087-microcode-reverse-engineering-fscale.html",
+    "discussion_link": "https://lobste.rs/s/6xdgjr/microcode_intel_s_8087_floating_point",
+    "title": "Microcode in Intel's 8087 floating-point chip: the scale instruction"
+  },
+  "@lobstersgram:730": {
+    "telegraph_link": "https://telegra.ph/Optimizing-a-single-Rust-Clippy-lint-by-3133X--BLOGGOOSELOVE-09-12",
+    "article_link": "https://blog.goose.love/posts/making-a-clippy-lint-faster-by-3133x/",
+    "discussion_link": "https://lobste.rs/s/jtmyg2/optimizing_single_rust_clippy_lint_by",
+    "title": "Optimizing a single Rust Clippy lint by 3133X"
+  },
+  "@lobstersgram:731": {
+    "telegraph_link": "https://telegra.ph/The-gpgfail-aftermath-On-responsible-disclosure-GPG-and-the-state-of-security-in-2026---mediacccde-09-12",
+    "article_link": "https://media.ccc.de/v/2026-728-the-gpg-fail-aftermath-on-responsible-disclosure-gpg-and-the-state-of-security-in-2026",
+    "discussion_link": "https://lobste.rs/s/fcttpk/gpg_fail_aftermath_on_responsible",
+    "title": "The gpg.fail aftermath: On responsible disclosure, GPG, and the state of security in 2026 [32:37]"
+  },
+  "@lobstersgram:732": {
+    "telegraph_link": "https://telegra.ph/Base84-deserves-a-place-in-file-names---Frank-DENIS-random-thoughts-09-12",
+    "article_link": "https://00f.net/2026/09/09/base84/",
+    "discussion_link": "https://lobste.rs/s/bfiose/base84_deserves_place_file_names",
+    "title": "Base84 deserves a place in file names"
+  },
+  "@lobstersgram:733": {
+    "telegraph_link": "https://telegra.ph/I-made-a-build-visualizer-to-understand-Buns-compile-times---Lalit-Maganti-09-12-2",
+    "article_link": "https://lalitm.com/post/buildprof/",
+    "discussion_link": "https://lobste.rs/s/qsrjs2/i_made_build_visualizer_understand_bun_s",
+    "title": "I made a build visualizer to understand Bun’s compile times"
   }
 }
