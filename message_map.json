@@ -4270,5 +4270,35 @@
     "article_link": "https://github.com/sinelaw/fresh",
     "discussion_link": "https://lobste.rs/s/yhfmtx/fresh_terminal_based_ide_text_editor_easy",
     "title": "fresh: Terminal based IDE & text editor: easy, powerful and fast"
+  },
+  "@lobstersgram:721": {
+    "telegraph_link": "https://telegra.ph/Solod-04-Better-C-interop-09-12-2",
+    "article_link": "https://antonz.org/solod-0.4/",
+    "discussion_link": "https://lobste.rs/s/oz5ju3/solod_0_4_better_c_interop",
+    "title": "Solod 0.4: Better C interop"
+  },
+  "@lobstersgram:722": {
+    "telegraph_link": "https://telegra.ph/Logo-Programming-Language-09-12",
+    "article_link": "https://el.media.mit.edu/logo-foundation/what_is_logo/logo_programming.html",
+    "discussion_link": "https://lobste.rs/s/oh5hqw/logo_programming_language",
+    "title": "Logo Programming Language"
+  },
+  "@lobstersgram:723": {
+    "telegraph_link": "https://telegra.ph/Why-Do-Companies-Stop-Using-Haskell--Vaibhav-Sagar--ZuriHac-2026-09-12",
+    "article_link": "https://www.youtube.com/watch?v=2PebXEak24M",
+    "discussion_link": "https://lobste.rs/s/pwoxht/why_do_companies_stop_using_haskell",
+    "title": "Why do companies stop using Haskell?"
+  },
+  "@lobstersgram:724": {
+    "telegraph_link": "https://telegra.ph/ipythonxkcd-font--The-xkcd-font-09-12",
+    "article_link": "https://github.com/ipython/xkcd-font",
+    "discussion_link": "https://lobste.rs/s/o6rlho/xkcd_font_xkcd_font",
+    "title": "xkcd-font: The xkcd font"
+  },
+  "@lobstersgram:725": {
+    "telegraph_link": "https://telegra.ph/Useful-Things-Agents-Can-Do-That-Are-Not-Writing-Code-09-12",
+    "article_link": "https://elijahpotter.dev/articles/useful-things-agents-can-do-that-are-not-writing-code",
+    "discussion_link": "https://lobste.rs/s/ub8q3s/useful_things_agents_can_do_are_not",
+    "title": "Useful Things Agents Can Do That Are Not Writing Code"
   }
 }
