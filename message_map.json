@@ -4234,5 +4234,17 @@
     "article_link": "https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/",
     "discussion_link": "https://lobste.rs/s/xsbz3l/severe_misalignment_ai_mathematics",
     "title": "A Severe Misalignment of AI in Mathematics"
+  },
+  "@lobstersgram:715": {
+    "telegraph_link": "https://telegra.ph/Tutorial-for-Septabee-a-free-DAW-Ive-secretly-been-making-for-over-20000-hours-09-12",
+    "article_link": "https://www.youtube.com/watch?v=lW8Z98pXuSE",
+    "discussion_link": "https://lobste.rs/s/esgot3/tutorial_for_septabee_free_daw_making_for",
+    "title": "Tutorial for Septabee, a free DAW in the making for over 20,000 hours"
+  },
+  "@lobstersgram:716": {
+    "telegraph_link": "https://telegra.ph/OpenAI-agents-carried-out-an-undisclosed-attack-on-RubyGems-09-12-5",
+    "article_link": "https://www.rubyhack.ai/",
+    "discussion_link": "https://lobste.rs/s/wajtsa/openai_agents_carried_out_undisclosed",
+    "title": "OpenAI agents carried out an undisclosed attack on RubyGems"
   }
 }
