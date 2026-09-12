@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 import urllib.parse
 from collections.abc import Iterable
 from dataclasses import dataclass
@@ -127,6 +128,18 @@ def _x_post_html(node: Tag) -> str:
     text = node.select_one('[data-testid="tweetText"]') or node.select_one('div[dir="auto"]') or node.find("p")
     if text is None:
         return ""
+
+    for link in text.select("a[href]"):
+        visible = link.get_text(strip=True)
+        parsed = urllib.parse.urlparse(urllib.parse.urljoin("https://x.com", str(link["href"])))
+        host = (parsed.hostname or "").removeprefix("www.").removeprefix("m.")
+        handle = parsed.path.strip("/")
+        if (
+            visible.startswith(("http://", "https://"))
+            and _host_matches(host, ("x.com", "twitter.com"))
+            and re.fullmatch(r"[A-Za-z0-9_]{1,15}", handle)
+        ):
+            link.string = f"@{handle}"
 
     parts = [str(text)]
     images = list(node.select('[data-testid="tweetPhoto"] img'))

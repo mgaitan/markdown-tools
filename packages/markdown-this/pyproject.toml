@@ -1,6 +1,6 @@
 [project]
 name = "markdown-this"
-version = "0.1.12"
+version = "0.1.13"
 description = "Extract web pages and supported special URLs as Markdown"
 readme = "README.md"
 authors = [{ name = "Martín Gaitán", email = "gaitan@gmail.com" }]
