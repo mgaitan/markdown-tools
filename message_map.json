@@ -4414,5 +4414,35 @@
     "article_link": "https://rm4n0s.github.io/posts/2-go-devs-should-learn-odin/",
     "discussion_link": "https://lobste.rs/s/ytc27d/golang_developers_should_try_odin",
     "title": "Golang developers should try Odin"
+  },
+  "@lobstersgram:745": {
+    "telegraph_link": "https://telegra.ph/Nobody-pays-for-open-source-We-can-force-them-to--Seldocom-09-13",
+    "article_link": "https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/",
+    "discussion_link": "https://lobste.rs/s/oqkml5/nobody_pays_for_open_source_we_can_force",
+    "title": "Nobody pays for open source. We can force them to"
+  },
+  "@lobstersgram:746": {
+    "telegraph_link": "https://telegra.ph/Sorry-Wrong-Number-Debugging-a-Crash-under-Wine-09-13",
+    "article_link": "https://blog.jchw.dev/wrong-number/",
+    "discussion_link": "https://lobste.rs/s/sr1qmw/sorry_wrong_number_debugging_crash_under",
+    "title": "Sorry, Wrong Number: Debugging a Crash under Wine (2022)"
+  },
+  "@lobstersgram:747": {
+    "telegraph_link": "https://telegra.ph/Ori-Bernstein---GEFS-The-File-Shredder-of-the-Future---Exquisitetube-09-13",
+    "article_link": "https://exquisite.tube/w/3QQimMdswWJxrsPaJtak2u",
+    "discussion_link": "https://lobste.rs/s/vxkb8z/gefs_file_shredder_future",
+    "title": "GEFS: The File Shredder of the Future"
+  },
+  "@lobstersgram:748": {
+    "telegraph_link": "https://telegra.ph/homelucioalbengaes---From-Git-to-Fossil-09-13-3",
+    "article_link": "https://lucio.albenga.es/web-en/posts/2025/from-git-to-fossil.html",
+    "discussion_link": "https://lobste.rs/s/pomjkm/from_git_fossil_2025",
+    "title": "From Git to Fossil (2025)"
+  },
+  "@lobstersgram:749": {
+    "telegraph_link": "https://telegra.ph/Dont-call-yourself-an-artisanal-programmer--purplesyringas-blog-09-13-2",
+    "article_link": "https://purplesyringa.moe/blog/dont-call-yourself-an-artisanal-programmer/",
+    "discussion_link": "https://lobste.rs/s/dmlzwx/don_t_call_yourself_artisanal_programmer",
+    "title": "Don't call yourself an artisanal programmer"
   }
 }
