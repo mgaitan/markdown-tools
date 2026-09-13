@@ -4348,5 +4348,17 @@
     "article_link": "https://lalitm.com/post/buildprof/",
     "discussion_link": "https://lobste.rs/s/qsrjs2/i_made_build_visualizer_understand_bun_s",
     "title": "I made a build visualizer to understand Bun’s compile times"
+  },
+  "@lobstersgram:734": {
+    "telegraph_link": "https://telegra.ph/a-better-way-of-blocking-macOS-updates-09-13",
+    "article_link": "https://zoey-on-github.github.io/blog/updates.html",
+    "discussion_link": "https://lobste.rs/s/betbip/better_way_blocking_macos_updates",
+    "title": "a better way of blocking macOS updates"
+  },
+  "@lobstersgram:735": {
+    "telegraph_link": "https://telegra.ph/Everyone-should-slow-down-AI-development-except-for-me---Xe-Iaso-09-13",
+    "article_link": "https://xeiaso.net/notes/2026/everyone-slowdown-but-me/",
+    "discussion_link": "https://lobste.rs/s/fmkm3v/everyone_should_slow_down_ai_development",
+    "title": "Everyone should slow down AI development except for me"
   }
 }
