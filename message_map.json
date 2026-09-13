@@ -4372,5 +4372,29 @@
     "article_link": "https://exquisite.tube/w/nQbc54t4G7YGaqiryZ7mg1",
     "discussion_link": "https://lobste.rs/s/pbmvov/night_142_my_servers_went_up_clouds",
     "title": "The night 142 of my servers went up in the clouds Physically"
+  },
+  "@lobstersgram:738": {
+    "telegraph_link": "https://telegra.ph/Homebrew-700-09-13-9",
+    "article_link": "https://brew.sh/2026/09/13/homebrew-7.0.0/",
+    "discussion_link": "https://lobste.rs/s/vmapye/homebrew_7_0_0",
+    "title": "Homebrew 7.0.0"
+  },
+  "@lobstersgram:739": {
+    "telegraph_link": "https://telegra.ph/Being-lazy-in-C---CPP-Rendering---Antoine-MORRIER-09-13",
+    "article_link": "https://cpp-rendering.io/being-lazy-in-c/",
+    "discussion_link": "https://lobste.rs/s/mdvpm4/being_lazy_c",
+    "title": "Being lazy in C++"
+  },
+  "@lobstersgram:740": {
+    "telegraph_link": "https://telegra.ph/After-Math--Whats-new-09-13-2",
+    "article_link": "https://terrytao.wordpress.com/2026/09/12/after-math/",
+    "discussion_link": "https://lobste.rs/s/ojls0p/after_math",
+    "title": "After Math"
+  },
+  "@lobstersgram:741": {
+    "telegraph_link": "https://telegra.ph/Can-a-regex-match-valid-card-numbers--Abstract-Nonsense-09-13",
+    "article_link": "https://abstractnonsense.xyz/blog/2025-08-31-can-a-regex-match-valid-card-numbers/",
+    "discussion_link": "https://lobste.rs/s/8fqdvr/can_regex_match_valid_card_numbers",
+    "title": "Can a regex match valid card numbers?"
   }
 }
