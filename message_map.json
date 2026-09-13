@@ -4396,5 +4396,23 @@
     "article_link": "https://abstractnonsense.xyz/blog/2025-08-31-can-a-regex-match-valid-card-numbers/",
     "discussion_link": "https://lobste.rs/s/8fqdvr/can_regex_match_valid_card_numbers",
     "title": "Can a regex match valid card numbers?"
+  },
+  "@lobstersgram:742": {
+    "telegraph_link": "https://telegra.ph/The-EDSAC-Film-09-13",
+    "article_link": "https://www.youtube.com/watch?v=DjhRRj6WYcs",
+    "discussion_link": "https://lobste.rs/s/m6rdhi/edsac_film_1951_1976",
+    "title": "The Edsac Film (1951, 1976)"
+  },
+  "@lobstersgram:743": {
+    "telegraph_link": "https://telegra.ph/Stabilizing-Rusts-never-type-LWNnet-09-13",
+    "article_link": "https://lwn.net/SubscriberLink/1091015/d9e48318ed242b41/",
+    "discussion_link": "https://lobste.rs/s/felv2m/stabilizing_rust_s_never_type",
+    "title": "Stabilizing Rust's never type"
+  },
+  "@lobstersgram:744": {
+    "telegraph_link": "https://telegra.ph/Golang-developers-should-try-Odin--RManos-Blog-09-13",
+    "article_link": "https://rm4n0s.github.io/posts/2-go-devs-should-learn-odin/",
+    "discussion_link": "https://lobste.rs/s/ytc27d/golang_developers_should_try_odin",
+    "title": "Golang developers should try Odin"
   }
 }
