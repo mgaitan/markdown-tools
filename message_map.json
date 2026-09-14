@@ -4474,5 +4474,29 @@
     "article_link": "https://evanhahn.com/posts/2026-09-13-programmers-dislike-reduce/",
     "discussion_link": "https://lobste.rs/s/dhn991/anecdotally_programmers_dislike_reduce",
     "title": "Anecdotally, programmers dislike \"reduce\""
+  },
+  "@lobstersgram:755": {
+    "telegraph_link": "https://telegra.ph/Who-Gets-to-Define-the-Rules-for-AI--Cohere-09-14-2",
+    "article_link": "https://cohere.com/blog/who-gets-to-define-the-rules-for-ai",
+    "discussion_link": "https://lobste.rs/s/c88k8e/who_gets_define_rules_for_ai",
+    "title": "Who Gets to Define the Rules for AI?"
+  },
+  "@lobstersgram:756": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-week--Lobsters-09-14",
+    "article_link": "https://lobste.rs/s/0inlyw/what_are_you_doing_this_week",
+    "discussion_link": "https://lobste.rs/s/0inlyw/what_are_you_doing_this_week",
+    "title": "What are you doing this week?"
+  },
+  "@lobstersgram:757": {
+    "telegraph_link": "https://telegra.ph/Why-is-the-x86-undefined-instruction-called-ud2-Why-2---The-Old-New-Thing-09-14",
+    "article_link": "https://devblogs.microsoft.com/oldnewthing/20260910-00/?p=112689",
+    "discussion_link": "https://lobste.rs/s/zbb37v/why_is_x86_undefined_instruction_called",
+    "title": "Why is the x86 undefined instruction called ud2? Why 2?"
+  },
+  "@lobstersgram:758": {
+    "telegraph_link": "https://telegra.ph/what-if-my-git-host-were-a-static-site-generator---charlotte-09-14-2",
+    "article_link": "https://char.lt/blog/2026/09/sorcery-repo-viewer/",
+    "discussion_link": "https://lobste.rs/s/6syfar/what_if_my_git_host_were_static_site",
+    "title": "what if my git host were a static site generator?"
   }
 }
