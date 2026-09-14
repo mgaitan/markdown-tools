@@ -4498,5 +4498,35 @@
     "article_link": "https://char.lt/blog/2026/09/sorcery-repo-viewer/",
     "discussion_link": "https://lobste.rs/s/6syfar/what_if_my_git_host_were_static_site",
     "title": "what if my git host were a static site generator?"
+  },
+  "@lobstersgram:759": {
+    "telegraph_link": "https://telegra.ph/What-blog-posts-influenced-your-thinking-the-most--Lobsters-09-14",
+    "article_link": "https://lobste.rs/s/lbavmm/what_blog_posts_influenced_your_thinking",
+    "discussion_link": "https://lobste.rs/s/lbavmm/what_blog_posts_influenced_your_thinking",
+    "title": "What blog posts influenced your thinking the most?"
+  },
+  "@lobstersgram:760": {
+    "telegraph_link": "https://telegra.ph/There-are-only-twelve-4x4-sudokus---and-a-cool-trick-for-finding-minimal-subsets--baldinodev-09-14",
+    "article_link": "https://baldino.dev/blog/there-are-only-twelve-4x4-sudokus/",
+    "discussion_link": "https://lobste.rs/s/ccnirb/there_are_only_twelve_4x4_sudokus_cool",
+    "title": "There are only twelve 4x4 sudokus - and a cool trick for finding minimal subsets"
+  },
+  "@lobstersgram:761": {
+    "telegraph_link": "https://telegra.ph/Sticking-Functions-Where-They-Donʼt-Belong-09-14-2",
+    "article_link": "https://blog.veritates.love/functions-as-data",
+    "discussion_link": "https://lobste.rs/s/y2n9bq/sticking_functions_where_they_don_t",
+    "title": "Sticking Functions Where They Donʼt Belong"
+  },
+  "@lobstersgram:762": {
+    "telegraph_link": "https://telegra.ph/why-am-I-still-programming-09-14",
+    "article_link": "https://www.youtube.com/watch?v=pOAj3mor8y8",
+    "discussion_link": "https://lobste.rs/s/gud12o/why_am_i_still_programming",
+    "title": "Why Am I Still Programming"
+  },
+  "@lobstersgram:763": {
+    "telegraph_link": "https://telegra.ph/Finished-aerial-maps-in-under-30-minutes-09-14",
+    "article_link": "https://blog.zm.is/finished-aerial-maps-within-30-minutes/",
+    "discussion_link": "https://lobste.rs/s/da7fcv/finished_aerial_maps_under_30_minutes",
+    "title": "Finished aerial maps in under 30 minutes"
   }
 }
