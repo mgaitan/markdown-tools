@@ -4444,5 +4444,35 @@
     "article_link": "https://purplesyringa.moe/blog/dont-call-yourself-an-artisanal-programmer/",
     "discussion_link": "https://lobste.rs/s/dmlzwx/don_t_call_yourself_artisanal_programmer",
     "title": "Don't call yourself an artisanal programmer"
+  },
+  "@lobstersgram:750": {
+    "telegraph_link": "https://telegra.ph/Purely-Functional-Operating-Systems-eighty-twenty-news-09-14-2",
+    "article_link": "https://eighty-twenty.org/2022/06/23/henderson-functional-operating-systems-1982",
+    "discussion_link": "https://lobste.rs/s/jlmeib/purely_functional_operating_systems",
+    "title": "Purely Functional Operating Systems"
+  },
+  "@lobstersgram:751": {
+    "telegraph_link": "https://telegra.ph/The-case-against-JPEG-XL--Gianni-Rosato-09-14-2",
+    "article_link": "https://giannirosato.com/blog/post/case-against-jxl/",
+    "discussion_link": "https://lobste.rs/s/e1lcnf/case_against_jpeg_xl",
+    "title": "The case against JPEG XL"
+  },
+  "@lobstersgram:752": {
+    "telegraph_link": "https://telegra.ph/Writing-a-Guix-service-from-scratch-as-a-beginner---Aloys-corner-09-14",
+    "article_link": "https://aloysberger.com/posts/writing-a-guix-service-from-scratch-as-a-beginner.html",
+    "discussion_link": "https://lobste.rs/s/f4arrs/writing_guix_service_from_scratch_as",
+    "title": "Writing a Guix service from scratch, as a beginner"
+  },
+  "@lobstersgram:753": {
+    "telegraph_link": "https://telegra.ph/Switching-to-GNU-Guix-A-Beginners-Perspective---Wai-Hons-Blog-09-14",
+    "article_link": "https://whhone.com/posts/switching-to-gnu-guix/",
+    "discussion_link": "https://lobste.rs/s/loapzc/switching_gnu_guix_beginner_s",
+    "title": "Switching to GNU Guix: A Beginner's Perspective"
+  },
+  "@lobstersgram:754": {
+    "telegraph_link": "https://telegra.ph/Anecdotally-programmers-dislike-reduce-09-14-2",
+    "article_link": "https://evanhahn.com/posts/2026-09-13-programmers-dislike-reduce/",
+    "discussion_link": "https://lobste.rs/s/dhn991/anecdotally_programmers_dislike_reduce",
+    "title": "Anecdotally, programmers dislike \"reduce\""
   }
 }
