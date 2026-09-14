@@ -4528,5 +4528,29 @@
     "article_link": "https://blog.zm.is/finished-aerial-maps-within-30-minutes/",
     "discussion_link": "https://lobste.rs/s/da7fcv/finished_aerial_maps_under_30_minutes",
     "title": "Finished aerial maps in under 30 minutes"
+  },
+  "@lobstersgram:764": {
+    "telegraph_link": "https://telegra.ph/How-I-use-a-single-zshrc-file-on-macOS-and-Windows-WSL2-09-14",
+    "article_link": "https://talkoren.com/blog/single-zshrc-macos-windows-wsl2/",
+    "discussion_link": "https://lobste.rs/s/9ukost/how_i_use_single_zshrc_file_on_macos",
+    "title": "How I use a single .zshrc file on macOS and Windows (WSL2)"
+  },
+  "@lobstersgram:765": {
+    "telegraph_link": "https://telegra.ph/How-my-e-reader-lost-its-stripes--teideal-glic-deisbhéalach-09-14-2",
+    "article_link": "https://www.serpentine.com/posts/2026/x3-stripes/",
+    "discussion_link": "https://lobste.rs/s/w6aktj/how_my_e_reader_lost_its_stripes",
+    "title": "How my e-reader lost its stripes"
+  },
+  "@lobstersgram:766": {
+    "telegraph_link": "https://telegra.ph/Do-You-Still-Read-the-Code--zanlib-09-14",
+    "article_link": "https://zanlib.dev/blog/do-you-still-read-the-code/",
+    "discussion_link": "https://lobste.rs/s/qiwlzz/do_you_still_read_code",
+    "title": "\"Do You Still Read the Code?\""
+  },
+  "@lobstersgram:767": {
+    "telegraph_link": "https://telegra.ph/Watch-what-you-say-Apple-opens-the-door-to-a-nightmare-world-of-always-listening-tech-09-14-2",
+    "article_link": "https://this.weekinsecurity.com/watch-what-you-say-apple-opens-the-door-to-a-nightmare-world-of-always-listening-tech/",
+    "discussion_link": "https://lobste.rs/s/yaax1z/watch_what_you_say_apple_opens_door",
+    "title": "Watch what you say: Apple opens the door to a nightmare world of always-listening tech"
   }
 }
