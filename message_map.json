@@ -4642,5 +4642,29 @@
     "article_link": "https://lezli01.is-a.dev/vincent/docs/why/the-terminal-should-not-own-the-work.html",
     "discussion_link": "https://lobste.rs/s/m1zfy8/terminal_should_not_own_work",
     "title": "The terminal should not own the work"
+  },
+  "@lobstersgram:783": {
+    "telegraph_link": "https://telegra.ph/Trying-to-Make-a-Loop-Auto-Vectorize--jsgroths-blog-09-15",
+    "article_link": "https://jsgroth.dev/blog/posts/trying-to-make-a-loop-auto-vectorize/",
+    "discussion_link": "https://lobste.rs/s/4nhhax/trying_make_loop_auto_vectorize",
+    "title": "Trying to Make a Loop Auto-Vectorize"
+  },
+  "@lobstersgram:784": {
+    "telegraph_link": "https://telegra.ph/Secret-Cold-War-Supercomputer-Was-Built-for-One-Job---IEEE-Spectrum-09-15",
+    "article_link": "https://spectrum.ieee.org/cold-war-codebreaker-nsa-ibm",
+    "discussion_link": "https://lobste.rs/s/pwofca/ibm_built_cold_war_s_most_powerful_code",
+    "title": "IBM Built the Cold War’s Most Powerful Code Breaker for the NSA"
+  },
+  "@lobstersgram:785": {
+    "telegraph_link": "https://telegra.ph/How-I-Wrote-a-Forth-Without-Knowing-How-vtrlxca-09-15-2",
+    "article_link": "https://vtrlx.ca/w/2026-09-10-how-i-wrote-moonforth.html",
+    "discussion_link": "https://lobste.rs/s/ccy1nr/how_i_wrote_forth_without_knowing_how",
+    "title": "How I Wrote a Forth (Without Knowing How)"
+  },
+  "@lobstersgram:786": {
+    "telegraph_link": "https://telegra.ph/GEFS-on-OpenBSD-A-very-early-preview---MARC-09-15-2",
+    "article_link": "https://marc.info/?l=openbsd-tech&m=178948744271633&w=2",
+    "discussion_link": "https://lobste.rs/s/buzdkb/gefs_on_openbsd_very_early_preview",
+    "title": "GEFS on OpenBSD: A very early preview"
   }
 }
