@@ -4582,5 +4582,35 @@
     "article_link": "https://codeberg.org/mergiraf/mergiraf",
     "discussion_link": "https://lobste.rs/s/gslcz7/mergiraf_syntax_aware_git_merge_driver",
     "title": "Mergiraf: A syntax-aware git merge driver for a growing collection of programming languages and file formats"
+  },
+  "@lobstersgram:773": {
+    "telegraph_link": "https://telegra.ph/Dropping-eBPF-CPU-Cost-by-About-90-With-Memoization-Not-AI-Gen--nathan-naveen-09-15",
+    "article_link": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+    "discussion_link": "https://lobste.rs/s/a66b7j/dropping_ebpf_cpu_cost_by_about_90_with",
+    "title": "Dropping eBPF CPU Cost by About 90% With Memoization"
+  },
+  "@lobstersgram:774": {
+    "telegraph_link": "https://telegra.ph/Push-based-vs-Pull-based-Customization--Barrys-C-Blog-09-15",
+    "article_link": "https://brevzin.github.io/c++/2026/09/14/push-vs-pull/",
+    "discussion_link": "https://lobste.rs/s/deh4ax/push_based_vs_pull_based_customization",
+    "title": "Push-based vs Pull-based Customization"
+  },
+  "@lobstersgram:775": {
+    "telegraph_link": "https://telegra.ph/Type-Systems-You-Might-Not-Know-But-Will-Love-09-15",
+    "article_link": "https://www.wearedevelopers.com/videos/100067-type-systems-you-might-not-know-but-will-love",
+    "discussion_link": "https://lobste.rs/s/89pcze/type_systems_you_might_not_know_will_love",
+    "title": "Type Systems You Might Not Know (But Will Love)"
+  },
+  "@lobstersgram:776": {
+    "telegraph_link": "https://telegra.ph/A-Nix-store-is-three-functions--Farid-Zakarias-Blog-09-15",
+    "article_link": "https://fzakaria.com/2026/09/11/a-nix-store-is-three-functions",
+    "discussion_link": "https://lobste.rs/s/9zytkh/nix_store_is_three_functions",
+    "title": "A Nix store is three functions"
+  },
+  "@lobstersgram:777": {
+    "telegraph_link": "https://telegra.ph/GDScript-The-Good-Bad-and-Ugly-Parts-09-15",
+    "article_link": "https://azhdarchid.com/gdscript-good-bad-ugly/",
+    "discussion_link": "https://lobste.rs/s/q5dgu6/gdscript_good_bad_ugly_parts",
+    "title": "GDScript: The Good, Bad, and Ugly Parts"
   }
 }
