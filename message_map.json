@@ -4552,5 +4552,35 @@
     "article_link": "https://this.weekinsecurity.com/watch-what-you-say-apple-opens-the-door-to-a-nightmare-world-of-always-listening-tech/",
     "discussion_link": "https://lobste.rs/s/yaax1z/watch_what_you_say_apple_opens_door",
     "title": "Watch what you say: Apple opens the door to a nightmare world of always-listening tech"
+  },
+  "@lobstersgram:768": {
+    "telegraph_link": "https://telegra.ph/Kythe-09-15",
+    "article_link": "https://kythe.io/",
+    "discussion_link": "https://lobste.rs/s/uqezny/kythe_pluggable_language_agnostic",
+    "title": "Kythe, a pluggable, language-agnostic ecosystem for building tools that work with code"
+  },
+  "@lobstersgram:769": {
+    "telegraph_link": "https://telegra.ph/I-wish-you-the-best-in-the-Offline---daverupertcom-09-15",
+    "article_link": "https://daverupert.com/2026/09/i-wish-you-the-best-in-the-offline/",
+    "discussion_link": "https://lobste.rs/s/ede4z0/i_wish_you_best_offline",
+    "title": "I wish you the best in the Offline"
+  },
+  "@lobstersgram:770": {
+    "telegraph_link": "https://telegra.ph/We-are-all-Product-Engineers-now--Seldocom-09-15",
+    "article_link": "https://seldo.com/posts/we-are-all-product-engineers-now/",
+    "discussion_link": "https://lobste.rs/s/agbpkq/we_are_all_product_engineers_now",
+    "title": "We are all Product Engineers now"
+  },
+  "@lobstersgram:771": {
+    "telegraph_link": "https://telegra.ph/A-New-Equal-Area-Map-for-Interactive-Computer-Use-09-15",
+    "article_link": "https://www.benjoffe.com/map",
+    "discussion_link": "https://lobste.rs/s/zttri6/new_equal_area_map_natively_zooms",
+    "title": "A New Equal-Area Map that natively zooms to Mercator"
+  },
+  "@lobstersgram:772": {
+    "telegraph_link": "https://telegra.ph/mergirafmergiraf-A-syntax-aware-git-merge-driver-for-a-growing-collection-of-programming-languages-and-file-formats---Codebergor-09-15",
+    "article_link": "https://codeberg.org/mergiraf/mergiraf",
+    "discussion_link": "https://lobste.rs/s/gslcz7/mergiraf_syntax_aware_git_merge_driver",
+    "title": "Mergiraf: A syntax-aware git merge driver for a growing collection of programming languages and file formats"
   }
 }
