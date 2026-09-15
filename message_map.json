@@ -4666,5 +4666,29 @@
     "article_link": "https://marc.info/?l=openbsd-tech&m=178948744271633&w=2",
     "discussion_link": "https://lobste.rs/s/buzdkb/gefs_on_openbsd_very_early_preview",
     "title": "GEFS on OpenBSD: A very early preview"
+  },
+  "@lobstersgram:787": {
+    "telegraph_link": "https://telegra.ph/Subnormal-floating-point-numbers-are-expensive-on-Intel-processors---Daniel-Lemires-blog-09-15",
+    "article_link": "https://lemire.me/blog/2026/09/15/subnormal-floating-point-numbers-are-expensive-on-intel-processors/",
+    "discussion_link": "https://lobste.rs/s/hv3l4v/subnormal_floating_point_numbers_are",
+    "title": "Subnormal floating-point numbers are expensive… on Intel processors"
+  },
+  "@lobstersgram:788": {
+    "telegraph_link": "https://telegra.ph/Swift-64-Released--Swiftorg-09-15-2",
+    "article_link": "https://www.swift.org/blog/swift-6.4-released/",
+    "discussion_link": "https://lobste.rs/s/ptegb0/swift_6_4_released",
+    "title": "Swift 6.4 Released"
+  },
+  "@lobstersgram:789": {
+    "telegraph_link": "https://telegra.ph/Adactio-Journal-Stalling-installing-09-15",
+    "article_link": "https://adactio.com/journal/22757",
+    "discussion_link": "https://lobste.rs/s/pgzlof/stalling_installing",
+    "title": "Stalling installing"
+  },
+  "@lobstersgram:790": {
+    "telegraph_link": "https://telegra.ph/How-can-you-not-be-romantic-about-UNIX-domain-sockets--yuval-09-15",
+    "article_link": "https://yuvalino.com/how-can-you-not-be-romantic-about-unix-domain-sockets",
+    "discussion_link": "https://lobste.rs/s/uauns9/how_can_you_not_be_romantic_about_unix",
+    "title": "How can you not be romantic about UNIX domain sockets?"
   }
 }
