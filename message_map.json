@@ -4612,5 +4612,35 @@
     "article_link": "https://azhdarchid.com/gdscript-good-bad-ugly/",
     "discussion_link": "https://lobste.rs/s/q5dgu6/gdscript_good_bad_ugly_parts",
     "title": "GDScript: The Good, Bad, and Ugly Parts"
+  },
+  "@lobstersgram:778": {
+    "telegraph_link": "https://telegra.ph/How-my-e-reader-lost-its-stripes--teideal-glic-deisbhéalach-09-15",
+    "article_link": "https://www.serpentine.com/posts/2026/x3-stripes/",
+    "discussion_link": "https://lobste.rs/s/w6aktj/how_my_e_reader_lost_its_stripes",
+    "title": "How my e-reader lost its stripes"
+  },
+  "@lobstersgram:779": {
+    "telegraph_link": "https://telegra.ph/Postgres-development-activity---Tomas-Vondra-09-15",
+    "article_link": "https://vondra.me/posts/postgres-development-activity/",
+    "discussion_link": "https://lobste.rs/s/3wmby2/postgres_development_activity",
+    "title": "Postgres development activity"
+  },
+  "@lobstersgram:780": {
+    "telegraph_link": "https://telegra.ph/Simpler-time-map-plots-09-15",
+    "article_link": "https://lepisma.xyz/2017/06/25/simple-time-maps/",
+    "discussion_link": "https://lobste.rs/s/ixjmzm/simpler_time_map_plots_2017",
+    "title": "Simpler time map plots (2017)"
+  },
+  "@lobstersgram:781": {
+    "telegraph_link": "https://telegra.ph/To-Be-Determined---Search-over-Algebraic-Graphs-09-15",
+    "article_link": "https://anekstein.com/posts/2026-08-22.html",
+    "discussion_link": "https://lobste.rs/s/cw8fep/search_over_algebraic_graphs",
+    "title": "Search over Algebraic Graphs"
+  },
+  "@lobstersgram:782": {
+    "telegraph_link": "https://telegra.ph/Durable-AI-agent-execution-beyond-terminal-sessions--vincent-09-15",
+    "article_link": "https://lezli01.is-a.dev/vincent/docs/why/the-terminal-should-not-own-the-work.html",
+    "discussion_link": "https://lobste.rs/s/m1zfy8/terminal_should_not_own_work",
+    "title": "The terminal should not own the work"
   }
 }
