@@ -4690,5 +4690,35 @@
     "article_link": "https://yuvalino.com/how-can-you-not-be-romantic-about-unix-domain-sockets",
     "discussion_link": "https://lobste.rs/s/uauns9/how_can_you_not_be_romantic_about_unix",
     "title": "How can you not be romantic about UNIX domain sockets?"
+  },
+  "@lobstersgram:791": {
+    "telegraph_link": "https://telegra.ph/skillsynchqtxcript--Pandoc-for-AI-chats-Move-ai-chats-across-harnesses-Claude-Code-Codex-OpenCode-Cursor-and-more-Rust-library-C-09-15",
+    "article_link": "https://github.com/skillsynchq/txcript",
+    "discussion_link": "https://lobste.rs/s/d7kmuj/txcript_switching_coding_agents_mid",
+    "title": "txcript: Switching coding agents mid-conversation"
+  },
+  "@lobstersgram:792": {
+    "telegraph_link": "https://telegra.ph/1Passwords-AI-patching-benchmark-is-misleading---The-Trail-of-Bits-Blog-09-15",
+    "article_link": "https://blog.trailofbits.com/2026/09/15/1passwords-ai-patching-benchmark-is-misleading/",
+    "discussion_link": "https://lobste.rs/s/qx8dxe/1password_s_ai_patching_benchmark_is",
+    "title": "1Password's AI patching benchmark is misleading"
+  },
+  "@lobstersgram:793": {
+    "telegraph_link": "https://telegra.ph/PlayBook-A-Programmable-Paper-Notebook-09-15",
+    "article_link": "https://www.youtube.com/watch?v=GurWDZ8ENpA",
+    "discussion_link": "https://lobste.rs/s/6gro0u/playbook_programmable_paper_notebook",
+    "title": "PlayBook: A Programmable Paper Notebook"
+  },
+  "@lobstersgram:794": {
+    "telegraph_link": "https://telegra.ph/From-Intern-to-Software-Architect-09-15-3",
+    "article_link": "https://chauhankiran.blogspot.com/2026/09/levels.html",
+    "discussion_link": "https://lobste.rs/s/jsvadf/from_intern_software_architect",
+    "title": "From Intern to Software Architect"
+  },
+  "@lobstersgram:795": {
+    "telegraph_link": "https://telegra.ph/Converting-a-20-4G-wireless-hotspot-into-a-texting-device-09-15-5",
+    "article_link": "https://bkovac.github.io/modem-thing/",
+    "discussion_link": "https://lobste.rs/s/klussk/converting_20_4g_wireless_hotspot_into",
+    "title": "Converting a $20 4G wireless hotspot into a texting device"
   }
 }
