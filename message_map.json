@@ -4786,5 +4786,29 @@
     "article_link": "https://openjdk.org/projects/jdk/27/",
     "discussion_link": "https://lobste.rs/s/jlja1a/jdk_27_has_been_released",
     "title": "JDK 27 has been released"
+  },
+  "@lobstersgram:807": {
+    "telegraph_link": "https://telegra.ph/UserCook-Me-PloxOSRS-Wiki-and-RuneLite-are-increasingly-under-strain-from-low-effort-AI-development---OSRS-Wiki-09-16",
+    "article_link": "https://oldschool.runescape.wiki/w/User:Cook_Me_Plox/OSRS_Wiki_and_RuneLite_are_increasingly_under_strain_from_low-effort_AI_development",
+    "discussion_link": "https://lobste.rs/s/aml2pc/osrs_wiki_runelite_are_increasingly",
+    "title": "OSRS Wiki and RuneLite are increasingly under strain from low-effort AI development"
+  },
+  "@lobstersgram:808": {
+    "telegraph_link": "https://telegra.ph/type-declaration-syntax---citronsxyz-09-16",
+    "article_link": "https://citrons.xyz/journal/2026-09-09",
+    "discussion_link": "https://lobste.rs/s/qphopj/type_declaration_syntax",
+    "title": "type declaration syntax"
+  },
+  "@lobstersgram:809": {
+    "telegraph_link": "https://telegra.ph/Original-Sony-PlayStation-2-security-chip-broken-wide-open-after-26-years---chemical-decapping-and-four-years-of-reverse-enginee-09-16-2",
+    "article_link": "https://www.tomshardware.com/video-games/playstation/26-year-old-sony-ps2-security-chip-broken-wide-open-after-four-years-of-effort-reverse-engineering-enthusiast-successfully-unlocks-cxp102064-mechacon-chip",
+    "discussion_link": "https://lobste.rs/s/vkdmdy/original_sony_playstation_2_security",
+    "title": "Original Sony PlayStation 2 security chip ‘broken wide open’ after 26 years"
+  },
+  "@lobstersgram:810": {
+    "telegraph_link": "https://telegra.ph/Why-building-a-Rust-LSP-is-hard--Rust-Glancer-09-16",
+    "article_link": "https://rust-glancer.github.io/blog/why-lsp-is-hard/",
+    "discussion_link": "https://lobste.rs/s/q35pnm/why_building_rust_lsp_is_hard",
+    "title": "Why building a Rust LSP is hard"
   }
 }
