@@ -4762,5 +4762,29 @@
     "article_link": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-rust-coreutils-complete",
     "discussion_link": "https://lobste.rs/s/ynjgbz/ubuntu_26_10_completes_transition_rust",
     "title": "Ubuntu 26.10 completes transition to Rust-based coreutils"
+  },
+  "@lobstersgram:803": {
+    "telegraph_link": "https://telegra.ph/Simple-and-Efficient-Row-Level-Security-09-16",
+    "article_link": "https://acadia.engineering/blog/simple-and-efficient-row-level-security",
+    "discussion_link": "https://lobste.rs/s/nhdqgh/simple_efficient_row_level_security",
+    "title": "Simple and Efficient Row-Level Security"
+  },
+  "@lobstersgram:804": {
+    "telegraph_link": "https://telegra.ph/When-the-fractional-part-of-a-float-fixes-your-shader---Bruno-Croci-09-16",
+    "article_link": "https://crocidb.com/post/when-the-fractional-part-of-a-float-fixes-your-shader/",
+    "discussion_link": "https://lobste.rs/s/ue8rof/when_adding_fractional_part_number_fixes",
+    "title": "When adding a fractional part to a number fixes your shader"
+  },
+  "@lobstersgram:805": {
+    "telegraph_link": "https://telegra.ph/C2PA-and-Pixel-Glitter-Milk---The-Hacker-Factor-Blog-09-16",
+    "article_link": "https://www.hackerfactor.com/blog/index.php?/archives/1102-C2PA-and-Pixel-Glitter-Milk.html",
+    "discussion_link": "https://lobste.rs/s/tgrvxh/forgery_c2pa_on_pixel_10",
+    "title": "Forgery of C2PA on a Pixel 10"
+  },
+  "@lobstersgram:806": {
+    "telegraph_link": "https://telegra.ph/JDK-27-09-16-2",
+    "article_link": "https://openjdk.org/projects/jdk/27/",
+    "discussion_link": "https://lobste.rs/s/jlja1a/jdk_27_has_been_released",
+    "title": "JDK 27 has been released"
   }
 }
