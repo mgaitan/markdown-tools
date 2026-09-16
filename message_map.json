@@ -4720,5 +4720,35 @@
     "article_link": "https://bkovac.github.io/modem-thing/",
     "discussion_link": "https://lobste.rs/s/klussk/converting_20_4g_wireless_hotspot_into",
     "title": "Converting a $20 4G wireless hotspot into a texting device"
+  },
+  "@lobstersgram:796": {
+    "telegraph_link": "https://telegra.ph/Trying-to-Make-a-Loop-Auto-Vectorize--jsgroths-blog-09-16",
+    "article_link": "https://jsgroth.dev/blog/posts/trying-to-make-a-loop-auto-vectorize/",
+    "discussion_link": "https://lobste.rs/s/4nhhax/trying_make_loop_auto_vectorize",
+    "title": "Trying to Make a Loop Auto-Vectorize"
+  },
+  "@lobstersgram:797": {
+    "telegraph_link": "https://telegra.ph/The-contagion-of-fear--The-Observation-Deck-09-16",
+    "article_link": "https://bcantrill.dtrace.org/2026/09/13/the-contagion-of-fear/",
+    "discussion_link": "https://lobste.rs/s/1ifr5f/contagion_fear",
+    "title": "The contagion of fear"
+  },
+  "@lobstersgram:798": {
+    "telegraph_link": "https://telegra.ph/CSS-Tricks-in-Limbo---15-Sept-2026-0135-UTC--ValeRocks-09-16",
+    "article_link": "https://vale.rocks/micros/20260915-0135",
+    "discussion_link": "https://lobste.rs/s/lgcmoo/css_tricks_limbo",
+    "title": "CSS-Tricks in Limbo"
+  },
+  "@lobstersgram:799": {
+    "telegraph_link": "https://telegra.ph/Coreutils---rejected-feature-requests-09-16",
+    "article_link": "https://www.gnu.org/software/coreutils/rejected_requests.html",
+    "discussion_link": "https://lobste.rs/s/zbcua4/coreutils_rejected_feature_requests",
+    "title": "Coreutils - rejected feature requests"
+  },
+  "@lobstersgram:800": {
+    "telegraph_link": "https://telegra.ph/Small-Programming-Tricks--will-keleher-09-16",
+    "article_link": "https://will-keleher.com/posts/small-programming-tricks-matter/",
+    "discussion_link": "https://lobste.rs/s/f65fy3/small_programming_tricks",
+    "title": "Small Programming Tricks"
   }
 }
