@@ -4750,5 +4750,17 @@
     "article_link": "https://will-keleher.com/posts/small-programming-tricks-matter/",
     "discussion_link": "https://lobste.rs/s/f65fy3/small_programming_tricks",
     "title": "Small Programming Tricks"
+  },
+  "@lobstersgram:801": {
+    "telegraph_link": "https://telegra.ph/Maintaining-the-love-for-coding-in-the-time-of-AI-09-16",
+    "article_link": "https://blog.nlnetlabs.nl/maintaining-the-love-for-coding-in-the-time-of-ai/",
+    "discussion_link": "https://lobste.rs/s/glywa4/maintaining_love_for_coding_time_ai",
+    "title": "Maintaining the love for coding in the time of AI"
+  },
+  "@lobstersgram:802": {
+    "telegraph_link": "https://telegra.ph/Ubuntu-2610-completes-transition-to-Rust-based-coreutils---OMG-Ubuntu-09-16",
+    "article_link": "https://www.omgubuntu.co.uk/2026/09/ubuntu-2610-rust-coreutils-complete",
+    "discussion_link": "https://lobste.rs/s/ynjgbz/ubuntu_26_10_completes_transition_rust",
+    "title": "Ubuntu 26.10 completes transition to Rust-based coreutils"
   }
 }
