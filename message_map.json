@@ -4810,5 +4810,29 @@
     "article_link": "https://rust-glancer.github.io/blog/why-lsp-is-hard/",
     "discussion_link": "https://lobste.rs/s/q35pnm/why_building_rust_lsp_is_hard",
     "title": "Why building a Rust LSP is hard"
+  },
+  "@lobstersgram:811": {
+    "telegraph_link": "https://telegra.ph/Style-Guide-for-Online-Hypertext-09-16",
+    "article_link": "https://www.w3.org/Provider/Style/",
+    "discussion_link": "https://lobste.rs/s/7ehqzv/style_guide_for_online_hypertext_1992",
+    "title": "Style Guide for Online Hypertext (1992)"
+  },
+  "@lobstersgram:812": {
+    "telegraph_link": "https://telegra.ph/Game-of-Trees-Hub-09-16",
+    "article_link": "https://gothub.org/lists.html",
+    "discussion_link": "https://lobste.rs/s/wo4fuj/gothub_lists",
+    "title": "Gothub lists"
+  },
+  "@lobstersgram:813": {
+    "telegraph_link": "https://telegra.ph/Replace-PRs-with-Delta---Now-in-Public-Beta---Zeds-Blog-09-16",
+    "article_link": "https://zed.dev/blog/delta-public-beta",
+    "discussion_link": "https://lobste.rs/s/c5xrht/replacing_pull_requests_with_delta",
+    "title": "Replacing Pull Requests with Delta"
+  },
+  "@lobstersgram:814": {
+    "telegraph_link": "https://telegra.ph/Some-things-Veloren-does-differently-09-16-2",
+    "article_link": "https://blog.jsbarretto.com/post/veloren",
+    "discussion_link": "https://lobste.rs/s/zutlqt/some_things_veloren_does_differently",
+    "title": "Some things Veloren does differently"
   }
 }
