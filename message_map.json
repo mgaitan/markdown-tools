@@ -4834,5 +4834,35 @@
     "article_link": "https://blog.jsbarretto.com/post/veloren",
     "discussion_link": "https://lobste.rs/s/zutlqt/some_things_veloren_does_differently",
     "title": "Some things Veloren does differently"
+  },
+  "@lobstersgram:815": {
+    "telegraph_link": "https://telegra.ph/Why-cant-you-combine-targz-files-with-cat---alexwlchan-09-17",
+    "article_link": "https://alexwlchan.net/2026/cat-confusion/",
+    "discussion_link": "https://lobste.rs/s/lox1su/why_tar_gz_files_can_t_be_combined_with_cat",
+    "title": "Why .tar.gz files can't be combined with cat"
+  },
+  "@lobstersgram:816": {
+    "telegraph_link": "https://telegra.ph/C26-Trivial-infinite-loops-are-no-longer-undefined-behaviour--Sandor-Dargos-Blog-09-17",
+    "article_link": "https://www.sandordargo.com/blog/2026/09/16/cpp26-trivial-infinite-loops",
+    "discussion_link": "https://lobste.rs/s/uvrata/c_26_trivial_infinite_loops_are_no_longer",
+    "title": "C++26: Trivial infinite loops are no longer undefined behaviour"
+  },
+  "@lobstersgram:817": {
+    "telegraph_link": "https://telegra.ph/Reinventing-issue-tracking-Local-first-and-Git-native---Manganin-09-17",
+    "article_link": "https://blog.manganin.dev/blog/reinventing-issue-tracking/",
+    "discussion_link": "https://lobste.rs/s/4tb4nk/reinventing_issue_tracking_local_first",
+    "title": "Reinventing issue tracking: Local-first and Git-native"
+  },
+  "@lobstersgram:818": {
+    "telegraph_link": "https://telegra.ph/why-im-still-bearish-on-LLMs-after-navier-stokes--jay-kruer-09-17",
+    "article_link": "https://dank.systems/posts/2026-09-15-ai-bear.html",
+    "discussion_link": "https://lobste.rs/s/cianny/why_i_m_still_bearish_on_llms_after_navier",
+    "title": "Why i'm still bearish on LLMs after Navier-Stokes"
+  },
+  "@lobstersgram:819": {
+    "telegraph_link": "https://telegra.ph/How-to-get-a-DOI-for-your-blog-posts---Terence-Edens-Blog-09-17",
+    "article_link": "https://shkspr.mobi/blog/2026/09/how-to-get-a-doi-for-your-blog-posts/",
+    "discussion_link": "https://lobste.rs/s/lvld5b/how_get_doi_for_your_blog_posts",
+    "title": "How to get a DOI for your blog posts"
   }
 }
