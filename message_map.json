@@ -4876,5 +4876,23 @@
     "article_link": "https://blog.verygoodsoftwarenotvirus.dev/posts/2026/09/12/the-end-of-verygoodsoftwarenotvirus-dot-ru/",
     "discussion_link": "https://lobste.rs/s/ihw0hq/end_verygoodsoftwarenotvirus_ru",
     "title": "The end of verygoodsoftwarenotvirus.ru"
+  },
+  "@lobstersgram:822": {
+    "telegraph_link": "https://telegra.ph/AI-code-optimization-Proving-an-agents-performance-wins--Elasticsearch-Labs-09-17",
+    "article_link": "https://www.elastic.co/search-labs/blog/ai-code-optimization-elasticsearch-agent-harness",
+    "discussion_link": "https://lobste.rs/s/iul1vv/trust_benchmark_how_we_let_ai_agent",
+    "title": "Trust, but benchmark: How we let an AI agent optimize Elasticsearch"
+  },
+  "@lobstersgram:823": {
+    "telegraph_link": "https://telegra.ph/Developing-provably-correct-Rust-code-with-Verus---Amazon-Science-09-17-2",
+    "article_link": "https://www.amazon.science/blog/developing-provably-correct-rust-code-with-verus",
+    "discussion_link": "https://lobste.rs/s/yyijiq/developing_provably_correct_rust_code",
+    "title": "Developing provably correct Rust code with Verus"
+  },
+  "@lobstersgram:824": {
+    "telegraph_link": "https://telegra.ph/On-learning-programming-in-an-age-of-LLMs-09-17",
+    "article_link": "https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/",
+    "discussion_link": "https://lobste.rs/s/hp1xkh/on_learning_programming_age_llms",
+    "title": "On learning programming in an age of LLMs"
   }
 }
