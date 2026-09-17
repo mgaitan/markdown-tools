@@ -4894,5 +4894,17 @@
     "article_link": "https://blog.ploeh.dk/2026/09/16/on-learning-programming-in-an-age-of-llms/",
     "discussion_link": "https://lobste.rs/s/hp1xkh/on_learning_programming_age_llms",
     "title": "On learning programming in an age of LLMs"
+  },
+  "@lobstersgram:825": {
+    "telegraph_link": "https://telegra.ph/Release-540--jemallocjemalloc--GitHub-09-17",
+    "article_link": "https://github.com/jemalloc/jemalloc/releases/tag/5.4.0",
+    "discussion_link": "https://lobste.rs/s/eiqamo/jemalloc_5_4_0_release",
+    "title": "jemalloc 5.4.0 release"
+  },
+  "@lobstersgram:826": {
+    "telegraph_link": "https://telegra.ph/Labeled-matches-why-is-this-not-in-every-regex-engine--ian-erik-varatalu-09-17-2",
+    "article_link": "https://iev.ee/blog/categorize-everything-all-at-once/",
+    "discussion_link": "https://lobste.rs/s/7d6sh9/labeled_matches_why_is_this_not_every",
+    "title": "Labeled matches: why is this not in every regex engine?"
   }
 }
