@@ -4906,5 +4906,35 @@
     "article_link": "https://iev.ee/blog/categorize-everything-all-at-once/",
     "discussion_link": "https://lobste.rs/s/7d6sh9/labeled_matches_why_is_this_not_every",
     "title": "Labeled matches: why is this not in every regex engine?"
+  },
+  "@lobstersgram:827": {
+    "telegraph_link": "https://telegra.ph/bloombergbonobomock--A-GoogleTest-compatible-C-mocking-library-using-monkey-patching-to-mock-free-functions-static-functions-and-09-17",
+    "article_link": "https://github.com/bloomberg/bonobomock/",
+    "discussion_link": "https://lobste.rs/s/marwqj/bonobomock_googletest_compatible_c",
+    "title": "bonobomock: A GoogleTest-compatible C++ mocking library"
+  },
+  "@lobstersgram:828": {
+    "telegraph_link": "https://telegra.ph/Flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials-09-17-2",
+    "article_link": "https://micahflee.com/flock-cameras-are-riddled-with-security-vulnerabilities-and-hard-coded-credentials/",
+    "discussion_link": "https://lobste.rs/s/eyg3oe/flock_cameras_are_riddled_with_security",
+    "title": "Flock cameras are riddled with security vulnerabilities and hard-coded credentials"
+  },
+  "@lobstersgram:829": {
+    "telegraph_link": "https://telegra.ph/The-Golden-Spike-and-Resurrecting-the-Valen-Programming-Language-09-17-2",
+    "article_link": "https://verdagon.dev/blog/golden-spike-reviving-vale-valen",
+    "discussion_link": "https://lobste.rs/s/fjnkn4/golden_spike_resurrecting_vale_n",
+    "title": "The Golden Spike, and Resurrecting the Vale(n) Programming Language"
+  },
+  "@lobstersgram:830": {
+    "telegraph_link": "https://telegra.ph/I-expected-better-from-Google--minitap-09-17",
+    "article_link": "https://www.minitap.ai/blog/i-expected-better-from-google",
+    "discussion_link": "https://lobste.rs/s/11uiiv/i_expected_better_from_google",
+    "title": "I expected better from Google"
+  },
+  "@lobstersgram:831": {
+    "telegraph_link": "https://telegra.ph/I-dont-like-LLMs-09-17-7",
+    "article_link": "https://martinfowler.com/articles/2026-dont-like-llms.html",
+    "discussion_link": "https://lobste.rs/s/pkj7mf/i_don_t_like_llms",
+    "title": "I Don't Like LLMs"
   }
 }
