@@ -4978,5 +4978,35 @@
     "article_link": "https://arxiv.org/abs/2607.26719",
     "discussion_link": "https://lobste.rs/s/tvrnbv/not_my_git_yard_catching_backdoors_at",
     "title": "Not In My Git Yard: Catching Backdoors at Commit and Release Time"
+  },
+  "@lobstersgram:839": {
+    "telegraph_link": "https://telegra.ph/I-dont-like-passkeys--Ethan-Hawksley-09-18-2",
+    "article_link": "https://hawksley.dev/blog/i-dont-like-passkeys",
+    "discussion_link": "https://lobste.rs/s/4a7qly/i_don_t_like_passkeys",
+    "title": "I don't like passkeys"
+  },
+  "@lobstersgram:840": {
+    "telegraph_link": "https://telegra.ph/The-C20s-u8char8-t-Backward-Compatibility-Fiasco---Giovanni-Dicanios-Blog-09-18",
+    "article_link": "https://giodicanio.com/2026/09/11/the-c-plus-plus-20-s-u8-char8_t-fiasco/",
+    "discussion_link": "https://lobste.rs/s/ltjgvl/c_20_s_u8_char8_t_backward_compatibility",
+    "title": "The C++20’s u8/char8_t Backward-Compatibility Fiasco"
+  },
+  "@lobstersgram:841": {
+    "telegraph_link": "https://telegra.ph/Hacking-OpenAI--Hacktron-AI-09-18-2",
+    "article_link": "https://www.hacktron.ai/blog/hacking-openai",
+    "discussion_link": "https://lobste.rs/s/htziuj/hacking_openai",
+    "title": "Hacking OpenAI"
+  },
+  "@lobstersgram:842": {
+    "telegraph_link": "https://telegra.ph/Typst-makes-big-strides-LWNnet-09-18",
+    "article_link": "https://lwn.net/Articles/1092993/",
+    "discussion_link": "https://lobste.rs/s/j4oyxa/typst_makes_big_strides",
+    "title": "Typst makes big strides"
+  },
+  "@lobstersgram:843": {
+    "telegraph_link": "https://telegra.ph/Bend-09-18-7",
+    "article_link": "https://bend-lang.com/",
+    "discussion_link": "https://lobste.rs/s/xysdy9/bend",
+    "title": "Bend"
   }
 }
