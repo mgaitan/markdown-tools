@@ -4936,5 +4936,23 @@
     "article_link": "https://martinfowler.com/articles/2026-dont-like-llms.html",
     "discussion_link": "https://lobste.rs/s/pkj7mf/i_don_t_like_llms",
     "title": "I Don't Like LLMs"
+  },
+  "@lobstersgram:832": {
+    "telegraph_link": "https://telegra.ph/HarnessTax-How-Much-Does-the-Harness-Matter-for-Coding-Agents-09-18",
+    "article_link": "https://harnesstax.github.io/",
+    "discussion_link": "https://lobste.rs/s/iq4dwz/harnesstax_how_much_does_harness_matter",
+    "title": "HarnessTax: How Much Does the Harness Matter for Coding Agents?"
+  },
+  "@lobstersgram:833": {
+    "telegraph_link": "https://telegra.ph/Telstra-outage-The-night-a-network-decided-the-year-was-2006--Netnod-09-18-3",
+    "article_link": "https://www.netnod.se/blog/telstra-outage-night-network-decided-year-was-2006",
+    "discussion_link": "https://lobste.rs/s/3qdik0/telstra_outage_night_network_decided",
+    "title": "Telstra outage: The night a network decided the year was 2006"
+  },
+  "@lobstersgram:834": {
+    "telegraph_link": "https://telegra.ph/We-Must-Create-the-Shit-Machine---McSweeneys-Internet-Tendency-09-18",
+    "article_link": "https://www.mcsweeneys.net/articles/we-must-create-the-shit-machine",
+    "discussion_link": "https://lobste.rs/s/vzql1n/we_must_create_shit_machine",
+    "title": "We Must Create the Shit Machine"
   }
 }
