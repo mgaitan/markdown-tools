@@ -4954,5 +4954,29 @@
     "article_link": "https://www.mcsweeneys.net/articles/we-must-create-the-shit-machine",
     "discussion_link": "https://lobste.rs/s/vzql1n/we_must_create_shit_machine",
     "title": "We Must Create the Shit Machine"
+  },
+  "@lobstersgram:835": {
+    "telegraph_link": "https://telegra.ph/oss-sec-A-quartet-of-Linux-local-root-vulns-DirtyAH6-PPPoEject-TUNderflow-and-DiagSpill-09-18",
+    "article_link": "https://seclists.org/oss-sec/2026/q3/822",
+    "discussion_link": "https://lobste.rs/s/7d3zs8/quartet_linux_local_root_vulns_dirtyah6",
+    "title": "A quartet of Linux local root vulns: DirtyAH6, PPPoEject, TUNderflow, and DiagSpill"
+  },
+  "@lobstersgram:836": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-09-18",
+    "article_link": "https://lobste.rs/s/e1xglz/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/e1xglz/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:837": {
+    "telegraph_link": "https://telegra.ph/What-is-still-exciting-in-tech--Lobsters-09-18",
+    "article_link": "https://lobste.rs/s/lcjf7c/what_is_still_exciting_tech",
+    "discussion_link": "https://lobste.rs/s/lcjf7c/what_is_still_exciting_tech",
+    "title": "What is still exciting in tech?"
+  },
+  "@lobstersgram:838": {
+    "telegraph_link": "https://telegra.ph/Not-In-My-Git-Yard-Catching-Backdoors-at-Commit-and-Release-Time-09-18",
+    "article_link": "https://arxiv.org/abs/2607.26719",
+    "discussion_link": "https://lobste.rs/s/tvrnbv/not_my_git_yard_catching_backdoors_at",
+    "title": "Not In My Git Yard: Catching Backdoors at Commit and Release Time"
   }
 }
