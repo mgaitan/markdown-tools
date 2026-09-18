@@ -5008,5 +5008,35 @@
     "article_link": "https://bend-lang.com/",
     "discussion_link": "https://lobste.rs/s/xysdy9/bend",
     "title": "Bend"
+  },
+  "@lobstersgram:844": {
+    "telegraph_link": "https://telegra.ph/GitHub---anderspitmanawesome-tunneling-List-of-ngrok-Cloudflare-Tunnel-Tailscale-and-ZeroTier-alternatives-and-other-tunneling-s-09-18",
+    "article_link": "https://github.com/anderspitman/awesome-tunneling",
+    "discussion_link": "https://lobste.rs/s/myuake/awesome_tunneling_list_tunneling",
+    "title": "awesome-tunneling: List of tunneling software and services"
+  },
+  "@lobstersgram:845": {
+    "telegraph_link": "https://telegra.ph/Benchmarking-Wild-vs-Mold--David-Lattimore-09-18",
+    "article_link": "https://davidlattimore.github.io/posts/2026/09/18/benchmarking-wild-vs-mold.html",
+    "discussion_link": "https://lobste.rs/s/gjjizm/benchmarking_wild_vs_mold",
+    "title": "Benchmarking Wild vs Mold"
+  },
+  "@lobstersgram:846": {
+    "telegraph_link": "https://telegra.ph/Theres-no-point-at-which-turning-your-brain-off-will-work-09-18-6",
+    "article_link": "https://danluu.com/brain-off/",
+    "discussion_link": "https://lobste.rs/s/dd6if1/there_s_no_point_at_which_turning_your",
+    "title": "There's no point at which turning your brain off will work"
+  },
+  "@lobstersgram:847": {
+    "telegraph_link": "https://telegra.ph/crumblesblog-FAQ-Why-isnt-mutable-a-subtype-of-immutable-or-vice-versa-09-18",
+    "article_link": "https://crumbles.blog/posts/2026-09-17-immutable-mutable.html",
+    "discussion_link": "https://lobste.rs/s/lzhzsx/faq_why_isn_t_mutable_subtype_immutable",
+    "title": "FAQ: Why isn’t mutable a subtype of immutable, or vice versa?"
+  },
+  "@lobstersgram:848": {
+    "telegraph_link": "https://telegra.ph/Release-v0290--warp-techwarpgate--GitHub-09-18",
+    "article_link": "https://github.com/warp-tech/warpgate/releases/tag/v0.29.0",
+    "discussion_link": "https://lobste.rs/s/riugyt/release_v0_29_0_warp_tech_warpgate",
+    "title": "Release v0.29.0 · warp-tech/warpgate"
   }
 }
