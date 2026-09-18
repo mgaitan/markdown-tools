@@ -5038,5 +5038,17 @@
     "article_link": "https://github.com/warp-tech/warpgate/releases/tag/v0.29.0",
     "discussion_link": "https://lobste.rs/s/riugyt/release_v0_29_0_warp_tech_warpgate",
     "title": "Release v0.29.0 · warp-tech/warpgate"
+  },
+  "@lobstersgram:849": {
+    "telegraph_link": "https://telegra.ph/The-Bikeshed-email---PHKs-Bikeshed-09-18",
+    "article_link": "https://phk.freebsd.dk/sagas/bikeshed/",
+    "discussion_link": "https://lobste.rs/s/9myagn/bikeshed_email_phks_bikeshed",
+    "title": "The Bikeshed email — PHKs Bikeshed"
+  },
+  "@lobstersgram:850": {
+    "telegraph_link": "https://telegra.ph/Vale-Your-style-our-editor-09-18",
+    "article_link": "https://vale.sh/",
+    "discussion_link": "https://lobste.rs/s/anvcfz/vale_code_like_linting_for_prose",
+    "title": "Vale, code-like linting for prose"
   }
 }
