@@ -5134,5 +5134,35 @@
     "article_link": "https://astrid.tech/2022/04/05/0/dead-tlds/",
     "discussion_link": "https://lobste.rs/s/q75kgo/what_happens_tlds_when_their_country",
     "title": "What happens to TLDs when their country stops existing? (2022)"
+  },
+  "@lobstersgram:865": {
+    "telegraph_link": "https://telegra.ph/we-have-a-year-to-fix-security-everywhere-09-19",
+    "article_link": "https://jyn.dev/a-year-to-fix-security/",
+    "discussion_link": "https://lobste.rs/s/re9wk8/we_have_year_fix_security_everywhere",
+    "title": "we have a year to fix security everywhere"
+  },
+  "@lobstersgram:866": {
+    "telegraph_link": "https://telegra.ph/Thread-identity-switcheroo-for-io-uring-LWNnet-09-19",
+    "article_link": "https://lwn.net/SubscriberLink/1094303/50affb2e7bd3e698/",
+    "discussion_link": "https://lobste.rs/s/rpc7qb/thread_identity_switcheroo_for_io_uring",
+    "title": "Thread-identity switcheroo for io_uring"
+  },
+  "@lobstersgram:867": {
+    "telegraph_link": "https://telegra.ph/Laya---33ms-Multilingual-System-1-Decision-Engine-with-Calibrated-Probabilities-09-19-2",
+    "article_link": "https://laya.convaiinnovations.com/",
+    "discussion_link": "https://lobste.rs/s/ojukrw/laya_33ms_multilingual_system_1_decision",
+    "title": "Laya — 33ms Multilingual System 1 Decision Engine"
+  },
+  "@lobstersgram:868": {
+    "telegraph_link": "https://telegra.ph/Secure-VMs-for-Kubernetes-Hardening-Kata-Containers-09-19",
+    "article_link": "https://srcreigh.ca/posts/auditable-kata/",
+    "discussion_link": "https://lobste.rs/s/yfz406/secure_vms_for_kubernetes_hardening_kata",
+    "title": "Secure VMs for Kubernetes: Hardening Kata containers"
+  },
+  "@lobstersgram:869": {
+    "telegraph_link": "https://telegra.ph/OpenGOAL-09-19",
+    "article_link": "https://opengoal.dev/",
+    "discussion_link": "https://lobste.rs/s/xfeuet/reviving_language_brought_us_jak_daxter",
+    "title": "Reviving the language that brought us the Jak & Daxter Series"
   }
 }
