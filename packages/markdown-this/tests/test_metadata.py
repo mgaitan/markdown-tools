@@ -169,7 +169,7 @@ def test_extract_structured_article_reads_graph_and_social_text() -> None:
         "First post.\n\nSecond post.",
         {
             "title": "Thread title",
-            "author": "Example social",
+            "publisher": "Example social",
             "image": "https://example.com/thread.jpg",
             "type": "SocialMediaPosting",
         },

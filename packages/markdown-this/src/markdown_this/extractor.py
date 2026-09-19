@@ -108,7 +108,9 @@ def _extract_html_content(  # noqa: PLR0913
     structured_article = extract_structured_article(content_html, base_url)
     if structured_article:
         _structured_text, structured_metadata = structured_article
-        metadata = {**structured_metadata, **metadata}
+        # Generic meta tags often expose author profile URLs (one per author),
+        # while JSON-LD keeps the readable, complete author list.
+        metadata = {**metadata, **structured_metadata}
     article = extract_fusion_article(content_html)
     rule_html = apply_domain_rule(content_html, base_url)
     if rule_html:
