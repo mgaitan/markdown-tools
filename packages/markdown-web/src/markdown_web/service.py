@@ -38,6 +38,7 @@ from PIL import Image, ImageOps
 from PIL.Image import UnidentifiedImageError
 from pypdf import PdfReader, PdfWriter
 
+from markdown_web.math import replace_marked_math
 from markdown_web.schemas import SourceMetadata, SourceRequest
 from markdown_web.telegram import send_telegram_notifications
 
@@ -518,6 +519,7 @@ def prepare_content(request: SourceRequest) -> PreparedContent:
         intro = ""
 
     markdown, metadata = _merge_metadata(markdown, metadata)
+    markdown = replace_marked_math(markdown, os.getenv("SITE_URL", "https://markdown.fastapicloud.dev"))
     title = metadata.title or title
     return PreparedContent(
         title=title,

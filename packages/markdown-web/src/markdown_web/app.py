@@ -23,6 +23,13 @@ from starlette.datastructures import UploadFile
 
 from markdown_web import assets, jobs
 from markdown_web.bookmarklet import build_bookmarklets
+from markdown_web.math import (
+    FALLBACK_CACHE_CONTROL,
+    FORMULA_CACHE_CONTROL,
+    MathFormulaError,
+    decode_formula,
+    render_formula_png,
+)
 from markdown_web.schemas import (
     ImageUploadResponse,
     SourceMetadata,
@@ -161,6 +168,17 @@ def _path_source(url: str, request: Request) -> str:
     if request.url.query:
         return f"{url}?{request.url.query}"
     return url
+
+
+@app.get("/math/{formula_token}.png", include_in_schema=False)
+def math_png(formula_token: str) -> Response:
+    """Serve an extracted LaTex formula as a PNG."""
+    try:
+        image = render_formula_png(decode_formula(formula_token))
+    except MathFormulaError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
+    cache_control = FALLBACK_CACHE_CONTROL if image.is_fallback else FORMULA_CACHE_CONTROL
+    return Response(image.content, media_type="image/png", headers={"Cache-Control": cache_control})
 
 
 async def _request_data(request: Request) -> SourceRequest:

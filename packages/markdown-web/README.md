@@ -1,8 +1,9 @@
 # Markdown-web
 
-Minimal FastAPI service around [`markdown-this`](../markdown-this/) and
-[`md-to-telegraph`](../md-to-telegraph/), with EPUB export through
-[`md-to-epub`](../md-to-epub/).
+FastAPI service for extracting URLs and documents as Markdown, editing them,
+and publishing them to Telegraph. It uses
+[`markdown-this`](../markdown-this/), [`md-to-telegraph`](../md-to-telegraph/),
+and [`md-to-epub`](../md-to-epub/).
 
 ## Run
 
@@ -154,6 +155,16 @@ curl -X POST http://127.0.0.1:8000/t/jobs \
 Agents can read `/llms.txt` for the endpoint contract, accepted YAML front
 matter, and examples. The machine-readable contract is FastAPI's existing
 OpenAPI document at `/openapi.json`; there is no separate `openschema.json`.
+
+### Math formulas
+
+Some pages use `$m ... m$` and `$$m ... m$$` markers for LaTex formulas.
+During preparation, the service replaces those markers with PNG image Markdown
+pointing at its immutable `GET /math/<token>.png` endpoint. That endpoint
+renders the formula through the free CodeCogs service and caches the image for
+one year. It needs outbound access to `latex.codecogs.com`, but no API key or
+image-storage configuration. If CodeCogs is unavailable, it returns a local
+PNG containing the formula text.
 
 Long Markdown is split into Telegraph pages at paragraph or line boundaries
 before publication. The first page URL is returned, and continuation pages

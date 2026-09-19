@@ -135,6 +135,15 @@ def test_prepare_content_extracts_url_and_merges_metadata(monkeypatch: pytest.Mo
     assert result.fallback_text == "Fallback"
 
 
+def test_prepare_content_replaces_marked_math_with_service_image(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("SITE_URL", "https://markdown.example")
+
+    result = service.prepare_content(SourceRequest(markdown="# Formula\n\n$$m \\frac{1}{N} m$$"))
+
+    assert "![Formula](https://markdown.example/math/" in result.markdown
+    assert "$$m" not in result.markdown
+
+
 def test_prepare_content_accepts_raw_html(mocker: MockerFixture) -> None:
     extract = mocker.patch.object(
         service,

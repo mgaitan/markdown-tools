@@ -3,6 +3,7 @@ from pathlib import Path
 import markdown_web.app as app_module
 import pytest
 from fastapi.testclient import TestClient
+from markdown_web.math import FormulaImage
 from markdown_web.schemas import SourceMetadata, SourceRequest
 from markdown_web.service import PreparedContent
 from md_to_telegraph import TelegraphContentError
@@ -48,6 +49,33 @@ def test_bookmarklet_page_uses_the_public_service_url() -> None:
     assert "https://markdown.fastapicloud.dev/md" in response.text
     assert "https://markdown.fastapicloud.dev/bookmarklet/capture?action=md" in response.text
     assert "http://testserver/md" not in response.text
+
+
+def test_math_png_renders_a_decoded_formula(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(app_module, "render_formula_png", lambda formula: FormulaImage(formula.encode()))
+
+    response = client.get("/math/XGZyYWN7MX17Tn0.png")
+
+    assert response.status_code == HTTP_200_OK
+    assert response.content == b"\\frac{1}{N}"
+    assert response.headers["cache-control"] == "public, max-age=31536000, immutable"
+
+
+def test_math_png_does_not_cache_a_fallback(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(
+        app_module,
+        "render_formula_png",
+        lambda formula: FormulaImage(formula.encode(), is_fallback=True),
+    )
+
+    response = client.get("/math/XGZyYWN7MX17Tn0.png")
+
+    assert response.status_code == HTTP_200_OK
+    assert response.headers["cache-control"] == "no-store"
+
+
+def test_math_png_rejects_invalid_tokens() -> None:
+    assert client.get("/math/not-a-valid-token!.png").status_code == HTTP_422_UNPROCESSABLE_CONTENT
 
 
 def test_bookmarklet_edit_opens_prepared_markdown(monkeypatch: pytest.MonkeyPatch) -> None:
