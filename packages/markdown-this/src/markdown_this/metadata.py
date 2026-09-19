@@ -100,7 +100,8 @@ def extract_structured_article(content_html: str, base_url: str = "") -> tuple[s
             field: value
             for field, value in (
                 ("title", _schema_text(candidate.get("headline")) or _schema_text(candidate.get("name"))),
-                ("author", _schema_name(candidate.get("author")) or _schema_name(candidate.get("publisher"))),
+                ("author", _schema_name(candidate.get("author"))),
+                ("publisher", _schema_name(candidate.get("publisher"))),
                 ("date", _schema_text(candidate.get("datePublished"))),
                 ("image", _schema_image(candidate.get("image"), base_url)),
                 ("type", page_type),
