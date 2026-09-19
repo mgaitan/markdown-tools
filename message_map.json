@@ -5062,5 +5062,29 @@
     "article_link": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
     "discussion_link": "https://lobste.rs/s/meo3ou/saving_another_100tb_ram_with_math_rust",
     "title": "Saving another 100TB of RAM with math (and Rust)"
+  },
+  "@lobstersgram:853": {
+    "telegraph_link": "https://telegra.ph/Write-while-learning--purplesyringas-blog-09-19",
+    "article_link": "https://purplesyringa.moe/blog/write-while-learning/",
+    "discussion_link": "https://lobste.rs/s/ukzxid/write_while_learning",
+    "title": "Write while learning"
+  },
+  "@lobstersgram:854": {
+    "telegraph_link": "https://telegra.ph/Unit-tests-mark-territory-more-than-squash-bugs-09-19-2",
+    "article_link": "https://yosefk.com/blog/unit-tests-mark-territory-more-than-squash-bugs.html",
+    "discussion_link": "https://lobste.rs/s/mkv2pl/unit_tests_mark_territory_more_than",
+    "title": "Unit tests mark territory more than squash bugs"
+  },
+  "@lobstersgram:855": {
+    "telegraph_link": "https://telegra.ph/OpenLoco-version-2609---OpenLoco-09-19",
+    "article_link": "https://openloco.io/news/2026/09/openloco-v26.09.html",
+    "discussion_link": "https://lobste.rs/s/c0ei1a/openloco_version_26_09",
+    "title": "OpenLoco version 26.09"
+  },
+  "@lobstersgram:856": {
+    "telegraph_link": "https://telegra.ph/The-scourge-of-x86-emulation---FEX-Emu---A-fast-linux-usermode-x86-and-x86-64-emulator-09-19",
+    "article_link": "https://fex-emu.com/Scourge-of-emulation/",
+    "discussion_link": "https://lobste.rs/s/iq6w6l/scourge_x86_emulation",
+    "title": "The scourge of x86 emulation"
   }
 }
