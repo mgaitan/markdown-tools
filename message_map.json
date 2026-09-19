@@ -5050,5 +5050,17 @@
     "article_link": "https://vale.sh/",
     "discussion_link": "https://lobste.rs/s/anvcfz/vale_code_like_linting_for_prose",
     "title": "Vale, code-like linting for prose"
+  },
+  "@lobstersgram:851": {
+    "telegraph_link": "https://telegra.ph/sudo-and-OpenDoas-timestamp-files-09-19",
+    "article_link": "https://xn--1xa.duncano.de/sudo-doas-timestamp-files",
+    "discussion_link": "https://lobste.rs/s/9njxl2/sudo_opendoas_timestamp_files_2020",
+    "title": "sudo and OpenDoas timestamp files (2020)"
+  },
+  "@lobstersgram:852": {
+    "telegraph_link": "https://telegra.ph/Saving-another-100TB-of-RAM-with-math-and-Rust--Cloudflare-Blog-09-19",
+    "article_link": "https://blog.cloudflare.com/saving-100-tb-of-ram-with-math/",
+    "discussion_link": "https://lobste.rs/s/meo3ou/saving_another_100tb_ram_with_math_rust",
+    "title": "Saving another 100TB of RAM with math (and Rust)"
   }
 }
