@@ -7,6 +7,7 @@ from markdown_web import math
 from markdown_web.math import MathFormulaError, decode_formula, math_image_url, replace_marked_math
 
 EXPECTED_FORMULA_COUNT = 2
+EXPECTED_SINGLE_FORMULA_COUNT = 1
 
 
 def test_replace_marked_math_turns_block_and_inline_formulas_into_images() -> None:
@@ -32,9 +33,32 @@ At $m N=100, \\text{CV} \\approx 99\\% m$.
 
 
 def test_replace_marked_math_leaves_regular_currency_and_math_untouched() -> None:
-    markdown = "A price is $10 and ordinary math is $x$."
+    markdown = "A price is $10, ordinary math is $x$, and a word is $minimum$."
 
     assert replace_marked_math(markdown, "https://markdown.example") == markdown
+
+
+def test_replace_marked_math_accepts_compact_latex_syntax() -> None:
+    result = replace_marked_math("$mS_2m$ and $mw\\timesm$", "https://markdown.example")
+
+    assert result.count("![Formula](https://markdown.example/math/") == EXPECTED_FORMULA_COUNT
+
+
+def test_replace_marked_math_preserves_inline_and_fenced_code() -> None:
+    markdown = """A formula: $m x m$.
+
+`$m x m$`
+
+```tex
+$$m x m$$
+```
+"""
+
+    result = replace_marked_math(markdown, "https://markdown.example")
+
+    assert result.count("![Formula](https://markdown.example/math/") == EXPECTED_SINGLE_FORMULA_COUNT
+    assert "`$m x m$`" in result
+    assert "$$m x m$$" in result
 
 
 def test_formula_tokens_round_trip_and_reject_invalid_values() -> None:
@@ -51,4 +75,7 @@ def test_render_formula_png_falls_back_when_codecogs_is_unavailable(monkeypatch:
 
     monkeypatch.setattr(math.requests, "get", timeout)
 
-    assert math.render_formula_png(r"\frac{1}{N}").startswith(b"\x89PNG\r\n\x1a\n")
+    image = math.render_formula_png(r"\frac{1}{N}")
+
+    assert image.content.startswith(b"\x89PNG\r\n\x1a\n")
+    assert image.is_fallback
