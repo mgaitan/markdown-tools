@@ -5164,5 +5164,35 @@
     "article_link": "https://opengoal.dev/",
     "discussion_link": "https://lobste.rs/s/xfeuet/reviving_language_brought_us_jak_daxter",
     "title": "Reviving the language that brought us the Jak & Daxter Series"
+  },
+  "@lobstersgram:870": {
+    "telegraph_link": "https://telegra.ph/Most-Normal-C-Project-Coding-a-B2-Stealth-Bomber-in-GTA-3-09-19",
+    "article_link": "https://www.youtube.com/watch?v=OQM42Ee0fn8",
+    "discussion_link": "https://lobste.rs/s/uzbhh8/most_normal_c_project_coding_b2_stealth",
+    "title": "Most Normal C++ Project: Coding a B2 Stealth Bomber in GTA 3"
+  },
+  "@lobstersgram:871": {
+    "telegraph_link": "https://telegra.ph/Persistent-Databases-in-the-Browser-with-DuckDB-Wasm-and-OPFS---DuckDB-09-19",
+    "article_link": "https://duckdb.org/2026/09/18/opfs-wasm",
+    "discussion_link": "https://lobste.rs/s/k5shc5/persistent_databases_browser_with",
+    "title": "Persistent Databases in the Browser with DuckDB-Wasm and OPFS"
+  },
+  "@lobstersgram:872": {
+    "telegraph_link": "https://telegra.ph/GPT-6-Astra-Solves-a-WWI-German-Radio-Cipher---prinz-09-19-2",
+    "article_link": "https://www.prinzai.com/p/gpt-6-astra-solves-a-wwi-german-radio",
+    "discussion_link": "https://lobste.rs/s/ywnsld/gpt_6_astra_solves_wwi_german_radio_cipher",
+    "title": "GPT-6 Astra Solves a WWI German Radio Cipher"
+  },
+  "@lobstersgram:873": {
+    "telegraph_link": "https://telegra.ph/I-Built-Non-Autoregressive-Decision-Models-a-Year-Ago-Then-a-Frontier-Lab-Called-It-a-Breakthrough---DEV-Community-09-19",
+    "article_link": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+    "discussion_link": "https://lobste.rs/s/kaqsr5/i_built_non_autoregressive_decision",
+    "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\""
+  },
+  "@lobstersgram:874": {
+    "telegraph_link": "https://telegra.ph/Dont-Let-Architecture-Astronauts-Scare-You---Joel-on-Software-09-19",
+    "article_link": "https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/",
+    "discussion_link": "https://lobste.rs/s/3xfxnj/don_t_let_architecture_astronauts_scare",
+    "title": "Don’t Let Architecture Astronauts Scare You (2001)"
   }
 }
