@@ -50,6 +50,20 @@ def test_bookmarklet_page_uses_the_public_service_url() -> None:
     assert "http://testserver/md" not in response.text
 
 
+def test_math_png_renders_a_decoded_formula(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setattr(app_module, "render_formula_png", lambda formula: formula.encode())
+
+    response = client.get("/math/XGZyYWN7MX17Tn0.png")
+
+    assert response.status_code == HTTP_200_OK
+    assert response.content == b"\\frac{1}{N}"
+    assert response.headers["cache-control"] == "public, max-age=31536000, immutable"
+
+
+def test_math_png_rejects_invalid_tokens() -> None:
+    assert client.get("/math/not-a-valid-token!.png").status_code == HTTP_422_UNPROCESSABLE_CONTENT
+
+
 def test_bookmarklet_edit_opens_prepared_markdown(monkeypatch: pytest.MonkeyPatch) -> None:
     seen: dict[str, SourceRequest] = {}
 
