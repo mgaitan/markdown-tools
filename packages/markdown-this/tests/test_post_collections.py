@@ -116,6 +116,19 @@ def test_current_x_markup_keeps_only_thread_text() -> None:
         assert noise not in result
 
 
+def test_current_x_markup_unwraps_nested_text_blocks() -> None:
+    html = """
+    <main><article>
+      <a href="/alice/status/1001">4 September</a>
+      <div dir="auto">First paragraph.<p>Second paragraph.</p></div>
+    </article></main>
+    """
+
+    result = apply_domain_rule(html, "https://x.com/alice/status/1001")
+
+    assert result and "First paragraph." in result and "Second paragraph." in result
+
+
 def test_collection_requires_requested_post_and_skips_unusable_cells() -> None:
     rule = DomainRule(hosts=("forum.example",), body_selectors=("main",), item_selector="article")
     html = '<main><article>No permalink</article><article><a href="javascript:bad"><time>Bad</time></a></article>'

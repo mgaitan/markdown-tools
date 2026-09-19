@@ -2,20 +2,23 @@
 
 [![PyPI](https://img.shields.io/pypi/v/markdown-this)](https://pypi.org/project/markdown-this/)
 
-Extract the readable content of a URL and convert it to Markdown. The package
-also handles GitHub repositories and Markdown files through the GitHub API,
-arXiv abstract pages through their HTML representation, YouTube videos, and
-oEmbed-backed Vimeo/Dailymotion media pages and public X/Twitter posts.
-Embedded Arc Fusion article data (including Pagina/12) is extracted by format
-from downloaded HTML, local files and browser-supplied HTML alike.
-When generic extraction selects too little content, schema.org JSON-LD article
-text can be used as a fallback.
-Small declarative domain rules can preselect article containers for known
-high-value sites such as Substack.
-For X/Twitter, public URL extraction uses the shared rich oEmbed renderer;
-supplied browser HTML uses declarative post-collection selectors. Neither
-path guarantees a complete thread: front matter declares `extraction_scope`
-as `oembed` or `captured-posts`, respectively.
+Extract readable content from a URL, local file, or supplied HTML and convert
+it to Markdown.
+
+## Features
+
+- GitHub repositories and Markdown files through the GitHub API.
+- arXiv abstract pages, YouTube videos, and oEmbed-backed Vimeo, Dailymotion,
+  and public X/Twitter posts.
+- Embedded Arc Fusion article data, including Pagina/12.
+- Local files and browser-supplied HTML.
+- schema.org JSON-LD article text as a fallback when generic extraction is too
+  short.
+- Declarative container rules for selected sites, including Substack.
+
+Public X/Twitter URLs use oEmbed; browser-supplied HTML uses post-collection
+selectors. Neither mode guarantees a complete thread. The resulting front
+matter identifies the extraction scope as `oembed` or `captured-posts`.
 
 ## Installation
 

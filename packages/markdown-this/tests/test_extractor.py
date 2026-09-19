@@ -82,6 +82,24 @@ def test_extract_main_content_emits_html_metadata(*, mocker: MockerFixture) -> N
     }
 
 
+def test_extract_main_content_prefers_structured_multiple_authors_over_profile_urls(*, mocker: MockerFixture) -> None:
+    html = """
+    <meta name="author" content="https://example.com/profile/first">
+    <meta name="author" content="https://example.com/profile/second">
+    <script type="application/ld+json">
+      {"@type": "NewsArticle", "articleBody": "Article body.",
+       "author": [{"name": "First Author"}, {"name": "Second Author"}]}
+    </script>
+    <article><p>Article body.</p></article>
+    """
+    mocker.patch.object(extractor_module, "Document", return_value=_document(mocker=mocker))
+
+    _title, markdown, _fallback, _intro = extract_main_content(html, min_content_length=0)
+
+    metadata, _body = split_front_matter(markdown)
+    assert metadata["author"] == "First Author, Second Author"
+
+
 def test_extract_main_content_falls_back_when_special_url_extractor_fails(*, mocker: MockerFixture) -> None:
     broken_extractor = mocker.Mock(side_effect=RuntimeError("broken"))
     ignored_extractor = mocker.Mock(return_value=None)
