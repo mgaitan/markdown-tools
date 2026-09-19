@@ -5086,5 +5086,29 @@
     "article_link": "https://fex-emu.com/Scourge-of-emulation/",
     "discussion_link": "https://lobste.rs/s/iq6w6l/scourge_x86_emulation",
     "title": "The scourge of x86 emulation"
+  },
+  "@lobstersgram:857": {
+    "telegraph_link": "https://telegra.ph/Jalapeño-Shows-Power-of-LLMs-for-Chip-Design---IEEE-Spectrum-09-19",
+    "article_link": "https://spectrum.ieee.org/llms-for-chip-design",
+    "discussion_link": "https://lobste.rs/s/7knhjd/how_openai_used_its_own_llms_design_its",
+    "title": "How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip"
+  },
+  "@lobstersgram:858": {
+    "telegraph_link": "https://telegra.ph/The-Implications-of-Linguistic-Illegibility-for-LLM-Security-09-19-5",
+    "article_link": "https://arxiv.org/abs/2609.02852",
+    "discussion_link": "https://lobste.rs/s/bkjmjg/implications_linguistic_illegibility",
+    "title": "The Implications of Linguistic Illegibility for LLM Security"
+  },
+  "@lobstersgram:859": {
+    "telegraph_link": "https://telegra.ph/The-Secret-Life-of-Circuits-is-here---lcamtufs-thing-09-19",
+    "article_link": "https://blog.coredump.cx/p/the-secret-life-of-circuits-is-here",
+    "discussion_link": "https://lobste.rs/s/sn8voe/secret_life_circuits_is_here",
+    "title": "“The Secret Life of Circuits” is here"
+  },
+  "@lobstersgram:860": {
+    "telegraph_link": "https://telegra.ph/kicking-the-tires-on-jev-with-2048--GitHub-09-19",
+    "article_link": "https://gist.github.com/cablehead/bdf9ad946ceb26d9008976e49c9bfbbb",
+    "discussion_link": "https://lobste.rs/s/hmkk2c/kicking_tires_on_jev_typesafe_s_system_one",
+    "title": "kicking the tires on jev (TypeSafe's System One model) with 2048"
   }
 }
