@@ -5236,5 +5236,17 @@
     "article_link": "https://heif-heist.com/",
     "discussion_link": "https://lobste.rs/s/qpbblx/heif_heist",
     "title": "HEIF Heist"
+  },
+  "@lobstersgram:882": {
+    "telegraph_link": "https://telegra.ph/Using-non-breakable-spaces-in-test-method-names---Matthieu-Napoli-09-20",
+    "article_link": "https://mnapoli.fr/using-non-breakable-spaces-in-test-method-names",
+    "discussion_link": "https://lobste.rs/s/bvsaiy/using_non_breakable_spaces_test_method",
+    "title": "Using non-breakable spaces in test method names"
+  },
+  "@lobstersgram:883": {
+    "telegraph_link": "https://telegra.ph/iamgioquarkdown---Markdown-with-superpowers-from-ideas-to-papers-presentations-websites-books-and-knowledge-bases-09-20",
+    "article_link": "https://github.com/iamgio/quarkdown",
+    "discussion_link": "https://lobste.rs/s/wryj2p/quarkdown_turing_complete_markdown",
+    "title": "Quarkdown: Turing-complete Markdown typesetting system"
   }
 }
