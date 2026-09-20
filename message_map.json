@@ -5302,5 +5302,23 @@
     "article_link": "https://www.osnews.com/story/145877/an-actively-maintained-and-updated-motif-fork-actually-exists/",
     "discussion_link": "https://lobste.rs/s/xrnbcn/actively_maintained_updated_motif_fork",
     "title": "An actively maintained and updated Motif fork actually exists"
+  },
+  "@lobstersgram:893": {
+    "telegraph_link": "https://telegra.ph/Bot-free-self-hosted-analytics-with-GoatCounter-on-NixOS-09-20-2",
+    "article_link": "https://vincent.bernat.ch/en/blog/2026-goatcounter",
+    "discussion_link": "https://lobste.rs/s/1xxu7n/bot_free_self_hosted_analytics_with",
+    "title": "Bot-free self-hosted analytics with GoatCounter on NixOS"
+  },
+  "@lobstersgram:894": {
+    "telegraph_link": "https://telegra.ph/Scott-Jenson-Are-we-really-going-to-use-the-same-Desktop-UX-forever-09-20",
+    "article_link": "https://www.youtube.com/watch?v=V7AfAcQwLW0",
+    "discussion_link": "https://lobste.rs/s/vpvdlw/scott_jenson_are_we_really_going_use_same",
+    "title": "Scott Jenson: Are we really going to use the same Desktop UX forever?"
+  },
+  "@lobstersgram:895": {
+    "telegraph_link": "https://telegra.ph/Deterministic-Core-Non-Deterministic-Shell---Outdata-09-20",
+    "article_link": "https://outdata.net/blog/260803",
+    "discussion_link": "https://lobste.rs/s/qupohm/deterministic_core_non_deterministic",
+    "title": "Deterministic Core, Non-Deterministic Shell"
   }
 }
