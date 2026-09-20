@@ -5194,5 +5194,23 @@
     "article_link": "https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/",
     "discussion_link": "https://lobste.rs/s/3xfxnj/don_t_let_architecture_astronauts_scare",
     "title": "Don’t Let Architecture Astronauts Scare You (2001)"
+  },
+  "@lobstersgram:875": {
+    "telegraph_link": "https://telegra.ph/ZK-JPEG-Zero-knowledge-Image-Editing-and-Compression-09-20-3",
+    "article_link": "https://eprint.iacr.org/2026/2039",
+    "discussion_link": "https://lobste.rs/s/cvqxkk/zk_jpeg_zero_knowledge_image_editing",
+    "title": "ZK-JPEG: Zero-knowledge Image Editing and Compression"
+  },
+  "@lobstersgram:876": {
+    "telegraph_link": "https://telegra.ph/CleanShots-bulldozed-settings---Unsung-09-20",
+    "article_link": "https://unsung.aresluna.org/cleanshots-bulldozed-settings/",
+    "discussion_link": "https://lobste.rs/s/adploh/cleanshot_s_bulldozed_settings",
+    "title": "CleanShot’s bulldozed settings"
+  },
+  "@lobstersgram:877": {
+    "telegraph_link": "https://telegra.ph/Thoughts-on-the-Future-of-Web-Browsers-09-20-2",
+    "article_link": "https://sarahjamielewis.com/log/2026/future-of-web-browsers.html",
+    "discussion_link": "https://lobste.rs/s/96omjg/thoughts_on_future_web_browsers",
+    "title": "Thoughts on the Future of Web Browsers"
   }
 }
