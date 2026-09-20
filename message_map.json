@@ -5248,5 +5248,35 @@
     "article_link": "https://github.com/iamgio/quarkdown",
     "discussion_link": "https://lobste.rs/s/wryj2p/quarkdown_turing_complete_markdown",
     "title": "Quarkdown: Turing-complete Markdown typesetting system"
+  },
+  "@lobstersgram:884": {
+    "telegraph_link": "https://telegra.ph/Whats-been-going-on-in-w64devkit-the-past-year-09-20-3",
+    "article_link": "https://nullprogram.com/blog/2026/09/20/",
+    "discussion_link": "https://lobste.rs/s/ilqm2u/what_s_been_going_on_w64devkit_past_year",
+    "title": "What's been going on in w64devkit the past year"
+  },
+  "@lobstersgram:885": {
+    "telegraph_link": "https://telegra.ph/You-Know-GDPR-Is-Good-Based-on-Who-Hates-It-09-20-2",
+    "article_link": "https://matduggan.com/you-know-gdpr-is-good-based-on-who-hates-it/",
+    "discussion_link": "https://lobste.rs/s/poeqrk/you_know_gdpr_is_good_based_on_who_hates_it",
+    "title": "You Know GDPR Is Good Based on Who Hates It"
+  },
+  "@lobstersgram:886": {
+    "telegraph_link": "https://telegra.ph/Lambda-MicroEgg--Hey-There-Buddo-09-20",
+    "article_link": "https://www.philipzucker.com/lambda_miller_egg/",
+    "discussion_link": "https://lobste.rs/s/o6vyfj/lambda_microegg",
+    "title": "Lambda MicroEgg"
+  },
+  "@lobstersgram:887": {
+    "telegraph_link": "https://telegra.ph/Beyond-jj-config--tools-ecosystem-09-20-3",
+    "article_link": "https://andre.arko.net/2026/09/16/beyond-jj-config-and-tools-ecosystem/",
+    "discussion_link": "https://lobste.rs/s/xgdt4u/beyond_jj_config_tools_ecosystem",
+    "title": "Beyond jj: config & tools ecosystem"
+  },
+  "@lobstersgram:888": {
+    "telegraph_link": "https://telegra.ph/Software-sandboxing-The-basics-09-20",
+    "article_link": "https://blog.emilua.org/2025/01/12/software-sandboxing-basics/",
+    "discussion_link": "https://lobste.rs/s/brptxb/software_sandboxing_basics_2025",
+    "title": "Software sandboxing: The basics (2025)"
   }
 }
