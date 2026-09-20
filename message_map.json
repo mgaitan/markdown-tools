@@ -5278,5 +5278,29 @@
     "article_link": "https://blog.emilua.org/2025/01/12/software-sandboxing-basics/",
     "discussion_link": "https://lobste.rs/s/brptxb/software_sandboxing_basics_2025",
     "title": "Software sandboxing: The basics (2025)"
+  },
+  "@lobstersgram:889": {
+    "telegraph_link": "https://telegra.ph/Adversarial-examples-for-fast-hash-functions-09-20",
+    "article_link": "https://thomasahle.com/blog/adversarial-examples-for-hashes/",
+    "discussion_link": "https://lobste.rs/s/lmmuu3/adversarial_examples_for_fast_hash",
+    "title": "Adversarial examples for fast hash functions"
+  },
+  "@lobstersgram:890": {
+    "telegraph_link": "https://telegra.ph/Vims-UserGettingBored-autocmd-09-20",
+    "article_link": "https://evanhahn.com/usergettingbored-vim/",
+    "discussion_link": "https://lobste.rs/s/hbipbf/vim_s_usergettingbored_autocmd",
+    "title": "Vim's UserGettingBored autocmd"
+  },
+  "@lobstersgram:891": {
+    "telegraph_link": "https://telegra.ph/ChatGPT-now-knows-what-you-do-on-other-websites-via-ad-collector-09-20-6",
+    "article_link": "https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/",
+    "discussion_link": "https://lobste.rs/s/jbnmj9/chatgpt_now_knows_what_you_do_on_other",
+    "title": "ChatGPT now knows what you do on other websites via ad collector"
+  },
+  "@lobstersgram:892": {
+    "telegraph_link": "https://telegra.ph/An-actively-maintained-and-updated-Motif-fork-actually-exists---OSnews-09-20",
+    "article_link": "https://www.osnews.com/story/145877/an-actively-maintained-and-updated-motif-fork-actually-exists/",
+    "discussion_link": "https://lobste.rs/s/xrnbcn/actively_maintained_updated_motif_fork",
+    "title": "An actively maintained and updated Motif fork actually exists"
   }
 }
