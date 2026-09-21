@@ -5332,5 +5332,23 @@
     "article_link": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
     "discussion_link": "https://lobste.rs/s/vwl2kn/what_sun_got_wrong",
     "title": "What Sun got wrong"
+  },
+  "@lobstersgram:898": {
+    "telegraph_link": "https://telegra.ph/Making-a-game-for-the-GBA-and-PC-from-the-same-codebase--Matt-Greer-09-21",
+    "article_link": "https://mattgreer.dev/blog/making-a-game-for-gba-and-pc/",
+    "discussion_link": "https://lobste.rs/s/xvkvhh/making_game_for_gba_pc_from_same_codebase",
+    "title": "Making a game for the GBA and PC from the same codebase"
+  },
+  "@lobstersgram:899": {
+    "telegraph_link": "https://telegra.ph/Skia-compositor-for-WPE-WebKit-and-WebKitGTK--Carlos-Garcia-Campos-09-21",
+    "article_link": "https://blogs.igalia.com/carlosgc/2026/09/21/skia-compositor-for-wpe-webkit-and-webkitgtk/",
+    "discussion_link": "https://lobste.rs/s/gexhnh/skia_compositor_for_wpe_webkit_webkitgtk",
+    "title": "Skia compositor for WPE WebKit and WebKitGTK"
+  },
+  "@lobstersgram:900": {
+    "telegraph_link": "https://telegra.ph/Why-do-computers-look-like-this-anyway-09-21",
+    "article_link": "https://www.youtube.com/watch?v=dpIuNUn0PZc",
+    "discussion_link": "https://lobste.rs/s/8gy9fa/why_do_computers_look_like_this_anyway",
+    "title": "Why do computers look like this anyway?"
   }
 }
