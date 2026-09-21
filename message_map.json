@@ -5320,5 +5320,11 @@
     "article_link": "https://outdata.net/blog/260803",
     "discussion_link": "https://lobste.rs/s/qupohm/deterministic_core_non_deterministic",
     "title": "Deterministic Core, Non-Deterministic Shell"
+  },
+  "@lobstersgram:896": {
+    "telegraph_link": "https://telegra.ph/Jane-Street-Blog---A-study-of-sequence-weighting-at-scale-09-21",
+    "article_link": "https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/",
+    "discussion_link": "https://lobste.rs/s/tamvz4/study_sequence_weighting_at_scale",
+    "title": "A study of sequence weighting at scale"
   }
 }
