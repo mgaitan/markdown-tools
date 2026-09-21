@@ -5350,5 +5350,23 @@
     "article_link": "https://www.youtube.com/watch?v=dpIuNUn0PZc",
     "discussion_link": "https://lobste.rs/s/8gy9fa/why_do_computers_look_like_this_anyway",
     "title": "Why do computers look like this anyway?"
+  },
+  "@lobstersgram:901": {
+    "telegraph_link": "https://telegra.ph/Windows-Exploitation-Techniques-Dangling-COM-Object-Registrations---Project-Zero-09-21-3",
+    "article_link": "https://projectzero.google/2026/09/windows-dangling-com.html",
+    "discussion_link": "https://lobste.rs/s/1somoo/windows_exploitation_techniques",
+    "title": "Windows Exploitation Techniques: Dangling COM Object Registrations"
+  },
+  "@lobstersgram:902": {
+    "telegraph_link": "https://telegra.ph/Attention-is-all-you-have-09-21-4",
+    "article_link": "https://alicegg.tech/2026/09/21/attention",
+    "discussion_link": "https://lobste.rs/s/fbo41b/attention_is_all_you_have",
+    "title": "Attention is all you have"
+  },
+  "@lobstersgram:903": {
+    "telegraph_link": "https://telegra.ph/Running-an-Optimal-Trace-09-21-2",
+    "article_link": "https://anishathalye.com/optimal-trace/",
+    "discussion_link": "https://lobste.rs/s/jbbxgy/running_optimal_trace",
+    "title": "Running an Optimal Trace"
   }
 }
