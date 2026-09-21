@@ -5326,5 +5326,11 @@
     "article_link": "https://blog.janestreet.com/a-study-of-sequence-weighting-at-scale/",
     "discussion_link": "https://lobste.rs/s/tamvz4/study_sequence_weighting_at_scale",
     "title": "A study of sequence weighting at scale"
+  },
+  "@lobstersgram:897": {
+    "telegraph_link": "https://telegra.ph/What-Sun-got-wrong--The-Observation-Deck-09-21",
+    "article_link": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
+    "discussion_link": "https://lobste.rs/s/vwl2kn/what_sun_got_wrong",
+    "title": "What Sun got wrong"
   }
 }
