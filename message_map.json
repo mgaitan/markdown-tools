@@ -5446,5 +5446,29 @@
     "article_link": "https://blog.veitheller.de/A_First_Futamura_Projection.html",
     "discussion_link": "https://lobste.rs/s/uahccr/first_futamura_projection",
     "title": "A First Futamura Projection"
+  },
+  "@lobstersgram:917": {
+    "telegraph_link": "https://telegra.ph/Do-you-use-visited-on-links---Kev-Quirk-09-22",
+    "article_link": "https://kevquirk.com/do-you-use-visited-on-links",
+    "discussion_link": "https://lobste.rs/s/34xsdg/do_you_use_visited_on_links",
+    "title": "Do you use :visited on links?"
+  },
+  "@lobstersgram:918": {
+    "telegraph_link": "https://telegra.ph/Shifting-the-Trap-09-22",
+    "article_link": "https://jxself.org/shifting-the-trap.shtml",
+    "discussion_link": "https://lobste.rs/s/mrtqsz/shifting_trap",
+    "title": "Shifting the Trap"
+  },
+  "@lobstersgram:919": {
+    "telegraph_link": "https://telegra.ph/Writing-Rust-code-thats-faster-than-state-of-the-art-libraries-by-asking-agents-to-make-the-code-faster--Max-Woolfs-Blog-09-22",
+    "article_link": "https://minimaxir.com/2026/09/agentic-iteration/",
+    "discussion_link": "https://lobste.rs/s/bg9j71/writing_rust_code_s_faster_than_state_art",
+    "title": "Writing Rust code that's faster than state-of-the-art libraries by asking agents to make the code faster"
+  },
+  "@lobstersgram:920": {
+    "telegraph_link": "https://telegra.ph/Reviving-TEMPEST-Attacks-With-An-Injected-Signal--Hackaday-09-22",
+    "article_link": "https://hackaday.com/2026/09/20/reviving-tempest-attacks-with-an-injected-signal/",
+    "discussion_link": "https://lobste.rs/s/ub3vw7/reviving_tempest_attacks_with_injected",
+    "title": "Reviving TEMPEST Attacks With An Injected Signal"
   }
 }
