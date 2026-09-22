@@ -5470,5 +5470,23 @@
     "article_link": "https://hackaday.com/2026/09/20/reviving-tempest-attacks-with-an-injected-signal/",
     "discussion_link": "https://lobste.rs/s/ub3vw7/reviving_tempest_attacks_with_injected",
     "title": "Reviving TEMPEST Attacks With An Injected Signal"
+  },
+  "@lobstersgram:921": {
+    "telegraph_link": "https://telegra.ph/Did-OpenAI-solve-the-wrong-Navier-Stokes-problem--Scientific-American-09-22",
+    "article_link": "https://www.scientificamerican.com/article/did-openai-solve-the-wrong-navier-stokes-problem/",
+    "discussion_link": "https://lobste.rs/s/wiuzrg/did_openai_solve_wrong_navier_stokes",
+    "title": "Did OpenAI solve the wrong Navier-Stokes problem?"
+  },
+  "@lobstersgram:922": {
+    "telegraph_link": "https://telegra.ph/tokens-too-cheap-to-meter-09-22-3",
+    "article_link": "https://jyn.dev/tokens-too-cheap-to-meter/",
+    "discussion_link": "https://lobste.rs/s/n4vfwm/tokens_too_cheap_meter",
+    "title": "tokens too cheap to meter"
+  },
+  "@lobstersgram:923": {
+    "telegraph_link": "https://telegra.ph/EvilVM-Documentation-Site-09-22",
+    "article_link": "https://web.archive.org/web/20250418124519/http://evilvm.ninja/",
+    "discussion_link": "https://lobste.rs/s/vhbyvk/evilvm_forth_shellcode",
+    "title": "EvilVM: Forth shellcode"
   }
 }
