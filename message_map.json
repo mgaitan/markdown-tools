@@ -5392,5 +5392,35 @@
     "article_link": "https://htmx.org/essays/markdown-in-src/",
     "discussion_link": "https://lobste.rs/s/xooho4/markdown_src",
     "title": "Markdown in /src"
+  },
+  "@lobstersgram:908": {
+    "telegraph_link": "https://telegra.ph/Design-your-programming-languages-right-09-22",
+    "article_link": "https://blog.veritates.love/design-it-right",
+    "discussion_link": "https://lobste.rs/s/fdgccx/design_your_programming_languages_right",
+    "title": "Design your programming languages right (2024)"
+  },
+  "@lobstersgram:909": {
+    "telegraph_link": "https://telegra.ph/stack-unwinding-can-lead-to-leakless-code-execution-09-22",
+    "article_link": "https://pepsipu.com/blog/2026-09-dwarf/",
+    "discussion_link": "https://lobste.rs/s/0d6gcs/stack_unwinding_can_lead_leakless_code",
+    "title": "stack unwinding can lead to leakless code execution"
+  },
+  "@lobstersgram:910": {
+    "telegraph_link": "https://telegra.ph/Arguing-about-arguments-09-22",
+    "article_link": "https://steveklabnik.com/writing/arguing-about-arguments/",
+    "discussion_link": "https://lobste.rs/s/bvrhgq/arguing_about_arguments",
+    "title": "Arguing about arguments"
+  },
+  "@lobstersgram:911": {
+    "telegraph_link": "https://telegra.ph/Cheap-and-easy-throwaway-VPN-server--Alexander-Fortin-09-22",
+    "article_link": "https://a.l3x.in/blog/throwaway-vpn/",
+    "discussion_link": "https://lobste.rs/s/npjb02/cheap_easy_throwaway_vpn_server",
+    "title": "Cheap and easy throwaway VPN server"
+  },
+  "@lobstersgram:912": {
+    "telegraph_link": "https://telegra.ph/Preface---Ju-Ju-Tsu-09-22",
+    "article_link": "https://arialdo.codeberg.page/ju-ju-tsu/",
+    "discussion_link": "https://lobste.rs/s/d4wq0w/ju_ju_tsu",
+    "title": "Ju! Ju! Tsu"
   }
 }
