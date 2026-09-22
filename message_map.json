@@ -5368,5 +5368,29 @@
     "article_link": "https://anishathalye.com/optimal-trace/",
     "discussion_link": "https://lobste.rs/s/jbbxgy/running_optimal_trace",
     "title": "Running an Optimal Trace"
+  },
+  "@lobstersgram:904": {
+    "telegraph_link": "https://telegra.ph/Deterministic-Hypervisors-For-Cheap--Red-Vice-09-22",
+    "article_link": "https://redvice.org/2026/deterministic-hypervisor/",
+    "discussion_link": "https://lobste.rs/s/hirktz/deterministic_hypervisors_for_cheap",
+    "title": "Deterministic Hypervisors For Cheap"
+  },
+  "@lobstersgram:905": {
+    "telegraph_link": "https://telegra.ph/READMEtxt---evocation---Call-forth-the-blue-green-flame-of-computation-from-the-universe-weave-its-energies-into-a-fabric-that-w-09-22",
+    "article_link": "https://code.irenes.space/evocation/tree/README.txt",
+    "discussion_link": "https://lobste.rs/s/kpegs1/evocation_call_forth_blue_green_flame",
+    "title": "evocation - Call forth the blue-green flame of computation from the universe, weave its energies into a fabric, that we may share our blood with it"
+  },
+  "@lobstersgram:906": {
+    "telegraph_link": "https://telegra.ph/ra-ra-09-22",
+    "article_link": "https://remy.wang/blog/ra-ra.html",
+    "discussion_link": "https://lobste.rs/s/t5fquc/relation_algebra_is_not_relational",
+    "title": "Relation algebra is not relational algebra"
+  },
+  "@lobstersgram:907": {
+    "telegraph_link": "https://telegra.ph/htmx--Markdown-in-src-09-22",
+    "article_link": "https://htmx.org/essays/markdown-in-src/",
+    "discussion_link": "https://lobste.rs/s/xooho4/markdown_src",
+    "title": "Markdown in /src"
   }
 }
