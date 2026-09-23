@@ -5596,5 +5596,23 @@
     "article_link": "https://inessential.com/2026/09/22/that-about-wraps-it-up-for.html",
     "discussion_link": "https://lobste.rs/s/vvg9ue/about_wraps_it_up_for_stock_mac_ui",
     "title": "That About Wraps It Up for Stock Mac UI"
+  },
+  "@lobstersgram:942": {
+    "telegraph_link": "https://telegra.ph/ALP-Adaptive-Lossless-Floating-Point-Encoding-in-Apache-Parquet--Parquet-09-23",
+    "article_link": "https://parquet.apache.org/blog/2026/09/22/alp-adaptive-lossless-floating-point-encoding-in-apache-parquet/",
+    "discussion_link": "https://lobste.rs/s/dtozf3/adaptive_lossless_floating_point",
+    "title": "Adaptive Lossless Floating-Point Encoding in Apache Parquet"
+  },
+  "@lobstersgram:943": {
+    "telegraph_link": "https://telegra.ph/A-brief-history-of-Windows-scroll-bar-shortcuts---The-Old-New-Thing-09-23-3",
+    "article_link": "https://devblogs.microsoft.com/oldnewthing/20260922-00/?p=112719/",
+    "discussion_link": "https://lobste.rs/s/kjqjse/brief_history_windows_scroll_bar",
+    "title": "A brief history of Windows scroll bar shortcuts"
+  },
+  "@lobstersgram:944": {
+    "telegraph_link": "https://telegra.ph/Ideas-on-modernizing-the-open-source-desktop-LWNnet-09-23",
+    "article_link": "https://lwn.net/SubscriberLink/1095425/2d9f411252325784/",
+    "discussion_link": "https://lobste.rs/s/aaq59w/ideas_on_modernizing_open_source_desktop",
+    "title": "Ideas on modernizing the open-source desktop"
   }
 }
