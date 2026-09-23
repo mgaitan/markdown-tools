@@ -5500,5 +5500,29 @@
     "article_link": "https://www.jeffgeerling.com/blog/2026/raspberry-pi-ram-lockdown/",
     "discussion_link": "https://lobste.rs/s/5ybneq/raspberry_pi_locks_down_pi_5_ram_upgrades",
     "title": "Raspberry Pi locks down Pi 5 RAM upgrades in firmware"
+  },
+  "@lobstersgram:926": {
+    "telegraph_link": "https://telegra.ph/DeepSeek-Elastic-Compute-DSec-A-Sandbox-Infrastructure-for-Effective-Agentic-Training-at-Scale-09-23",
+    "article_link": "https://arxiv.org/abs/2609.22978",
+    "discussion_link": "https://lobste.rs/s/3hbty3/deepseek_elastic_compute_dsec_sandbox",
+    "title": "DeepSeek Elastic Compute (DSec): Sandbox Infrastructure for Effective Agentic Training at Scale"
+  },
+  "@lobstersgram:927": {
+    "telegraph_link": "https://telegra.ph/acsandmannrift--a-tiling-window-manager-for-macos-09-23",
+    "article_link": "https://github.com/acsandmann/rift/",
+    "discussion_link": "https://lobste.rs/s/bcbuqk/rift_tiling_window_manager_for_macos",
+    "title": "rift - a tiling window manager for macos"
+  },
+  "@lobstersgram:928": {
+    "telegraph_link": "https://telegra.ph/Self-Hosting-Behind-CGNAT--David-Álvarez-Rosa-09-23",
+    "article_link": "https://david.alvarezrosa.com/posts/self-hosting-behind-cgnat/",
+    "discussion_link": "https://lobste.rs/s/sus08k/self_hosting_behind_cgnat",
+    "title": "Self-Hosting Behind CGNAT"
+  },
+  "@lobstersgram:929": {
+    "telegraph_link": "https://telegra.ph/Spacebar-09-23-8",
+    "article_link": "https://levmiseri.com/nospace/",
+    "discussion_link": "https://lobste.rs/s/ayyuqc/jev_powered_autocorrection",
+    "title": "Jev-powered autocorrection"
   }
 }
