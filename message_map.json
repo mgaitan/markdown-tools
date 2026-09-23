@@ -5554,5 +5554,29 @@
     "article_link": "https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/",
     "discussion_link": "https://lobste.rs/s/liey8q/looking_forward_git_2_56_3_0",
     "title": "Looking forward to Git 2.56 - and 3.0"
+  },
+  "@lobstersgram:935": {
+    "telegraph_link": "https://telegra.ph/Redenormalisation-Building-a-search-index-the-other-way--slatecavenet-09-23",
+    "article_link": "https://slatecave.net/blog/redenormalization/",
+    "discussion_link": "https://lobste.rs/s/gzjcbu/redenormalisation_building_search",
+    "title": "Redenormalisation: Building a search index, the other way"
+  },
+  "@lobstersgram:936": {
+    "telegraph_link": "https://telegra.ph/Latest-BGP-hijack-targets-hosting-software-vendor--APNIC-Blog-09-23",
+    "article_link": "https://blog.apnic.net/2026/09/22/latest-bgp-hijack-targets-hosting-software-vendor/",
+    "discussion_link": "https://lobste.rs/s/eqme8i/latest_bgp_hijack_targets_hosting",
+    "title": "Latest BGP hijack targets hosting software vendor"
+  },
+  "@lobstersgram:937": {
+    "telegraph_link": "https://telegra.ph/SAML-A-fractal-of-bad-design---The-Trail-of-Bits-Blog-09-23",
+    "article_link": "https://blog.trailofbits.com/2026/09/21/saml-a-fractal-of-bad-design/",
+    "discussion_link": "https://lobste.rs/s/4uqtta/saml_fractal_bad_design",
+    "title": "SAML: A fractal of bad design"
+  },
+  "@lobstersgram:938": {
+    "telegraph_link": "https://telegra.ph/Cheaper-LLM-labelling-09-23-2",
+    "article_link": "https://entropicthoughts.com/cheaper-llm-labeling",
+    "discussion_link": "https://lobste.rs/s/9zjyto/cheaper_llm_labelling",
+    "title": "Cheaper LLM labelling"
   }
 }
