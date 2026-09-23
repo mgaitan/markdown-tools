@@ -5524,5 +5524,35 @@
     "article_link": "https://levmiseri.com/nospace/",
     "discussion_link": "https://lobste.rs/s/ayyuqc/jev_powered_autocorrection",
     "title": "Jev-powered autocorrection"
+  },
+  "@lobstersgram:930": {
+    "telegraph_link": "https://telegra.ph/Sandboxing-with-minimal-effort-09-23-3",
+    "article_link": "https://yorickpeterse.com/articles/sandboxing-with-minimal-effort/",
+    "discussion_link": "https://lobste.rs/s/zji8bf/sandboxing_with_minimal_effort",
+    "title": "Sandboxing with minimal effort"
+  },
+  "@lobstersgram:931": {
+    "telegraph_link": "https://telegra.ph/Gmane----Mail-To-News-And-Back-Again-09-23",
+    "article_link": "https://web.archive.org/web/20180603053407/http://article.gmane.org/gmane.comp.lang.lua.general/75426",
+    "discussion_link": "https://lobste.rs/s/v4bdwl/re_suggestions_on_implementing",
+    "title": "Re: Suggestions on implementing an efficient instruction set simulator in LuaJIT2 (2011)"
+  },
+  "@lobstersgram:932": {
+    "telegraph_link": "https://telegra.ph/Redis-is-not-a-map-you-talk-to-over-TCP---Very-Good-Software-Not-Virus-09-23",
+    "article_link": "https://blog.verygoodsoftwarenotvirus.dev/posts/2026/09/22/redis-is-not-a-map-you-talk-to-over-tcp/",
+    "discussion_link": "https://lobste.rs/s/sfhrrp/redis_is_not_map_you_talk_over_tcp",
+    "title": "Redis is not a map you talk to over TCP"
+  },
+  "@lobstersgram:933": {
+    "telegraph_link": "https://telegra.ph/Parsing-JSON-Objects-without-intermediate-ASTs--Arthur-Jamet-09-23",
+    "article_link": "https://arthi-chaud.github.io/posts/json-ir/",
+    "discussion_link": "https://lobste.rs/s/ehpn7n/parsing_json_objects_without",
+    "title": "Parsing JSON Objects without intermediate ASTs"
+  },
+  "@lobstersgram:934": {
+    "telegraph_link": "https://telegra.ph/Looking-forward-to-Git-256---and-30-LWNnet-09-23",
+    "article_link": "https://lwn.net/SubscriberLink/1094575/2385e98583715c2b/",
+    "discussion_link": "https://lobste.rs/s/liey8q/looking_forward_git_2_56_3_0",
+    "title": "Looking forward to Git 2.56 - and 3.0"
   }
 }
