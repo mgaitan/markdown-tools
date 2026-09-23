@@ -5578,5 +5578,23 @@
     "article_link": "https://entropicthoughts.com/cheaper-llm-labeling",
     "discussion_link": "https://lobste.rs/s/9zjyto/cheaper_llm_labelling",
     "title": "Cheaper LLM labelling"
+  },
+  "@lobstersgram:939": {
+    "telegraph_link": "https://telegra.ph/Why-didnt-anybody-tell-me-about-hash-slots---Very-Good-Software-Not-Virus-09-23",
+    "article_link": "https://blog.verygoodsoftwarenotvirus.dev/posts/2026/09/23/why-didnt-anybody-tell-me-about-hash-slots/",
+    "discussion_link": "https://lobste.rs/s/nwg2ha/why_didn_t_anybody_tell_me_about_redis_hash",
+    "title": "Why didn't anybody tell me about Redis hash slots?"
+  },
+  "@lobstersgram:940": {
+    "telegraph_link": "https://telegra.ph/Do-not-let-your-type-system-reason-about-aliasing-in-your-programming-language-09-23",
+    "article_link": "https://futhark-lang.org/blog/2026-09-22-aliasing.html",
+    "discussion_link": "https://lobste.rs/s/huj44r/do_not_let_your_type_system_reason_about",
+    "title": "Do not let your type system reason about aliasing in your programming language"
+  },
+  "@lobstersgram:941": {
+    "telegraph_link": "https://telegra.ph/inessential-That-About-Wraps-It-Up-for-Stock-Mac-UI-09-23",
+    "article_link": "https://inessential.com/2026/09/22/that-about-wraps-it-up-for.html",
+    "discussion_link": "https://lobste.rs/s/vvg9ue/about_wraps_it_up_for_stock_mac_ui",
+    "title": "That About Wraps It Up for Stock Mac UI"
   }
 }
