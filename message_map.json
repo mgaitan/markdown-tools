@@ -5650,5 +5650,17 @@
     "article_link": "https://blogs.gnome.org/alatiera/2026/09/23/the-gnome-llm-policy-that-i-want/",
     "discussion_link": "https://lobste.rs/s/kras1h/gnome_llm_policy_i_want",
     "title": "The GNOME LLM Policy That I Want"
+  },
+  "@lobstersgram:951": {
+    "telegraph_link": "https://telegra.ph/From-Thin-Air-to-Bootable-Images-The-tine-Build-System---Amutable-09-24",
+    "article_link": "https://amutable.com/blog/tine-build-system",
+    "discussion_link": "https://lobste.rs/s/c3t81d/from_thin_air_bootable_images_tine_build",
+    "title": "From Thin Air to Bootable Images: The tine Build System"
+  },
+  "@lobstersgram:952": {
+    "telegraph_link": "https://telegra.ph/SaaS-Isnt-Dead-Sameness-Is---The-Phoenix-Architecture-09-24",
+    "article_link": "https://aicoding.leaflet.pub/3mtu6c5wsvc2n",
+    "discussion_link": "https://lobste.rs/s/kiny54/saas_isn_t_dead_sameness_is",
+    "title": "SaaS Isn’t Dead. Sameness Is"
   }
 }
