@@ -5758,5 +5758,23 @@
     "article_link": "https://jadarma.github.io/blog/posts/2026/09/clankers-made-me-build-a-second-brain/",
     "discussion_link": "https://lobste.rs/s/xg8zbk/clankers_made_me_build_second_brain",
     "title": "Clankers Made Me Build a Second Brain"
+  },
+  "@lobstersgram:969": {
+    "telegraph_link": "https://telegra.ph/AI-Workers-Inquiry-2026-09-25",
+    "article_link": "https://techworkersinquiry.org/ai/",
+    "discussion_link": "https://lobste.rs/s/uxvwlo/ai_workers_inquiry_2026",
+    "title": "AI Workers' Inquiry 2026"
+  },
+  "@lobstersgram:970": {
+    "telegraph_link": "https://telegra.ph/Commodified-Intelligence--MONDTECH-MAGAZINE-09-25",
+    "article_link": "https://herecomesthemoon.net/2026/09/commodified-intelligence/",
+    "discussion_link": "https://lobste.rs/s/nidcls/commodified_intelligence",
+    "title": "Commodified Intelligence"
+  },
+  "@lobstersgram:971": {
+    "telegraph_link": "https://telegra.ph/Understanding-NvPCRs-in-systemd-v262--blog-katexochen-09-25",
+    "article_link": "https://katexochen.aro.bz/posts/systemd-v262-nvpcrs/",
+    "discussion_link": "https://lobste.rs/s/ya3cl7/understanding_nvpcrs_systemd_v262",
+    "title": "Understanding NvPCRs in systemd v262"
   }
 }
