@@ -5674,5 +5674,29 @@
     "article_link": "https://blogs.gnome.org/xjuan/2026/09/24/casilda-1-6-released/",
     "discussion_link": "https://lobste.rs/s/ckhrtg/casilda_1_6_released",
     "title": "Casilda 1.6 Released"
+  },
+  "@lobstersgram:955": {
+    "telegraph_link": "https://telegra.ph/Platform-independent-SIMD-in-Go---The-Go-Programming-Language-09-25",
+    "article_link": "https://go.dev/blog/simd-experiment",
+    "discussion_link": "https://lobste.rs/s/sfdf3h/platform_independent_simd_go",
+    "title": "Platform-independent SIMD in Go"
+  },
+  "@lobstersgram:956": {
+    "telegraph_link": "https://telegra.ph/RAM-the-forgotten-history---lcamtufs-thing-09-25",
+    "article_link": "https://blog.coredump.cx/p/memory-the-forgotten-history",
+    "discussion_link": "https://lobste.rs/s/zr2qoj/ram_forgotten_history",
+    "title": "RAM: the forgotten history"
+  },
+  "@lobstersgram:957": {
+    "telegraph_link": "https://telegra.ph/Pencils-Down-Eyes-Open-A-Rails-Developer-After-Rails-World--Caio-Bianchi-09-25",
+    "article_link": "https://caio.ca/blog/pencils-down-eyes-open-rails-world",
+    "discussion_link": "https://lobste.rs/s/jiv1c5/pencils_down_eyes_open_rails_developer",
+    "title": "Pencils Down, Eyes Open: A Rails Developer After Rails World"
+  },
+  "@lobstersgram:958": {
+    "telegraph_link": "https://telegra.ph/iterate-think-thoughts-Introducing-Lev-09-25",
+    "article_link": "https://yogthos.net/posts/2026-09-24-introducing-lev.html",
+    "discussion_link": "https://lobste.rs/s/zcbk0r/introducing_lev",
+    "title": "Introducing Lev"
   }
 }
