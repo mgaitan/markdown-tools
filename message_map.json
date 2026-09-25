@@ -5776,5 +5776,23 @@
     "article_link": "https://katexochen.aro.bz/posts/systemd-v262-nvpcrs/",
     "discussion_link": "https://lobste.rs/s/ya3cl7/understanding_nvpcrs_systemd_v262",
     "title": "Understanding NvPCRs in systemd v262"
+  },
+  "@lobstersgram:972": {
+    "telegraph_link": "https://telegra.ph/Ataraxy-Labsweave--Entity-level-git-merge-driver-Resolves-false-conflicts-git-invents-when-independent-agents-edit-the-same-file-09-25",
+    "article_link": "https://github.com/Ataraxy-Labs/weave",
+    "discussion_link": "https://lobste.rs/s/33w4jp/weave_structural_merging_for_different",
+    "title": "weave: structural merging for different languages"
+  },
+  "@lobstersgram:973": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-09-25",
+    "article_link": "https://lobste.rs/s/bubfjf/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/bubfjf/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:974": {
+    "telegraph_link": "https://telegra.ph/LLM-Policies-Progress-At-All-Costs-09-25-3",
+    "article_link": "https://diegoe.be/2026/09/25/llm-policies-progress-at-all-costs/",
+    "discussion_link": "https://lobste.rs/s/v6nizc/llm_policies_progress_at_all_costs",
+    "title": "LLM Policies: Progress At All Costs"
   }
 }
