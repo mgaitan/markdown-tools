@@ -5698,5 +5698,35 @@
     "article_link": "https://yogthos.net/posts/2026-09-24-introducing-lev.html",
     "discussion_link": "https://lobste.rs/s/zcbk0r/introducing_lev",
     "title": "Introducing Lev"
+  },
+  "@lobstersgram:959": {
+    "telegraph_link": "https://telegra.ph/Real-Time-Telemetry-with-Eventlog-Live---Well-Typed-The-Haskell-Consultants-09-25",
+    "article_link": "https://www.well-typed.com/blog/2026/09/real-time-telemetry-with-eventlog-live/",
+    "discussion_link": "https://lobste.rs/s/3bgvbn/real_time_telemetry_with_eventlog_live",
+    "title": "Real-Time Telemetry with Eventlog Live"
+  },
+  "@lobstersgram:960": {
+    "telegraph_link": "https://telegra.ph/Launching-FreeBSDEC2-desktop-AMIs-09-25-2",
+    "article_link": "https://www.daemonology.net/blog/2026-09-24-Launching-FreeBSD-EC2-desktop-AMIs.html",
+    "discussion_link": "https://lobste.rs/s/ufor73/launching_freebsd_ec2_desktop_amis",
+    "title": "Launching FreeBSD/EC2 desktop AMIs"
+  },
+  "@lobstersgram:961": {
+    "telegraph_link": "https://telegra.ph/Remembering-Johannes-Doerfert---The-LLVM-Project-Blog-09-25",
+    "article_link": "https://blog.llvm.org/posts/2026-09-24-rememberingjohannesdoerfert/",
+    "discussion_link": "https://lobste.rs/s/cuxdjq/remembering_johannes_doerfert",
+    "title": "Remembering Johannes Doerfert"
+  },
+  "@lobstersgram:962": {
+    "telegraph_link": "https://telegra.ph/Two-Tier-Encryption-in-the-UK-09-25-2",
+    "article_link": "https://macanorak.com/two-tier-encryption-in-the-uk/",
+    "discussion_link": "https://lobste.rs/s/n5l90o/apple_s_two_tier_encryption_uk",
+    "title": "Apple's Two-Tier Encryption in the UK"
+  },
+  "@lobstersgram:963": {
+    "telegraph_link": "https://telegra.ph/katamari-architecture--novedev-09-25-2",
+    "article_link": "https://nove.dev/blog/katamari-architecture/",
+    "discussion_link": "https://lobste.rs/s/f0buwg/katamari_architecture",
+    "title": "katamari architecture"
   }
 }
