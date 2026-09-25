@@ -5728,5 +5728,35 @@
     "article_link": "https://nove.dev/blog/katamari-architecture/",
     "discussion_link": "https://lobste.rs/s/f0buwg/katamari_architecture",
     "title": "katamari architecture"
+  },
+  "@lobstersgram:964": {
+    "telegraph_link": "https://telegra.ph/What-About-Rails--Jared-Norman-09-25-3",
+    "article_link": "https://jardo.dev/what-about-rails",
+    "discussion_link": "https://lobste.rs/s/rvvqos/what_about_rails",
+    "title": "What About Rails?"
+  },
+  "@lobstersgram:965": {
+    "telegraph_link": "https://telegra.ph/The-Story-of-Mel-09-25",
+    "article_link": "https://users.cs.utah.edu/~elb/folklore/mel.html",
+    "discussion_link": "https://lobste.rs/s/wf4wid/story_mel",
+    "title": "The Story of Mel"
+  },
+  "@lobstersgram:966": {
+    "telegraph_link": "https://telegra.ph/flegflegParanoia-Sans--A-conspiratorial-typeface-09-25",
+    "article_link": "https://github.com/flegfleg/Paranoia-Sans",
+    "discussion_link": "https://lobste.rs/s/uc2ovf/paranoia_sans_conspiratorial_typeface",
+    "title": "Paranoia-Sans: A conspiratorial typeface"
+  },
+  "@lobstersgram:967": {
+    "telegraph_link": "https://telegra.ph/Parsing-Expression-Grammar-in-Lisp-Converting-Org-to-HTML-with-ice-9-peg-in-Guile---jointhefreeworld-09-25",
+    "article_link": "https://jointhefreeworld.org/blog/articles/lisps/parsing-expression-grammar-lisp-org-convert-to-html/index.html",
+    "discussion_link": "https://lobste.rs/s/2uzmg2/parsing_expression_grammar_vs_regexes",
+    "title": "Parsing Expression Grammar vs. regexes: Building Org parser in Lisp that exports to HTML (via SXML)"
+  },
+  "@lobstersgram:968": {
+    "telegraph_link": "https://telegra.ph/Clankers-Made-Me-Build-a-Second-Brain--Jadarmas-Blog-09-25",
+    "article_link": "https://jadarma.github.io/blog/posts/2026/09/clankers-made-me-build-a-second-brain/",
+    "discussion_link": "https://lobste.rs/s/xg8zbk/clankers_made_me_build_second_brain",
+    "title": "Clankers Made Me Build a Second Brain"
   }
 }
