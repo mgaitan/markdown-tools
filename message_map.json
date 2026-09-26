@@ -5896,5 +5896,29 @@
     "article_link": "https://www.datagubbe.se/amscr/",
     "discussion_link": "https://lobste.rs/s/dsungs/amiga_screens_primer",
     "title": "Amiga screens: a primer"
+  },
+  "@lobstersgram:992": {
+    "telegraph_link": "https://telegra.ph/Rusty-thoughts-on-Parse-dont-validate---Eli-Benderskys-website-09-26-2",
+    "article_link": "https://eli.thegreenplace.net/2026/rusty-thoughts-on-parse-dont-validate/",
+    "discussion_link": "https://lobste.rs/s/uvmajz/rusty_thoughts_on_parse_don_t_validate",
+    "title": "Rusty thoughts on \"Parse, don't validate\""
+  },
+  "@lobstersgram:993": {
+    "telegraph_link": "https://telegra.ph/Reassurance-09-26-6",
+    "article_link": "https://www.rocketpoweredjetpants.com/reassurance/",
+    "discussion_link": "https://lobste.rs/s/vpis72/reassurance",
+    "title": "Reassurance"
+  },
+  "@lobstersgram:994": {
+    "telegraph_link": "https://telegra.ph/Were-gonna-need-a-lot-more-mathematicians--Whats-new-09-26-2",
+    "article_link": "https://terrytao.wordpress.com/2026/09/24/were-gonna-need-a-lot-more-mathematicians/",
+    "discussion_link": "https://lobste.rs/s/gt2jle/we_re_gonna_need_lot_more_mathematicians",
+    "title": "We’re gonna need a lot more mathematicians"
+  },
+  "@lobstersgram:995": {
+    "telegraph_link": "https://telegra.ph/User-scripts-09-26",
+    "article_link": "https://greasyfork.org/en/scripts?by=1646191",
+    "discussion_link": "https://lobste.rs/s/68n22g/lobsters_rename_vibecoding_llms",
+    "title": "Lobsters: Rename vibecoding to llms (Greasemonkey script)"
   }
 }
