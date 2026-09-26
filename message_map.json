@@ -5812,5 +5812,35 @@
     "article_link": "https://purplesyringa.moe/blog/grieving-the-loss-of-details/",
     "discussion_link": "https://lobste.rs/s/jmlnak/grieving_loss_details",
     "title": "Grieving the loss of details"
+  },
+  "@lobstersgram:978": {
+    "telegraph_link": "https://telegra.ph/Reinventing-the-wheel-to-draw-wide-tree-hierarchies--Lonamis-Blog-09-26",
+    "article_link": "https://lonami.dev/blog/tree-node-positioning/",
+    "discussion_link": "https://lobste.rs/s/9ry4yi/reinventing_wheel_draw_wide_tree",
+    "title": "Reinventing the wheel to draw wide tree hierarchies"
+  },
+  "@lobstersgram:979": {
+    "telegraph_link": "https://telegra.ph/There-is-more-to-code-review-than-automatable-detection-09-26-3",
+    "article_link": "https://www.adaptivecapacitylabs.com/2026/08/24/there-is-more-to-code-review-than-automatable-detection/",
+    "discussion_link": "https://lobste.rs/s/ivunna/there_is_more_code_review_than",
+    "title": "There is more to code review than (automatable) detection"
+  },
+  "@lobstersgram:980": {
+    "telegraph_link": "https://telegra.ph/The-state-of-SIMD-in-Rust-in-2026--Sergey-Shnatsel-Davidoff-09-26",
+    "article_link": "https://shnatsel.github.io/state-of-simd-rust-2026/",
+    "discussion_link": "https://lobste.rs/s/iotaty/state_simd_rust_2026",
+    "title": "The state of SIMD in Rust in 2026"
+  },
+  "@lobstersgram:981": {
+    "telegraph_link": "https://telegra.ph/SourceHut-account-takeover-via-build-logs-XSS-in-ansi2htmlpy--CVE-2026-92973--Arusekk-blog-09-26",
+    "article_link": "https://blog.arusekk.pl/posts/srht-account-takeover/",
+    "discussion_link": "https://lobste.rs/s/ky1cr0/sourcehut_account_takeover_via_build",
+    "title": "SourceHut account takeover via build logs (XSS in ansi2html.py)"
+  },
+  "@lobstersgram:982": {
+    "telegraph_link": "https://telegra.ph/Daniel-Gultsch--Breaking-Up-with-Google-Play-Why-Conversations-Is-Now-Free-09-26",
+    "article_link": "https://gultsch.de/posts/breaking-up-with-google-play/",
+    "discussion_link": "https://lobste.rs/s/4jqfz1/breaking_up_with_google_play_why",
+    "title": "Breaking Up with Google Play: Why Conversations Is Now Free"
   }
 }
