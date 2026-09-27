@@ -5950,5 +5950,23 @@
     "article_link": "https://blogs.gnome.org/alatiera/2026/09/26/introducing-toolpak/",
     "discussion_link": "https://lobste.rs/s/7dkvey/introducing_toolpak",
     "title": "Introducing Toolpak"
+  },
+  "@lobstersgram:1001": {
+    "telegraph_link": "https://telegra.ph/Robot-use-agents-09-27-3",
+    "article_link": "https://web.mit.edu/phillipi/www/writing/robot-use-agents.html",
+    "discussion_link": "https://lobste.rs/s/ueh7gz/robot_use_agents",
+    "title": "Robot-use agents"
+  },
+  "@lobstersgram:1002": {
+    "telegraph_link": "https://telegra.ph/Improving-site-performance-by-shipping-more-CSS---The-GitHub-Blog-09-27",
+    "article_link": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+    "discussion_link": "https://lobste.rs/s/fli8va/improving_site_performance_by_shipping",
+    "title": "Improving site performance by shipping more CSS"
+  },
+  "@lobstersgram:1003": {
+    "telegraph_link": "https://telegra.ph/Wrong-not-broken--AWS-Insights-09-27-2",
+    "article_link": "https://aws.amazon.com/blogs/aws-insights/wrong-not-broken/",
+    "discussion_link": "https://lobste.rs/s/aokbai/wrong_not_broken",
+    "title": "Wrong, not broken"
   }
 }
