@@ -5968,5 +5968,29 @@
     "article_link": "https://aws.amazon.com/blogs/aws-insights/wrong-not-broken/",
     "discussion_link": "https://lobste.rs/s/aokbai/wrong_not_broken",
     "title": "Wrong, not broken"
+  },
+  "@lobstersgram:1004": {
+    "telegraph_link": "https://telegra.ph/Reverse-engineering-the-vintage-Intel-8087s-tangent-algorithm-more-than-CORDIC-09-27-5",
+    "article_link": "http://www.righto.com/2026/09/8087-tangent-cordic.html",
+    "discussion_link": "https://lobste.rs/s/5soxba/reverse_engineering_vintage_intel_8087_s",
+    "title": "Reverse-engineering the vintage Intel 8087's tangent algorithm: more than CORDIC"
+  },
+  "@lobstersgram:1005": {
+    "telegraph_link": "https://telegra.ph/Teaching-GPU-programming-in-p5js-now-with-compute-shaders---Dave-Pagurek-09-27",
+    "article_link": "https://www.davepagurek.com/blog/p5-compute-shaders/",
+    "discussion_link": "https://lobste.rs/s/zsdlcz/teaching_gpu_programming_p5_js_now_with",
+    "title": "Teaching GPU programming in p5.js: now with compute shaders"
+  },
+  "@lobstersgram:1006": {
+    "telegraph_link": "https://telegra.ph/The-Greatest-Pun-JavaScripts---tagged-template-literal-09-27",
+    "article_link": "https://shukla.io/blog/2026-09/pun.html",
+    "discussion_link": "https://lobste.rs/s/rtcnc8/javascript_pun_tagged_template_literal",
+    "title": "The JavaScript Pun: tagged template literal"
+  },
+  "@lobstersgram:1007": {
+    "telegraph_link": "https://telegra.ph/Deshittification-Part-2-Bypassing-the-App-Store-Gatekeeper--Fabricati-Diem-09-27",
+    "article_link": "https://fabricati-diem.inform.social/post/deshittification-as-a-service-part2-bypassing-the-app-store-gatekeeper/",
+    "discussion_link": "https://lobste.rs/s/fcj31p/deshittification_part_2_bypassing_app",
+    "title": "Deshittification Part 2: Bypassing the App Store Gatekeeper"
   }
 }
