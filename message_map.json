@@ -5920,5 +5920,35 @@
     "article_link": "https://greasyfork.org/en/scripts?by=1646191",
     "discussion_link": "https://lobste.rs/s/68n22g/lobsters_rename_vibecoding_llms",
     "title": "Lobsters: Rename vibecoding to llms (Greasemonkey script)"
+  },
+  "@lobstersgram:996": {
+    "telegraph_link": "https://telegra.ph/How-I-Found-a-113337-AF-ALG-Linux-Local-Privilege-Escalation-Before-Copy-Fail-09-27",
+    "article_link": "https://idnsec.com/research/linux-local-privilege-escalation-with-af-alg/",
+    "discussion_link": "https://lobste.rs/s/j1nvpt/how_i_found_113_337_af_alg_linux_local",
+    "title": "How I Found a $113,337 AF_ALG Linux Local Privilege Escalation Before Copy Fail"
+  },
+  "@lobstersgram:997": {
+    "telegraph_link": "https://telegra.ph/This-Month-in-Redox---August-2026---Redox---Your-NextGen-OS-09-27",
+    "article_link": "https://www.redox-os.org/news/this-month-260831/",
+    "discussion_link": "https://lobste.rs/s/kc8t26/this_month_redox_august_2026",
+    "title": "This Month in Redox - August 2026"
+  },
+  "@lobstersgram:998": {
+    "telegraph_link": "https://telegra.ph/mantlenes-breakdown-blog-part-1--melons-zone-09-27",
+    "article_link": "https://melon.zone/blog/blog/gamedev/tech/fun/2026-09-23-mantle-nes-breakdown-part-1/",
+    "discussion_link": "https://lobste.rs/s/lw0e1u/mantle_nes_breakdown_blog_part_1",
+    "title": "mantle.nes breakdown blog part 1"
+  },
+  "@lobstersgram:999": {
+    "telegraph_link": "https://telegra.ph/Goodbye-Google-09-27",
+    "article_link": "https://robert.ocallahan.org/2026/09/goodbye-google.html",
+    "discussion_link": "https://lobste.rs/s/sxlf4a/goodbye_google",
+    "title": "Goodbye Google"
+  },
+  "@lobstersgram:1000": {
+    "telegraph_link": "https://telegra.ph/Introducing-Toolpak---Rust-in-Peace-09-27",
+    "article_link": "https://blogs.gnome.org/alatiera/2026/09/26/introducing-toolpak/",
+    "discussion_link": "https://lobste.rs/s/7dkvey/introducing_toolpak",
+    "title": "Introducing Toolpak"
   }
 }
