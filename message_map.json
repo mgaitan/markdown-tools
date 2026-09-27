@@ -6022,5 +6022,29 @@
     "article_link": "https://modernmotherfuckingwebsite.dreamstation.systems/",
     "discussion_link": "https://lobste.rs/s/zoproh/this_is_modern_motherfucking_website",
     "title": "This is a modern motherfucking website"
+  },
+  "@lobstersgram:1013": {
+    "telegraph_link": "https://telegra.ph/Reverse-Engineering-the-iPod-Classics-Undocumented-Mikey-Chip--TerminalBytes-09-27",
+    "article_link": "https://terminalbytes.com/reverse-engineering-ipod-classic-mikey-chip/",
+    "discussion_link": "https://lobste.rs/s/czoeax/reverse_engineering_ipod_classic_s",
+    "title": "Reverse Engineering the iPod Classic's Undocumented Mikey Chip"
+  },
+  "@lobstersgram:1014": {
+    "telegraph_link": "https://telegra.ph/Valve-Introduces-Pyrowave-Video-Codec-In-Beta-For-Low-Latency-Streaming---Phoronix-09-27",
+    "article_link": "https://www.phoronix.com/news/Valve-Steam-Beta-Pyrowave",
+    "discussion_link": "https://lobste.rs/s/hq6xj2/valve_introduces_pyrowave_video_codec",
+    "title": "Valve Introduces Pyrowave Video Codec In Beta For Low Latency Streaming"
+  },
+  "@lobstersgram:1015": {
+    "telegraph_link": "https://telegra.ph/Dont-couple-your-Go-code-to-GitHub--Iain-Cambridge-09-27-2",
+    "article_link": "https://iain.rocks/blog/dont-couple-your-go-code-to-github",
+    "discussion_link": "https://lobste.rs/s/e5vf6k/don_t_couple_your_go_code_github",
+    "title": "Don't couple your Go code to GitHub"
+  },
+  "@lobstersgram:1016": {
+    "telegraph_link": "https://telegra.ph/Security-Incident-September-2026---LuaRocks-09-27-2",
+    "article_link": "https://luarocks.org/security-incident-september-2026",
+    "discussion_link": "https://lobste.rs/s/apoyxs/luarocks_security_incident_september",
+    "title": "LuaRocks Security Incident September 2026"
   }
 }
