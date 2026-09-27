@@ -5992,5 +5992,35 @@
     "article_link": "https://fabricati-diem.inform.social/post/deshittification-as-a-service-part2-bypassing-the-app-store-gatekeeper/",
     "discussion_link": "https://lobste.rs/s/fcj31p/deshittification_part_2_bypassing_app",
     "title": "Deshittification Part 2: Bypassing the App Store Gatekeeper"
+  },
+  "@lobstersgram:1008": {
+    "telegraph_link": "https://telegra.ph/Deploying-Guix-images-on-Linode---dthompson-09-27",
+    "article_link": "https://dthompson.us/posts/deploying-guix-images-on-linode.html",
+    "discussion_link": "https://lobste.rs/s/mf2lic/deploying_guix_images_on_linode",
+    "title": "Deploying Guix images on Linode"
+  },
+  "@lobstersgram:1009": {
+    "telegraph_link": "https://telegra.ph/Writing-Efficient-C-Code-09-27-7",
+    "article_link": "https://asawicki.info/articles/writing_efficient_cpp_code.php",
+    "discussion_link": "https://lobste.rs/s/exda3k/writing_efficient_c_code",
+    "title": "Writing Efficient C++ Code"
+  },
+  "@lobstersgram:1010": {
+    "telegraph_link": "https://telegra.ph/If-we-do-not-stop-to-help-each-other-what-do-we-become-09-27-8",
+    "article_link": "https://blog.codinghorror.com/if-we-do-not-stop-to-help-each-other-what-do-we-become/",
+    "discussion_link": "https://lobste.rs/s/p3iq7v/if_we_do_not_stop_help_each_other_what_do_we",
+    "title": "If we do not stop to help each other, what do we become?"
+  },
+  "@lobstersgram:1011": {
+    "telegraph_link": "https://telegra.ph/AI-Agents-Push-Humans-Out-of-the-Loop-09-27-3",
+    "article_link": "https://arxiv.org/abs/2608.23642",
+    "discussion_link": "https://lobste.rs/s/iqqqbg/ai_agents_push_humans_out_loop",
+    "title": "AI Agents Push Humans Out of the Loop"
+  },
+  "@lobstersgram:1012": {
+    "telegraph_link": "https://telegra.ph/Modern-Motherfucking-Website-09-27-2",
+    "article_link": "https://modernmotherfuckingwebsite.dreamstation.systems/",
+    "discussion_link": "https://lobste.rs/s/zoproh/this_is_modern_motherfucking_website",
+    "title": "This is a modern motherfucking website"
   }
 }
