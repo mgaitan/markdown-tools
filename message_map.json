@@ -6106,5 +6106,29 @@
     "article_link": "https://github.com/sebastiancarlos/shobr",
     "discussion_link": "https://lobste.rs/s/bslggr/shobr_job_seach_cli_via_browser",
     "title": "Shobr: Job seach CLI via browser automation, event-sourcing, LLM"
+  },
+  "@lobstersgram:1027": {
+    "telegraph_link": "https://telegra.ph/prologicparley-Federated-decentralised-chat-that-speaks-plain-IRC-Run-your-own-instance-for-your-domain-talk-to-anyone-as-userdo-09-28-2",
+    "article_link": "https://git.mills.io/prologic/parley",
+    "discussion_link": "https://lobste.rs/s/wbgbpp/parley_federated_decentralised_chat",
+    "title": "Parley - Federated, decentralised chat that speaks plain IRC"
+  },
+  "@lobstersgram:1028": {
+    "telegraph_link": "https://telegra.ph/Its-Time-to-Investigate-the-AI-Labs---Cal-Newport-09-28",
+    "article_link": "https://calnewport.com/its-time-to-investigate-the-ai-labs/",
+    "discussion_link": "https://lobste.rs/s/ir1emf/it_s_time_investigate_ai_labs",
+    "title": "It’s Time to Investigate the AI Labs"
+  },
+  "@lobstersgram:1029": {
+    "telegraph_link": "https://telegra.ph/Expert-asterisks--Ned-Batchelder-09-28",
+    "article_link": "https://nedbatchelder.com/blog/202609/expert_asterisks",
+    "discussion_link": "https://lobste.rs/s/0knxvq/expert_asterisks",
+    "title": "Expert asterisks"
+  },
+  "@lobstersgram:1030": {
+    "telegraph_link": "https://telegra.ph/Ten-Lines-Of-Code-That-Changed-My-World---Pixelambacht-09-28",
+    "article_link": "https://pixelambacht.nl/2026/ten-lines-of-code/",
+    "discussion_link": "https://lobste.rs/s/fpk9gq/ten_lines_code_changed_my_world",
+    "title": "Ten Lines Of Code That Changed My World"
   }
 }
