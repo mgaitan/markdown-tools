@@ -6076,5 +6076,35 @@
     "article_link": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
     "discussion_link": "https://lobste.rs/s/ivbx5f/one_month_without_ai",
     "title": "One month without AI"
+  },
+  "@lobstersgram:1022": {
+    "telegraph_link": "https://telegra.ph/Packing-Binary-Is-Fun-Actually-09-28-2",
+    "article_link": "https://hereticpleb.vercel.app/blog/packing-binary-is-fun-actually/",
+    "discussion_link": "https://lobste.rs/s/uawtno/packing_binary_is_fun_actually",
+    "title": "Packing Binary Is Fun, Actually"
+  },
+  "@lobstersgram:1023": {
+    "telegraph_link": "https://telegra.ph/Leaving-them-behind---David-Bushell---Web-Dev-UK-09-28",
+    "article_link": "https://dbushell.com/2026/09/28/leaving-them-behind/",
+    "discussion_link": "https://lobste.rs/s/h3igdh/leaving_them_behind",
+    "title": "Leaving them behind"
+  },
+  "@lobstersgram:1024": {
+    "telegraph_link": "https://telegra.ph/Pragmatic-Anthropomorphism-or-How-to-Talk-to-an-Autocompleting-Cricket---bloglmorchardcom-09-28",
+    "article_link": "https://blog.lmorchard.com/2026/09/27/pragmatic-anthropomorphism/",
+    "discussion_link": "https://lobste.rs/s/yidvju/pragmatic_anthropomorphism_how_talk",
+    "title": "Pragmatic Anthropomorphism, or: How to Talk to an Autocompleting Cricket"
+  },
+  "@lobstersgram:1025": {
+    "telegraph_link": "https://telegra.ph/When-did-Google-get-so-f-ing-weird---Sancho-Panzas-Thoughts-09-28",
+    "article_link": "https://sancho.bearblog.dev/google-weird/",
+    "discussion_link": "https://lobste.rs/s/aig5tr/when_did_google_get_so_weird",
+    "title": "When did Google get so weird?"
+  },
+  "@lobstersgram:1026": {
+    "telegraph_link": "https://telegra.ph/sebastiancarlosshobr--The-stealthiest-UNIX-iest-Job-Search-Automator-09-28",
+    "article_link": "https://github.com/sebastiancarlos/shobr",
+    "discussion_link": "https://lobste.rs/s/bslggr/shobr_job_seach_cli_via_browser",
+    "title": "Shobr: Job seach CLI via browser automation, event-sourcing, LLM"
   }
 }
