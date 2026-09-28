@@ -6046,5 +6046,35 @@
     "article_link": "https://luarocks.org/security-incident-september-2026",
     "discussion_link": "https://lobste.rs/s/apoyxs/luarocks_security_incident_september",
     "title": "LuaRocks Security Incident September 2026"
+  },
+  "@lobstersgram:1017": {
+    "telegraph_link": "https://telegra.ph/Thorsten-Ball---What-I-believe-about-the-future-of-software-development-09-28",
+    "article_link": "https://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/",
+    "discussion_link": "https://lobste.rs/s/edx1gf/thorsten_ball_what_i_believe_about_future",
+    "title": "Thorsten Ball - What I believe about the future of software development"
+  },
+  "@lobstersgram:1018": {
+    "telegraph_link": "https://telegra.ph/EX-ARRR-Sailing-the-0-click-Seas---ironPeak-Blog-09-28",
+    "article_link": "https://ironpeak.be/blog/ex-arrr-sailing-the-0-click-seas/",
+    "discussion_link": "https://lobste.rs/s/qgsfdf/ex_arrr_sailing_0_click_seas",
+    "title": "EX-ARRR: Sailing the 0-click Seas"
+  },
+  "@lobstersgram:1019": {
+    "telegraph_link": "https://telegra.ph/Syncing-Rust-GCC-backend-or-how-to-test-Murphys-law-09-28-2",
+    "article_link": "https://blog.guillaume-gomez.fr/articles/2026-09-22+Syncing+Rust+GCC+backend+or+how+to+test+Murphy%27s+law",
+    "discussion_link": "https://lobste.rs/s/hy7ckt/syncing_rust_gcc_backend_how_test_murphy_s",
+    "title": "Syncing Rust GCC backend or how to test Murphy's law"
+  },
+  "@lobstersgram:1020": {
+    "telegraph_link": "https://telegra.ph/rustunit-09-28-2",
+    "article_link": "https://rustunit.com/blog/2026/09-04-bevy-ios-crates-objc2/",
+    "discussion_link": "https://lobste.rs/s/nmksyw/dropping_swift_entirely_from_our_bevy_ios",
+    "title": "Dropping Swift entirely from our Bevy iOS crates"
+  },
+  "@lobstersgram:1021": {
+    "telegraph_link": "https://telegra.ph/One-month-without-AI-09-28",
+    "article_link": "https://blog.bustikiller.com/2026/09/25/one-month-without-ai.html",
+    "discussion_link": "https://lobste.rs/s/ivbx5f/one_month_without_ai",
+    "title": "One month without AI"
   }
 }
