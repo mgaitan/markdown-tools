@@ -6196,5 +6196,35 @@
     "article_link": "https://lobste.rs/s/hgmgp2/what_are_you_doing_this_week",
     "discussion_link": "https://lobste.rs/s/hgmgp2/what_are_you_doing_this_week",
     "title": "What are you doing this week?"
+  },
+  "@lobstersgram:1042": {
+    "telegraph_link": "https://telegra.ph/HardenedBSD-August--September-2026-Status-Report--HardenedBSD-09-29",
+    "article_link": "https://hardenedbsd.org/article/shawn-webb/2026-09-27/hardenedbsd-august-september-2026-status-report",
+    "discussion_link": "https://lobste.rs/s/roo5hm/hardenedbsd_august_september_2026",
+    "title": "HardenedBSD August / September 2026 Status Report"
+  },
+  "@lobstersgram:1043": {
+    "telegraph_link": "https://telegra.ph/Text-to-meowdio-models--Mark-J-Nelson-09-29",
+    "article_link": "https://www.kmjn.org/notes/text_to_meowdio_models.html",
+    "discussion_link": "https://lobste.rs/s/1xr8zc/text_meowdio_models",
+    "title": "Text-to-meowdio models"
+  },
+  "@lobstersgram:1044": {
+    "telegraph_link": "https://telegra.ph/What-makes-Lisp-difficult-to-read-09-29",
+    "article_link": "https://paultm.nl/paren-thesis",
+    "discussion_link": "https://lobste.rs/s/fqype1/what_makes_lisp_difficult_read",
+    "title": "What makes Lisp difficult to read?"
+  },
+  "@lobstersgram:1045": {
+    "telegraph_link": "https://telegra.ph/ICFP26-Deterministic-Concurrency-09-29-2",
+    "article_link": "https://www.youtube.com/watch?v=25x0UuSCKuU",
+    "discussion_link": "https://lobste.rs/s/wuiaba/deterministic_concurrency",
+    "title": "Deterministic Concurrency"
+  },
+  "@lobstersgram:1046": {
+    "telegraph_link": "https://telegra.ph/Nura--The-road-to-daily-drivable-mainline-phones-09-29-2",
+    "article_link": "https://nura.eco/blog/2026/09/29/road-to-main-category/",
+    "discussion_link": "https://lobste.rs/s/hnb7tb/nura_postmarketos_road_daily_drivable",
+    "title": "Nura (postmarketOS): The road to daily-drivable mainline phones"
   }
 }
