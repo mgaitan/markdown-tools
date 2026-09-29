@@ -6130,5 +6130,23 @@
     "article_link": "https://pixelambacht.nl/2026/ten-lines-of-code/",
     "discussion_link": "https://lobste.rs/s/fpk9gq/ten_lines_code_changed_my_world",
     "title": "Ten Lines Of Code That Changed My World"
+  },
+  "@lobstersgram:1031": {
+    "telegraph_link": "https://telegra.ph/Thoughts-on-Flash-09-29",
+    "article_link": "https://web.archive.org/web/20100501010616/http://www.apple.com/hotnews/thoughts-on-flash/",
+    "discussion_link": "https://lobste.rs/s/t8bsws/thoughts_on_flash_2010",
+    "title": "Thoughts on Flash (2010)"
+  },
+  "@lobstersgram:1032": {
+    "telegraph_link": "https://telegra.ph/frazerpearceTimeLord--TimeLord-choose-your-random-future-09-29",
+    "article_link": "https://github.com/frazerpearce/TimeLord",
+    "discussion_link": "https://lobste.rs/s/v6bbts/output_seed_mappings_for_cpython_s_prng",
+    "title": "Output-to-seed mappings for CPython's PRNG"
+  },
+  "@lobstersgram:1033": {
+    "telegraph_link": "https://telegra.ph/Fools-Expertise--The-Observation-Deck-09-29",
+    "article_link": "https://bcantrill.dtrace.org/2026/09/27/fools-expertise/",
+    "discussion_link": "https://lobste.rs/s/hjkktn/fool_s_expertise",
+    "title": "Fool's Expertise"
   }
 }
