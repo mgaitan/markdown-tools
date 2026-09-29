@@ -6166,5 +6166,35 @@
     "article_link": "https://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/",
     "discussion_link": "https://lobste.rs/s/edx1gf/what_i_believe_about_future_software",
     "title": "What I believe about the future of software development"
+  },
+  "@lobstersgram:1037": {
+    "telegraph_link": "https://telegra.ph/MicroLLM-lab---tiny-LLMs-Q4-in-your-browser-09-29",
+    "article_link": "https://stateofutopia.com/experiments/microllmlab/",
+    "discussion_link": "https://lobste.rs/s/1gy0zx/microllm_lab_tiny_llms_q4_your_browser",
+    "title": "MicroLLM lab - tiny LLMs, Q4, in your browser"
+  },
+  "@lobstersgram:1038": {
+    "telegraph_link": "https://telegra.ph/Adding-Floating-Point-Decimals-for-Fun-and-Profit-09-29-3",
+    "article_link": "https://blog.vero.site/post/float",
+    "discussion_link": "https://lobste.rs/s/bm2juk/adding_floating_point_decimals_for_fun",
+    "title": "Adding Floating-Point Decimals for Fun and Profit"
+  },
+  "@lobstersgram:1039": {
+    "telegraph_link": "https://telegra.ph/How-to-Solve-Hallucination---Robert-W-09-29",
+    "article_link": "https://www.robw.fyi/2026/09/28/how-to-solve-hallucination/",
+    "discussion_link": "https://lobste.rs/s/kolgwk/how_solve_hallucination_with_rlcd",
+    "title": "How to Solve Hallucination (with RLCD)"
+  },
+  "@lobstersgram:1040": {
+    "telegraph_link": "https://telegra.ph/To-Be-Determined---Prototyping-a-Small-Genetic-Algorithms-Library-in-Haskell-09-29",
+    "article_link": "https://anekstein.com/posts/2019-11-15.html",
+    "discussion_link": "https://lobste.rs/s/xdk1cp/prototyping_small_genetic_algorithms",
+    "title": "Prototyping a Small Genetic Algorithms Library inHaskell (2019)"
+  },
+  "@lobstersgram:1041": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-week--Lobsters-09-29",
+    "article_link": "https://lobste.rs/s/hgmgp2/what_are_you_doing_this_week",
+    "discussion_link": "https://lobste.rs/s/hgmgp2/what_are_you_doing_this_week",
+    "title": "What are you doing this week?"
   }
 }
