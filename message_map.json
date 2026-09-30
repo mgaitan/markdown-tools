@@ -6274,5 +6274,35 @@
     "article_link": "https://blog.glyph.im/2026/09/serious-ai-product.html",
     "discussion_link": "https://lobste.rs/s/q2rymh/what_would_serious_ai_product_look_like",
     "title": "What Would A Serious AI Product Look Like?"
+  },
+  "@lobstersgram:1055": {
+    "telegraph_link": "https://telegra.ph/MotifCentral-09-30",
+    "article_link": "https://motif-central.org/",
+    "discussion_link": "https://lobste.rs/s/otexs4/motifcentral_all_things_motif_xt_xlib",
+    "title": "MotifCentral - All Things Motif/Xt/Xlib"
+  },
+  "@lobstersgram:1056": {
+    "telegraph_link": "https://telegra.ph/ESPARGOS---ESP-SDR-Raw-IQ-Capture-with-Espressifs-ESP32-Chips-09-30",
+    "article_link": "https://espargos.net/espsdr/",
+    "discussion_link": "https://lobste.rs/s/werm2e/espargos_esp_sdr_raw_iq_capture_with",
+    "title": "ESPARGOS - ESP-SDR: Raw IQ Capture with Espressif's ESP32 Chips"
+  },
+  "@lobstersgram:1057": {
+    "telegraph_link": "https://telegra.ph/Bill-Gates-tries-to-install-Movie-Maker-09-30",
+    "article_link": "https://www.techemails.com/p/bill-gates-tries-to-install-movie-maker",
+    "discussion_link": "https://lobste.rs/s/lfqtgh/bill_gates_tries_install_movie_maker",
+    "title": "Bill Gates tries to install Movie Maker"
+  },
+  "@lobstersgram:1058": {
+    "telegraph_link": "https://telegra.ph/frostyardsnowdesktop--Immutable-Debian-desktop-for-developers-09-30",
+    "article_link": "https://github.com/frostyard/snowdesktop",
+    "discussion_link": "https://lobste.rs/s/igpxhf/snowdesktop_immutable_debian_desktop",
+    "title": "snowdesktop: Immutable Debian desktop for developers"
+  },
+  "@lobstersgram:1059": {
+    "telegraph_link": "https://telegra.ph/A-no-cost-audio-upgrade-for-my-workstation-09-30",
+    "article_link": "https://mit.teil.space/rane-sl3.html",
+    "discussion_link": "https://lobste.rs/s/qjnmeg/no_cost_audio_upgrade_for_my_workstation",
+    "title": "A no-cost audio upgrade for my workstation"
   }
 }
