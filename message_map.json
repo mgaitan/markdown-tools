@@ -6304,5 +6304,29 @@
     "article_link": "https://mit.teil.space/rane-sl3.html",
     "discussion_link": "https://lobste.rs/s/qjnmeg/no_cost_audio_upgrade_for_my_workstation",
     "title": "A no-cost audio upgrade for my workstation"
+  },
+  "@lobstersgram:1060": {
+    "telegraph_link": "https://telegra.ph/The-Shell--Email---machtiani-09-30",
+    "article_link": "https://www.machtiani.chat/blogs/the-shell",
+    "discussion_link": "https://lobste.rs/s/joqdsi/shell_email",
+    "title": "The Shell & Email"
+  },
+  "@lobstersgram:1061": {
+    "telegraph_link": "https://telegra.ph/Join-Ordering-Part-1-The-Shape-of-the-Search-Space--Opinions-on-Software-09-30",
+    "article_link": "https://deferworks.org/posts/join-ordering/",
+    "discussion_link": "https://lobste.rs/s/phvgme/join_ordering_part_1_shape_search_space",
+    "title": "Join Ordering, Part 1: The Shape of the Search Space"
+  },
+  "@lobstersgram:1062": {
+    "telegraph_link": "https://telegra.ph/Qt-612-LTS-Released-09-30-3",
+    "article_link": "https://www.qt.io/blog/qt-6.12-released",
+    "discussion_link": "https://lobste.rs/s/3ixiwz/qt_6_12_lts_released",
+    "title": "Qt 6.12 LTS Released"
+  },
+  "@lobstersgram:1063": {
+    "telegraph_link": "https://telegra.ph/Colin-James---Aho-Corasick-09-30",
+    "article_link": "https://compiler.club/aho-corasick/",
+    "discussion_link": "https://lobste.rs/s/s0x5nd/aho_corasick_algorithm",
+    "title": "Aho-Corasick Algorithm"
   }
 }
