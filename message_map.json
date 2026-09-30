@@ -6226,5 +6226,29 @@
     "article_link": "https://nura.eco/blog/2026/09/29/road-to-main-category/",
     "discussion_link": "https://lobste.rs/s/hnb7tb/nura_postmarketos_road_daily_drivable",
     "title": "Nura (postmarketOS): The road to daily-drivable mainline phones"
+  },
+  "@lobstersgram:1047": {
+    "telegraph_link": "https://telegra.ph/How-to-work-in-a-software-engineering-team---Kimmos-home-page-09-30",
+    "article_link": "https://kimmosaaskilahti.fi/blog/2022/02/25/how-to-work-in-a-software-engineering-team/",
+    "discussion_link": "https://lobste.rs/s/fmnvbk/how_work_software_engineering_team_2022",
+    "title": "How to work in a software engineering team (2022)"
+  },
+  "@lobstersgram:1048": {
+    "telegraph_link": "https://telegra.ph/Unix-File-and-Directory-Permissions-and-Modes-09-30",
+    "article_link": "https://wpollock.com/AUnix1/FilePermissions.htm",
+    "discussion_link": "https://lobste.rs/s/yj7sbv/unix_file_directory_permissions_modes",
+    "title": "Unix File and Directory Permissions and Modes (2018)"
+  },
+  "@lobstersgram:1049": {
+    "telegraph_link": "https://telegra.ph/Hijacking-the-PS5s-RTMP-Stream-09-30",
+    "article_link": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
+    "discussion_link": "https://lobste.rs/s/8oyww7/hijacking_ps5_s_rtmp_stream",
+    "title": "Hijacking the PS5's RTMP Stream"
+  },
+  "@lobstersgram:1050": {
+    "telegraph_link": "https://telegra.ph/State-of-the-Tagged-Union-Address-by-Andrew-Kelley-09-30",
+    "article_link": "https://www.youtube.com/watch?v=zwi5b5xSsKA",
+    "discussion_link": "https://lobste.rs/s/okds3e/state_tagged_union_address_by_andrew",
+    "title": "State of the (Tagged) Union Address by Andrew Kelley"
   }
 }
