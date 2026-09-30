@@ -6250,5 +6250,29 @@
     "article_link": "https://www.youtube.com/watch?v=zwi5b5xSsKA",
     "discussion_link": "https://lobste.rs/s/okds3e/state_tagged_union_address_by_andrew",
     "title": "State of the (Tagged) Union Address by Andrew Kelley"
+  },
+  "@lobstersgram:1051": {
+    "telegraph_link": "https://telegra.ph/Yes-no-AI-is-now-a-feature---TDF-Community-Blog-09-30",
+    "article_link": "https://blog.documentfoundation.org/blog/2026/09/03/yes-no-ai-is-now-a-feature/",
+    "discussion_link": "https://lobste.rs/s/sxcz4v/yes_no_ai_is_now_feature",
+    "title": "Yes, no AI is now a feature"
+  },
+  "@lobstersgram:1052": {
+    "telegraph_link": "https://telegra.ph/Re-NEW-sysutilsuutils-09-30",
+    "article_link": "https://www.mail-archive.com/ports%40openbsd.org/msg143892.html",
+    "discussion_link": "https://lobste.rs/s/vmmq7g/openbsd_s_ports_tree_keeps_gpl_coreutils",
+    "title": "OpenBSD's ports tree keeps GPL coreutils and rejects uutils (Rust rewrite)"
+  },
+  "@lobstersgram:1053": {
+    "telegraph_link": "https://telegra.ph/Getting-root-on-OnePlus-15-from-an-untrusted-app-via-an-audio-debug-service-and-a-vendor-HAL--nnsee-09-30-2",
+    "article_link": "https://blog.nns.ee/2026/09/24/oneplus-root/",
+    "discussion_link": "https://lobste.rs/s/a5rcxy/getting_root_on_oneplus_15_from_untrusted",
+    "title": "Getting root on OnePlus 15 from an untrusted app"
+  },
+  "@lobstersgram:1054": {
+    "telegraph_link": "https://telegra.ph/Deciphering-Glyph--What-Would-A-Serious-AI-Product-Look-Like-09-30",
+    "article_link": "https://blog.glyph.im/2026/09/serious-ai-product.html",
+    "discussion_link": "https://lobste.rs/s/q2rymh/what_would_serious_ai_product_look_like",
+    "title": "What Would A Serious AI Product Look Like?"
   }
 }
