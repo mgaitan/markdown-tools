@@ -6388,5 +6388,29 @@
     "article_link": "https://www.tigrisdata.com/blog/quick-fdb-kafka/",
     "discussion_link": "https://lobste.rs/s/0xfpgo/we_used_database_as_message_queue_now_we",
     "title": "We used a database as a message queue. Now we use Kafka"
+  },
+  "@lobstersgram:1074": {
+    "telegraph_link": "https://telegra.ph/TclTk-91-10-01",
+    "article_link": "https://www.tcl-lang.org/software/tcltk/9.1.html",
+    "discussion_link": "https://lobste.rs/s/kbdf4q/tcl_tk_9_1",
+    "title": "Tcl/Tk 9.1"
+  },
+  "@lobstersgram:1075": {
+    "telegraph_link": "https://telegra.ph/We-Should-be-Able-to-Change-our-Languages---Jimmy-Miller-10-01",
+    "article_link": "https://jimmyhmiller.com/change-our-languages",
+    "discussion_link": "https://lobste.rs/s/oeflod/we_should_be_able_change_our_languages",
+    "title": "We Should be Able to Change our Languages"
+  },
+  "@lobstersgram:1076": {
+    "telegraph_link": "https://telegra.ph/Finding-Bugs-10-01-2",
+    "article_link": "https://matklad.github.io/2026/09/19/finding-bugs.html",
+    "discussion_link": "https://lobste.rs/s/2r2sg8/finding_bugs",
+    "title": "Finding Bugs"
+  },
+  "@lobstersgram:1077": {
+    "telegraph_link": "https://telegra.ph/edgcppcompiler-10-01",
+    "article_link": "https://github.com/edgcpp/compiler",
+    "discussion_link": "https://lobste.rs/s/nwdxko/edg_c_c_compiler_project",
+    "title": "EDG C/C++ Compiler Project"
   }
 }
