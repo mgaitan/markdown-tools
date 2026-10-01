@@ -19,7 +19,7 @@ now first-class packages.
   UI, URL endpoints, document upload, image upload, bookmarklets, and Telegraph
   publishing and Telegram notifications.
 - [`lobstersgram`](https://github.com/mgaitan/markdown-tools/tree/master/src/lobstersgram): Telegram application that posts Lobsters
-  links with clean Telegraph reading views.
+  links with clean Telegraph reading views ([README](src/lobstersgram/README.md)).
 
 ```mermaid
 flowchart TD
