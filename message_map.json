@@ -6376,5 +6376,17 @@
     "article_link": "https://ayazhafiz.com/articles/21/lang-narrow",
     "discussion_link": "https://lobste.rs/s/7k5jce/simple_language_with_flow_typing_2021",
     "title": "A Simple Language With Flow Typing (2021)"
+  },
+  "@lobstersgram:1072": {
+    "telegraph_link": "https://telegra.ph/django-modern-rest0160-release--Lobsters-10-01",
+    "article_link": "https://lobste.rs/s/fujfew/django_modern_rest_0_16_0_release",
+    "discussion_link": "https://lobste.rs/s/fujfew/django_modern_rest_0_16_0_release",
+    "title": "django-modern-rest@0.16.0 release"
+  },
+  "@lobstersgram:1073": {
+    "telegraph_link": "https://telegra.ph/We-used-a-database-as-a-message-queue-Now-we-use-Kafka--Tigris-Object-Storage-10-01-2",
+    "article_link": "https://www.tigrisdata.com/blog/quick-fdb-kafka/",
+    "discussion_link": "https://lobste.rs/s/0xfpgo/we_used_database_as_message_queue_now_we",
+    "title": "We used a database as a message queue. Now we use Kafka"
   }
 }
