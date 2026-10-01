@@ -6352,5 +6352,29 @@
     "article_link": "https://mechanicalrabbit.github.io/FunSQL.jl/stable/two-kinds-of-sql-query-builders/#Two-Kinds-of-SQL-Query-Builders",
     "discussion_link": "https://lobste.rs/s/zknqct/two_kinds_sql_query_builders",
     "title": "Two Kinds of SQL Query Builders"
+  },
+  "@lobstersgram:1068": {
+    "telegraph_link": "https://telegra.ph/Branch-Target-Reuse-Spectre-v2-Attacks-in-JIT-Engines-10-01",
+    "article_link": "https://www.vusec.net/projects/btr/",
+    "discussion_link": "https://lobste.rs/s/y3ppje/branch_target_reuse_spectre_v2_attacks",
+    "title": "Branch Target Reuse: Spectre-v2 Attacks in JIT Engines"
+  },
+  "@lobstersgram:1069": {
+    "telegraph_link": "https://telegra.ph/CoW---a-stacking-window-manager-for-Wayland-10-01",
+    "article_link": "https://cow-wm.codeberg.page/cow/",
+    "discussion_link": "https://lobste.rs/s/tyivfg/cow_stacking_window_manager_for_wayland",
+    "title": "CoW — a stacking window manager for Wayland"
+  },
+  "@lobstersgram:1070": {
+    "telegraph_link": "https://telegra.ph/Deser-Rethinking-Rust-Serialization--Armin-Ronachers-Thoughts-and-Writings-10-01",
+    "article_link": "https://lucumr.pocoo.org/2026/9/29/deser/",
+    "discussion_link": "https://lobste.rs/s/hxmtyv/deser_rethinking_rust_serialization",
+    "title": "Deser: Rethinking Rust Serialization"
+  },
+  "@lobstersgram:1071": {
+    "telegraph_link": "https://telegra.ph/A-Simple-Language-With-Flow-Typing-10-01",
+    "article_link": "https://ayazhafiz.com/articles/21/lang-narrow",
+    "discussion_link": "https://lobste.rs/s/7k5jce/simple_language_with_flow_typing_2021",
+    "title": "A Simple Language With Flow Typing (2021)"
   }
 }
