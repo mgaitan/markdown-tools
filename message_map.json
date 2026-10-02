@@ -6490,5 +6490,29 @@
     "article_link": "https://blog.jetbrains.com/blog/2026/09/22/introducing-jetbrains-air/",
     "discussion_link": "https://lobste.rs/s/p1yw6k/jetbrains_air_building_system_products",
     "title": "JetBrains Air: Building a System of Products for Agentic Software Development"
+  },
+  "@lobstersgram:1091": {
+    "telegraph_link": "https://telegra.ph/Debian-13-as-a-dual-WAN-router--TQdev-10-02",
+    "article_link": "https://www.tqdev.com/2026-dual-wan-router-debian-13/",
+    "discussion_link": "https://lobste.rs/s/jh245o/debian_13_as_dual_wan_router",
+    "title": "Debian 13 as a dual WAN router"
+  },
+  "@lobstersgram:1092": {
+    "telegraph_link": "https://telegra.ph/Klassik-Revives-the-KDE-3-Desktop-on-Modern-Plasma-6-10-02",
+    "article_link": "https://linuxiac.com/klassik-revives-the-kde-3-desktop-on-modern-plasma-6/",
+    "discussion_link": "https://lobste.rs/s/qmcuiv/klassik_revives_kde_3_desktop_on_modern",
+    "title": "Klassik Revives the KDE 3 Desktop on Modern Plasma 6"
+  },
+  "@lobstersgram:1093": {
+    "telegraph_link": "https://telegra.ph/Driving-the-GDEH0154D67-e-paper-display-with-Rust-10-02-3",
+    "article_link": "https://sgt.hootr.club/blog/driving-gdeh0154d67-with-rust/",
+    "discussion_link": "https://lobste.rs/s/bghff5/driving_gdeh0154d67_e_paper_display_with",
+    "title": "Driving the GDEH0154D67 e-paper display with Rust"
+  },
+  "@lobstersgram:1094": {
+    "telegraph_link": "https://telegra.ph/The-death-of-web-development-education---Rescuing-a-field-from-disappearing-10-02",
+    "article_link": "https://molily.de/web-dev-education/",
+    "discussion_link": "https://lobste.rs/s/td9dxd/death_web_development_education",
+    "title": "The death of web development education"
   }
 }
