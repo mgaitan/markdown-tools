@@ -6442,5 +6442,29 @@
     "article_link": "https://verdagon.dev/blog/boundary-memory-safety",
     "discussion_link": "https://lobste.rs/s/ajtnc6/second_golden_spike_memory_safety_across",
     "title": "The Second Golden Spike: Memory Safety Across the Valen/Rust Boundary"
+  },
+  "@lobstersgram:1083": {
+    "telegraph_link": "https://telegra.ph/Thrust-vs-Steer-or-Yet-Another-Anecdotal-Case-of-the-Dunning-Kruger-Effect---tmcb-10-02",
+    "article_link": "https://write.as/tmcb/thrust-vs-steer-or-yet-another-anecdotal-case-of-the-dunning-kruger-effect",
+    "discussion_link": "https://lobste.rs/s/kp2tg8/thrust_vs_steer_yet_another_anecdotal",
+    "title": "Thrust vs. Steer (or: Yet Another Anecdotal Case of the Dunning-Kruger Effect)"
+  },
+  "@lobstersgram:1084": {
+    "telegraph_link": "https://telegra.ph/Readable-Regular-Expressions-for-JavaScriptTypeScript-Inspired-by-Emacs-rx--Rahuls-Blog-10-02",
+    "article_link": "https://rahuljuliato.com/posts/emacs-rx-in-typescript",
+    "discussion_link": "https://lobste.rs/s/3hdied/readable_regular_expressions_for",
+    "title": "Readable Regular Expressions for JavaScript/TypeScript, Inspired by Emacs' rx"
+  },
+  "@lobstersgram:1085": {
+    "telegraph_link": "https://telegra.ph/Claude-shaped-science--Anthropic-10-02",
+    "article_link": "https://www.anthropic.com/research/claude-shaped-science",
+    "discussion_link": "https://lobste.rs/s/m7hmat/claude_shaped_science",
+    "title": "Claude-shaped science"
+  },
+  "@lobstersgram:1086": {
+    "telegraph_link": "https://telegra.ph/The-AI-Pascals-Wager-10-02",
+    "article_link": "https://ploum.net/2026-10-01-pascal_wager.html",
+    "discussion_link": "https://lobste.rs/s/hbjy0b/ai_pascal_s_wager",
+    "title": "The AI Pascal’s Wager"
   }
 }
