@@ -6412,5 +6412,35 @@
     "article_link": "https://github.com/edgcpp/compiler",
     "discussion_link": "https://lobste.rs/s/nwdxko/edg_c_c_compiler_project",
     "title": "EDG C/C++ Compiler Project"
+  },
+  "@lobstersgram:1078": {
+    "telegraph_link": "https://telegra.ph/Hanami-Why-Introductions--Aaron-Allen-10-02",
+    "article_link": "https://aaronmallen.me/writing/hanami-why-introductions",
+    "discussion_link": "https://lobste.rs/s/bag41j/hanami_why_introductions",
+    "title": "Hanami, Why?: Introductions"
+  },
+  "@lobstersgram:1079": {
+    "telegraph_link": "https://telegra.ph/Major-rsync-upgrade-in-Debian-because-of-33-CVEs--Lobsters-10-02",
+    "article_link": "https://lobste.rs/s/sqyhgt/major_rsync_upgrade_debian_because_33",
+    "discussion_link": "https://lobste.rs/s/sqyhgt/major_rsync_upgrade_debian_because_33",
+    "title": "Major rsync upgrade in Debian because of 33 CVEs"
+  },
+  "@lobstersgram:1080": {
+    "telegraph_link": "https://telegra.ph/Jimmy-Lefevre--How-to-make-a-text-box-A-crash-course-in-Unicode-and-OpenType--BSC-2026-10-02",
+    "article_link": "https://www.youtube.com/watch?v=7Tr0ty9-yeQ",
+    "discussion_link": "https://lobste.rs/s/tslwlq/how_make_text_box_crash_course_unicode",
+    "title": "How to make a text box: A crash course in Unicode and OpenType"
+  },
+  "@lobstersgram:1081": {
+    "telegraph_link": "https://telegra.ph/grimcargocutorg---Lists-that-keep-track-of-their-reversal-10-02",
+    "article_link": "https://grim.cargocut.org/a/rev-list.html",
+    "discussion_link": "https://lobste.rs/s/eqemtu/lists_keep_track_their_reversal",
+    "title": "Lists that keep track of their reversal"
+  },
+  "@lobstersgram:1082": {
+    "telegraph_link": "https://telegra.ph/The-Second-Golden-Spike-Memory-Safety-Across-the-ValenRust-Boundary-10-02",
+    "article_link": "https://verdagon.dev/blog/boundary-memory-safety",
+    "discussion_link": "https://lobste.rs/s/ajtnc6/second_golden_spike_memory_safety_across",
+    "title": "The Second Golden Spike: Memory Safety Across the Valen/Rust Boundary"
   }
 }
