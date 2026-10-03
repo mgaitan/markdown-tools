@@ -6556,5 +6556,35 @@
     "article_link": "https://www.oliverdunk.com/2026/09/30/iana-reply",
     "discussion_link": "https://lobste.rs/s/qgd17n/iana_s_email_about_why_example_com_changed",
     "title": "IANA's email about why example.com changed"
+  },
+  "@lobstersgram:1102": {
+    "telegraph_link": "https://telegra.ph/Kernel-Recipes-2026---Security-in-the-LLM-age-10-03",
+    "article_link": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+    "discussion_link": "https://lobste.rs/s/rghh9w/greg_kroah_hartman_security_llm_age",
+    "title": "Greg Kroah-Hartman - Security in the LLM Age"
+  },
+  "@lobstersgram:1103": {
+    "telegraph_link": "https://telegra.ph/Go-JSON-v2-Migration-What-Breaks-in-Go-127--ImportStatic-10-03",
+    "article_link": "https://importstatic.com/go/go-json-v2-migration",
+    "discussion_link": "https://lobste.rs/s/par7rv/go_json_v2_migration_what_breaks_go_1_27",
+    "title": "Go JSON v2 Migration: What Breaks in Go 1.27"
+  },
+  "@lobstersgram:1104": {
+    "telegraph_link": "https://telegra.ph/Git-30s-upcoming-SHA-256-default-will-be-a-costly-mistake--Butlers-Log-10-03",
+    "article_link": "https://blog.gitbutler.com/git-3-sha-256",
+    "discussion_link": "https://lobste.rs/s/bytzgl/git_3_0_s_upcoming_sha_256_default_will_be",
+    "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake"
+  },
+  "@lobstersgram:1105": {
+    "telegraph_link": "https://telegra.ph/Problems-and-solutions-to-the-modern-desktop-Make-tmux-the-OS-10-03",
+    "article_link": "https://matduggan.com/what-does-my-dream-os-ui-look-like/",
+    "discussion_link": "https://lobste.rs/s/gjlxiz/problems_solutions_modern_desktop_make",
+    "title": "Problems and solutions to the modern desktop (Make tmux the OS)"
+  },
+  "@lobstersgram:1106": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-10-03",
+    "article_link": "https://lobste.rs/s/hfmcxi/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/hfmcxi/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
   }
 }
