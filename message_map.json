@@ -6610,5 +6610,29 @@
     "article_link": "https://futhark-lang.org/blog/2026-10-02-cpu_function.html",
     "discussion_link": "https://lobste.rs/s/8f5elm/keeping_futhark_off_gpu",
     "title": "Keeping Futhark off the GPU"
+  },
+  "@lobstersgram:1111": {
+    "telegraph_link": "https://telegra.ph/bsidesorlando2026-badge-10-03",
+    "article_link": "https://github.com/bsidesorlando/2026-badge",
+    "discussion_link": "https://lobste.rs/s/opwgtj/bsides_orlando_2026_badge",
+    "title": "BSides Orlando 2026 Badge"
+  },
+  "@lobstersgram:1112": {
+    "telegraph_link": "https://telegra.ph/The-forgetful-CPU-Linux-on-M4---Blog---Yureka-Lilian-10-03",
+    "article_link": "https://yuka.dev/blog-2026-10-02-linux-m4.html",
+    "discussion_link": "https://lobste.rs/s/s4wm69/forgetful_cpu_linux_on_m4",
+    "title": "The forgetful CPU (Linux on M4)"
+  },
+  "@lobstersgram:1113": {
+    "telegraph_link": "https://telegra.ph/The-Era-of-Programming-Languages-Exploration-is-upon-Us-10-03-2",
+    "article_link": "https://kirancodes.me/posts/log-end-of-pl.html",
+    "discussion_link": "https://lobste.rs/s/1rmsib/era_programming_languages_exploration",
+    "title": "The Era of Programming Languages Exploration is upon Us"
+  },
+  "@lobstersgram:1114": {
+    "telegraph_link": "https://telegra.ph/Updates-to-Full-Disk-Access-in-macOS---Latest-News---Apple-Developer-10-03-3",
+    "article_link": "https://developer.apple.com/news/?id=p6zjojqw",
+    "discussion_link": "https://lobste.rs/s/9ipypq/updates_full_disk_access_macos",
+    "title": "Updates to Full Disk Access in macOS"
   }
 }
