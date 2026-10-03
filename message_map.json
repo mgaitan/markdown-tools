@@ -6586,5 +6586,29 @@
     "article_link": "https://lobste.rs/s/hfmcxi/what_are_you_doing_this_weekend",
     "discussion_link": "https://lobste.rs/s/hfmcxi/what_are_you_doing_this_weekend",
     "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:1107": {
+    "telegraph_link": "https://telegra.ph/Kagi-Blog---An-Update-on-Orion-for-Linux-and-Windows-10-03-2",
+    "article_link": "https://blog.kagi.com/update-orion-linux-windows",
+    "discussion_link": "https://lobste.rs/s/xruas8/update_on_orion_for_linux_windows",
+    "title": "An Update on Orion for Linux and Windows"
+  },
+  "@lobstersgram:1108": {
+    "telegraph_link": "https://telegra.ph/Waterfox-675---Read-the-Feed---Release-Notes-10-03",
+    "article_link": "https://www.waterfox.com/releases/6.7.5/",
+    "discussion_link": "https://lobste.rs/s/gmjegm/waterfox_6_7_5_adds_built_feed_reader",
+    "title": "Waterfox 6.7.5 Adds a Built-in Feed Reader"
+  },
+  "@lobstersgram:1109": {
+    "telegraph_link": "https://telegra.ph/swarm-10-03-5",
+    "article_link": "https://nohope.io/",
+    "discussion_link": "https://lobste.rs/s/e90dzr/grow_control_swarm",
+    "title": "Grow and control a swarm"
+  },
+  "@lobstersgram:1110": {
+    "telegraph_link": "https://telegra.ph/Keeping-Futhark-off-the-GPU-10-03-2",
+    "article_link": "https://futhark-lang.org/blog/2026-10-02-cpu_function.html",
+    "discussion_link": "https://lobste.rs/s/8f5elm/keeping_futhark_off_gpu",
+    "title": "Keeping Futhark off the GPU"
   }
 }
