@@ -6514,5 +6514,23 @@
     "article_link": "https://molily.de/web-dev-education/",
     "discussion_link": "https://lobste.rs/s/td9dxd/death_web_development_education",
     "title": "The death of web development education"
+  },
+  "@lobstersgram:1095": {
+    "telegraph_link": "https://telegra.ph/sixteenth-RacketCon-10-03",
+    "article_link": "https://con.racket-lang.org/",
+    "discussion_link": "https://lobste.rs/s/auypcd/sixteenth_racketcon_this_weekend",
+    "title": "sixteenth RacketCon this weekend"
+  },
+  "@lobstersgram:1096": {
+    "telegraph_link": "https://telegra.ph/Arch-specific-SIMD-in-Go---The-Go-Programming-Language-10-03",
+    "article_link": "https://go.dev/blog/archsimd",
+    "discussion_link": "https://lobste.rs/s/kid4ru/arch_specific_simd_go",
+    "title": "Arch-specific SIMD in Go"
+  },
+  "@lobstersgram:1097": {
+    "telegraph_link": "https://telegra.ph/Whos-hiring-Q4-2026--Lobsters-10-03",
+    "article_link": "https://lobste.rs/s/bmcnwp/who_s_hiring_q4_2026",
+    "discussion_link": "https://lobste.rs/s/bmcnwp/who_s_hiring_q4_2026",
+    "title": "Who's hiring? Q4 2026"
   }
 }
