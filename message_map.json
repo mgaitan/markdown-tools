@@ -6532,5 +6532,29 @@
     "article_link": "https://lobste.rs/s/bmcnwp/who_s_hiring_q4_2026",
     "discussion_link": "https://lobste.rs/s/bmcnwp/who_s_hiring_q4_2026",
     "title": "Who's hiring? Q4 2026"
+  },
+  "@lobstersgram:1098": {
+    "telegraph_link": "https://telegra.ph/Respecting-your-users-dread-of-the-clankers-10-03",
+    "article_link": "https://thoughtbot.com/blog/respecting-your-users-dread-of-the-clankers",
+    "discussion_link": "https://lobste.rs/s/c105dq/respecting_your_users_dread_clankers",
+    "title": "Respecting your users' dread of the clankers"
+  },
+  "@lobstersgram:1099": {
+    "telegraph_link": "https://telegra.ph/Reducing-the-cognitive-load-of-AI-changes-10-03",
+    "article_link": "https://amoffat.github.io/blog/cognitive-load.html",
+    "discussion_link": "https://lobste.rs/s/iwvjr0/reducing_cognitive_load_ai_changes",
+    "title": "Reducing the cognitive load of AI changes"
+  },
+  "@lobstersgram:1100": {
+    "telegraph_link": "https://telegra.ph/SequenceHash-multihashing-for-the-rest-of-us---The-Trail-of-Bits-Blog-10-03",
+    "article_link": "https://blog.trailofbits.com/2026/10/02/sequencehash-multihashing-for-the-rest-of-us/",
+    "discussion_link": "https://lobste.rs/s/llnale/sequencehash_multihashing_for_rest_us",
+    "title": "SequenceHash: multihashing for the rest of us"
+  },
+  "@lobstersgram:1101": {
+    "telegraph_link": "https://telegra.ph/IANAs-email-about-why-examplecom-changed--Oliver-Dunk-10-03",
+    "article_link": "https://www.oliverdunk.com/2026/09/30/iana-reply",
+    "discussion_link": "https://lobste.rs/s/qgd17n/iana_s_email_about_why_example_com_changed",
+    "title": "IANA's email about why example.com changed"
   }
 }
