@@ -6652,5 +6652,29 @@
     "article_link": "https://www.youtube.com/watch?v=3kbPyuAtk7g",
     "discussion_link": "https://lobste.rs/s/hfq43j/rust_sickness_health",
     "title": "Rust, In Sickness & In Health"
+  },
+  "@lobstersgram:1118": {
+    "telegraph_link": "https://telegra.ph/Carrier-Pigeon-Internet-Protocol-April-2001--Christies-10-04",
+    "article_link": "https://onlineonly.christies.com/s/fine-printed-books-manuscripts-science/carrier-pigeon-internet-protocol-150/325216",
+    "discussion_link": "https://lobste.rs/s/wqqkws/actual_rfc1149_packet_being_auctioned",
+    "title": "Actual RFC1149 packet being auctioned"
+  },
+  "@lobstersgram:1119": {
+    "telegraph_link": "https://telegra.ph/gVisor-is-being-donated-to-CNCF---gVisor-10-04",
+    "article_link": "https://gvisor.dev/blog/2026/10/02/gvisor-cncf/",
+    "discussion_link": "https://lobste.rs/s/asoxjl/gvisor_is_being_donated_cncf",
+    "title": "gVisor is being donated to CNCF"
+  },
+  "@lobstersgram:1120": {
+    "telegraph_link": "https://telegra.ph/Peter-Bex-on-CHICKEN-Scheme--Alex-Alejandre-10-04",
+    "article_link": "https://alexalejandre.com/interviews/peter-bex/",
+    "discussion_link": "https://lobste.rs/s/0egeug/lobsters_interview_with_sjamaan",
+    "title": "Lobsters Interview with Sjamaan"
+  },
+  "@lobstersgram:1121": {
+    "telegraph_link": "https://telegra.ph/Two-Stack-Sliding-Window-Aggregation--orlpnet-10-04",
+    "article_link": "https://orlp.net/blog/two-stack-sliding-window-aggregation/",
+    "discussion_link": "https://lobste.rs/s/49glor/two_stack_sliding_window_aggregation",
+    "title": "Two-Stack Sliding-Window Aggregation"
   }
 }
