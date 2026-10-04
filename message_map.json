@@ -6634,5 +6634,23 @@
     "article_link": "https://developer.apple.com/news/?id=p6zjojqw",
     "discussion_link": "https://lobste.rs/s/9ipypq/updates_full_disk_access_macos",
     "title": "Updates to Full Disk Access in macOS"
+  },
+  "@lobstersgram:1115": {
+    "telegraph_link": "https://telegra.ph/Cyclone-Scheme-10-04",
+    "article_link": "https://justinethier.github.io/cyclone/docs/Writing-the-Cyclone-Scheme-Compiler-Revised-2017",
+    "discussion_link": "https://lobste.rs/s/hlnjbj/writing_cyclone_scheme_compiler_2017",
+    "title": "Writing the Cyclone Scheme Compiler (2017)"
+  },
+  "@lobstersgram:1116": {
+    "telegraph_link": "https://telegra.ph/Why-I-recommend-Renovate-over-any-other-dependency-update-tools--Jamie-Tanna--Software-Engineer-10-04",
+    "article_link": "https://www.jvt.me/posts/2024/04/12/use-renovate/",
+    "discussion_link": "https://lobste.rs/s/kt0yxd/why_i_recommend_renovate_over_any_other",
+    "title": "Why I recommend Renovate over any other dependency update tools (2024)"
+  },
+  "@lobstersgram:1117": {
+    "telegraph_link": "https://telegra.ph/Bryan-Cantrill-Keynote-Rust-In-Sickness--In-Health--RustConf-2026-10-04",
+    "article_link": "https://www.youtube.com/watch?v=3kbPyuAtk7g",
+    "discussion_link": "https://lobste.rs/s/hfq43j/rust_sickness_health",
+    "title": "Rust, In Sickness & In Health"
   }
 }
