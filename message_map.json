@@ -6676,5 +6676,17 @@
     "article_link": "https://orlp.net/blog/two-stack-sliding-window-aggregation/",
     "discussion_link": "https://lobste.rs/s/49glor/two_stack_sliding_window_aggregation",
     "title": "Two-Stack Sliding-Window Aggregation"
+  },
+  "@lobstersgram:1122": {
+    "telegraph_link": "https://telegra.ph/NetBSD-Blog-10-04",
+    "article_link": "https://blog.netbsd.org/tnf/entry/gsoc2026_racoon2",
+    "discussion_link": "https://lobste.rs/s/wbpt5y/improving_stabilizing_racoon2_ike",
+    "title": "Improving and Stabilizing the racoon2 IKE Daemon in NetBSD"
+  },
+  "@lobstersgram:1123": {
+    "telegraph_link": "https://telegra.ph/The-complement-of-true-is-true-except-when-its-false--Substitution-Failure-10-04",
+    "article_link": "https://dryperspective.github.io/posts/complement-of-true/",
+    "discussion_link": "https://lobste.rs/s/4bzoft/complement_true_is_true_except_when_it_s",
+    "title": "The complement of true is true, except when it's false"
   }
 }
