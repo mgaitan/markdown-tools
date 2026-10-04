@@ -6688,5 +6688,23 @@
     "article_link": "https://dryperspective.github.io/posts/complement-of-true/",
     "discussion_link": "https://lobste.rs/s/4bzoft/complement_true_is_true_except_when_it_s",
     "title": "The complement of true is true, except when it's false"
+  },
+  "@lobstersgram:1124": {
+    "telegraph_link": "https://telegra.ph/How-to-Hack-Time-With-C2PA--Blog-10-04",
+    "article_link": "https://www.da.vidbuchanan.co.uk/blog/hacking-time.html",
+    "discussion_link": "https://lobste.rs/s/u8uvlr/how_hack_time_with_c2pa",
+    "title": "How to Hack Time, With C2PA"
+  },
+  "@lobstersgram:1125": {
+    "telegraph_link": "https://telegra.ph/The-Era-of-Software-Quality-or-the-Era-of-Ostriches---Michael-Catanzaros-Blog-10-04",
+    "article_link": "https://blogs.gnome.org/mcatanzaro/2026/10/02/the-era-of-software-quality-or-the-era-of-ostriches/",
+    "discussion_link": "https://lobste.rs/s/elziso/era_software_quality_era_ostriches",
+    "title": "The Era of Software Quality, or the Era of Ostriches?"
+  },
+  "@lobstersgram:1126": {
+    "telegraph_link": "https://telegra.ph/I-got-targeted-10-04",
+    "article_link": "https://frankwiles.com/posts/i-got-targeted/",
+    "discussion_link": "https://lobste.rs/s/cd5gdk/i_got_targeted_trying_get_your",
+    "title": "I got targeted: Trying to get your credentials via a git post-checkout hook"
   }
 }
