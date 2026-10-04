@@ -6706,5 +6706,29 @@
     "article_link": "https://frankwiles.com/posts/i-got-targeted/",
     "discussion_link": "https://lobste.rs/s/cd5gdk/i_got_targeted_trying_get_your",
     "title": "I got targeted: Trying to get your credentials via a git post-checkout hook"
+  },
+  "@lobstersgram:1127": {
+    "telegraph_link": "https://telegra.ph/Iroh-global-content-discovery---Iroh-10-04",
+    "article_link": "https://www.iroh.computer/blog/iroh-global-content-discovery",
+    "discussion_link": "https://lobste.rs/s/eoibah/iroh_global_content_discovery",
+    "title": "Iroh global content discovery"
+  },
+  "@lobstersgram:1128": {
+    "telegraph_link": "https://telegra.ph/Kevin-Boone-System-level-ad-blocking-in-Android-in-2026-10-04",
+    "article_link": "https://kevinboone.me/adblock.html",
+    "discussion_link": "https://lobste.rs/s/hk0ohb/system_level_ad_blocking_android",
+    "title": "System-level ad-blocking in Android"
+  },
+  "@lobstersgram:1129": {
+    "telegraph_link": "https://telegra.ph/Self-hosted-HTTP-tunnels-with-SSH-and-nginx-10-04",
+    "article_link": "https://vincent.bernat.ch/en/blog/2026-http-over-ssh",
+    "discussion_link": "https://lobste.rs/s/jba52r/self_hosted_http_tunnels_with_ssh_nginx",
+    "title": "Self-hosted HTTP tunnels with SSH and nginx"
+  },
+  "@lobstersgram:1130": {
+    "telegraph_link": "https://telegra.ph/Flatpak-from-the-CLI-sucks---kowalski7cc-10-04-2",
+    "article_link": "https://kowalski7cc.xyz/blog/flatpak-from-the-cli-sucks/",
+    "discussion_link": "https://lobste.rs/s/lnmgaw/flatpak_from_cli_sucks",
+    "title": "Flatpak from the CLI sucks"
   }
 }
