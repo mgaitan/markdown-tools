@@ -6748,5 +6748,35 @@
     "article_link": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
     "discussion_link": "https://lobste.rs/s/srduzv/why_don_t_more_developers_use_platform",
     "title": "Why don’t more developers \"use the platform\"?"
+  },
+  "@lobstersgram:1134": {
+    "telegraph_link": "https://telegra.ph/Building-a-RAG-Pipeline-for-Semantic-Code-Search-A-Developer-Diary-and-Field-Notes---The-JetBrains-Blog-10-05-3",
+    "article_link": "https://blog.jetbrains.com/ai/2026/09/building-a-rag-pipeline-for-semantic-code-search-a-developer-diary-and-field-notes/",
+    "discussion_link": "https://lobste.rs/s/ok0m3n/building_rag_pipeline_for_semantic_code",
+    "title": "Building a RAG Pipeline for Semantic Code Search"
+  },
+  "@lobstersgram:1135": {
+    "telegraph_link": "https://telegra.ph/Youre-Leaving-Compute-on-the-Table--Nishant-Joshi-10-05",
+    "article_link": "https://nishantjosh.dev/blogs/youre-leaving-compute-on-the-table/",
+    "discussion_link": "https://lobste.rs/s/1gxpk2/you_re_leaving_compute_on_table",
+    "title": "You're Leaving Compute on the Table"
+  },
+  "@lobstersgram:1136": {
+    "telegraph_link": "https://telegra.ph/From-anyoneicloudcom---Spoofing-Arbitrary-Apple-iCloud-Identities---SEC-Consult-10-05",
+    "article_link": "https://sec-consult.com/blog/detail/from-anyoneicloudcom-spoofing-arbitrary-apple-icloud-identities/",
+    "discussion_link": "https://lobste.rs/s/jpwrmk/from_anyone_icloud_com_spoofing",
+    "title": "From: anyone@icloud.com - Spoofing Arbitrary Apple iCloud Identities"
+  },
+  "@lobstersgram:1137": {
+    "telegraph_link": "https://telegra.ph/Becoming-a-photographer---Stanko-10-05",
+    "article_link": "https://stanko.io/becoming-a-photographer-tIKMwUVuHnHG",
+    "discussion_link": "https://lobste.rs/s/svjojg/becoming_photographer",
+    "title": "Becoming a photographer"
+  },
+  "@lobstersgram:1138": {
+    "telegraph_link": "https://telegra.ph/Broadcasting-conglomerates-are-attempting-a-takeover-of-over-the-air-television-We-must-defend-it-10-05-2",
+    "article_link": "https://place.reeseric.ci/writings/2026-10-04/",
+    "discussion_link": "https://lobste.rs/s/r81dwi/broadcasting_conglomerates_are",
+    "title": "Broadcasting conglomerates are attempting a takeover of over-the-air television. We must defend it"
   }
 }
