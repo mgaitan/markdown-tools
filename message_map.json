@@ -6730,5 +6730,23 @@
     "article_link": "https://kowalski7cc.xyz/blog/flatpak-from-the-cli-sucks/",
     "discussion_link": "https://lobste.rs/s/lnmgaw/flatpak_from_cli_sucks",
     "title": "Flatpak from the CLI sucks"
+  },
+  "@lobstersgram:1131": {
+    "telegraph_link": "https://telegra.ph/grubby-10-05-4",
+    "article_link": "https://git.btxx.org/grubby/",
+    "discussion_link": "https://lobste.rs/s/xpyahx/grubby_static_site_generator_for_git",
+    "title": "grubby: static site generator for git repos written in Ruby"
+  },
+  "@lobstersgram:1132": {
+    "telegraph_link": "https://telegra.ph/Were-going-to-need-default-hard-budget-caps-on-pretty-much-everything-10-05",
+    "article_link": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/",
+    "discussion_link": "https://lobste.rs/s/xkwswd/we_re_going_need_default_hard_budget_caps",
+    "title": "We’re going to need default hard budget caps on pretty much everything"
+  },
+  "@lobstersgram:1133": {
+    "telegraph_link": "https://telegra.ph/Why-dont-more-developers-use-the-platform--Read-the-Tea-Leaves-10-05",
+    "article_link": "https://nolanlawson.com/2026/10/03/why-dont-more-developers-use-the-platform/",
+    "discussion_link": "https://lobste.rs/s/srduzv/why_don_t_more_developers_use_platform",
+    "title": "Why don’t more developers \"use the platform\"?"
   }
 }
