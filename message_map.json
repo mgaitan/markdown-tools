@@ -6778,5 +6778,29 @@
     "article_link": "https://place.reeseric.ci/writings/2026-10-04/",
     "discussion_link": "https://lobste.rs/s/r81dwi/broadcasting_conglomerates_are",
     "title": "Broadcasting conglomerates are attempting a takeover of over-the-air television. We must defend it"
+  },
+  "@lobstersgram:1139": {
+    "telegraph_link": "https://telegra.ph/Nix-on-the-Steam-Frame--Johns-Codes-10-05",
+    "article_link": "https://johns.codes/blog/nix-on-steam-frame",
+    "discussion_link": "https://lobste.rs/s/1m4kx1/nix_on_steam_frame",
+    "title": "Nix on the Steam Frame"
+  },
+  "@lobstersgram:1140": {
+    "telegraph_link": "https://telegra.ph/Async-Rust-Where-does-the-scheduler-live--MONDTECH-MAGAZINE-10-05",
+    "article_link": "https://herecomesthemoon.net/2026/10/async-rust-where-does-the-scheduler-live/",
+    "discussion_link": "https://lobste.rs/s/okk4bg/async_rust_where_does_scheduler_live",
+    "title": "Async Rust: Where does the scheduler live?"
+  },
+  "@lobstersgram:1141": {
+    "telegraph_link": "https://telegra.ph/TIL-Rusts-derive-often-implies-inline-10-05",
+    "article_link": "https://yossarian.net/til/post/rust-s-derive-often-implies-inline/",
+    "discussion_link": "https://lobste.rs/s/dldhpw/rust_s_derive_often_implies_inline",
+    "title": "Rust's derive often implies inline"
+  },
+  "@lobstersgram:1142": {
+    "telegraph_link": "https://telegra.ph/You-dont-need-an-effect-system-10-05",
+    "article_link": "https://burningwitness.github.io/blog/posts/against-effect-systems/",
+    "discussion_link": "https://lobste.rs/s/okq4dm/you_don_t_need_effect_system",
+    "title": "You don't need an effect system"
   }
 }
