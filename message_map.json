@@ -6838,5 +6838,29 @@
     "article_link": "https://www.philipzucker.com/refinement_egraph/",
     "discussion_link": "https://lobste.rs/s/9bufek/refinement_e_graphs",
     "title": "Refinement E-Graphs"
+  },
+  "@lobstersgram:1149": {
+    "telegraph_link": "https://telegra.ph/rcalixtencdu--NCurses-Disk-Usage-an-updated-fork-10-06",
+    "article_link": "https://github.com/rcalixte/ncdu",
+    "discussion_link": "https://lobste.rs/s/dsoh2w/ncdu_ncurses_disk_usage_updated_fork",
+    "title": "ncdu: NCurses Disk Usage (an updated fork)"
+  },
+  "@lobstersgram:1150": {
+    "telegraph_link": "https://telegra.ph/Making-a-GTK-application-in-Haskell-part-1---Floréal-Technologies-10-06",
+    "article_link": "https://floreal.tech/blog/2026/making-a-gtk-app-in-haskell-part-1/",
+    "discussion_link": "https://lobste.rs/s/xmir2s/making_gtk_application_haskell_part_1",
+    "title": "Making a GTK application in Haskell, part 1"
+  },
+  "@lobstersgram:1151": {
+    "telegraph_link": "https://telegra.ph/Using-docker-compose-with-Podman-rootless---Elouworld-10-06",
+    "article_link": "https://elou.world/en/tutorial/podman-docker-compose",
+    "discussion_link": "https://lobste.rs/s/tpxwfe/using_docker_compose_with_podman",
+    "title": "Using docker-compose with Podman rootless"
+  },
+  "@lobstersgram:1152": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-week--Lobsters-10-06",
+    "article_link": "https://lobste.rs/s/nvkrb9/what_are_you_doing_this_week",
+    "discussion_link": "https://lobste.rs/s/nvkrb9/what_are_you_doing_this_week",
+    "title": "What are you doing this week?"
   }
 }
