@@ -6802,5 +6802,23 @@
     "article_link": "https://burningwitness.github.io/blog/posts/against-effect-systems/",
     "discussion_link": "https://lobste.rs/s/okq4dm/you_don_t_need_effect_system",
     "title": "You don't need an effect system"
+  },
+  "@lobstersgram:1143": {
+    "telegraph_link": "https://telegra.ph/How-Cloudflare-addressed-a-cross-tenant-data-exposure-vulnerability-in-Containers--Cloudflare-Blog-10-06",
+    "article_link": "https://blog.cloudflare.com/containers-cross-tenant-vulnerability/",
+    "discussion_link": "https://lobste.rs/s/gm2ziy/how_cloudflare_addressed_cross_tenant",
+    "title": "How Cloudflare addressed a cross-tenant data exposure vulnerability in Containers"
+  },
+  "@lobstersgram:1144": {
+    "telegraph_link": "https://telegra.ph/Tuftes-Razor--An-interactive-guide-to-the-data-ink-ratio-10-06",
+    "article_link": "https://tuftesrazor.scienceux.org/",
+    "discussion_link": "https://lobste.rs/s/hmu7ym/tufte_s_razor_interactive_guide_data_ink",
+    "title": "Tufte's Razor: an interactive guide to the data-ink ratio"
+  },
+  "@lobstersgram:1145": {
+    "telegraph_link": "https://telegra.ph/A-new-bespoke-static-site-generator-to-replace-Jekyll-10-06",
+    "article_link": "https://nullprogram.com/blog/2026/10/04/",
+    "discussion_link": "https://lobste.rs/s/yj99wd/new_bespoke_static_site_generator",
+    "title": "A new, bespoke static site generator to replace Jekyll"
   }
 }
