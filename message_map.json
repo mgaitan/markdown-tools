@@ -6820,5 +6820,23 @@
     "article_link": "https://nullprogram.com/blog/2026/10/04/",
     "discussion_link": "https://lobste.rs/s/yj99wd/new_bespoke_static_site_generator",
     "title": "A new, bespoke static site generator to replace Jekyll"
+  },
+  "@lobstersgram:1146": {
+    "telegraph_link": "https://telegra.ph/I-hope-you-enjoy-these-10-06-4",
+    "article_link": "https://www.vivienhenz.com/common-lisp",
+    "discussion_link": "https://lobste.rs/s/dxqp7h/why_common_lisp_is_now_best_programming",
+    "title": "Why Common Lisp Is Now the Best Programming Language"
+  },
+  "@lobstersgram:1147": {
+    "telegraph_link": "https://telegra.ph/daniel-stenberg-This-week-in-curl-we-get-to-experience-not-one----Mastodon-10-06",
+    "article_link": "https://mastodon.social/@bagder/117392573268225646",
+    "discussion_link": "https://lobste.rs/s/fu57cb/two_arm64_specific_miscompiles_induce",
+    "title": "Two arm64-specific miscompiles induce vulnerabilities in curl"
+  },
+  "@lobstersgram:1148": {
+    "telegraph_link": "https://telegra.ph/Refinement-E-Graphs--Hey-There-Buddo-10-06",
+    "article_link": "https://www.philipzucker.com/refinement_egraph/",
+    "discussion_link": "https://lobste.rs/s/9bufek/refinement_e_graphs",
+    "title": "Refinement E-Graphs"
   }
 }
