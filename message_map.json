@@ -6934,5 +6934,35 @@
     "article_link": "https://lucumr.pocoo.org/2026/10/6/codemode/",
     "discussion_link": "https://lobste.rs/s/sshhsl/what_is_codemode",
     "title": "What is Codemode"
+  },
+  "@lobstersgram:1165": {
+    "telegraph_link": "https://telegra.ph/4evypared--Remove-unwanted-Apple-Intelligence-models-without-disabling-SIP-CLI-nix-darwin-and-Home-Manager-support-10-07",
+    "article_link": "https://github.com/4evy/pared",
+    "discussion_link": "https://lobste.rs/s/tcmpcw/pared_remove_unwanted_apple",
+    "title": "Pared - remove unwanted Apple Intelligence models without disabling SIP"
+  },
+  "@lobstersgram:1166": {
+    "telegraph_link": "https://telegra.ph/rats-register-allocator-10-07",
+    "article_link": "https://hexrat.cc/pages/blog/2026_10_07",
+    "discussion_link": "https://lobste.rs/s/frav12/rat_s_minimal_register_allocator",
+    "title": "rat's minimal register allocator"
+  },
+  "@lobstersgram:1167": {
+    "telegraph_link": "https://telegra.ph/Calling-a-function-in-C-without-naming-it--Wiros-World-10-07",
+    "article_link": "https://wiro.world/posts/calling-c-func-without-naming-it/",
+    "discussion_link": "https://lobste.rs/s/ucwapn/calling_function_c_without_naming_it",
+    "title": "Calling a function in C without naming it"
+  },
+  "@lobstersgram:1168": {
+    "telegraph_link": "https://telegra.ph/Zeroization-part-1-Wiping-can-make-things-worse---Frank-DENIS-random-thoughts-10-07",
+    "article_link": "https://00f.net/2026/10/06/zeroization-1/",
+    "discussion_link": "https://lobste.rs/s/4hxxad/zeroization_part_1_wiping_can_make_things",
+    "title": "Zeroization, part 1: Wiping can make things worse"
+  },
+  "@lobstersgram:1169": {
+    "telegraph_link": "https://telegra.ph/Introducing-mapsnap-Automated-Georeferencing-for-Historic-Sanborn-Insurance-Maps-10-07-2",
+    "article_link": "https://www.danvk.org/2026/09/10/mapsnap.html",
+    "discussion_link": "https://lobste.rs/s/b1iafm/introducing_mapsnap_automated",
+    "title": "Introducing mapsnap: Automated Georeferencing for Historic Sanborn Insurance Maps"
   }
 }
