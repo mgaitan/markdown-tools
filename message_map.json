@@ -6892,5 +6892,29 @@
     "article_link": "https://blog.buenzli.dev/flirt-is-open-source/",
     "discussion_link": "https://lobste.rs/s/9iztqv/flirt_is_now_open_source",
     "title": "Flirt is now Open-Source"
+  },
+  "@lobstersgram:1158": {
+    "telegraph_link": "https://telegra.ph/Chromes-Response-to-Recent-ccTLD-Registry-Hijacks-10-07",
+    "article_link": "https://blog.google/security/chromes-response-to-recent-cctld-registry-hijacks/",
+    "discussion_link": "https://lobste.rs/s/4fop73/chrome_s_response_recent_cctld_registry",
+    "title": "Chrome's Response to Recent ccTLD Registry Hijacks"
+  },
+  "@lobstersgram:1159": {
+    "telegraph_link": "https://telegra.ph/Burn-0220-Faster-Builds-Easier-Extensions-and-Smarter-Autotuning--Tracel-10-07",
+    "article_link": "https://tracel.ai/blog/release-0.22.0/",
+    "discussion_link": "https://lobste.rs/s/cme2vx/burn_0_22_0_faster_builds_easier",
+    "title": "Burn 0.22.0: Faster Builds, Easier Extensions, and Smarter Autotuning"
+  },
+  "@lobstersgram:1160": {
+    "telegraph_link": "https://telegra.ph/Raspberry-Pi-Desktop-now-available-for-PC-and-Mac---Raspberry-Pi-10-07",
+    "article_link": "https://www.raspberrypi.com/news/raspberry-pi-desktop-now-available-for-pc-and-mac/",
+    "discussion_link": "https://lobste.rs/s/6sogng/raspberry_pi_desktop_now_available_for_pc",
+    "title": "Raspberry Pi Desktop now available for PC and Mac"
+  },
+  "@lobstersgram:1161": {
+    "telegraph_link": "https://telegra.ph/openaimath-10-07",
+    "article_link": "https://github.com/openai/math",
+    "discussion_link": "https://lobste.rs/s/z0lxub/openai_shares_mathematics_research",
+    "title": "OpenAI shares mathematics research catalogue"
   }
 }
