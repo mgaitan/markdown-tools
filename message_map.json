@@ -6964,5 +6964,35 @@
     "article_link": "https://www.danvk.org/2026/09/10/mapsnap.html",
     "discussion_link": "https://lobste.rs/s/b1iafm/introducing_mapsnap_automated",
     "title": "Introducing mapsnap: Automated Georeferencing for Historic Sanborn Insurance Maps"
+  },
+  "@lobstersgram:1170": {
+    "telegraph_link": "https://telegra.ph/Faster-streaming-HTML-with-batches-and-aggregates-10-07-2",
+    "article_link": "https://andersmurphy.com/2026/09/29/faster-streaming-html-with-batches-and-aggregates.html",
+    "discussion_link": "https://lobste.rs/s/lon2jj/faster_streaming_html_with_batches",
+    "title": "Faster streaming HTML with batches and aggregates"
+  },
+  "@lobstersgram:1171": {
+    "telegraph_link": "https://telegra.ph/A-Terminal-Protocol-for-Program-Status-OSC-7501---Mitchell-Hashimoto-10-07",
+    "article_link": "https://mitchellh.com/writing/program-status-osc7501",
+    "discussion_link": "https://lobste.rs/s/rmh4fg/terminal_protocol_for_program_status_osc",
+    "title": "A Terminal Protocol for Program Status (OSC 7501)"
+  },
+  "@lobstersgram:1172": {
+    "telegraph_link": "https://telegra.ph/Shtetl-Optimized--Blog-Archive--The-Mathocalypse-10-07-2",
+    "article_link": "https://scottaaronson.blog/?p=10169",
+    "discussion_link": "https://lobste.rs/s/zlhyss/mathocalypse",
+    "title": "The Mathocalypse"
+  },
+  "@lobstersgram:1173": {
+    "telegraph_link": "https://telegra.ph/How-fast-is-Python-315---miguelgrinbergcom-10-07",
+    "article_link": "https://blog.miguelgrinberg.com/post/how-fast-is-python-3-15",
+    "discussion_link": "https://lobste.rs/s/se6wbx/how_fast_is_python_3_15",
+    "title": "How fast is Python 3.15?"
+  },
+  "@lobstersgram:1174": {
+    "telegraph_link": "https://telegra.ph/Last-rites-for-Gentoos-Chromium-package-LWNnet-10-07",
+    "article_link": "https://lwn.net/SubscriberLink/1097760/2be4d9e3eeb59039/",
+    "discussion_link": "https://lobste.rs/s/fpcicg/last_rites_for_gentoo_s_chromium_package",
+    "title": "Last rites for Gentoo's Chromium package"
   }
 }
