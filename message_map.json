@@ -6994,5 +6994,23 @@
     "article_link": "https://lwn.net/SubscriberLink/1097760/2be4d9e3eeb59039/",
     "discussion_link": "https://lobste.rs/s/fpcicg/last_rites_for_gentoo_s_chromium_package",
     "title": "Last rites for Gentoo's Chromium package"
+  },
+  "@lobstersgram:1175": {
+    "telegraph_link": "https://telegra.ph/A-sustainable-web-career-for-when-all-this-blows-over---David-Bushell---Web-Dev-UK-10-08",
+    "article_link": "https://dbushell.com/2026/10/07/sustainable-web-career/",
+    "discussion_link": "https://lobste.rs/s/jxhi2i/sustainable_web_career_for_when_all_this",
+    "title": "A sustainable web career, for when all this blows over"
+  },
+  "@lobstersgram:1176": {
+    "telegraph_link": "https://telegra.ph/Reasons-to-dislike-AI-coding--Structure-and-Interpretation-of-Computer-Programmers-10-08",
+    "article_link": "https://www.sicpers.info/2026/10/reasons-to-dislike-ai-coding/",
+    "discussion_link": "https://lobste.rs/s/9fjar3/reasons_dislike_ai_coding",
+    "title": "Reasons to dislike AI coding"
+  },
+  "@lobstersgram:1177": {
+    "telegraph_link": "https://telegra.ph/Is-COSMIC-DE-mogging-KDE-Plasma-10-08",
+    "article_link": "https://thelibre.news/is-cosmic-de-mogging-kde-plasma/",
+    "discussion_link": "https://lobste.rs/s/7qjhic/is_cosmic_de_mogging_kde_plasma",
+    "title": "Is COSMIC DE mogging KDE Plasma?"
   }
 }
