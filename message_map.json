@@ -7030,5 +7030,29 @@
     "article_link": "https://resilience.ocf.tw/web/report/en",
     "discussion_link": "https://lobste.rs/s/hhga98/when_submarine_cables_go_dark",
     "title": "When Submarine Cables Go Dark: Understanding and Preparing for the Risks of Taiwan's International Internet Disconnection"
+  },
+  "@lobstersgram:1181": {
+    "telegraph_link": "https://telegra.ph/storytoldphotocraft--An-open-source-clean-room-reimplementation-of-Adobe-Photoshop-in-pure-Rust-10-08",
+    "article_link": "https://github.com/storytold/photocraft",
+    "discussion_link": "https://lobste.rs/s/qn61ip/open_source_clean_room_reimplementation",
+    "title": "An open-source, clean-room reimplementation of Adobe Photoshop in pure Rust"
+  },
+  "@lobstersgram:1182": {
+    "telegraph_link": "https://telegra.ph/The-Performance-Cost-of-RwLock-in-Our-Read-Heavy-Workload-10-08-2",
+    "article_link": "https://pranitha.dev/posts/rwlock-vs-lockfree/",
+    "discussion_link": "https://lobste.rs/s/pioj21/performance_cost_rwlock_our_read_heavy",
+    "title": "The Performance Cost of RwLock in Our Read-Heavy Workload"
+  },
+  "@lobstersgram:1183": {
+    "telegraph_link": "https://telegra.ph/Composition-over-Inheritance-Explained-using-Retro-Games-10-08",
+    "article_link": "https://www.youtube.com/watch?v=HNzP1aLAffM&list=PLCl5BUbK0jXt5l18S5UNAoUc4eQ2PJDye",
+    "discussion_link": "https://lobste.rs/s/mpl36m/composition_over_inheritance_explained",
+    "title": "Composition over Inheritance Explained using Retro Games"
+  },
+  "@lobstersgram:1184": {
+    "telegraph_link": "https://telegra.ph/Migrating-Git-repos-to-SHA-256---Exas-Corner-10-08",
+    "article_link": "https://exa.y2k.diy/garden/git-sha256/",
+    "discussion_link": "https://lobste.rs/s/ug8erg/migrating_git_repos_sha_256",
+    "title": "Migrating Git repos to SHA-256"
   }
 }
