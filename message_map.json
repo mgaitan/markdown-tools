@@ -7054,5 +7054,29 @@
     "article_link": "https://exa.y2k.diy/garden/git-sha256/",
     "discussion_link": "https://lobste.rs/s/ug8erg/migrating_git_repos_sha_256",
     "title": "Migrating Git repos to SHA-256"
+  },
+  "@lobstersgram:1185": {
+    "telegraph_link": "https://telegra.ph/Creating-distro-build-tooling-for-a-small-community-10-09",
+    "article_link": "https://chimera-linux.org/news/2026/10/the-case-for-cbuild.html",
+    "discussion_link": "https://lobste.rs/s/y5tke0/creating_distro_build_tooling_for_small",
+    "title": "Creating distro build tooling for a small community"
+  },
+  "@lobstersgram:1186": {
+    "telegraph_link": "https://telegra.ph/blog-dds-2026-10-08---Thinking-will-become-a-hobby-10-09",
+    "article_link": "https://www.spinellis.gr/blog/20261008/?li261008",
+    "discussion_link": "https://lobste.rs/s/mosbat/thinking_will_become_hobby",
+    "title": "Thinking will become a hobby"
+  },
+  "@lobstersgram:1187": {
+    "telegraph_link": "https://telegra.ph/A-rant-about-APIs--Clinton-Blackburn-10-09",
+    "article_link": "https://dev.clintonblackburn.com/2026/10/08/a-rant-about-apis.html",
+    "discussion_link": "https://lobste.rs/s/jiphkt/rant_about_apis",
+    "title": "A rant about APIs"
+  },
+  "@lobstersgram:1188": {
+    "telegraph_link": "https://telegra.ph/C-for-Rust-Programmers-10-09",
+    "article_link": "https://bd103.dev/blog/2026-10-07-c-for-rust-programmers/",
+    "discussion_link": "https://lobste.rs/s/lgdxtw/c_for_rust_programmers",
+    "title": "C for Rust Programmers"
   }
 }
