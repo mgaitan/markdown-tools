@@ -7096,5 +7096,35 @@
     "article_link": "https://github.com/jj-vcs/jj/releases/tag/v0.46.0",
     "discussion_link": "https://lobste.rs/s/nz3b1h/jujutsu_jj_0_46_0",
     "title": "jujutsu (jj) 0.46.0"
+  },
+  "@lobstersgram:1192": {
+    "telegraph_link": "https://telegra.ph/Spinlocks-Considered-Harmful-10-09",
+    "article_link": "https://matklad.github.io/2020/01/02/spinlocks-considered-harmful.html",
+    "discussion_link": "https://lobste.rs/s/8mj9bb/spinlocks_considered_harmful_2020",
+    "title": "Spinlocks Considered Harmful (2020)"
+  },
+  "@lobstersgram:1193": {
+    "telegraph_link": "https://telegra.ph/Beauty-in-DVD-Menus--ValeRocks-10-09",
+    "article_link": "https://vale.rocks/posts/dvd-menus",
+    "discussion_link": "https://lobste.rs/s/9mykk7/beauty_dvd_menus",
+    "title": "Beauty in DVD Menus"
+  },
+  "@lobstersgram:1194": {
+    "telegraph_link": "https://telegra.ph/A-minimal-kernel-in-Swift-running-in-QEMU--A-journey-into-a-wild-pointer-10-09",
+    "article_link": "https://carette.xyz/posts/minimal_swift_kernel_on_qemu/",
+    "discussion_link": "https://lobste.rs/s/myb8wf/minimal_kernel_swift_running_qemu",
+    "title": "A minimal kernel in Swift, running in QEMU"
+  },
+  "@lobstersgram:1195": {
+    "telegraph_link": "https://telegra.ph/Ive-Been-Deindexed-by-Google---Citron-10-09",
+    "article_link": "https://kennyqin.com/deindexed-by-google/",
+    "discussion_link": "https://lobste.rs/s/en3vgh/i_ve_been_deindexed_by_google",
+    "title": "I've Been Deindexed by Google"
+  },
+  "@lobstersgram:1196": {
+    "telegraph_link": "https://telegra.ph/Margaret-Hamilton-computing-pioneer-who-led-software-development-for-the-Apollo-program-dies-at-90--MIT-News--Massachusetts-Inst-10-09",
+    "article_link": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
+    "discussion_link": "https://lobste.rs/s/9qtgrm/margaret_hamilton_computing_pioneer_who",
+    "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90"
   }
 }
