@@ -7126,5 +7126,35 @@
     "article_link": "https://news.mit.edu/2026/margaret-hamilton-computing-pioneer-dies-1007",
     "discussion_link": "https://lobste.rs/s/9qtgrm/margaret_hamilton_computing_pioneer_who",
     "title": "Margaret Hamilton, computing pioneer who led software development for the Apollo program, dies at 90"
+  },
+  "@lobstersgram:1197": {
+    "telegraph_link": "https://telegra.ph/Reducing-undefined-behavior-in-the-C-language-LWNnet-10-09-2",
+    "article_link": "https://lwn.net/Articles/1095811/",
+    "discussion_link": "https://lobste.rs/s/dstt3o/reducing_undefined_behavior_c_language",
+    "title": "Reducing undefined behavior in the C language"
+  },
+  "@lobstersgram:1198": {
+    "telegraph_link": "https://telegra.ph/Navier-Stokes-lost-in-translation-Why-Lean-verification-of-AI-autoformalisation-does-not-guarantee-correct-natural-language-proo-10-09-2",
+    "article_link": "https://arxiv.org/abs/2610.08144",
+    "discussion_link": "https://lobste.rs/s/axmhji/navier_stokes_lost_translation_why_lean",
+    "title": "Navier-Stokes lost in translation: Why Lean verification of AI autoformalisation does not guarantee correct natural language proofs"
+  },
+  "@lobstersgram:1199": {
+    "telegraph_link": "https://telegra.ph/Equality-Saturation-An-Incomplete-Project--SIGPLAN-Blog-10-09",
+    "article_link": "https://blog.sigplan.org/2026/10/01/equality-saturation-an-incomplete-project/",
+    "discussion_link": "https://lobste.rs/s/5n7zxa/equality_saturation_incomplete_project",
+    "title": "Equality Saturation: An “Incomplete” Project"
+  },
+  "@lobstersgram:1200": {
+    "telegraph_link": "https://telegra.ph/Deeper-dive-Keyboard-differences-between-Windows-and-Macs---Unsung-10-09-2",
+    "article_link": "https://unsung.aresluna.org/deeper-dive-keyboard-differences-between-windows-and-macs/",
+    "discussion_link": "https://lobste.rs/s/m2ixv3/deeper_dive_keyboard_differences",
+    "title": "Deeper dive: Keyboard differences between Windows and Macs"
+  },
+  "@lobstersgram:1201": {
+    "telegraph_link": "https://telegra.ph/Ending-the-Casuarina-Linux-Experiment---Casuarina-Linux-10-09",
+    "article_link": "https://casuarina.org/news/ending-the-casuarina-linux-experiment/",
+    "discussion_link": "https://lobste.rs/s/sdlhhs/ending_casuarina_linux_experiment",
+    "title": "Ending the Casuarina Linux Experiment"
   }
 }
