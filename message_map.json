@@ -7156,5 +7156,35 @@
     "article_link": "https://casuarina.org/news/ending-the-casuarina-linux-experiment/",
     "discussion_link": "https://lobste.rs/s/sdlhhs/ending_casuarina_linux_experiment",
     "title": "Ending the Casuarina Linux Experiment"
+  },
+  "@lobstersgram:1202": {
+    "telegraph_link": "https://telegra.ph/A-Practical-Guide-to-PlugPwn-for-Pentesters-and-Defenders---SCRT-Team-Blog-10-10",
+    "article_link": "https://blog.scrt.ch/2026/10/06/a-practical-guide-to-plugpwn-for-pentesters-and-defenders/",
+    "discussion_link": "https://lobste.rs/s/yrcmjj/practical_guide_plug_pwn_for_pentesters",
+    "title": "A Practical Guide to “Plug&Pwn” for Pentesters and Defenders"
+  },
+  "@lobstersgram:1203": {
+    "telegraph_link": "https://telegra.ph/The-people-holding-up-the-internet--Data-Drop-10-10",
+    "article_link": "https://sheets.works/data-viz/holding-up-the-internet",
+    "discussion_link": "https://lobste.rs/s/lhr4oy/people_holding_up_internet",
+    "title": "The people holding up the internet"
+  },
+  "@lobstersgram:1204": {
+    "telegraph_link": "https://telegra.ph/lumis-code-spelunking-adventures-10-10",
+    "article_link": "https://lumi.codeberg.page/blog/software-community.html",
+    "discussion_link": "https://lobste.rs/s/o8xo9z/importance_communities_around_software",
+    "title": "The importance of communities around software"
+  },
+  "@lobstersgram:1205": {
+    "telegraph_link": "https://telegra.ph/64-Day-Certificate-Lifetimes-Coming-Feb-2027---Lets-Encrypt-10-10",
+    "article_link": "https://letsencrypt.org/2026/10/07/64-day-certs.html",
+    "discussion_link": "https://lobste.rs/s/dcrosf/64_day_certificate_lifetimes_coming_feb",
+    "title": "64-Day Certificate Lifetimes Coming Feb 2027"
+  },
+  "@lobstersgram:1206": {
+    "telegraph_link": "https://telegra.ph/The-Missing-Piece-in-Rust-Error-Handling--mcmah309-Blog-10-10",
+    "article_link": "https://mcmah309.github.io/posts/the-missing-piece-in-rust-error-handling/",
+    "discussion_link": "https://lobste.rs/s/3vfu09/missing_piece_rust_error_handling",
+    "title": "The Missing Piece in Rust Error Handling"
   }
 }
