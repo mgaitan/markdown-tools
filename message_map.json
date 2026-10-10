@@ -7234,5 +7234,29 @@
     "article_link": "https://earendil.com/posts/system-theme/",
     "discussion_link": "https://lobste.rs/s/3zcaxw/there_are_many_themes_this_one_is_yours",
     "title": "There are many themes, but this one is yours"
+  },
+  "@lobstersgram:1215": {
+    "telegraph_link": "https://telegra.ph/facebookLifeguard--Lifeguard-is-a-static-analyzer-to-detect-Lazy-Imports-incompatibilities-and-ease-the-adoption-overhead-for-La-10-10",
+    "article_link": "https://github.com/Facebook/lifeguard",
+    "discussion_link": "https://lobste.rs/s/qwqne6/lifeguard_static_analyzer_for_python",
+    "title": "Lifeguard: A static analyzer for Python lazy imports compatibility"
+  },
+  "@lobstersgram:1216": {
+    "telegraph_link": "https://telegra.ph/Branches-in-branch-free-code---Frank-DENIS-random-thoughts-10-10",
+    "article_link": "https://00f.net/2026/10/09/llvm-compiles-branch-free-code-into-branches-on-risc-v/",
+    "discussion_link": "https://lobste.rs/s/dsbt5a/branches_branch_free_code",
+    "title": "Branches in branch-free code"
+  },
+  "@lobstersgram:1217": {
+    "telegraph_link": "https://telegra.ph/Cloudflare-shutting-down-Deno-is-news-not-just-PR--Lobsters-10-10",
+    "article_link": "https://lobste.rs/s/8rrtma/cloudflare_shutting_down_deno_is_news_not",
+    "discussion_link": "https://lobste.rs/s/8rrtma/cloudflare_shutting_down_deno_is_news_not",
+    "title": "Cloudflare shutting down Deno is news, not just PR"
+  },
+  "@lobstersgram:1218": {
+    "telegraph_link": "https://telegra.ph/Why-Are-Coding-Agents-So-Dumb--mtlynchio-10-10",
+    "article_link": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
+    "discussion_link": "https://lobste.rs/s/t5htlf/why_are_coding_agents_so_dumb",
+    "title": "Why Are Coding Agents So Dumb?"
   }
 }
