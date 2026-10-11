@@ -7312,5 +7312,23 @@
     "article_link": "https://borretti.me/article/no-man-is-an-island",
     "discussion_link": "https://lobste.rs/s/nxspz6/no_man_is_island",
     "title": "No Man Is an Island"
+  },
+  "@lobstersgram:1228": {
+    "telegraph_link": "https://telegra.ph/Kiesel-Devlog-15-Release-040---Linus-Groh-10-11",
+    "article_link": "https://linus.dev/posts/kiesel-devlog-15/",
+    "discussion_link": "https://lobste.rs/s/4zmka2/kiesel_devlog_15_release_0_4_0",
+    "title": "Kiesel Devlog #15: Release 0.4.0"
+  },
+  "@lobstersgram:1229": {
+    "telegraph_link": "https://telegra.ph/Inside-a-1980s-filter-chip-that-uses-switched-capacitors-10-11-2",
+    "article_link": "http://www.righto.com/2026/10/ML10-switched-capacitor-filter.html",
+    "discussion_link": "https://lobste.rs/s/mbyawi/inside_1980s_filter_chip_uses_switched",
+    "title": "Inside a 1980s filter chip that uses switched capacitors"
+  },
+  "@lobstersgram:1230": {
+    "telegraph_link": "https://telegra.ph/What-we-ended-up-doing-about-alias-propagation-10-11",
+    "article_link": "https://futhark-lang.org/blog/2026-10-11-what-we-did-about-aliasing.html",
+    "discussion_link": "https://lobste.rs/s/lwwtpu/what_we_ended_up_doing_about_alias",
+    "title": "What we ended up doing about alias propagation"
   }
 }
