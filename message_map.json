@@ -7288,5 +7288,29 @@
     "article_link": "https://blog.glyph.im/2026/10/programming-isnt-special.html",
     "discussion_link": "https://lobste.rs/s/ily7as/programming_isn_t_special",
     "title": "Programming Isn’t Special"
+  },
+  "@lobstersgram:1224": {
+    "telegraph_link": "https://telegra.ph/SNTPings-by-Studenten-Net-Twente-10-11-2",
+    "article_link": "https://pings.utwente.io/",
+    "discussion_link": "https://lobste.rs/s/5zbbd0/sntpings_draw_on_canvas_using_icmpv6",
+    "title": "SNTPings, draw on a canvas using ICMPv6"
+  },
+  "@lobstersgram:1225": {
+    "telegraph_link": "https://telegra.ph/Why-externalized-proofs-of-cyclic-trait-impls-does-not-work--baby-steps-10-11-2",
+    "article_link": "https://smallcultfollowing.com/babysteps/blog/2026/10/10/modular-vs-external-proofs/",
+    "discussion_link": "https://lobste.rs/s/gytcvn/why_externalized_proofs_cyclic_trait",
+    "title": "Why 'externalized' proofs of cyclic trait impls does not work"
+  },
+  "@lobstersgram:1226": {
+    "telegraph_link": "https://telegra.ph/Iframes-that-finally-fit-their-content-10-11",
+    "article_link": "https://alfy.blog/2026/10/09/iframe-that-finally-fit-their-content.html",
+    "discussion_link": "https://lobste.rs/s/ka6d0y/iframes_finally_fit_their_content",
+    "title": "Iframes that finally fit their content"
+  },
+  "@lobstersgram:1227": {
+    "telegraph_link": "https://telegra.ph/No-Man-Is-an-Island-10-11",
+    "article_link": "https://borretti.me/article/no-man-is-an-island",
+    "discussion_link": "https://lobste.rs/s/nxspz6/no_man_is_island",
+    "title": "No Man Is an Island"
   }
 }
