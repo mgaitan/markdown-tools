@@ -7282,5 +7282,11 @@
     "article_link": "https://blog.scientific-python.org/numpy/searchsorted/",
     "discussion_link": "https://lobste.rs/s/fbs3k7/making_np_searchsorted_up_25x_faster",
     "title": "Making np.searchsorted up to 25× Faster in NumPy 2.5"
+  },
+  "@lobstersgram:1223": {
+    "telegraph_link": "https://telegra.ph/Deciphering-Glyph--Programming-Isnt-Special-10-11",
+    "article_link": "https://blog.glyph.im/2026/10/programming-isnt-special.html",
+    "discussion_link": "https://lobste.rs/s/ily7as/programming_isn_t_special",
+    "title": "Programming Isn’t Special"
   }
 }
