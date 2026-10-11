@@ -7258,5 +7258,29 @@
     "article_link": "https://mtlynch.io/why-are-coding-agents-so-dumb/",
     "discussion_link": "https://lobste.rs/s/t5htlf/why_are_coding_agents_so_dumb",
     "title": "Why Are Coding Agents So Dumb?"
+  },
+  "@lobstersgram:1219": {
+    "telegraph_link": "https://telegra.ph/Byte-Language-Models-Scaling-Emergent-Abstractions-and-Information-Allocation-10-11",
+    "article_link": "https://arxiv.org/html/2610.05978v1",
+    "discussion_link": "https://lobste.rs/s/t2fxpt/byte_language_models_scaling_emergent",
+    "title": "Byte Language Models: Scaling, Emergent Abstractions, and Information Allocation"
+  },
+  "@lobstersgram:1220": {
+    "telegraph_link": "https://telegra.ph/Unison-Cloud-is-now-open-source--Unison-programming-language-10-11",
+    "article_link": "https://www.unison-lang.org/blog/unison-cloud-open-source/",
+    "discussion_link": "https://lobste.rs/s/zubabn/unison_cloud_is_now_open_source",
+    "title": "Unison Cloud is now open source"
+  },
+  "@lobstersgram:1221": {
+    "telegraph_link": "https://telegra.ph/rupert648culpert-10-11",
+    "article_link": "https://github.com/rupert648/culpert",
+    "discussion_link": "https://lobste.rs/s/a1ser9/culpert_rust_heap_profiling_with_span",
+    "title": "culpert - rust heap profiling with span awareness and regression tooling"
+  },
+  "@lobstersgram:1222": {
+    "telegraph_link": "https://telegra.ph/Blog---Making-npsearchsorted-up-to-25-Faster-in-NumPy-25-10-11",
+    "article_link": "https://blog.scientific-python.org/numpy/searchsorted/",
+    "discussion_link": "https://lobste.rs/s/fbs3k7/making_np_searchsorted_up_25x_faster",
+    "title": "Making np.searchsorted up to 25× Faster in NumPy 2.5"
   }
 }
