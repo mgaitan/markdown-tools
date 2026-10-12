@@ -7378,5 +7378,17 @@
     "article_link": "https://www.rubenerd.au/css-for-underlines/",
     "discussion_link": "https://lobste.rs/s/ezucf0/css_for_underlines",
     "title": "CSS for underlines"
+  },
+  "@lobstersgram:1239": {
+    "telegraph_link": "https://telegra.ph/The-wild-west-of-polyglot-docs-sites-10-12-3",
+    "article_link": "https://technicalwriting.dev/blog/2026/10/polyglot/index.html",
+    "discussion_link": "https://lobste.rs/s/wyxufm/wild_west_polyglot_docs_sites",
+    "title": "The wild west of polyglot docs sites"
+  },
+  "@lobstersgram:1240": {
+    "telegraph_link": "https://telegra.ph/Valens-Memory-Safety-A-New-Kind-of-Borrow-Checking-10-12-2",
+    "article_link": "https://verdagon.dev/blog/valen-group-borrowing",
+    "discussion_link": "https://lobste.rs/s/gmnqhj/valen_s_memory_safety_new_kind_borrow",
+    "title": "Valen's Memory Safety: A New Kind of Borrow Checking"
   }
 }
