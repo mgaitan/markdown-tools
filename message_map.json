@@ -7354,5 +7354,29 @@
     "article_link": "https://blog.jacq.cc/guides/gamesir-t1d-linux-gamepad/",
     "discussion_link": "https://lobste.rs/s/dxftjg/tello_s_gamesir_t1d_controller_as_linux",
     "title": "Tello's GameSir T1d controller as a Linux Xbox controller"
+  },
+  "@lobstersgram:1235": {
+    "telegraph_link": "https://telegra.ph/How-shredding-JSON-is-giving-Logfire-1000x-query-speedups-10-12-2",
+    "article_link": "https://pydantic.dev/articles/dynamic-shredding-2026-01-26",
+    "discussion_link": "https://lobste.rs/s/6vjx1k/how_shredding_json_is_giving_logfire",
+    "title": "How shredding JSON is giving Logfire 1000x query speedups"
+  },
+  "@lobstersgram:1236": {
+    "telegraph_link": "https://telegra.ph/When-LLM-Decompilers-Recompile-More-and-Preserve-Less-10-12",
+    "article_link": "https://arxiv.org/abs/2609.05370",
+    "discussion_link": "https://lobste.rs/s/uzfa4k/when_llm_decompilers_recompile_more",
+    "title": "When LLM Decompilers Recompile More and Preserve Less"
+  },
+  "@lobstersgram:1237": {
+    "telegraph_link": "https://telegra.ph/3-2-1-Backup-Strategy--Chuck-Carroll-10-12",
+    "article_link": "https://chuck.is/paranoid/",
+    "discussion_link": "https://lobste.rs/s/9zcxev/3_2_1_backup_strategy_with_restic",
+    "title": "3-2-1 Backup Strategy with restic and Backblaze B2"
+  },
+  "@lobstersgram:1238": {
+    "telegraph_link": "https://telegra.ph/Rubenerd-CSS-for-underlines-10-12",
+    "article_link": "https://www.rubenerd.au/css-for-underlines/",
+    "discussion_link": "https://lobste.rs/s/ezucf0/css_for_underlines",
+    "title": "CSS for underlines"
   }
 }
