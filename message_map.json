@@ -7330,5 +7330,29 @@
     "article_link": "https://futhark-lang.org/blog/2026-10-11-what-we-did-about-aliasing.html",
     "discussion_link": "https://lobste.rs/s/lwwtpu/what_we_ended_up_doing_about_alias",
     "title": "What we ended up doing about alias propagation"
+  },
+  "@lobstersgram:1231": {
+    "telegraph_link": "https://telegra.ph/Consistency-is-not-a-localized-property---N-The-Loop-10-12",
+    "article_link": "https://n-the-loop.com/blog/consistency-is-not-a-localized-property/",
+    "discussion_link": "https://lobste.rs/s/rhy5zp/consistency_is_not_localized_property",
+    "title": "Consistency is not a localized property"
+  },
+  "@lobstersgram:1232": {
+    "telegraph_link": "https://telegra.ph/oh-apparently-its-not-possible-to-portably-check-for-string-to-float-conversion-errors-in-standard-c-10-12",
+    "article_link": "https://sebsite.pw/w/20261009-strtod.html",
+    "discussion_link": "https://lobste.rs/s/rb2ulg/oh_apparently_it_s_not_possible_portably",
+    "title": "oh, apparently it's not possible to portably check for string-to-float conversion errors in standard c"
+  },
+  "@lobstersgram:1233": {
+    "telegraph_link": "https://telegra.ph/Highlights-from-I-spent-6-years-developing-a-game-in-Rust-and-it-just-shipped-AMA---Games-by-Mason-10-12",
+    "article_link": "https://gamesbymason.com/blog/2024/6-years-in-rust-ama/#what-made-you-decide-to-use-rust",
+    "discussion_link": "https://lobste.rs/s/dodzdb/highlights_from_i_spent_6_years",
+    "title": "Highlights from \"I spent 6 years developing a game in Rust and it just shipped, AMA\" (2024)"
+  },
+  "@lobstersgram:1234": {
+    "telegraph_link": "https://telegra.ph/Use-the-Tellos-GameSir-T1d-controller-as-a-Linux-gamepad--blogjacqcc-10-12",
+    "article_link": "https://blog.jacq.cc/guides/gamesir-t1d-linux-gamepad/",
+    "discussion_link": "https://lobste.rs/s/dxftjg/tello_s_gamesir_t1d_controller_as_linux",
+    "title": "Tello's GameSir T1d controller as a Linux Xbox controller"
   }
 }
