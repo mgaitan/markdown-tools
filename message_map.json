@@ -7432,5 +7432,29 @@
     "article_link": "https://prophitt.me/writing/a-modern-web-app-in-c",
     "discussion_link": "https://lobste.rs/s/cjdy6d/modern_web_app_c",
     "title": "A modern web app in c"
+  },
+  "@lobstersgram:1248": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-week--Lobsters-10-13",
+    "article_link": "https://lobste.rs/s/7vzgsl/what_are_you_doing_this_week",
+    "discussion_link": "https://lobste.rs/s/7vzgsl/what_are_you_doing_this_week",
+    "title": "What are you doing this week?"
+  },
+  "@lobstersgram:1249": {
+    "telegraph_link": "https://telegra.ph/your-c-is-not-standard-c-10-13-2",
+    "article_link": "https://sebsite.pw/w/20261012-notstdc.html",
+    "discussion_link": "https://lobste.rs/s/0aocct/your_c_is_not_standard_c",
+    "title": "your c is not standard c"
+  },
+  "@lobstersgram:1250": {
+    "telegraph_link": "https://telegra.ph/AI-is-Not-a-Tool-10-13-2",
+    "article_link": "https://www.linkedin.com/pulse/ai-tool-rich-hickey-kjl8e",
+    "discussion_link": "https://lobste.rs/s/ikk8ie/ai_is_not_tool",
+    "title": "'AI' is Not a Tool"
+  },
+  "@lobstersgram:1251": {
+    "telegraph_link": "https://telegra.ph/Running-RAG-with-a-small-language-model-in-the-browser--Bart-de-Goede-10-13",
+    "article_link": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
+    "discussion_link": "https://lobste.rs/s/nsjjo3/running_rag_with_small_language_model",
+    "title": "Running RAG with a (small) language model in the browser"
   }
 }
