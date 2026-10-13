@@ -7456,5 +7456,35 @@
     "article_link": "https://bart.degoe.de/rag-with-a-small-language-model-in-the-browser/",
     "discussion_link": "https://lobste.rs/s/nsjjo3/running_rag_with_small_language_model",
     "title": "Running RAG with a (small) language model in the browser"
+  },
+  "@lobstersgram:1252": {
+    "telegraph_link": "https://telegra.ph/How-I-Found-a-90000-Remote-Code-Execution-Vulnerability-in-Google--Simon-Koeck-10-13",
+    "article_link": "https://simonkoeck.com/writeups/google-devsite-flask-session-pickle-rce",
+    "discussion_link": "https://lobste.rs/s/mldt0o/finding_90_000_remote_code_execution",
+    "title": "Finding a $90,000 Remote Code Execution Vulnerability in Google"
+  },
+  "@lobstersgram:1253": {
+    "telegraph_link": "https://telegra.ph/Nixpkgs-for-the-frontend-impaired--Farid-Zakarias-Blog-10-13",
+    "article_link": "https://fzakaria.com/2026/10/12/nixpkgs-for-the-frontend-impaired",
+    "discussion_link": "https://lobste.rs/s/4jfegi/nixpkgs_for_frontend_impaired",
+    "title": "Nixpkgs for the frontend impaired"
+  },
+  "@lobstersgram:1254": {
+    "telegraph_link": "https://telegra.ph/Accelerating-the-Zig-Tokenizer-with-AVX-512---Niles-Salter-10-13",
+    "article_link": "https://www.youtube.com/watch?v=E6dWIwPLx3s",
+    "discussion_link": "https://lobste.rs/s/jref3l/accelerating_zig_tokenizer_with_avx_512",
+    "title": "Accelerating the Zig Tokenizer (with AVX-512)"
+  },
+  "@lobstersgram:1255": {
+    "telegraph_link": "https://telegra.ph/Redesigning-source-control-at-Anthropic--Anthropic-10-13-2",
+    "article_link": "https://www.anthropic.com/engineering/redesigning-source-control",
+    "discussion_link": "https://lobste.rs/s/5ucftp/redesigning_source_control_at_anthropic",
+    "title": "Redesigning source control at Anthropic"
+  },
+  "@lobstersgram:1256": {
+    "telegraph_link": "https://telegra.ph/Lix--Announcing-Lix-296-Bingsu-10-13",
+    "article_link": "https://lix.systems/blog/2026-10-13-lix-2.96-release/",
+    "discussion_link": "https://lobste.rs/s/y65egs/announcing_lix_2_96_bingsu",
+    "title": "Announcing Lix 2.96 “Bingsu”"
   }
 }
