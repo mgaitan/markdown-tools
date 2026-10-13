@@ -7390,5 +7390,17 @@
     "article_link": "https://verdagon.dev/blog/valen-group-borrowing",
     "discussion_link": "https://lobste.rs/s/gmnqhj/valen_s_memory_safety_new_kind_borrow",
     "title": "Valen's Memory Safety: A New Kind of Borrow Checking"
+  },
+  "@lobstersgram:1241": {
+    "telegraph_link": "https://telegra.ph/We-Put-Fighting-Game-Netcode-in-Brood-War-10-13",
+    "article_link": "https://www.youtube.com/watch?v=vIt9xua9bLc",
+    "discussion_link": "https://lobste.rs/s/gr0ptb/we_put_fighting_game_netcode_brood_war",
+    "title": "We Put Fighting Game Netcode in Brood War"
+  },
+  "@lobstersgram:1242": {
+    "telegraph_link": "https://telegra.ph/ESP32-As-Your-Raspberry-Pis-Linux-Wireless-Co-processor--Hackaday-10-13",
+    "article_link": "https://hackaday.com/2026/10/07/esp32-as-your-raspberry-pis-linux-wireless-co-processor/",
+    "discussion_link": "https://lobste.rs/s/x1ucie/esp32_as_your_raspberry_pi_s_linux",
+    "title": "ESP32 As Your Raspberry Pi’s Linux Wireless Co-processor"
   }
 }
