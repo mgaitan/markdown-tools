@@ -7402,5 +7402,35 @@
     "article_link": "https://hackaday.com/2026/10/07/esp32-as-your-raspberry-pis-linux-wireless-co-processor/",
     "discussion_link": "https://lobste.rs/s/x1ucie/esp32_as_your_raspberry_pi_s_linux",
     "title": "ESP32 As Your Raspberry Pi’s Linux Wireless Co-processor"
+  },
+  "@lobstersgram:1243": {
+    "telegraph_link": "https://telegra.ph/D-Bus-Hell---David-Bushell---Web-Dev-UK-10-13",
+    "article_link": "https://dbushell.com/2026/10/11/d-bus-hell/",
+    "discussion_link": "https://lobste.rs/s/qgybwb/d_bus_hell",
+    "title": "D-Bus Hell"
+  },
+  "@lobstersgram:1244": {
+    "telegraph_link": "https://telegra.ph/500-Billion-Tokens-Later-Letting-AI-Agents-Decompile-A-First-Person-Shooter--Maurices-Blog-10-13",
+    "article_link": "https://momo5502.com/posts/2026-10-09-game-decompilation/",
+    "discussion_link": "https://lobste.rs/s/fdxjtr/500_billion_tokens_later_letting_ai",
+    "title": "500+ Billion Tokens Later: Letting AI Agents Decompile A First-Person Shooter"
+  },
+  "@lobstersgram:1245": {
+    "telegraph_link": "https://telegra.ph/Im-sorry-but-you-still-have-to-think--Its-all-about-the-bit-10-13",
+    "article_link": "https://itsallaboutthebit.com/i-am-sorry-but-you-still-have-to-think/",
+    "discussion_link": "https://lobste.rs/s/k2natg/i_m_sorry_you_still_have_think",
+    "title": "I'm sorry, but you still have to think"
+  },
+  "@lobstersgram:1246": {
+    "telegraph_link": "https://telegra.ph/Type-safe-HTML-templating-in-Zig--Lukáš-Lalinský-10-13",
+    "article_link": "https://lalinsky.com/2026/10/11/type-safe-html-templating-in-zig.html",
+    "discussion_link": "https://lobste.rs/s/dujxbl/type_safe_html_templating_zig",
+    "title": "Type-safe HTML templating in Zig"
+  },
+  "@lobstersgram:1247": {
+    "telegraph_link": "https://telegra.ph/A-modern-web-app-in-c--Corey-Prophitt-10-13-2",
+    "article_link": "https://prophitt.me/writing/a-modern-web-app-in-c",
+    "discussion_link": "https://lobste.rs/s/cjdy6d/modern_web_app_c",
+    "title": "A modern web app in c"
   }
 }
