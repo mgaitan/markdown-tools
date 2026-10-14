@@ -7588,5 +7588,29 @@
     "article_link": "https://go.dev/blog/http-connection-reuse",
     "discussion_link": "https://lobste.rs/s/mkq3x9/better_http_1_connection_reuse",
     "title": "Better HTTP/1 connection reuse"
+  },
+  "@lobstersgram:1274": {
+    "telegraph_link": "https://telegra.ph/A-UAF-turned-RCE--danielhaxxse-10-14",
+    "article_link": "https://daniel.haxx.se/blog/2026/10/14/a-uaf-turned-rce/",
+    "discussion_link": "https://lobste.rs/s/g46xkj/uaf_turned_rce",
+    "title": "A UAF turned RCE"
+  },
+  "@lobstersgram:1275": {
+    "telegraph_link": "https://telegra.ph/Did-Ente-Locker-copy-my-code-without-attribution-10-14-3",
+    "article_link": "https://fairscan.org/blog/did-ente-locker-copy-my-code-without-attribution/",
+    "discussion_link": "https://lobste.rs/s/uiulqe/did_ente_locker_copy_my_code_without",
+    "title": "Did Ente Locker copy my code without attribution?"
+  },
+  "@lobstersgram:1276": {
+    "telegraph_link": "https://telegra.ph/Home---A-Delightql-Language-10-14",
+    "article_link": "https://delightql.org/latest/",
+    "discussion_link": "https://lobste.rs/s/ireiaf/delightql_query_language",
+    "title": "The DelightQL Query Language"
+  },
+  "@lobstersgram:1277": {
+    "telegraph_link": "https://telegra.ph/I-Gave-My-NPCs-Voices-Without-Recording-Anything-10-14",
+    "article_link": "https://www.youtube.com/watch?v=NaW0d7Tghw0",
+    "discussion_link": "https://lobste.rs/s/stmtap/my_game_s_procedural_dialogue_system",
+    "title": "My Game's Procedural Dialogue System"
   }
 }
