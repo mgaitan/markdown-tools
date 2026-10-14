@@ -7540,5 +7540,23 @@
     "article_link": "https://daniel.haxx.se/blog/2026/10/13/a-slightly-faster-slimmer-curl/",
     "discussion_link": "https://lobste.rs/s/d9rpcl/slightly_faster_slimmer_curl",
     "title": "A slightly faster slimmer curl"
+  },
+  "@lobstersgram:1266": {
+    "telegraph_link": "https://telegra.ph/Please-stop-hashing-the-public-key-first-or-ML-DSAs-µ-annoys-me-10-14",
+    "article_link": "https://blog.erincandescent.net/2026/10/mu-annoys-me/",
+    "discussion_link": "https://lobste.rs/s/xatiaj/please_stop_hashing_public_key_first_ml",
+    "title": "Please stop hashing the public key first (or: ML-DSA's µ annoys me)"
+  },
+  "@lobstersgram:1267": {
+    "telegraph_link": "https://telegra.ph/Lockstep-to-pipeline-in-almost-one-line-10-14",
+    "article_link": "https://andersmurphy.com/2026/10/12/lockstep-to-pipeline-in-one-line.html",
+    "discussion_link": "https://lobste.rs/s/ckdir0/lockstep_pipeline_almost_one_line",
+    "title": "Lockstep to pipeline in almost one line"
+  },
+  "@lobstersgram:1268": {
+    "telegraph_link": "https://telegra.ph/OpenFatigue---Open-is-the-new-closed-10-14",
+    "article_link": "https://openfatigue.ai/",
+    "discussion_link": "https://lobste.rs/s/plbei0/openfatigue_open_is_new_closed",
+    "title": "OpenFatigue™ — Open is the new closed"
   }
 }
