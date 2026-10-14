@@ -7558,5 +7558,35 @@
     "article_link": "https://openfatigue.ai/",
     "discussion_link": "https://lobste.rs/s/plbei0/openfatigue_open_is_new_closed",
     "title": "OpenFatigue™ — Open is the new closed"
+  },
+  "@lobstersgram:1269": {
+    "telegraph_link": "https://telegra.ph/Building-a-Linearizable-Log-on-READ-COMMITTED-Isolation--Materialize-10-14",
+    "article_link": "https://materialize.com/blog/building-a-linearizable-log-on-read-committed/",
+    "discussion_link": "https://lobste.rs/s/sj09ps/building_linearizable_log_on_read",
+    "title": "Building a Linearizable Log on READ COMMITTED Isolation"
+  },
+  "@lobstersgram:1270": {
+    "telegraph_link": "https://telegra.ph/How-the-L0pht-probably-optimized-attack-against-the-LanMan-hash--modexp-10-14",
+    "article_link": "https://modexp.wordpress.com/2019/02/02/3883/",
+    "discussion_link": "https://lobste.rs/s/5m8mle/how_l0pht_probably_optimized_attack",
+    "title": "How the L0pht (probably) optimized attack against the LanMan hash"
+  },
+  "@lobstersgram:1271": {
+    "telegraph_link": "https://telegra.ph/The-reverts-will-continue-until-morale-improves--Peter-Eisentraut-10-14",
+    "article_link": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
+    "discussion_link": "https://lobste.rs/s/aasanp/reverts_will_continue_until_morale",
+    "title": "The reverts will continue until morale improves"
+  },
+  "@lobstersgram:1272": {
+    "telegraph_link": "https://telegra.ph/Package-managers-have-an-integrity-problem---The-Trail-of-Bits-Blog-10-14",
+    "article_link": "https://blog.trailofbits.com/2026/10/14/package-managers-have-an-integrity-problem/",
+    "discussion_link": "https://lobste.rs/s/lmx2hi/package_managers_have_integrity_problem",
+    "title": "Package managers have an integrity problem"
+  },
+  "@lobstersgram:1273": {
+    "telegraph_link": "https://telegra.ph/Better-HTTP1-connection-reuse---The-Go-Programming-Language-10-14-2",
+    "article_link": "https://go.dev/blog/http-connection-reuse",
+    "discussion_link": "https://lobste.rs/s/mkq3x9/better_http_1_connection_reuse",
+    "title": "Better HTTP/1 connection reuse"
   }
 }
