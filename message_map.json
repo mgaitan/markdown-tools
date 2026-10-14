@@ -7486,5 +7486,35 @@
     "article_link": "https://lix.systems/blog/2026-10-13-lix-2.96-release/",
     "discussion_link": "https://lobste.rs/s/y65egs/announcing_lix_2_96_bingsu",
     "title": "Announcing Lix 2.96 “Bingsu”"
+  },
+  "@lobstersgram:1257": {
+    "telegraph_link": "https://telegra.ph/Post-Quantum-Cryptographic-Right-Answers-10-14",
+    "article_link": "https://words.filippo.io/right-answers/",
+    "discussion_link": "https://lobste.rs/s/sozl9e/post_quantum_cryptographic_right",
+    "title": "(Post-Quantum) Cryptographic Right Answers"
+  },
+  "@lobstersgram:1258": {
+    "telegraph_link": "https://telegra.ph/Speeding-up-the-Unreal-editor-by-not-using-unnecessarily-secure-hash-methods---Larst-Of-Us-10-14",
+    "article_link": "https://larstofus.com/2026/10/11/speeding-up-the-unreal-editor-by-not-using-unnecessarily-secure-hash-methods/",
+    "discussion_link": "https://lobste.rs/s/5feguu/speeding_up_unreal_editor_by_not_using",
+    "title": "Speeding up the Unreal editor by… not using unnecessarily secure hash methods"
+  },
+  "@lobstersgram:1259": {
+    "telegraph_link": "https://telegra.ph/Faster-Fourier-Transforms---by-Ben-Recht---arg-min-10-14",
+    "article_link": "https://www.argmin.net/p/faster-fourier-transforms",
+    "discussion_link": "https://lobste.rs/s/xz6sst/faster_fourier_transforms",
+    "title": "Faster Fourier Transforms"
+  },
+  "@lobstersgram:1260": {
+    "telegraph_link": "https://telegra.ph/Chasing-a--O2-pessimization-in-antcc-10-14",
+    "article_link": "https://386s.org/w/lua-antcc-pessimization/",
+    "discussion_link": "https://lobste.rs/s/g2ktrq/chasing_o2_pessimization_antcc",
+    "title": "Chasing a -O2 pessimization in antcc"
+  },
+  "@lobstersgram:1261": {
+    "telegraph_link": "https://telegra.ph/The-2026-Maintainers-Summit-LWNnet-10-14",
+    "article_link": "https://lwn.net/SubscriberLink/1099594/fba1c2268c3e2fb5/",
+    "discussion_link": "https://lobste.rs/s/fppgkl/2026_maintainers_summit",
+    "title": "The 2026 Maintainers Summit"
   }
 }
