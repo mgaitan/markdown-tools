@@ -7516,5 +7516,29 @@
     "article_link": "https://lwn.net/SubscriberLink/1099594/fba1c2268c3e2fb5/",
     "discussion_link": "https://lobste.rs/s/fppgkl/2026_maintainers_summit",
     "title": "The 2026 Maintainers Summit"
+  },
+  "@lobstersgram:1262": {
+    "telegraph_link": "https://telegra.ph/AIR-LLM-Broadcasting-AI-Weights-over-Radio-for-Memory-Free-Edge-LLM-Inference-via-RF-Computing-10-14",
+    "article_link": "https://arxiv.org/html/2610.00465",
+    "discussion_link": "https://lobste.rs/s/h8tdxj/air_llm_broadcasting_ai_weights_over",
+    "title": "AIR-LLM: Broadcasting AI Weights over Radio for Memory-Free Edge LLM Inference via RF Computing"
+  },
+  "@lobstersgram:1263": {
+    "telegraph_link": "https://telegra.ph/Linux-Lockdown-and-Hibernation-again-10-14-2",
+    "article_link": "https://codon.org.uk/~mjg59/blog/p/linux-lockdown-and-hibernation-again/",
+    "discussion_link": "https://lobste.rs/s/rrazyb/linux_lockdown_hibernation_again",
+    "title": "Linux Lockdown and Hibernation (again)"
+  },
+  "@lobstersgram:1264": {
+    "telegraph_link": "https://telegra.ph/Data-Oriented-Design-for-Mortals---Andres-Villegas-10-14",
+    "article_link": "https://www.youtube.com/watch?v=uI1Yx1CJAB0",
+    "discussion_link": "https://lobste.rs/s/es1vaj/data_oriented_design_for_mortals",
+    "title": "Data-oriented Design for Mortals"
+  },
+  "@lobstersgram:1265": {
+    "telegraph_link": "https://telegra.ph/A-slightly-faster-slimmer-curl--danielhaxxse-10-14",
+    "article_link": "https://daniel.haxx.se/blog/2026/10/13/a-slightly-faster-slimmer-curl/",
+    "discussion_link": "https://lobste.rs/s/d9rpcl/slightly_faster_slimmer_curl",
+    "title": "A slightly faster slimmer curl"
   }
 }
