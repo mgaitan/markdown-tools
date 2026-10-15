@@ -7660,5 +7660,29 @@
     "article_link": "https://nytpu.com/gemlog/2026-03-18",
     "discussion_link": "https://lobste.rs/s/zitobg/fancy_curl_sites",
     "title": "Fancy Curl Sites"
+  },
+  "@lobstersgram:1286": {
+    "telegraph_link": "https://telegra.ph/GitLab-warns-of-max-severity-code-execution-vulnerability-10-15-2",
+    "article_link": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
+    "discussion_link": "https://lobste.rs/s/tehays/gitlab_warns_max_severity_code_execution",
+    "title": "GitLab warns of max severity code execution vulnerability"
+  },
+  "@lobstersgram:1287": {
+    "telegraph_link": "https://telegra.ph/Plasma-68---KDE-Community-10-15",
+    "article_link": "https://kde.org/announcements/plasma/6/6.8.0/",
+    "discussion_link": "https://lobste.rs/s/d1c8zn/plasma_6_8_released_kde_s_30th_birthday",
+    "title": "Plasma 6.8 released (KDE's 30th birthday)"
+  },
+  "@lobstersgram:1288": {
+    "telegraph_link": "https://telegra.ph/Awesome-Gaming-on-Linux-Without-Cheating---Epic-Online-Services-10-15",
+    "article_link": "https://onlineservices.epicgames.com/news/introducing-easy-anti-cheat-linux-v2",
+    "discussion_link": "https://lobste.rs/s/x9fqa4/awesome_gaming_on_linux_without_cheating",
+    "title": "Awesome Gaming on Linux Without Cheating"
+  },
+  "@lobstersgram:1289": {
+    "telegraph_link": "https://telegra.ph/The-geometric-model-of-maintenance-10-15-2",
+    "article_link": "https://entropicthoughts.com/geometric-model-of-maintenance",
+    "discussion_link": "https://lobste.rs/s/bpvpbe/geometric_model_maintenance",
+    "title": "The geometric model of maintenance"
   }
 }
