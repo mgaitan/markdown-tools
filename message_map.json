@@ -7642,5 +7642,23 @@
     "article_link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
     "discussion_link": "https://lobste.rs/s/cwota8/ledger_confirms_spy_chip_implant_behind",
     "title": "Ledger confirms spy chip implant behind wallet crypto thefts"
+  },
+  "@lobstersgram:1283": {
+    "telegraph_link": "https://telegra.ph/Everyone-is-doing-Git-on-S3-wrong--Enroute-10-15",
+    "article_link": "https://enroute.sh/blog/everyone-is-doing-git-on-s3-wrong",
+    "discussion_link": "https://lobste.rs/s/ydo1wi/everyone_is_doing_git_on_s3_wrong",
+    "title": "Everyone is doing Git on S3 wrong"
+  },
+  "@lobstersgram:1284": {
+    "telegraph_link": "https://telegra.ph/ArenaAllocators-dont-play-nicely-with-ArrayLists-10-15",
+    "article_link": "https://www.openmymind.net/Arena-Allocators-and-ArrayLists/",
+    "discussion_link": "https://lobste.rs/s/huk6zu/arenaallocators_don_t_play_nicely_with",
+    "title": "ArenaAllocators don't play nicely with ArrayLists"
+  },
+  "@lobstersgram:1285": {
+    "telegraph_link": "https://telegra.ph/Fancy-Curl-Sites-10-15-4",
+    "article_link": "https://nytpu.com/gemlog/2026-03-18",
+    "discussion_link": "https://lobste.rs/s/zitobg/fancy_curl_sites",
+    "title": "Fancy Curl Sites"
   }
 }
