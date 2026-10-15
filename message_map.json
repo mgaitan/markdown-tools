@@ -7684,5 +7684,17 @@
     "article_link": "https://entropicthoughts.com/geometric-model-of-maintenance",
     "discussion_link": "https://lobste.rs/s/bpvpbe/geometric_model_maintenance",
     "title": "The geometric model of maintenance"
+  },
+  "@lobstersgram:1290": {
+    "telegraph_link": "https://telegra.ph/Religious-Studies-In-Software-Engineering-10-15",
+    "article_link": "https://tombh.co.uk/religious-studies-in-software-engineering",
+    "discussion_link": "https://lobste.rs/s/ivsn8e/religious_studies_software_engineering",
+    "title": "Religious Studies In Software Engineering"
+  },
+  "@lobstersgram:1291": {
+    "telegraph_link": "https://telegra.ph/lumis-code-spelunking-adventures-10-15-2",
+    "article_link": "https://lumi.codeberg.page/blog/remote-attestation.html",
+    "discussion_link": "https://lobste.rs/s/s8bo3z/remote_attestation_should_not_be",
+    "title": "Remote Attestation Should Not Be Tolerated"
   }
 }
