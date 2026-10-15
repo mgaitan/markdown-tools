@@ -7612,5 +7612,11 @@
     "article_link": "https://www.youtube.com/watch?v=NaW0d7Tghw0",
     "discussion_link": "https://lobste.rs/s/stmtap/my_game_s_procedural_dialogue_system",
     "title": "My Game's Procedural Dialogue System"
+  },
+  "@lobstersgram:1278": {
+    "telegraph_link": "https://telegra.ph/A-plea-not-to-use-uv-build---Michał-Górny-10-15",
+    "article_link": "https://blogs.gentoo.org/mgorny/2026/10/12/a-plea-not-to-use-uv-build/",
+    "discussion_link": "https://lobste.rs/s/73ssw1/plea_not_use_uv_build",
+    "title": "A plea not to use uv-build"
   }
 }
