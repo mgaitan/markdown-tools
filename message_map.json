@@ -7618,5 +7618,29 @@
     "article_link": "https://blogs.gentoo.org/mgorny/2026/10/12/a-plea-not-to-use-uv-build/",
     "discussion_link": "https://lobste.rs/s/73ssw1/plea_not_use_uv_build",
     "title": "A plea not to use uv-build"
+  },
+  "@lobstersgram:1279": {
+    "telegraph_link": "https://telegra.ph/The-Ferranti-Files-40-Years-of-Sinclair-Secrets-Unearthed-10-15-2",
+    "article_link": "https://www.youtube.com/watch?v=jiW3P1rJRMc&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/cyp6lv/ferranti_files_40_years_sinclair_secrets",
+    "title": "The Ferranti files: 40 years of Sinclair secrets unearthed"
+  },
+  "@lobstersgram:1280": {
+    "telegraph_link": "https://telegra.ph/Haxynet-is-live--HAXY-git-forge-devlog-10-15",
+    "article_link": "https://www.youtube.com/watch?v=89yAiqYEwKg&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/o0ixth/haxy_net_is_live_haxy_git_forge_devlog",
+    "title": "Haxy.net is live! — HAXY (git forge) devlog"
+  },
+  "@lobstersgram:1281": {
+    "telegraph_link": "https://telegra.ph/yet-another-place-where-a-linux-man-page-is-inaccurate-10-15-2",
+    "article_link": "https://sebsite.pw/w/20261014-initstate.html",
+    "discussion_link": "https://lobste.rs/s/tsjuje/yet_another_place_where_linux_man_page_is",
+    "title": "yet another place where a linux man page is inaccurate"
+  },
+  "@lobstersgram:1282": {
+    "telegraph_link": "https://telegra.ph/Ledger-confirms-spy-chip-implant-behind-wallet-crypto-thefts-10-15",
+    "article_link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+    "discussion_link": "https://lobste.rs/s/cwota8/ledger_confirms_spy_chip_implant_behind",
+    "title": "Ledger confirms spy chip implant behind wallet crypto thefts"
   }
 }
