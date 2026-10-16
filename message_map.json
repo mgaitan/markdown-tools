@@ -7696,5 +7696,35 @@
     "article_link": "https://lumi.codeberg.page/blog/remote-attestation.html",
     "discussion_link": "https://lobste.rs/s/s8bo3z/remote_attestation_should_not_be",
     "title": "Remote Attestation Should Not Be Tolerated"
+  },
+  "@lobstersgram:1292": {
+    "telegraph_link": "https://telegra.ph/What-I-Self-Host--Clever-Blog-Title-10-16-2",
+    "article_link": "https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/",
+    "discussion_link": "https://lobste.rs/s/j4tlzg/what_i_self_host",
+    "title": "What I Self-Host"
+  },
+  "@lobstersgram:1293": {
+    "telegraph_link": "https://telegra.ph/Introducing-Firefox-Enterprise-10-16",
+    "article_link": "https://blog.mozilla.org/en/firefox/introducing-firefox-enterprise/",
+    "discussion_link": "https://lobste.rs/s/7xg9rm/introducing_firefox_enterprise",
+    "title": "Introducing Firefox Enterprise"
+  },
+  "@lobstersgram:1294": {
+    "telegraph_link": "https://telegra.ph/glinckersslx--A-fast-modern-alternative-to-OpenSSLs-CLI---inspect-grade-and-manage-certificates-from-the-terminal-10-16",
+    "article_link": "https://github.com/glincker/sslx",
+    "discussion_link": "https://lobste.rs/s/p7tf7i/sslx_fast_modern_alternative_openssl_s",
+    "title": "sslx: A fast, modern alternative to OpenSSL's CLI"
+  },
+  "@lobstersgram:1295": {
+    "telegraph_link": "https://telegra.ph/Epics-EAC2-v2-seems-fairly-easily-bypassable-10-16",
+    "article_link": "https://codon.org.uk/~mjg59/blog/p/epics-eac2-v2-seems-fairly-easily-bypassable/",
+    "discussion_link": "https://lobste.rs/s/1iin5o/epic_s_eac2_v2_seems_fairly_easily",
+    "title": "Epic's EAC2 v2 seems fairly easily bypassable"
+  },
+  "@lobstersgram:1296": {
+    "telegraph_link": "https://telegra.ph/Secure-Linux-desktops-with-Microsoft-Defender--Microsoft-Community-Hub-10-16",
+    "article_link": "https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/secure-linux-desktops-with-microsoft-defender/4560822",
+    "discussion_link": "https://lobste.rs/s/46dcms/microsoft_defender_for_linux",
+    "title": "Microsoft Defender for Linux"
   }
 }
