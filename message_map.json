@@ -7804,5 +7804,35 @@
     "article_link": "https://danieltemkin.com/esolangs/folders",
     "discussion_link": "https://lobste.rs/s/norjho/folders_esoteric_language",
     "title": "Folders Esoteric Language"
+  },
+  "@lobstersgram:1310": {
+    "telegraph_link": "https://telegra.ph/Ubuntu-2610-Stonking-Stingray-released-10-16",
+    "article_link": "https://lists.ubuntu.com/archives/ubuntu-announce/2026-October/000330.html",
+    "discussion_link": "https://lobste.rs/s/61ujum/ubuntu_26_10_stonking_stingray_released",
+    "title": "Ubuntu 26.10 (Stonking Stingray) released"
+  },
+  "@lobstersgram:1311": {
+    "telegraph_link": "https://telegra.ph/Theres-never-been-a-better-time-to-go-into-math-10-16-2",
+    "article_link": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+    "discussion_link": "https://lobste.rs/s/wzgadv/there_s_never_been_better_time_go_into_math",
+    "title": "There's never been a better time to go into math"
+  },
+  "@lobstersgram:1312": {
+    "telegraph_link": "https://telegra.ph/Forgejo-v170-is-available---Forgejo-10-16",
+    "article_link": "https://forgejo.org/2026-10-release-v17-0/",
+    "discussion_link": "https://lobste.rs/s/vemho2/forgejo_v17_0_is_available",
+    "title": "Forgejo v17.0 is available"
+  },
+  "@lobstersgram:1313": {
+    "telegraph_link": "https://telegra.ph/Sunsetting-decompdev-10-16-2",
+    "article_link": "https://decomp.dev/",
+    "discussion_link": "https://lobste.rs/s/kaerns/sunsetting_decomp_dev",
+    "title": "Sunsetting decomp.dev"
+  },
+  "@lobstersgram:1314": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-10-16",
+    "article_link": "https://lobste.rs/s/hounpx/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/hounpx/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
   }
 }
