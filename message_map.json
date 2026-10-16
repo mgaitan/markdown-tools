@@ -7726,5 +7726,29 @@
     "article_link": "https://techcommunity.microsoft.com/blog/microsoftdefenderatpblog/secure-linux-desktops-with-microsoft-defender/4560822",
     "discussion_link": "https://lobste.rs/s/46dcms/microsoft_defender_for_linux",
     "title": "Microsoft Defender for Linux"
+  },
+  "@lobstersgram:1297": {
+    "telegraph_link": "https://telegra.ph/Where-did-WIN32-LEAN-AND-MEAN-come-from---The-Old-New-Thing-10-16",
+    "article_link": "https://devblogs.microsoft.com/oldnewthing/20091130-00/?p=15863/",
+    "discussion_link": "https://lobste.rs/s/eqoieo/where_did_win32_lean_mean_come_from_2009",
+    "title": "Where did WIN32_LEAN_AND_MEAN come from? (2009)"
+  },
+  "@lobstersgram:1298": {
+    "telegraph_link": "https://telegra.ph/End-to-end-encrypted-relays-for-OCapN---Spritely-Institute-10-16",
+    "article_link": "https://spritely.institute/news/end-to-end-encrypted-relays-for-ocapn.html",
+    "discussion_link": "https://lobste.rs/s/yxnovw/end_end_encrypted_relays_for_ocapn",
+    "title": "End-to-end encrypted relays for OCapN"
+  },
+  "@lobstersgram:1299": {
+    "telegraph_link": "https://telegra.ph/Home---The-Costa-GUI-10-16",
+    "article_link": "https://costa.jacobpalm.dk/",
+    "discussion_link": "https://lobste.rs/s/uqugjk/costa_gui",
+    "title": "The Costa GUI"
+  },
+  "@lobstersgram:1300": {
+    "telegraph_link": "https://telegra.ph/Anthropics-Scion-is-heavily-inspired-by-Mononoke--sunshowers-10-16",
+    "article_link": "https://sunshowers.io/posts/anthropic-mononoke/",
+    "discussion_link": "https://lobste.rs/s/plcgps/anthropic_s_scion_is_heavily_inspired_by",
+    "title": "Anthropic's Scion is heavily inspired by Mononoke"
   }
 }
