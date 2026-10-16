@@ -7780,5 +7780,29 @@
     "article_link": "https://try.haxy.net/haxy:haxy",
     "discussion_link": "https://lobste.rs/s/bcaopz/haxy_on_haxy",
     "title": "Haxy on Haxy"
+  },
+  "@lobstersgram:1306": {
+    "telegraph_link": "https://telegra.ph/Introducing-GNOME-OS-Preview---Adrians-blog-10-16",
+    "article_link": "https://blogs.gnome.org/adrianvovk/2026/10/16/gnome-os-preview/",
+    "discussion_link": "https://lobste.rs/s/xwng6u/introducing_gnome_os_preview",
+    "title": "Introducing GNOME OS Preview"
+  },
+  "@lobstersgram:1307": {
+    "telegraph_link": "https://telegra.ph/Cornelius-Blog-Thirty-Years-of-KDE-10-16",
+    "article_link": "https://blog.cornelius-schumacher.de/2026/10/thirty-years-of-kde.html",
+    "discussion_link": "https://lobste.rs/s/cgs07z/thirty_years_kde",
+    "title": "Thirty Years of KDE"
+  },
+  "@lobstersgram:1308": {
+    "telegraph_link": "https://telegra.ph/Migrate-your-site-to-the-new-git-pages-backed-Codeberg-Pages-now-Were-sunsetting-Codeberg-Pages-v2---Codeberg-News-10-16",
+    "article_link": "https://blog.codeberg.org/migrate-your-site-to-the-new-git-pages-backed-codeberg-pages-now-were-sunsetting-codeberg-pages-v2.html",
+    "discussion_link": "https://lobste.rs/s/e7rvsp/we_re_sunsetting_codeberg_pages_v2",
+    "title": "We're sunsetting Codeberg Pages v2"
+  },
+  "@lobstersgram:1309": {
+    "telegraph_link": "https://telegra.ph/Daniel-Temkin--Folders-Language-10-16-4",
+    "article_link": "https://danieltemkin.com/esolangs/folders",
+    "discussion_link": "https://lobste.rs/s/norjho/folders_esoteric_language",
+    "title": "Folders Esoteric Language"
   }
 }
