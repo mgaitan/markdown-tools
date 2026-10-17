@@ -7930,5 +7930,35 @@
     "article_link": "https://k.sosnierz.me/08-11-24/",
     "discussion_link": "https://lobste.rs/s/v6hhdr/making_88x31_button_book_using",
     "title": "Making a 88x31 button book using ImageMagick"
+  },
+  "@lobstersgram:1331": {
+    "telegraph_link": "https://telegra.ph/Principles-of-Anchor-Engineering--Napping-to-Heavy-Metal-10-17",
+    "article_link": "https://nappingtoheavymetal.com/post/2026-09-15-principles-of-anchor-engineering/",
+    "discussion_link": "https://lobste.rs/s/iyquo7/principles_anchor_engineering",
+    "title": "Principles of Anchor Engineering"
+  },
+  "@lobstersgram:1332": {
+    "telegraph_link": "https://telegra.ph/PwnEscape-Guest-to-Host-KVM-Escape-CVE-2026-99999--PWNAI-Security-Research-10-17",
+    "article_link": "https://pwn.ai/blog/pwnescape",
+    "discussion_link": "https://lobste.rs/s/np84oh/pwnescape_guest_host_kvm_escape_cve_2026",
+    "title": "PwnEscape: Guest-to-Host KVM Escape (CVE-2026-99999)"
+  },
+  "@lobstersgram:1333": {
+    "telegraph_link": "https://telegra.ph/Abolish-AI-Manifesto-under-construction---Abolish-AI-10-17",
+    "article_link": "https://abolish-ai.net/abolish-ai-a-manifesto/",
+    "discussion_link": "https://lobste.rs/s/1kesjm/abolish_ai_manifesto",
+    "title": "Abolish AI! Manifesto"
+  },
+  "@lobstersgram:1334": {
+    "telegraph_link": "https://telegra.ph/Getting-Canceled---Andrew-Kelley-10-17-2",
+    "article_link": "https://www.youtube.com/watch?v=5zIOfBLQ3U4",
+    "discussion_link": "https://lobste.rs/s/tty7hm/getting_canceled",
+    "title": "Getting Canceled"
+  },
+  "@lobstersgram:1335": {
+    "telegraph_link": "https://telegra.ph/Why-are-we-even-doing-all-this--Whats-new-10-17",
+    "article_link": "https://terrytao.wordpress.com/2026/10/15/why-are-we-even-doing-all-this/",
+    "discussion_link": "https://lobste.rs/s/qvomvk/why_are_we_even_doing_all_this",
+    "title": "Why are we even doing all this?"
   }
 }
