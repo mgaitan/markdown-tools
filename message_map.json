@@ -7858,5 +7858,35 @@
     "article_link": "https://go.dev/blog/interactive-refactoring",
     "discussion_link": "https://lobste.rs/s/wn293o/interactive_refactoring_gopls",
     "title": "Interactive refactoring in gopls"
+  },
+  "@lobstersgram:1319": {
+    "telegraph_link": "https://telegra.ph/Developing-for-Debugging--Dave-Pachecos-Blog-10-17",
+    "article_link": "https://www.davepacheco.net/blog/2025/developing-for-debugging-dns-propagation/",
+    "discussion_link": "https://lobste.rs/s/a0og2j/developing_for_debugging_2025",
+    "title": "Developing for Debugging (2025)"
+  },
+  "@lobstersgram:1320": {
+    "telegraph_link": "https://telegra.ph/STAC-M3-Benchmark-Results-L-tick-database-10-on-an-Oxide-OxVM-virtual-machine-with-128-vCPUs-and-125-TiB-of-RAM-with-5-x-344-TB--10-17",
+    "article_link": "https://docs.stacresearch.com/M3-20261005a",
+    "discussion_link": "https://lobste.rs/s/oh4yfc/stac_m3_benchmark_l_tick_database_1_0_on",
+    "title": "STAC-M3 Benchmark: L tick database 1.0 on Oxide OxVM w/ 128 vCPUs & 1.25 TiB of RAM"
+  },
+  "@lobstersgram:1321": {
+    "telegraph_link": "https://telegra.ph/My-C23-Conventions---Abner-10-17",
+    "article_link": "https://abner.page/post/c23-conventions-1/",
+    "discussion_link": "https://lobste.rs/s/umdbht/my_c23_conventions",
+    "title": "My C23 Conventions"
+  },
+  "@lobstersgram:1322": {
+    "telegraph_link": "https://telegra.ph/Some-quick-thoughts-on-Unit-Testing-ActivityPub---Terence-Edens-Blog-10-17",
+    "article_link": "https://shkspr.mobi/blog/2026/10/some-thoughts-on-unit-testing-activitypub/",
+    "discussion_link": "https://lobste.rs/s/gwuebx/some_quick_thoughts_on_unit_testing",
+    "title": "Some quick thoughts on Unit Testing ActivityPub"
+  },
+  "@lobstersgram:1323": {
+    "telegraph_link": "https://telegra.ph/Do-you-let-LLMs-write-both-your-tests-and-your-code--Lobsters-10-17",
+    "article_link": "https://lobste.rs/s/miwcai/do_you_let_llms_write_both_your_tests_your",
+    "discussion_link": "https://lobste.rs/s/miwcai/do_you_let_llms_write_both_your_tests_your",
+    "title": "Do you let LLMs write both your tests and your code?"
   }
 }
