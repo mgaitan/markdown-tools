@@ -7888,5 +7888,29 @@
     "article_link": "https://lobste.rs/s/miwcai/do_you_let_llms_write_both_your_tests_your",
     "discussion_link": "https://lobste.rs/s/miwcai/do_you_let_llms_write_both_your_tests_your",
     "title": "Do you let LLMs write both your tests and your code?"
+  },
+  "@lobstersgram:1324": {
+    "telegraph_link": "https://telegra.ph/rajtilakjeeorib--Bringing-back-the-old-Reddit-interface-with-a-few-new-enhancements-10-17",
+    "article_link": "https://github.com/rajtilakjee/orib",
+    "discussion_link": "https://lobste.rs/s/pllfoa/orib_bringing_back_old_reddit_interface",
+    "title": "orib: Bringing back the old Reddit interface, with a few new enhancements"
+  },
+  "@lobstersgram:1325": {
+    "telegraph_link": "https://telegra.ph/stepchowfunmull--A-tool-for-managing-a-wiki-stored-in-a-plain-text-file-10-17",
+    "article_link": "https://github.com/stepchowfun/mull",
+    "discussion_link": "https://lobste.rs/s/xcacrh/mull_note_taking_with_language_server",
+    "title": "Mull: note-taking with a language server / vscode extension"
+  },
+  "@lobstersgram:1326": {
+    "telegraph_link": "https://telegra.ph/Intuitive-concurrent-programming-in-any-language--Lingua-Franca-10-17-2",
+    "article_link": "https://www.lf-lang.org/",
+    "discussion_link": "https://lobste.rs/s/srao9u/intuitive_concurrent_programming_any",
+    "title": "Intuitive concurrent programming in any language | Lingua Franca"
+  },
+  "@lobstersgram:1327": {
+    "telegraph_link": "https://telegra.ph/Big-Fish-Exploiting-a-37-Year-Old-Kernel-Bug-in-OpenBSD--Calif-10-17",
+    "article_link": "https://calif.io/research/big-fish",
+    "discussion_link": "https://lobste.rs/s/cxlrc5/big_fish_exploiting_37_year_old_kernel_bug",
+    "title": "Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD"
   }
 }
