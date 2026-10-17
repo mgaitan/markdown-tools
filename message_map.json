@@ -7912,5 +7912,23 @@
     "article_link": "https://calif.io/research/big-fish",
     "discussion_link": "https://lobste.rs/s/cxlrc5/big_fish_exploiting_37_year_old_kernel_bug",
     "title": "Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD"
+  },
+  "@lobstersgram:1328": {
+    "telegraph_link": "https://telegra.ph/It-took-me-nine-years-to-hack-my-Xbox-360---Kennedns-Blog-10-17",
+    "article_link": "https://kennedn.com/blog/posts/glitching/",
+    "discussion_link": "https://lobste.rs/s/wceg2u/it_took_me_nine_years_hack_my_xbox_360",
+    "title": "It took me nine years to hack my Xbox 360"
+  },
+  "@lobstersgram:1329": {
+    "telegraph_link": "https://telegra.ph/Re-PATCH-docs-remove-Assisted-by-references---Linus-Torvalds-10-17",
+    "article_link": "https://lore.kernel.org/lkml/CAHk-=whTs09_ozN+e09GU68N1wPP56MUzDjrg9rnKxQUa0A_4Q@mail.gmail.com/",
+    "discussion_link": "https://lobste.rs/s/xiq59t/linus_torvalds_on_ai_assisted_kernel",
+    "title": "Linus Torvalds on AI-assisted kernel contributions"
+  },
+  "@lobstersgram:1330": {
+    "telegraph_link": "https://telegra.ph/88x31-button-book-using-ImageMagick-10-17",
+    "article_link": "https://k.sosnierz.me/08-11-24/",
+    "discussion_link": "https://lobste.rs/s/v6hhdr/making_88x31_button_book_using",
+    "title": "Making a 88x31 button book using ImageMagick"
   }
 }
