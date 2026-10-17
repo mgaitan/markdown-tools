@@ -7960,5 +7960,17 @@
     "article_link": "https://terrytao.wordpress.com/2026/10/15/why-are-we-even-doing-all-this/",
     "discussion_link": "https://lobste.rs/s/qvomvk/why_are_we_even_doing_all_this",
     "title": "Why are we even doing all this?"
+  },
+  "@lobstersgram:1336": {
+    "telegraph_link": "https://telegra.ph/The-road-to-iroh-10---Iroh-10-17",
+    "article_link": "https://www.iroh.computer/blog/the-road-to-iroh-1-0",
+    "discussion_link": "https://lobste.rs/s/6laoto/road_iroh_1_0",
+    "title": "The road to iroh 1.0"
+  },
+  "@lobstersgram:1337": {
+    "telegraph_link": "https://telegra.ph/The-NIST-Elliptic-Curves-Seeds-Bounty-Has-Been-Claimed-10-17-2",
+    "article_link": "https://words.filippo.io/seeds-solved/",
+    "discussion_link": "https://lobste.rs/s/ddtqtn/nist_elliptic_curves_seeds_bounty_has",
+    "title": "The NIST Elliptic Curves Seeds Bounty Has Been Claimed"
   }
 }
