@@ -7834,5 +7834,29 @@
     "article_link": "https://lobste.rs/s/hounpx/what_are_you_doing_this_weekend",
     "discussion_link": "https://lobste.rs/s/hounpx/what_are_you_doing_this_weekend",
     "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:1315": {
+    "telegraph_link": "https://telegra.ph/C26-the-new-debugging-header--Sandor-Dargos-Blog-10-17",
+    "article_link": "https://www.sandordargo.com/blog/2026/09/30/cpp26-debugging",
+    "discussion_link": "https://lobste.rs/s/lnh3vn/c_26_new_debugging_header",
+    "title": "C++26: the new debugging header"
+  },
+  "@lobstersgram:1316": {
+    "telegraph_link": "https://telegra.ph/Abstraction-intuition-and-the-monad-tutorial-fallacy--blog--Brent---String-10-17",
+    "article_link": "https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/",
+    "discussion_link": "https://lobste.rs/s/obhuqr/abstraction_intuition_monad_tutorial",
+    "title": "Abstraction, intuition, and the “monad tutorial fallacy”(2009)"
+  },
+  "@lobstersgram:1317": {
+    "telegraph_link": "https://telegra.ph/Someone-on-Torrent-Sites-Kept-Fucking-With-My-Sonarr-10-17",
+    "article_link": "https://thereallo.dev/blog/someone-on-torrent-sites-kept-fucking-with-my-sonarr-setup",
+    "discussion_link": "https://lobste.rs/s/1zknyw/someone_on_torrent_sites_kept_fucking",
+    "title": "Someone on Torrent Sites Kept Fucking With My Sonarr"
+  },
+  "@lobstersgram:1318": {
+    "telegraph_link": "https://telegra.ph/Interactive-refactoring-in-gopls---The-Go-Programming-Language-10-17",
+    "article_link": "https://go.dev/blog/interactive-refactoring",
+    "discussion_link": "https://lobste.rs/s/wn293o/interactive_refactoring_gopls",
+    "title": "Interactive refactoring in gopls"
   }
 }
