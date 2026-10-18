@@ -8026,5 +8026,23 @@
     "article_link": "https://gist.github.com/rcalixte/d2de5c816fc1de3970cc501b5ae9706e",
     "discussion_link": "https://lobste.rs/s/izjf9o/qml_for_c_zig",
     "title": "QML for C & Zig"
+  },
+  "@lobstersgram:1347": {
+    "telegraph_link": "https://telegra.ph/EvoGrain-Algorithmic-Sound-Design-with-L-Systems-and-Granular-Synthesis--Nathan-Ho-10-18",
+    "article_link": "https://nathanho.me/posts/evograin/",
+    "discussion_link": "https://lobste.rs/s/kiq0si/algorithmic_sound_design_with_l_systems",
+    "title": "Algorithmic Sound Design with L-Systems and Granular Synthesis"
+  },
+  "@lobstersgram:1348": {
+    "telegraph_link": "https://telegra.ph/Inside-the-Intel-8087-chip-floating-point-addition-and-subtraction-10-18-2",
+    "article_link": "https://www.righto.com/2026/10/8087-addition-subtraction-microcode.html",
+    "discussion_link": "https://lobste.rs/s/nbxnh7/inside_intel_8087_chip_floating_point",
+    "title": "Inside the Intel 8087 chip: floating-point addition and subtraction"
+  },
+  "@lobstersgram:1349": {
+    "telegraph_link": "https://telegra.ph/The-Brain-Sandwich---Terrible-Software-10-18-2",
+    "article_link": "https://terriblesoftware.org/2026/10/02/the-brain-sandwich/",
+    "discussion_link": "https://lobste.rs/s/k5omum/brain_sandwich",
+    "title": "The Brain Sandwich"
   }
 }
