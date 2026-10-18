@@ -7996,5 +7996,35 @@
     "article_link": "https://www.philipzucker.com/asmc_cpp/",
     "discussion_link": "https://lobste.rs/s/br0hd7/ghidra_cbmc_assembly_model_checker",
     "title": "Ghidra + CBMC = Assembly Model Checker"
+  },
+  "@lobstersgram:1342": {
+    "telegraph_link": "https://telegra.ph/Real-time-Software-On-Linux-How-Hard-Can-It-Be---Jeff-Pele-10-18",
+    "article_link": "https://www.youtube.com/watch?v=-0D0rFdU6HY",
+    "discussion_link": "https://lobste.rs/s/jp6tfb/real_time_software_on_linux_how_hard_can_it",
+    "title": "Real-time Software On Linux: How Hard Can It Be?"
+  },
+  "@lobstersgram:1343": {
+    "telegraph_link": "https://telegra.ph/Making-Hybrid-Images--Math--Programming-10-18",
+    "article_link": "https://www.jeremykun.com/2014/09/29/hybrid-images/",
+    "discussion_link": "https://lobste.rs/s/16tsvr/making_hybrid_images_2014",
+    "title": "Making Hybrid Images (2014)"
+  },
+  "@lobstersgram:1344": {
+    "telegraph_link": "https://telegra.ph/Outside-the-Scope-of-Our-Support---fireborn-10-18",
+    "article_link": "https://fireborn.mataroa.blog/blog/outside-the-scope-of-our-support/",
+    "discussion_link": "https://lobste.rs/s/brrnpm/outside_scope_our_support",
+    "title": "Outside the Scope of Our Support"
+  },
+  "@lobstersgram:1345": {
+    "telegraph_link": "https://telegra.ph/Its-time-to-talk-about-TEEs---Alin-Tomescu-10-18-2",
+    "article_link": "https://alinush.github.io//tee",
+    "discussion_link": "https://lobste.rs/s/edli0x/it_s_time_talk_about_tees",
+    "title": "It's time to talk about TEEs"
+  },
+  "@lobstersgram:1346": {
+    "telegraph_link": "https://telegra.ph/QML-for-C--Zig--GitHub-10-18",
+    "article_link": "https://gist.github.com/rcalixte/d2de5c816fc1de3970cc501b5ae9706e",
+    "discussion_link": "https://lobste.rs/s/izjf9o/qml_for_c_zig",
+    "title": "QML for C & Zig"
   }
 }
