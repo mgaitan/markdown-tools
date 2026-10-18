@@ -7972,5 +7972,29 @@
     "article_link": "https://words.filippo.io/seeds-solved/",
     "discussion_link": "https://lobste.rs/s/ddtqtn/nist_elliptic_curves_seeds_bounty_has",
     "title": "The NIST Elliptic Curves Seeds Bounty Has Been Claimed"
+  },
+  "@lobstersgram:1338": {
+    "telegraph_link": "https://telegra.ph/Marcin-Borkowski-2026-10-17-Using-timers-to-perform-weekly-tasks-10-18",
+    "article_link": "https://mbork.pl/2026-10-17_Using_timers_to_perform_weekly_tasks",
+    "discussion_link": "https://lobste.rs/s/u8vxmz/using_timers_perform_weekly_tasks",
+    "title": "Using timers to perform weekly tasks"
+  },
+  "@lobstersgram:1339": {
+    "telegraph_link": "https://telegra.ph/The-Problem-with-C-Safety-Part-1-Why-It-Works-Isnt-Good-Enough---MC-BLOG-10-18",
+    "article_link": "https://www.modernescpp.com/index.php/cpp-and-memory-safety-part-1/",
+    "discussion_link": "https://lobste.rs/s/koipdp/problem_with_c_safety_why_it_works_isn_t",
+    "title": "The Problem with C++ Safety: Why “It Works” Isn’t Good Enough"
+  },
+  "@lobstersgram:1340": {
+    "telegraph_link": "https://telegra.ph/My-obituary-for-programming--dumbmattercom-10-18",
+    "article_link": "https://dumbmatter.com/2026/10/programming-obituary/",
+    "discussion_link": "https://lobste.rs/s/wtobpt/my_obituary_for_programming",
+    "title": "My obituary for programming"
+  },
+  "@lobstersgram:1341": {
+    "telegraph_link": "https://telegra.ph/Ghidra--CBMC--Assembly-Model-Checker--Hey-There-Buddo-10-18",
+    "article_link": "https://www.philipzucker.com/asmc_cpp/",
+    "discussion_link": "https://lobste.rs/s/br0hd7/ghidra_cbmc_assembly_model_checker",
+    "title": "Ghidra + CBMC = Assembly Model Checker"
   }
 }
