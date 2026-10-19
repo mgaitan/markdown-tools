@@ -8068,5 +8068,11 @@
     "article_link": "https://leanrada.com/notes/inline-rendering-currentscript/",
     "discussion_link": "https://lobste.rs/s/ogp1wf/inline_rendering_with_document",
     "title": "Inline rendering with document.currentScript"
+  },
+  "@lobstersgram:1354": {
+    "telegraph_link": "https://telegra.ph/The-73-kernel-has-been-released-LWNnet-10-19-2",
+    "article_link": "https://lwn.net/Articles/1101143/",
+    "discussion_link": "https://lobste.rs/s/4oz3sk/7_3_kernel_has_been_released",
+    "title": "The 7.3 kernel has been released"
   }
 }
