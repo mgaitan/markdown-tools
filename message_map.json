@@ -8074,5 +8074,23 @@
     "article_link": "https://lwn.net/Articles/1101143/",
     "discussion_link": "https://lobste.rs/s/4oz3sk/7_3_kernel_has_been_released",
     "title": "The 7.3 kernel has been released"
+  },
+  "@lobstersgram:1355": {
+    "telegraph_link": "https://telegra.ph/Removing-a-Type-Assertion-with-Objectassign--ataias-10-19",
+    "article_link": "https://ataias.com.br/2026/10/01/removing-a-type-assertion-with-object.assign/",
+    "discussion_link": "https://lobste.rs/s/l5oolm/removing_type_assertion_with_object",
+    "title": "Removing a Type Assertion with Object.assign"
+  },
+  "@lobstersgram:1356": {
+    "telegraph_link": "https://telegra.ph/Borrow-Checking-Zero-Cost-Cyclic-Mutability-10-19",
+    "article_link": "https://antelang.org/blog/safe_cyclic_mutability/",
+    "discussion_link": "https://lobste.rs/s/qo8flp/borrow_checking_zero_cost_cyclic",
+    "title": "Borrow Checking Zero-Cost Cyclic Mutability"
+  },
+  "@lobstersgram:1357": {
+    "telegraph_link": "https://telegra.ph/Home---Jim-Calabro-10-19",
+    "article_link": "https://www.calabro.io/",
+    "discussion_link": "https://lobste.rs/s/mpytbn/one_hash_bloom_filters",
+    "title": "One Hash Bloom Filters"
   }
 }
