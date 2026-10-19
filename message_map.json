@@ -8092,5 +8092,29 @@
     "article_link": "https://www.calabro.io/",
     "discussion_link": "https://lobste.rs/s/mpytbn/one_hash_bloom_filters",
     "title": "One Hash Bloom Filters"
+  },
+  "@lobstersgram:1358": {
+    "telegraph_link": "https://telegra.ph/A-New-Way-to-Think-About-Borrow-Checking-In-Reverse-10-19-4",
+    "article_link": "https://verdagon.dev/blog/reverse-borrow-checking",
+    "discussion_link": "https://lobste.rs/s/vwgrix/new_way_think_about_borrow_checking",
+    "title": "A New Way to Think About Borrow Checking (In Reverse)"
+  },
+  "@lobstersgram:1359": {
+    "telegraph_link": "https://telegra.ph/Superoptimizing-an-FPU-emulator--purplesyringas-blog-10-19",
+    "article_link": "https://purplesyringa.moe/blog/superoptimizing-an-fpu-emulator/",
+    "discussion_link": "https://lobste.rs/s/1s3dve/superoptimizing_fpu_emulator",
+    "title": "Superoptimizing an FPU emulator"
+  },
+  "@lobstersgram:1360": {
+    "telegraph_link": "https://telegra.ph/ARP-Tell-your-network-to-explain-itself---Bens-Web-Space-10-19",
+    "article_link": "https://benjcal.space/blog/arp-tell-your-network-to-explain-itself/",
+    "discussion_link": "https://lobste.rs/s/mmvhup/arp_tell_your_network_explain_itself",
+    "title": "ARP! Tell your network to explain itself"
+  },
+  "@lobstersgram:1361": {
+    "telegraph_link": "https://telegra.ph/Its-enough---vibecoding-tag-crossed-from-useless-to-harmful--Lobsters-10-19",
+    "article_link": "https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from",
+    "discussion_link": "https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from",
+    "title": "It's enough - vibecoding tag crossed from useless to harmful"
   }
 }
