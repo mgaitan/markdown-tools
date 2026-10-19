@@ -8044,5 +8044,29 @@
     "article_link": "https://terriblesoftware.org/2026/10/02/the-brain-sandwich/",
     "discussion_link": "https://lobste.rs/s/k5omum/brain_sandwich",
     "title": "The Brain Sandwich"
+  },
+  "@lobstersgram:1350": {
+    "telegraph_link": "https://telegra.ph/Speeding-up-code-review-with-small-change--Irrational-Exuberance-10-19",
+    "article_link": "https://lethain.com/small-changes/",
+    "discussion_link": "https://lobste.rs/s/opyxtm/speeding_up_code_review_with_small_change",
+    "title": "Speeding up code review with `small-change`"
+  },
+  "@lobstersgram:1351": {
+    "telegraph_link": "https://telegra.ph/BBC-Master-Pi1MHz-Domesday-10-19",
+    "article_link": "https://www.youtube.com/watch?v=UAWSOCOTjIU&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/82vulz/bbc_master_pi_1mhz_domesday",
+    "title": "BBC Master Pi 1MHz Domesday"
+  },
+  "@lobstersgram:1352": {
+    "telegraph_link": "https://telegra.ph/Dynamic-Packages-10-19-2",
+    "article_link": "https://www.getlazarus.org/dynamic/",
+    "discussion_link": "https://lobste.rs/s/dc2efo/dynamic_packages",
+    "title": "Dynamic Packages"
+  },
+  "@lobstersgram:1353": {
+    "telegraph_link": "https://telegra.ph/Inline-rendering-with-documentcurrentScript-10-19",
+    "article_link": "https://leanrada.com/notes/inline-rendering-currentscript/",
+    "discussion_link": "https://lobste.rs/s/ogp1wf/inline_rendering_with_document",
+    "title": "Inline rendering with document.currentScript"
   }
 }
