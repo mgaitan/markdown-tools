@@ -8116,5 +8116,35 @@
     "article_link": "https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from",
     "discussion_link": "https://lobste.rs/s/ggpwfi/it_s_enough_vibecoding_tag_crossed_from",
     "title": "It's enough - vibecoding tag crossed from useless to harmful"
+  },
+  "@lobstersgram:1362": {
+    "telegraph_link": "https://telegra.ph/Its-still-OK-to-enjoy-programming---Blogomatano-10-20",
+    "article_link": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+    "discussion_link": "https://lobste.rs/s/zfqg1b/it_s_still_ok_enjoy_programming",
+    "title": "It's still OK to enjoy programming"
+  },
+  "@lobstersgram:1363": {
+    "telegraph_link": "https://telegra.ph/Do-web-components-have-a-future-if-nobody-is-writing-them--Read-the-Tea-Leaves-10-20",
+    "article_link": "https://nolanlawson.com/2026/10/19/do-web-components-have-a-future-if-nobody-is-writing-them/",
+    "discussion_link": "https://lobste.rs/s/dpjkzz/do_web_components_have_future_if_nobody_is",
+    "title": "Do web components have a future if nobody is writing them?"
+  },
+  "@lobstersgram:1364": {
+    "telegraph_link": "https://telegra.ph/Men-in-tech-YesAllMen---mediacccde-10-20",
+    "article_link": "https://media.ccc.de/v/emf2026-240-1-men-in-tech-yesallmen",
+    "discussion_link": "https://lobste.rs/s/mp8qye/men_tech_yesallmen",
+    "title": "Men in tech #YesAllMen"
+  },
+  "@lobstersgram:1365": {
+    "telegraph_link": "https://telegra.ph/The-Netherlands-is-building-its-own-Linux-OS-to-break-free-from-Microsoft--TechSpot-10-20",
+    "article_link": "https://www.techspot.com/news/114018-netherlands-building-own-linux-os-break-free-microsoft.html",
+    "discussion_link": "https://lobste.rs/s/nne5uh/netherlands_is_building_its_own_linux_os",
+    "title": "The Netherlands is building its own Linux OS to break free from Microsoft"
+  },
+  "@lobstersgram:1366": {
+    "telegraph_link": "https://telegra.ph/What-the-heck-is-pkg--andereggca-10-20",
+    "article_link": "https://anderegg.ca/2026/10/18/what-the-heck-is-pkg",
+    "discussion_link": "https://lobste.rs/s/w6xosj/what_heck_is_pkg",
+    "title": "What the heck is /pkg?"
   }
 }
