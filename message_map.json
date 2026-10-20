@@ -8146,5 +8146,23 @@
     "article_link": "https://anderegg.ca/2026/10/18/what-the-heck-is-pkg",
     "discussion_link": "https://lobste.rs/s/w6xosj/what_heck_is_pkg",
     "title": "What the heck is /pkg?"
+  },
+  "@lobstersgram:1367": {
+    "telegraph_link": "https://telegra.ph/Rendering-untrusted-HTML-email-safely--The-Making-of-Close-10-20",
+    "article_link": "https://making.close.com/posts/rendering-untrusted-html-email-safely/",
+    "discussion_link": "https://lobste.rs/s/9ww9by/rendering_untrusted_html_email_safely",
+    "title": "Rendering untrusted HTML email, safely(2021)"
+  },
+  "@lobstersgram:1368": {
+    "telegraph_link": "https://telegra.ph/A-Very-Fast-IPv4-Parser-in-Swift--Mahdi-Bahramis-blog-10-20",
+    "article_link": "https://blog.mahdibm.com/posts/a-very-fast-ipv4-parser-in-swift/",
+    "discussion_link": "https://lobste.rs/s/dl4h2a/very_fast_ipv4_parser_swift",
+    "title": "A Very Fast IPv4 Parser, in Swift"
+  },
+  "@lobstersgram:1369": {
+    "telegraph_link": "https://telegra.ph/Hanami-Why-Model-Citizens--Aaron-Allen-10-20",
+    "article_link": "https://aaronmallen.me/writing/hanami-why-model-citizens",
+    "discussion_link": "https://lobste.rs/s/ygp18d/hanami_why_model_citizens",
+    "title": "Hanami, Why?: Model Citizens"
   }
 }
