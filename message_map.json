@@ -8164,5 +8164,23 @@
     "article_link": "https://aaronmallen.me/writing/hanami-why-model-citizens",
     "discussion_link": "https://lobste.rs/s/ygp18d/hanami_why_model_citizens",
     "title": "Hanami, Why?: Model Citizens"
+  },
+  "@lobstersgram:1370": {
+    "telegraph_link": "https://telegra.ph/Intermediary-between-public-and-private-members--Lobsters-10-20",
+    "article_link": "https://lobste.rs/s/fonp7g/intermediary_between_public_private",
+    "discussion_link": "https://lobste.rs/s/fonp7g/intermediary_between_public_private",
+    "title": "Intermediary between public and private members"
+  },
+  "@lobstersgram:1371": {
+    "telegraph_link": "https://telegra.ph/Tor-VPN-Beta-What-weve-learned-building-our-own-VPN-for-Android-from-scratch--The-Tor-Project-10-20",
+    "article_link": "https://blog.torproject.org/tor-vpn-beta/",
+    "discussion_link": "https://lobste.rs/s/s3w7hd/tor_vpn_beta_what_we_ve_learned_building",
+    "title": "Tor VPN Beta: What we've learned building our own VPN for Android from scratch"
+  },
+  "@lobstersgram:1372": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-week--Lobsters-10-20",
+    "article_link": "https://lobste.rs/s/vyfegx/what_are_you_doing_this_week",
+    "discussion_link": "https://lobste.rs/s/vyfegx/what_are_you_doing_this_week",
+    "title": "What are you doing this week?"
   }
 }
