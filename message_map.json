@@ -8212,5 +8212,29 @@
     "article_link": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
     "discussion_link": "https://lobste.rs/s/c2ouz0/2026_is_exciting_year_for_rust_compiler_me",
     "title": "2026 is an exciting year for the Rust compiler (and me)"
+  },
+  "@lobstersgram:1378": {
+    "telegraph_link": "https://telegra.ph/thebroken-Episode-1-10-20",
+    "article_link": "https://www.youtube.com/watch?v=A_xTA-YAa9U&t=2m10s",
+    "discussion_link": "https://lobste.rs/s/hypbid/thebroken_episode_1_2003",
+    "title": "thebroken Episode 1 (2003)"
+  },
+  "@lobstersgram:1379": {
+    "telegraph_link": "https://telegra.ph/Genera-for-the-Initiated-Inside-Symbolics-Lisp-Machines-10-20",
+    "article_link": "https://www.youtube.com/watch?v=W2fGKjFoaOg",
+    "discussion_link": "https://lobste.rs/s/staj2z/genera_for_initiated_inside_symbolics",
+    "title": "Genera for the Initiated: Inside Symbolics Lisp Machines"
+  },
+  "@lobstersgram:1380": {
+    "telegraph_link": "https://telegra.ph/Declarative-WASM-GC-Types-10-20-2",
+    "article_link": "https://blog.veritates.love/decl-wasm-types",
+    "discussion_link": "https://lobste.rs/s/72bkyt/declarative_wasm_gc_types",
+    "title": "Declarative WASM GC Types"
+  },
+  "@lobstersgram:1381": {
+    "telegraph_link": "https://telegra.ph/Making-all-divisions-slower-to-fix-a-bug-in-0000000000000000000542-of-cases-10-20-2",
+    "article_link": "https://futhark-lang.org/blog/2026-10-14-defining-division.html",
+    "discussion_link": "https://lobste.rs/s/a9f6z1/making_all_divisions_slower_fix_bug_0",
+    "title": "Making all divisions slower to fix a bug in 0.000000000000000000542% of cases"
   }
 }
