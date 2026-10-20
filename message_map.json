@@ -8182,5 +8182,35 @@
     "article_link": "https://lobste.rs/s/vyfegx/what_are_you_doing_this_week",
     "discussion_link": "https://lobste.rs/s/vyfegx/what_are_you_doing_this_week",
     "title": "What are you doing this week?"
+  },
+  "@lobstersgram:1373": {
+    "telegraph_link": "https://telegra.ph/50-A-closer-look---Mastodon-Blog-10-20",
+    "article_link": "https://blog.joinmastodon.org/2026/10/5.0-a-closer-look/",
+    "discussion_link": "https://lobste.rs/s/dlbufy/mastodon_5_0_closer_look",
+    "title": "Mastodon 5.0: A closer look"
+  },
+  "@lobstersgram:1374": {
+    "telegraph_link": "https://telegra.ph/CVE-2026-106173-FortiSIEM-gRPC-Path-Traversal-RCE--Horizon3-10-20",
+    "article_link": "https://horizon3.ai/attack-research/cve-2026-106173-deep-dive-fortisiem-grpc-path-traversal-file-write-rce/",
+    "discussion_link": "https://lobste.rs/s/d0bbhd/cve_2026_106173_fortisiem_grpc_path",
+    "title": "CVE-2026-106173: FortiSIEM gRPC Path Traversal to RCE"
+  },
+  "@lobstersgram:1375": {
+    "telegraph_link": "https://telegra.ph/In-Context---Rich-Hickey-ClojureConj-2026-10-20-2",
+    "article_link": "https://www.youtube.com/watch?v=P5eO7BNyJao",
+    "discussion_link": "https://lobste.rs/s/b36ixw/context",
+    "title": "In Context"
+  },
+  "@lobstersgram:1376": {
+    "telegraph_link": "https://telegra.ph/A5-v10--A5-10-20",
+    "article_link": "https://a5geo.org/blog/2026/10/14/a5-v1",
+    "discussion_link": "https://lobste.rs/s/wtthju/a5_v1_0",
+    "title": "A5 v1.0"
+  },
+  "@lobstersgram:1377": {
+    "telegraph_link": "https://telegra.ph/2026-is-an-exciting-year-for-the-Rust-compiler-and-me-10-20-4",
+    "article_link": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
+    "discussion_link": "https://lobste.rs/s/c2ouz0/2026_is_exciting_year_for_rust_compiler_me",
+    "title": "2026 is an exciting year for the Rust compiler (and me)"
   }
 }
