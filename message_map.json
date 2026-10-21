@@ -8266,5 +8266,23 @@
     "article_link": "https://daniel.haxx.se/blog/2026/10/20/do-minor-curl-vulnerabilities-in-the-open/",
     "discussion_link": "https://lobste.rs/s/nryxzd/do_minor_curl_vulnerabilities_open",
     "title": "Do minor curl vulnerabilities in the open"
+  },
+  "@lobstersgram:1387": {
+    "telegraph_link": "https://telegra.ph/Please-hold-tests-until-security-fixes-ship-10-21-2",
+    "article_link": "https://groups.google.com/a/mozilla.org/g/firefox-dev/c/4I1HSPtVyrI/m/giGra4ZzAQAJ",
+    "discussion_link": "https://lobste.rs/s/othohc/firefox_security_patch_tests_are_now",
+    "title": "Firefox security patch tests are now private for at least a week"
+  },
+  "@lobstersgram:1388": {
+    "telegraph_link": "https://telegra.ph/Vector-Graphics-in-Lil-10-21",
+    "article_link": "https://beyondloom.com/blog/vectorgraphics.html",
+    "discussion_link": "https://lobste.rs/s/tsfina/vector_graphics_lil",
+    "title": "Vector Graphics in Lil"
+  },
+  "@lobstersgram:1389": {
+    "telegraph_link": "https://telegra.ph/Home---Unikernels-in-OCaml-10-21",
+    "article_link": "https://uniker.nl/",
+    "discussion_link": "https://lobste.rs/s/mfserj/unikernels_ocaml",
+    "title": "Unikernels in OCaml"
   }
 }
