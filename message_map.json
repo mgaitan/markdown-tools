@@ -8326,5 +8326,29 @@
     "article_link": "https://entropicthoughts.com/nixos-is-making-me-less-afraid",
     "discussion_link": "https://lobste.rs/s/7d1swo/nixos_is_making_me_less_afraid",
     "title": "NixOS is making me less afraid"
+  },
+  "@lobstersgram:1397": {
+    "telegraph_link": "https://telegra.ph/Embedding-EYG-in-Erlang-programs-10-21",
+    "article_link": "https://eyg.run/guides/embedding-eyg-in-erlang-programs",
+    "discussion_link": "https://lobste.rs/s/deqmg0/embedding_eyg_erlang_programs",
+    "title": "Embedding EYG in Erlang programs"
+  },
+  "@lobstersgram:1398": {
+    "telegraph_link": "https://telegra.ph/Nicolas-Mattia---Setting-up-SSH-keys-on-macOS-with-Touch-ID-10-21-2",
+    "article_link": "https://nmattia.com/posts/2026-10-19-setting-up-ssh-keys-touch-id/",
+    "discussion_link": "https://lobste.rs/s/d7m5j1/setting_up_ssh_keys_on_macos_with_touch_id",
+    "title": "Setting up SSH keys on macOS with Touch ID"
+  },
+  "@lobstersgram:1399": {
+    "telegraph_link": "https://telegra.ph/Nodejs---Wednesday-October-21-2026-Security-Releases-10-21",
+    "article_link": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases",
+    "discussion_link": "https://lobste.rs/s/gu7bow/node_js_wednesday_october_21_2026",
+    "title": "Node.js — Wednesday, October 21, 2026 Security Releases"
+  },
+  "@lobstersgram:1400": {
+    "telegraph_link": "https://telegra.ph/GitLab-Critical-Patch-Release-1951-1943-1936-1929-1919-19010-181113--GitLab-Docs-10-21-2",
+    "article_link": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/",
+    "discussion_link": "https://lobste.rs/s/pnpcso/gitlab_critical_patch_release",
+    "title": "GitLab Critical Patch Release"
   }
 }
