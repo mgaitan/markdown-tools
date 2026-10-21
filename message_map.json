@@ -8236,5 +8236,35 @@
     "article_link": "https://futhark-lang.org/blog/2026-10-14-defining-division.html",
     "discussion_link": "https://lobste.rs/s/a9f6z1/making_all_divisions_slower_fix_bug_0",
     "title": "Making all divisions slower to fix a bug in 0.000000000000000000542% of cases"
+  },
+  "@lobstersgram:1382": {
+    "telegraph_link": "https://telegra.ph/Lobsters-NYC-Meetup-on-the-28th-of-October--Lobsters-10-21",
+    "article_link": "https://lobste.rs/s/73ozwc/lobsters_nyc_meetup_on_28th_october",
+    "discussion_link": "https://lobste.rs/s/73ozwc/lobsters_nyc_meetup_on_28th_october",
+    "title": "Lobsters NYC Meetup on the 28th of October"
+  },
+  "@lobstersgram:1383": {
+    "telegraph_link": "https://telegra.ph/emulatorswine---MARC-10-21",
+    "article_link": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+    "discussion_link": "https://lobste.rs/s/gqepzd/wine_ported_openbsd",
+    "title": "Wine ported to OpenBSD"
+  },
+  "@lobstersgram:1384": {
+    "telegraph_link": "https://telegra.ph/Security-Update---October-2026-Security-Incident-Report-Unauthorized-Access-to-PingCAP-Cloud-Resources-10-21",
+    "article_link": "https://www.pingcap.com/trust-hub/security/security-update-october-2026/",
+    "discussion_link": "https://lobste.rs/s/x7codz/unauthorized_access_pingcap_cloud",
+    "title": "Unauthorized Access to PingCAP Cloud Resources"
+  },
+  "@lobstersgram:1385": {
+    "telegraph_link": "https://telegra.ph/Why-do-we-need-ud2-when-int-6-is-right-there---The-Old-New-Thing-10-21",
+    "article_link": "https://devblogs.microsoft.com/oldnewthing/20261019-00/?p=112781/",
+    "discussion_link": "https://lobste.rs/s/9u6gm0/why_do_we_need_ud2_when_int_6_is_right_there",
+    "title": "Why do we need ud2 when int 6 is right there?"
+  },
+  "@lobstersgram:1386": {
+    "telegraph_link": "https://telegra.ph/Do-minor-curl-vulnerabilities-in-the-open--danielhaxxse-10-21",
+    "article_link": "https://daniel.haxx.se/blog/2026/10/20/do-minor-curl-vulnerabilities-in-the-open/",
+    "discussion_link": "https://lobste.rs/s/nryxzd/do_minor_curl_vulnerabilities_open",
+    "title": "Do minor curl vulnerabilities in the open"
   }
 }
