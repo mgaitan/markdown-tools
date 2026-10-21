@@ -8308,5 +8308,23 @@
     "article_link": "https://lukaswerner.com/post/2026-10-20@bottom-up-vga",
     "discussion_link": "https://lobste.rs/s/mngelc/making_vga_driver_systemverilog",
     "title": "Making a VGA Driver in SystemVerilog"
+  },
+  "@lobstersgram:1394": {
+    "telegraph_link": "https://telegra.ph/Updates-to-site-guidelines-and-AILLM-tags--Lobsters-10-21",
+    "article_link": "https://lobste.rs/s/h0eate/updates_site_guidelines_ai_llm_tags",
+    "discussion_link": "https://lobste.rs/s/h0eate/updates_site_guidelines_ai_llm_tags",
+    "title": "Updates to site guidelines and AI/LLM tags"
+  },
+  "@lobstersgram:1395": {
+    "telegraph_link": "https://telegra.ph/Michael-Tsai---Blog---Passkeys-Attestation-Trap-10-21",
+    "article_link": "https://mjtsai.com/blog/2026/10/15/passkeys-attestation-trap/",
+    "discussion_link": "https://lobste.rs/s/cdnepk/passkeys_attestation_trap",
+    "title": "Passkeys Attestation Trap"
+  },
+  "@lobstersgram:1396": {
+    "telegraph_link": "https://telegra.ph/NixOS-is-making-me-less-afraid-10-21-3",
+    "article_link": "https://entropicthoughts.com/nixos-is-making-me-less-afraid",
+    "discussion_link": "https://lobste.rs/s/7d1swo/nixos_is_making_me_less_afraid",
+    "title": "NixOS is making me less afraid"
   }
 }
