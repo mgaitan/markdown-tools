@@ -8374,5 +8374,29 @@
     "article_link": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
     "discussion_link": "https://lobste.rs/s/wi4nnl/railway_security_disclosure_wednesday",
     "title": "Railway Security Disclosure: Wednesday October 21st"
+  },
+  "@lobstersgram:1405": {
+    "telegraph_link": "https://telegra.ph/Extending-concurrent-separation-logic-to-the-hardware-level-to-verify-the-xv6-OS-kernel-on-RISC-V-with-AI-agents-10-22",
+    "article_link": "https://arxiv.org/abs/2609.04043",
+    "discussion_link": "https://lobste.rs/s/puijfw/extending_concurrent_separation_logic",
+    "title": "Extending concurrent separation logic to the hardware level to verify the xv6 OS kernel on RISC-V with AI agents"
+  },
+  "@lobstersgram:1406": {
+    "telegraph_link": "https://telegra.ph/Garmin-Revamps-and-Opens-Up-Connect-Developer-API-Program-All-the-Details--DC-Rainmaker-10-22",
+    "article_link": "https://www.dcrainmaker.com/2026/10/garmin-connect-api-revamps-connect-developer.html",
+    "discussion_link": "https://lobste.rs/s/nbd1cs/garmin_revamps_opens_up_connect",
+    "title": "Garmin Revamps and Opens Up Connect Developer API Program"
+  },
+  "@lobstersgram:1407": {
+    "telegraph_link": "https://telegra.ph/Announcing-DuckDB-200-LTS-Cinnamon-Teal---DuckDB-10-22",
+    "article_link": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+    "discussion_link": "https://lobste.rs/s/dcvs3u/announcing_duckdb_2_0_0_lts_cinnamon_teal",
+    "title": "Announcing DuckDB 2.0.0 LTS “Cinnamon Teal”"
+  },
+  "@lobstersgram:1408": {
+    "telegraph_link": "https://telegra.ph/Using-a-lookup-table-to-correct-an-approximation-10-22",
+    "article_link": "https://www.corsix.org/content/using-a-lookup-table-to-correct-an-approximation",
+    "discussion_link": "https://lobste.rs/s/os7brs/using_lookup_table_correct",
+    "title": "Using a lookup-table to correct an approximation"
   }
 }
