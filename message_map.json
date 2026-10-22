@@ -8428,5 +8428,23 @@
     "article_link": "https://zigtools.org/zls/releases/0.17.0/",
     "discussion_link": "https://lobste.rs/s/hty1qk/zls_0_17_0",
     "title": "zls 0.17.0"
+  },
+  "@lobstersgram:1414": {
+    "telegraph_link": "https://telegra.ph/Mojo-v120--Mojo-10-22",
+    "article_link": "https://mojolang.org/releases/v1.2.0/",
+    "discussion_link": "https://lobste.rs/s/famrid/mojo_v1_2_0",
+    "title": "Mojo v1.2.0"
+  },
+  "@lobstersgram:1415": {
+    "telegraph_link": "https://telegra.ph/oss-security---CVE-2026-107891-musl-libc-multiple-integer-overflow-in-regcomp-possibly-leading-to-incorrect-allocation-sizes-and-10-22",
+    "article_link": "https://www.openwall.com/lists/oss-security/2026/10/21/18",
+    "discussion_link": "https://lobste.rs/s/dldfel/cve_2026_107891_musl_libc_multiple",
+    "title": "CVE-2026-107891: musl libc: multiple integer overflow in regcomp, possibly leading to incorrect allocation sizes and out-of-bounds heap writes"
+  },
+  "@lobstersgram:1416": {
+    "telegraph_link": "https://telegra.ph/Eight-Bits-of-Trust-eMudhras-CA-keys-cracked-in-milliseconds-10-22-4",
+    "article_link": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+    "discussion_link": "https://lobste.rs/s/ebsqsp/eight_bits_trust_emudhra_s_ca_keys_cracked",
+    "title": "Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds"
   }
 }
