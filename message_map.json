@@ -8398,5 +8398,35 @@
     "article_link": "https://www.corsix.org/content/using-a-lookup-table-to-correct-an-approximation",
     "discussion_link": "https://lobste.rs/s/os7brs/using_lookup_table_correct",
     "title": "Using a lookup-table to correct an approximation"
+  },
+  "@lobstersgram:1409": {
+    "telegraph_link": "https://telegra.ph/Three-configurable-prettyprinters-10-22",
+    "article_link": "https://reasonableapproximation.net/2023/08/10/three-configurable-prettyprinters.html",
+    "discussion_link": "https://lobste.rs/s/was9lk/three_configurable_prettyprinters_2023",
+    "title": "Three configurable prettyprinters (2023)"
+  },
+  "@lobstersgram:1410": {
+    "telegraph_link": "https://telegra.ph/Script-dependencies-with-Nix-10-22",
+    "article_link": "https://entropicthoughts.com/python-dependencies-with-nix",
+    "discussion_link": "https://lobste.rs/s/oeehgs/script_dependencies_with_nix",
+    "title": "Script dependencies with Nix"
+  },
+  "@lobstersgram:1411": {
+    "telegraph_link": "https://telegra.ph/PHP-News-Archive---2026-10-22",
+    "article_link": "https://www.php.net/archive/2026.php#2026-10-20-1",
+    "discussion_link": "https://lobste.rs/s/ekxoyt/upcoming_critical_php_security_release",
+    "title": "Upcoming Critical PHP Security Release"
+  },
+  "@lobstersgram:1412": {
+    "telegraph_link": "https://telegra.ph/Tell-your-network-to-explain-itself-and-then-some-10-22",
+    "article_link": "https://unixdigest.com/tutorials/tell-your-network-to-explain-itself-and-then-some.html",
+    "discussion_link": "https://lobste.rs/s/m6l6ld/tell_your_network_explain_itself_then",
+    "title": "Tell your network to explain itself and then some"
+  },
+  "@lobstersgram:1413": {
+    "telegraph_link": "https://telegra.ph/ZLS-0170---zigtools-10-22",
+    "article_link": "https://zigtools.org/zls/releases/0.17.0/",
+    "discussion_link": "https://lobste.rs/s/hty1qk/zls_0_17_0",
+    "title": "zls 0.17.0"
   }
 }
