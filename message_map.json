@@ -8446,5 +8446,29 @@
     "article_link": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
     "discussion_link": "https://lobste.rs/s/ebsqsp/eight_bits_trust_emudhra_s_ca_keys_cracked",
     "title": "Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds"
+  },
+  "@lobstersgram:1417": {
+    "telegraph_link": "https://telegra.ph/We-have-Traits-at-Home--Mesoloop-10-22",
+    "article_link": "https://www.axelmagn.com/blog/202610-zig-traits/",
+    "discussion_link": "https://lobste.rs/s/05xrj8/we_have_traits_at_home",
+    "title": "We have Traits at Home"
+  },
+  "@lobstersgram:1418": {
+    "telegraph_link": "https://telegra.ph/What-is-your-opinion-on-submission-quality-since-the-vibecoding-tag-was-removed--Lobsters-10-22",
+    "article_link": "https://lobste.rs/s/nmurnh/what_is_your_opinion_on_submission",
+    "discussion_link": "https://lobste.rs/s/nmurnh/what_is_your_opinion_on_submission",
+    "title": "What is your opinion on submission quality since the `vibecoding` tag was removed?"
+  },
+  "@lobstersgram:1419": {
+    "telegraph_link": "https://telegra.ph/a-hacky-fucked-up-way-to-portably-access-errno-from-outside-of-c-10-22",
+    "article_link": "https://sebsite.pw/w/20260925-errno.html",
+    "discussion_link": "https://lobste.rs/s/jgull9/hacky_fucked_up_way_portably_access_errno",
+    "title": "a hacky fucked up way to portably access errno from outside of c"
+  },
+  "@lobstersgram:1420": {
+    "telegraph_link": "https://telegra.ph/Local-Mode---Firefox-Source-Docs-documentation-10-22",
+    "article_link": "https://firefox-source-docs.mozilla.org/devtools-user/local_mode/index.html",
+    "discussion_link": "https://lobste.rs/s/w9sxxq/firefox_local_mode",
+    "title": "Firefox Local Mode"
   }
 }
