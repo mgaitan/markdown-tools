@@ -8518,5 +8518,23 @@
     "article_link": "https://zoey-on-github.github.io/blog/macgcc.html",
     "discussion_link": "https://lobste.rs/s/hplfis/examining_macos_gcc_binary",
     "title": "examining the macOS gcc binary"
+  },
+  "@lobstersgram:1429": {
+    "telegraph_link": "https://telegra.ph/OrgWebAlchemy-Benchmarking-Profiling-and-the-Long-Road-to-Real-Org-Support---jointhefreeworld-10-23",
+    "article_link": "https://jointhefreeworld.org/blog/articles/lisps/orgwebalchemy-benchmarking-profiling-and-org-support/",
+    "discussion_link": "https://lobste.rs/s/9gak0g/profiling_org_html_formal_grammar",
+    "title": "Profiling Org->HTML formal grammar and optimizing it: orgwebalchemy"
+  },
+  "@lobstersgram:1430": {
+    "telegraph_link": "https://telegra.ph/The-glorious-xkcdRandom-Zig-builtin--Adolfo-Ochagavía-10-23",
+    "article_link": "https://ochagavia.nl/blog/the-glorious-@xkcdrandom-zig-builtin/",
+    "discussion_link": "https://lobste.rs/s/5hoqzj/glorious_xkcdrandom_zig_builtin",
+    "title": "The glorious @xkcdRandom Zig builtin"
+  },
+  "@lobstersgram:1431": {
+    "telegraph_link": "https://telegra.ph/a-neat-trick-i-found-for-reusing-physical-memory-10-23-2",
+    "article_link": "https://sebsite.pw/w/20260728-cow.html",
+    "discussion_link": "https://lobste.rs/s/bhqvxq/neat_trick_i_found_for_reusing_physical",
+    "title": "a neat trick i found for reusing physical memory"
   }
 }
