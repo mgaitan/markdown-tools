@@ -8536,5 +8536,23 @@
     "article_link": "https://sebsite.pw/w/20260728-cow.html",
     "discussion_link": "https://lobste.rs/s/bhqvxq/neat_trick_i_found_for_reusing_physical",
     "title": "a neat trick i found for reusing physical memory"
+  },
+  "@lobstersgram:1432": {
+    "telegraph_link": "https://telegra.ph/Next-Concept-Modeling-Fast-Parallel-Coarse-to-Fine-Text-Generation-10-23",
+    "article_link": "https://arxiv.org/abs/2610.14162",
+    "discussion_link": "https://lobste.rs/s/d1snfg/next_concept_modeling_fast_parallel",
+    "title": "Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation"
+  },
+  "@lobstersgram:1433": {
+    "telegraph_link": "https://telegra.ph/Preliminary-Report-Oct-21st-Security-Incident--Railway-Blog-10-23",
+    "article_link": "https://blog.railway.com/p/preliminary-report-october-security-incident",
+    "discussion_link": "https://lobste.rs/s/hq3tu8/railway_preliminary_report_oct_21st",
+    "title": "Railway Preliminary Report: Oct 21st Security Incident"
+  },
+  "@lobstersgram:1434": {
+    "telegraph_link": "https://telegra.ph/Release-OpenSSL-410--opensslopenssl--GitHub-10-23-2",
+    "article_link": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
+    "discussion_link": "https://lobste.rs/s/pcirxi/release_openssl_4_1_0_openssl_openssl",
+    "title": "Release OpenSSL 4.1.0 · openssl/openssl"
   }
 }
