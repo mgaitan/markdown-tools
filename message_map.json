@@ -8470,5 +8470,23 @@
     "article_link": "https://firefox-source-docs.mozilla.org/devtools-user/local_mode/index.html",
     "discussion_link": "https://lobste.rs/s/w9sxxq/firefox_local_mode",
     "title": "Firefox Local Mode"
+  },
+  "@lobstersgram:1421": {
+    "telegraph_link": "https://telegra.ph/UUIDv7-doesnt-have-the-properties-you-think-it-does-10-23",
+    "article_link": "https://alexsci.com/blog/uuidv7-is-weird/",
+    "discussion_link": "https://lobste.rs/s/kcyzco/uuidv7_doesn_t_have_properties_you_think",
+    "title": "UUIDv7 doesn't have the properties you think it does"
+  },
+  "@lobstersgram:1422": {
+    "telegraph_link": "https://telegra.ph/Please-dont-mess-with-links-10-23",
+    "article_link": "https://maurycyz.com/misc/real_links/",
+    "discussion_link": "https://lobste.rs/s/mucay8/please_don_t_mess_with_links",
+    "title": "Please don't mess with links"
+  },
+  "@lobstersgram:1423": {
+    "telegraph_link": "https://telegra.ph/jailbreaking-the-switch-2-10-23",
+    "article_link": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
+    "discussion_link": "https://lobste.rs/s/me75ey/jailbreaking_switch_2",
+    "title": "jailbreaking the switch 2"
   }
 }
