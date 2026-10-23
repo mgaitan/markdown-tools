@@ -8488,5 +8488,35 @@
     "article_link": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
     "discussion_link": "https://lobste.rs/s/me75ey/jailbreaking_switch_2",
     "title": "jailbreaking the switch 2"
+  },
+  "@lobstersgram:1424": {
+    "telegraph_link": "https://telegra.ph/The-Hibernate-Origin-Story-Outsider-Edition---The-Fishbowl-10-23",
+    "article_link": "https://fishbowl.pastiche.org/2026/10/23/hibernate-origin-story",
+    "discussion_link": "https://lobste.rs/s/ydmw6s/hibernate_origin_story_outsider_edition",
+    "title": "The Hibernate Origin Story (Outsider Edition)"
+  },
+  "@lobstersgram:1425": {
+    "telegraph_link": "https://telegra.ph/Isaac-Marovitz---The-Many-Many-Missed-Opportunities-of-Sonic-06-10-23-2",
+    "article_link": "https://isaacmarovitz.com/posts/sonic-06/",
+    "discussion_link": "https://lobste.rs/s/nb7wkp/many_many_missed_opportunities_sonic_06",
+    "title": "The Many Many Missed Opportunities of Sonic 06"
+  },
+  "@lobstersgram:1426": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-10-23",
+    "article_link": "https://lobste.rs/s/crqz1g/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/crqz1g/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:1427": {
+    "telegraph_link": "https://telegra.ph/Debunking-Faster-than-Rust-Malicious-Benchmarks-in-Tov-10-23-2",
+    "article_link": "https://blog.fyralabs.com/debunking-faster-than-rust-malicious-benchmarks-in-tov/",
+    "discussion_link": "https://lobste.rs/s/gajtrm/debunking_faster_than_rust_malicious",
+    "title": "Debunking \"Faster than Rust\": Malicious Benchmarks in Tov"
+  },
+  "@lobstersgram:1428": {
+    "telegraph_link": "https://telegra.ph/examining-the-macOS-gcc-binary-10-23-2",
+    "article_link": "https://zoey-on-github.github.io/blog/macgcc.html",
+    "discussion_link": "https://lobste.rs/s/hplfis/examining_macos_gcc_binary",
+    "title": "examining the macOS gcc binary"
   }
 }
