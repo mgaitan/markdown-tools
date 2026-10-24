@@ -8656,5 +8656,17 @@
     "article_link": "https://blog.luitjes.it/posts/i-want-my-wednesday-back/",
     "discussion_link": "https://lobste.rs/s/xgih2x/i_want_my_wednesday_back",
     "title": "I want my Wednesday back"
+  },
+  "@lobstersgram:1452": {
+    "telegraph_link": "https://telegra.ph/We-should-be-more-ambitious-with-the-software-we-build-10-24-3",
+    "article_link": "https://danluu.com/ambitious/",
+    "discussion_link": "https://lobste.rs/s/8h9sey/we_should_be_more_ambitious_with_software",
+    "title": "We should be more ambitious with the software we build"
+  },
+  "@lobstersgram:1453": {
+    "telegraph_link": "https://telegra.ph/SIMD-and-Go--Internals-for-Interns-10-24",
+    "article_link": "https://internals-for-interns.com/posts/go-simd/",
+    "discussion_link": "https://lobste.rs/s/whgofc/simd_go",
+    "title": "SIMD and Go"
   }
 }
