@@ -8590,5 +8590,17 @@
     "article_link": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
     "discussion_link": "https://lobste.rs/s/xsz9sc/docker_is_weird",
     "title": "Docker is weird"
+  },
+  "@lobstersgram:1441": {
+    "telegraph_link": "https://telegra.ph/Twelve-years-of-distributed-SQLite---Philip-OToole-10-24-2",
+    "article_link": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+    "discussion_link": "https://lobste.rs/s/rqefcw/twelve_years_distributed_sqlite",
+    "title": "Twelve years of distributed SQLite"
+  },
+  "@lobstersgram:1442": {
+    "telegraph_link": "https://telegra.ph/Big-Runtimes-Make-Efficient-Programs-by-Ron-Pressler-10-24",
+    "article_link": "https://www.youtube.com/watch?v=vhDwy1eCXbs",
+    "discussion_link": "https://lobste.rs/s/g5k2pc/big_runtimes_make_efficient_programs",
+    "title": "Big Runtimes Make Efficient Programs"
   }
 }
