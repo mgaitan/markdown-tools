@@ -8602,5 +8602,29 @@
     "article_link": "https://www.youtube.com/watch?v=vhDwy1eCXbs",
     "discussion_link": "https://lobste.rs/s/g5k2pc/big_runtimes_make_efficient_programs",
     "title": "Big Runtimes Make Efficient Programs"
+  },
+  "@lobstersgram:1443": {
+    "telegraph_link": "https://telegra.ph/Code-and-Cake---Docker-is-weird-10-24-2",
+    "article_link": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+    "discussion_link": "https://lobste.rs/s/xsz9sc/docker_is_weird",
+    "title": "Docker is weird"
+  },
+  "@lobstersgram:1444": {
+    "telegraph_link": "https://telegra.ph/Release-0110--wild-linkerwild--GitHub-10-24",
+    "article_link": "https://github.com/wild-linker/wild/releases/tag/0.11.0",
+    "discussion_link": "https://lobste.rs/s/vulvk7/wild_version_0_11_0_released",
+    "title": "Wild version 0.11.0 released"
+  },
+  "@lobstersgram:1445": {
+    "telegraph_link": "https://telegra.ph/Emacs-finally-folds-to-my-liking---jointhefreeworld-10-24",
+    "article_link": "https://jointhefreeworld.org/blog/articles/emacs/emacs-folding-kirigami/",
+    "discussion_link": "https://lobste.rs/s/yczems/emacs_finally_folds_my_liking",
+    "title": "Emacs finally folds to my liking"
+  },
+  "@lobstersgram:1446": {
+    "telegraph_link": "https://telegra.ph/Be-Aware-of-Whats-in-Your-Logs---fireborn-10-24",
+    "article_link": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
+    "discussion_link": "https://lobste.rs/s/rl0dz5/be_aware_what_s_your_logs",
+    "title": "Be Aware of What's in Your Logs"
   }
 }
