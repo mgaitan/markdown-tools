@@ -8626,5 +8626,23 @@
     "article_link": "https://fireborn.mataroa.blog/blog/be-aware-of-whats-in-your-logs/",
     "discussion_link": "https://lobste.rs/s/rl0dz5/be_aware_what_s_your_logs",
     "title": "Be Aware of What's in Your Logs"
+  },
+  "@lobstersgram:1447": {
+    "telegraph_link": "https://telegra.ph/The-Polyglots-Dilemma-Conformance-Testing-a-Dozen-Specs-in-as-Many-Languages-10-24",
+    "article_link": "https://emptysqua.re/blog/polyglots-dilemma/",
+    "discussion_link": "https://lobste.rs/s/gzpdsk/polyglot_s_dilemma_conformance_testing",
+    "title": "The Polyglot's Dilemma: Conformance Testing a Dozen Specs in as Many Languages"
+  },
+  "@lobstersgram:1448": {
+    "telegraph_link": "https://telegra.ph/How-to-run-a-city-builder-on-16-MHz---Larst-Of-Us-10-24",
+    "article_link": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
+    "discussion_link": "https://lobste.rs/s/qzfohf/how_run_city_builder_on_16_mhz",
+    "title": "How to run a city builder on 16 MHz"
+  },
+  "@lobstersgram:1449": {
+    "telegraph_link": "https://telegra.ph/Bringing-uv-and-ty-together-10-24-2",
+    "article_link": "https://astral.sh/blog/uv-ty-integration",
+    "discussion_link": "https://lobste.rs/s/dfieqa/bringing_uv_ty_together",
+    "title": "Bringing uv and ty together"
   }
 }
