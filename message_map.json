@@ -8698,5 +8698,23 @@
     "article_link": "https://media.ccc.de/v/matrix-conference-2026-99070-a-vision-for-a-next-generation-timeline",
     "discussion_link": "https://lobste.rs/s/jdczl6/vision_for_next_generation_timeline",
     "title": "A vision for a next-generation timeline"
+  },
+  "@lobstersgram:1459": {
+    "telegraph_link": "https://telegra.ph/The-Goose-Programming-Language--Goose-10-25-3",
+    "article_link": "https://aardappel.github.io/goose/",
+    "discussion_link": "https://lobste.rs/s/dkoryq/goose_programming_language",
+    "title": "The Goose Programming Language"
+  },
+  "@lobstersgram:1460": {
+    "telegraph_link": "https://telegra.ph/Vim-Classic-10-25",
+    "article_link": "https://vim-classic.org/",
+    "discussion_link": "https://lobste.rs/s/cxwpil/vim_classic",
+    "title": "Vim Classic"
+  },
+  "@lobstersgram:1461": {
+    "telegraph_link": "https://telegra.ph/TIL-POSIX-wordexp3-is-dangerous-10-25",
+    "article_link": "https://yossarian.net/til/post/posix-wordexp-3-is-dangerous/",
+    "discussion_link": "https://lobste.rs/s/tbbiqb/posix_wordexp_3_is_dangerous",
+    "title": "POSIX wordexp(3) is dangerous"
   }
 }
