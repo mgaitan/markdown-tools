@@ -8674,5 +8674,29 @@
     "article_link": "http://oldvcr.blogspot.com/2026/10/macos-extensions-pack-for-apple-network.html",
     "discussion_link": "https://lobste.rs/s/7byfjv/macos_extensions_pack_for_apple_network",
     "title": "MacOS Extensions pack for the Apple Network Server v1.0"
+  },
+  "@lobstersgram:1455": {
+    "telegraph_link": "https://telegra.ph/Every-Clojure-Talk-Ever---Alex-Engelberg-and-Derek-Slager-10-25",
+    "article_link": "https://www.youtube.com/watch?v=jlPaby7suOc",
+    "discussion_link": "https://lobste.rs/s/mug4of/every_clojure_talk_ever",
+    "title": "Every Clojure Talk Ever"
+  },
+  "@lobstersgram:1456": {
+    "telegraph_link": "https://telegra.ph/SIMD-accelerated-computer-vision-on-a-2-microcontroller---shraiwi-10-25",
+    "article_link": "https://shraiwi.com/blog/simd-fast-esp32s3/",
+    "discussion_link": "https://lobste.rs/s/qsmmke/simd_accelerated_computer_vision_on_2",
+    "title": "SIMD-accelerated computer vision on a $2 microcontroller"
+  },
+  "@lobstersgram:1457": {
+    "telegraph_link": "https://telegra.ph/When-a-glibc-update-accidentally-breaks-Chromiums-audio---refi64s-site-10-25",
+    "article_link": "https://refi64.dev/posts/chromium-audio-break.html",
+    "discussion_link": "https://lobste.rs/s/5ullyu/when_glibc_update_accidentally_breaks",
+    "title": "When a glibc update accidentally breaks Chromium's audio (2021)"
+  },
+  "@lobstersgram:1458": {
+    "telegraph_link": "https://telegra.ph/A-vision-for-a-next-generation-timeline---mediacccde-10-25",
+    "article_link": "https://media.ccc.de/v/matrix-conference-2026-99070-a-vision-for-a-next-generation-timeline",
+    "discussion_link": "https://lobste.rs/s/jdczl6/vision_for_next_generation_timeline",
+    "title": "A vision for a next-generation timeline"
   }
 }
