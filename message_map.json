@@ -8740,5 +8740,35 @@
     "article_link": "https://atgreen.github.io/repl-yell/posts/openldk-java-in-common-lisp/",
     "discussion_link": "https://lobste.rs/s/cf8mdy/openldk_bringing_java_world_into_common",
     "title": "OpenLDK: Bringing the Java World into Common Lisp"
+  },
+  "@lobstersgram:1466": {
+    "telegraph_link": "https://telegra.ph/Aggro-is-the-Foundation--Radimentary-10-26",
+    "article_link": "https://radimentary.wordpress.com/2022/11/07/aggro-is-the-foundation/",
+    "discussion_link": "https://lobste.rs/s/lh8nvx/aggro_is_foundation_2022",
+    "title": "Aggro is the Foundation (2022)"
+  },
+  "@lobstersgram:1467": {
+    "telegraph_link": "https://telegra.ph/Shadow-Dummy-folders-an-obvious-overflow-and-a-ROP-chain--avas-ramblings-10-26",
+    "article_link": "https://chirp.tene7.com/?action=view&url=shadow-dummy-folders-an-obvious-overflow-and-a-rop-chain",
+    "discussion_link": "https://lobste.rs/s/di1j7o/shadow_dummy_folders_obvious_overflow",
+    "title": "Shadow: Dummy folders, an obvious overflow, and a ROP chain"
+  },
+  "@lobstersgram:1468": {
+    "telegraph_link": "https://telegra.ph/Akkuscm-120-released---weinholtse-10-26",
+    "article_link": "https://weinholt.se/articles/akku-scm-1-2-0/",
+    "discussion_link": "https://lobste.rs/s/twdnpy/akku_scm_1_2_0_released",
+    "title": "Akku.scm 1.2.0 released"
+  },
+  "@lobstersgram:1469": {
+    "telegraph_link": "https://telegra.ph/Wails-v300-Released--Wails-10-26",
+    "article_link": "https://v3.wails.io/blog/wails-v3-released/",
+    "discussion_link": "https://lobste.rs/s/vgq0mf/wails_v3_0_0_released",
+    "title": "Wails v3.0.0 Released"
+  },
+  "@lobstersgram:1470": {
+    "telegraph_link": "https://telegra.ph/Heavenly-delights-of-hashing-numbers-under-EQUALP--TurtleWare-10-26",
+    "article_link": "https://turtleware.eu/posts/Heavenly-delights-of-hashing-numbers-under-EQUALP.html",
+    "discussion_link": "https://lobste.rs/s/0ta2mv/heavenly_delights_hashing_numbers_under",
+    "title": "Heavenly delights of hashing numbers under EQUALP"
   }
 }
