@@ -8734,5 +8734,11 @@
     "article_link": "https://bsandro.tech/posts/simple-netbsd-webserver/",
     "discussion_link": "https://lobste.rs/s/hzrmwz/simple_netbsd_webserver",
     "title": "Simple NetBSD webserver"
+  },
+  "@lobstersgram:1465": {
+    "telegraph_link": "https://telegra.ph/OpenLDK-Bringing-the-Java-World-into-Common-Lisp--REPL-Yell-10-26",
+    "article_link": "https://atgreen.github.io/repl-yell/posts/openldk-java-in-common-lisp/",
+    "discussion_link": "https://lobste.rs/s/cf8mdy/openldk_bringing_java_world_into_common",
+    "title": "OpenLDK: Bringing the Java World into Common Lisp"
   }
 }
