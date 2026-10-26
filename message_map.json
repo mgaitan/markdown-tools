@@ -8716,5 +8716,23 @@
     "article_link": "https://yossarian.net/til/post/posix-wordexp-3-is-dangerous/",
     "discussion_link": "https://lobste.rs/s/tbbiqb/posix_wordexp_3_is_dangerous",
     "title": "POSIX wordexp(3) is dangerous"
+  },
+  "@lobstersgram:1462": {
+    "telegraph_link": "https://telegra.ph/Two-musings-on-the-design-of-compiler-warnings---Arthur-ODwyer---Stuff-mostly-about-C-10-26",
+    "article_link": "https://quuxplusone.github.io/blog/2020/09/02/wparentheses/",
+    "discussion_link": "https://lobste.rs/s/kfaimp/two_musings_on_design_compiler_warnings",
+    "title": "Two musings on the design of compiler warnings (2020)"
+  },
+  "@lobstersgram:1463": {
+    "telegraph_link": "https://telegra.ph/AI-Skills-are-worthless-in-2026---The-Fishbowl-10-26",
+    "article_link": "https://fishbowl.pastiche.org/2026/10/26/ai-skills",
+    "discussion_link": "https://lobste.rs/s/x1s5oq/ai_skills_are_worthless_2026",
+    "title": "“AI Skills” are worthless in 2026"
+  },
+  "@lobstersgram:1464": {
+    "telegraph_link": "https://telegra.ph/Simple-NetBSD-webserver-10-26",
+    "article_link": "https://bsandro.tech/posts/simple-netbsd-webserver/",
+    "discussion_link": "https://lobste.rs/s/hzrmwz/simple_netbsd_webserver",
+    "title": "Simple NetBSD webserver"
   }
 }
