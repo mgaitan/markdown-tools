@@ -8800,5 +8800,35 @@
     "article_link": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
     "discussion_link": "https://lobste.rs/s/1h5kuj/pharo_14_released",
     "title": "Pharo 14 Released"
+  },
+  "@lobstersgram:1479": {
+    "telegraph_link": "https://telegra.ph/The-Shift-of-Theseus---Toy-Bit-Provenance-Abstract-Domain--PyPy-10-27",
+    "article_link": "https://pypy.org/posts/2026/10/toy-bit-provenance.html",
+    "discussion_link": "https://lobste.rs/s/kvije8/shift_theseus_toy_bit_provenance",
+    "title": "The Shift of Theseus — Toy Bit Provenance Abstract Domain"
+  },
+  "@lobstersgram:1480": {
+    "telegraph_link": "https://telegra.ph/slughorn---GPU-Vector-Graphics-10-27",
+    "article_link": "https://slughorn.io/",
+    "discussion_link": "https://lobste.rs/s/en7rby/slughorn_gpu_vector_graphics",
+    "title": "slughorn — GPU Vector Graphics"
+  },
+  "@lobstersgram:1481": {
+    "telegraph_link": "https://telegra.ph/About-the-compromised-eMudhra-intermediate-CAs---Apple-Support-10-27-2",
+    "article_link": "https://support.apple.com/en-us/149555",
+    "discussion_link": "https://lobste.rs/s/xzp4m0/about_compromised_emudhra_intermediate",
+    "title": "About the compromised eMudhra intermediate CAs"
+  },
+  "@lobstersgram:1482": {
+    "telegraph_link": "https://telegra.ph/Finding-panics-with-Call-Graph-Analyzer---Tweede-golf-10-27",
+    "article_link": "https://tweedegolf.nl/en/blog/242/finding-panics-with-call-graph-analyzer/",
+    "discussion_link": "https://lobste.rs/s/opqtiv/finding_panics_with_call_graph_analyzer",
+    "title": "Finding panics with Call Graph Analyzer"
+  },
+  "@lobstersgram:1483": {
+    "telegraph_link": "https://telegra.ph/Our-Response-To-The-eMudhra-Key-Disclosure-Incident---The-Go-Programming-Language-10-27-2",
+    "article_link": "https://go.dev/blog/emudhra-incident",
+    "discussion_link": "https://lobste.rs/s/cxdpiu/our_response_emudhra_key_disclosure",
+    "title": "Our Response To The eMudhra Key Disclosure Incident"
   }
 }
