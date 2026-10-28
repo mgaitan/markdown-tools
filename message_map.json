@@ -8866,5 +8866,35 @@
     "article_link": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
     "discussion_link": "https://lobste.rs/s/f3jpq3/next_circle_security_hell",
     "title": "The next circle of security hell"
+  },
+  "@lobstersgram:1490": {
+    "telegraph_link": "https://telegra.ph/Raspberry-Pi-Zero-3-W-and-Pi-4-Model-A-on-the-Way---bretdk-10-28-2",
+    "article_link": "https://bret.dk/raspberry-pi-zero-3-w-pi-4-model-a/",
+    "discussion_link": "https://lobste.rs/s/hqcvyj/raspberry_pi_zero_3_w_pi_4_model_on_way",
+    "title": "Raspberry Pi Zero 3 W and Pi 4 Model A on the Way?"
+  },
+  "@lobstersgram:1491": {
+    "telegraph_link": "https://telegra.ph/A-stackless-floodfill-automation-2023-10-28",
+    "article_link": "https://t3x.org/files/floodfill.pdf",
+    "discussion_link": "https://lobste.rs/s/tp0zlk/stackless_floodfill_automation_2023",
+    "title": "A stackless floodfill automation (2023)"
+  },
+  "@lobstersgram:1492": {
+    "telegraph_link": "https://telegra.ph/Filian-Fil-C-binaries-on-Debian-10-28",
+    "article_link": "https://cr.yp.to/2025/fil-c.html",
+    "discussion_link": "https://lobste.rs/s/rs6ce2/filian_fil_c_binaries_on_debian",
+    "title": "Filian, Fil-C binaries on Debian"
+  },
+  "@lobstersgram:1493": {
+    "telegraph_link": "https://telegra.ph/Making-SIMD-Code-Scale-to-Any-Vector-Width---Stream-HPC-10-28",
+    "article_link": "https://streamhpc.com/blog/2026-10-28/making-simd-code-scale-to-any-vector-width/",
+    "discussion_link": "https://lobste.rs/s/3jyfg9/making_simd_code_scale_any_vector_width",
+    "title": "Making SIMD Code Scale to Any Vector Width"
+  },
+  "@lobstersgram:1494": {
+    "telegraph_link": "https://telegra.ph/Fuzzers-vs-AI-Comparing-Fuzzilli-and-BigSleep-on-JavaScript-Engines---Project-Zero-10-28",
+    "article_link": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
+    "discussion_link": "https://lobste.rs/s/rswyzt/fuzzers_vs_ai_comparing_fuzzilli",
+    "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines"
   }
 }
