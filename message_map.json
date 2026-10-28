@@ -8854,5 +8854,17 @@
     "article_link": "https://brennenputh.me/blog/printable-websites/",
     "discussion_link": "https://lobste.rs/s/olnqh2/websites_should_be_printable",
     "title": "Websites Should Be Printable"
+  },
+  "@lobstersgram:1488": {
+    "telegraph_link": "https://telegra.ph/Tailscale-SSH-Investigation-and-remediation-update-10-28-5",
+    "article_link": "https://tailscale.com/ssh-investigation-update",
+    "discussion_link": "https://lobste.rs/s/qmvxuh/tailscale_ssh_investigation",
+    "title": "Tailscale SSH: Investigation and remediation update"
+  },
+  "@lobstersgram:1489": {
+    "telegraph_link": "https://telegra.ph/The-next-circle-of-security-hell---Michał-Górny-10-28",
+    "article_link": "https://blogs.gentoo.org/mgorny/2026/10/27/the-next-circle-of-security-hell/",
+    "discussion_link": "https://lobste.rs/s/f3jpq3/next_circle_security_hell",
+    "title": "The next circle of security hell"
   }
 }
