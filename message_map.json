@@ -8896,5 +8896,29 @@
     "article_link": "https://projectzero.google/2026/10/fuzzing-v-AI.html",
     "discussion_link": "https://lobste.rs/s/rswyzt/fuzzers_vs_ai_comparing_fuzzilli",
     "title": "Fuzzers vs. AI: Comparing Fuzzilli and BigSleep on JavaScript Engines"
+  },
+  "@lobstersgram:1495": {
+    "telegraph_link": "https://telegra.ph/Syl-10-28-5",
+    "article_link": "https://thenumb.at/Syl-Intro/",
+    "discussion_link": "https://lobste.rs/s/d09iy3/compile_time_dependent_types",
+    "title": "Compile-Time Dependent Types"
+  },
+  "@lobstersgram:1496": {
+    "telegraph_link": "https://telegra.ph/Shitty-Screenshare-10-28-2",
+    "article_link": "https://shittyscreenshare.com/",
+    "discussion_link": "https://lobste.rs/s/cxxcik/shitty_screenshare",
+    "title": "Shitty Screenshare"
+  },
+  "@lobstersgram:1497": {
+    "telegraph_link": "https://telegra.ph/Whos-0xabadbabe-and-why--danielhaxxse-10-28",
+    "article_link": "https://daniel.haxx.se/blog/2011/10/28/whos-0xabadbabe-and-why/",
+    "discussion_link": "https://lobste.rs/s/ml4m9a/who_s_0xabadbabe_why_2011",
+    "title": "Who’s 0xabadbabe and why? (2011)"
+  },
+  "@lobstersgram:1498": {
+    "telegraph_link": "https://telegra.ph/Why-Is-This-Fingerprinting-Script-Creating-Bioweapons-10-28-8",
+    "article_link": "https://nullpt.rs/fingerprinting-bioweapons",
+    "discussion_link": "https://lobste.rs/s/gvy5gz/why_is_this_fingerprinting_script",
+    "title": "Why Is This Fingerprinting Script Creating Bioweapons?"
   }
 }
