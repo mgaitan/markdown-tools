@@ -8950,5 +8950,23 @@
     "article_link": "https://tetralogical.com/blog/2026/10/14/accessible-components-library/",
     "discussion_link": "https://lobste.rs/s/ssp7ug/introducing_accessible_components",
     "title": "Introducing the Accessible Components Library"
+  },
+  "@lobstersgram:1504": {
+    "telegraph_link": "https://telegra.ph/My-Terminal-Setup-in-2026-Ghostty-tmux-and-Neovim--Nick-Liu---Software-Engineer-10-29",
+    "article_link": "https://nick-liu.com/posts/my-terminal-setup-2026/",
+    "discussion_link": "https://lobste.rs/s/opmxlq/my_terminal_setup_2026_ghostty_tmux",
+    "title": "My Terminal Setup in 2026: Ghostty, tmux, and Neovim"
+  },
+  "@lobstersgram:1505": {
+    "telegraph_link": "https://telegra.ph/Database-Architects-The-Benchmarking-Crisis-10-29",
+    "article_link": "http://databasearchitects.blogspot.com/2026/10/the-benchmarking-crisis.html",
+    "discussion_link": "https://lobste.rs/s/smtpje/benchmarking_crisis",
+    "title": "The Benchmarking Crisis"
+  },
+  "@lobstersgram:1506": {
+    "telegraph_link": "https://telegra.ph/Pair-coding-Lobsters-feat--Lobsters-10-29",
+    "article_link": "https://lobste.rs/s/mgy3tr/pair_coding_lobste_rs_feat",
+    "discussion_link": "https://lobste.rs/s/mgy3tr/pair_coding_lobste_rs_feat",
+    "title": "Pair-coding Lobste.rs feat"
   }
 }
