@@ -8998,5 +8998,29 @@
     "article_link": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
     "discussion_link": "https://lobste.rs/s/ansfvi/forging_microsoft_edge_full_chain_with",
     "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only"
+  },
+  "@lobstersgram:1512": {
+    "telegraph_link": "https://telegra.ph/Hoot-0100-released---Spritely-Institute-10-29",
+    "article_link": "https://spritely.institute/news/hoot-0-10-0-released.html",
+    "discussion_link": "https://lobste.rs/s/m3gsln/hoot_0_10_0_released",
+    "title": "Hoot 0.10.0 released"
+  },
+  "@lobstersgram:1513": {
+    "telegraph_link": "https://telegra.ph/Will-Open-Firmware-Become-the-Next-Big-Trend-in-Electronic-Music-Gear---Synthtopia-10-29",
+    "article_link": "https://www.synthtopia.com/content/2026/10/28/will-open-firmware-become-the-next-big-trend-in-electronic-music-gear/",
+    "discussion_link": "https://lobste.rs/s/j4ntsz/will_open_firmware_become_next_big_trend",
+    "title": "Will Open Firmware Become the Next Big Trend in Electronic Music Gear?"
+  },
+  "@lobstersgram:1514": {
+    "telegraph_link": "https://telegra.ph/Coding-Agents-Starter-Kits-and-pgledger---Paul-Grosss-Blog-10-29",
+    "article_link": "https://www.pgrs.net/2026/10/29/coding-agents-starter-kits-and-pgledger/",
+    "discussion_link": "https://lobste.rs/s/uezack/coding_agents_starter_kits_pgledger",
+    "title": "Coding Agents, Starter Kits and pgledger"
+  },
+  "@lobstersgram:1515": {
+    "telegraph_link": "https://telegra.ph/Announcements--SLCR-10-29",
+    "article_link": "https://slcr.dev/announcements#2026-10-29-slcr-launches",
+    "discussion_link": "https://lobste.rs/s/nexvnc/open_format_for_writing_agent_native",
+    "title": "An open format for writing agent-native software requirements"
   }
 }
