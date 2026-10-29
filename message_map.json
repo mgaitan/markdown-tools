@@ -8920,5 +8920,35 @@
     "article_link": "https://nullpt.rs/fingerprinting-bioweapons",
     "discussion_link": "https://lobste.rs/s/gvy5gz/why_is_this_fingerprinting_script",
     "title": "Why Is This Fingerprinting Script Creating Bioweapons?"
+  },
+  "@lobstersgram:1499": {
+    "telegraph_link": "https://telegra.ph/Pythons-experimental-JIT-to-be-removed-LWNnet-10-29",
+    "article_link": "https://lwn.net/SubscriberLink/1102102/0c00e4d550f25f8c/",
+    "discussion_link": "https://lobste.rs/s/cajuq6/python_s_experimental_jit_be_removed",
+    "title": "Python's experimental JIT to be removed"
+  },
+  "@lobstersgram:1500": {
+    "telegraph_link": "https://telegra.ph/1447-emoji-Well-do-it-live--Planet-Peanut-Studio-10-29",
+    "article_link": "https://planetpeanut.studio/post/2026/10/27/pidgin-emoji-twitch",
+    "discussion_link": "https://lobste.rs/s/qd0hc9/1_447_emoji_we_ll_do_it_live",
+    "title": "1,447 emoji? We'll do it live"
+  },
+  "@lobstersgram:1501": {
+    "telegraph_link": "https://telegra.ph/Scalable-Vector-Grief--PortSwigger-Research-10-29",
+    "article_link": "https://portswigger.net/research/scalable-vector-grief",
+    "discussion_link": "https://lobste.rs/s/vekgyd/scalable_vector_grief",
+    "title": "Scalable Vector Grief"
+  },
+  "@lobstersgram:1502": {
+    "telegraph_link": "https://telegra.ph/Reminder-Lobsters-NYC-Meetup-Tomorrow-530-at-Walkers--Lobsters-10-29",
+    "article_link": "https://lobste.rs/s/87iesc/reminder_lobsters_nyc_meetup_tomorrow_5",
+    "discussion_link": "https://lobste.rs/s/87iesc/reminder_lobsters_nyc_meetup_tomorrow_5",
+    "title": "Reminder: Lobsters NYC Meetup Tomorrow 5:30 at Walker's"
+  },
+  "@lobstersgram:1503": {
+    "telegraph_link": "https://telegra.ph/Introducing-the-Accessible-Components-Library---TetraLogical-10-29",
+    "article_link": "https://tetralogical.com/blog/2026/10/14/accessible-components-library/",
+    "discussion_link": "https://lobste.rs/s/ssp7ug/introducing_accessible_components",
+    "title": "Introducing the Accessible Components Library"
   }
 }
