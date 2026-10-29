@@ -8968,5 +8968,35 @@
     "article_link": "https://lobste.rs/s/mgy3tr/pair_coding_lobste_rs_feat",
     "discussion_link": "https://lobste.rs/s/mgy3tr/pair_coding_lobste_rs_feat",
     "title": "Pair-coding Lobste.rs feat"
+  },
+  "@lobstersgram:1507": {
+    "telegraph_link": "https://telegra.ph/Start-Doing-Graph-Theory-10-29-2",
+    "article_link": "https://vertex.degree/",
+    "discussion_link": "https://lobste.rs/s/46sc07/start_doing_graph_theory",
+    "title": "Start Doing Graph Theory"
+  },
+  "@lobstersgram:1508": {
+    "telegraph_link": "https://telegra.ph/Go-Empty-Interface-Explained--The-Hidden-Heap-Allocation-10-29",
+    "article_link": "https://www.youtube.com/watch?v=_BxdvkLLnDc",
+    "discussion_link": "https://lobste.rs/s/1hbwvl/go_empty_interface_explained_hidden_heap",
+    "title": "Go Empty Interface Explained & The Hidden Heap Allocation"
+  },
+  "@lobstersgram:1509": {
+    "telegraph_link": "https://telegra.ph/tar-codec-a-fast-and-secure-tar-parser-for-the-Rust-ecosystem-10-29",
+    "article_link": "https://astral.sh/blog/tar-codec",
+    "discussion_link": "https://lobste.rs/s/q7arzy/fast_secure_tar_parser_for_rust_ecosystem",
+    "title": "A fast and secure tar parser for the Rust ecosystem"
+  },
+  "@lobstersgram:1510": {
+    "telegraph_link": "https://telegra.ph/Syrinx-10-29-3",
+    "article_link": "https://var0xyz.github.io/syrinx/",
+    "discussion_link": "https://lobste.rs/s/25dapz/syrinx_censorship_resistant",
+    "title": "Syrinx: A censorship-resistant communications platform"
+  },
+  "@lobstersgram:1511": {
+    "telegraph_link": "https://telegra.ph/The-Last-Proof-of-Human-Craft-Forging-a-Microsoft-Edge-Full-Chain-with-Logic-Bugs-Only--Orange-Tsai-10-29-2",
+    "article_link": "https://blog.orange.tw/posts/2026-10-the-last-proof-of-human-craft-browser-full-chain/",
+    "discussion_link": "https://lobste.rs/s/ansfvi/forging_microsoft_edge_full_chain_with",
+    "title": "Forging a Microsoft Edge Full Chain with Logic Bugs Only"
   }
 }
