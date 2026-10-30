@@ -9100,5 +9100,35 @@
     "article_link": "https://divagr.com/blog/qwenputer",
     "discussion_link": "https://lobste.rs/s/zftely/qwenputer_fully_functioning",
     "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5"
+  },
+  "@lobstersgram:1529": {
+    "telegraph_link": "https://telegra.ph/Phorge-10-30-2",
+    "article_link": "https://www.phorge.it/",
+    "discussion_link": "https://lobste.rs/s/tw3rsp/phorge",
+    "title": "Phorge"
+  },
+  "@lobstersgram:1530": {
+    "telegraph_link": "https://telegra.ph/Rationale-for-filtering-LLM-usage-links-as-off-topic--Lobsters-10-30",
+    "article_link": "https://lobste.rs/s/spv7tb/rationale_for_filtering_llm_usage_links",
+    "discussion_link": "https://lobste.rs/s/spv7tb/rationale_for_filtering_llm_usage_links",
+    "title": "Rationale for filtering LLM usage links as off-topic"
+  },
+  "@lobstersgram:1531": {
+    "telegraph_link": "https://telegra.ph/Getting-Google-Cast-on-my-Soundbar-10-30",
+    "article_link": "https://codon.org.uk/~mjg59/blog/p/getting-google-cast-on-my-soundbar/",
+    "discussion_link": "https://lobste.rs/s/uyobll/getting_google_cast_on_my_soundbar",
+    "title": "Getting Google Cast on my Soundbar"
+  },
+  "@lobstersgram:1532": {
+    "telegraph_link": "https://telegra.ph/smart-audio-for-the-smart-home-10-30-2",
+    "article_link": "https://computer.rip/2021-11-06-smart-audio-for-the-smart-home.html",
+    "discussion_link": "https://lobste.rs/s/paqtgw/smart_audio_for_smart_home_2021",
+    "title": "Smart audio for the smart home (2021)"
+  },
+  "@lobstersgram:1533": {
+    "telegraph_link": "https://telegra.ph/My-favourite-PowerMac-is-a-Nintendo-Wii--Virtually-Fun-10-30-2",
+    "article_link": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+    "discussion_link": "https://lobste.rs/s/siebde/my_favourite_powermac_is_nintendo_wii",
+    "title": "My favourite PowerMac is a Nintendo Wii"
   }
 }
