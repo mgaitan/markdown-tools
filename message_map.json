@@ -9076,5 +9076,29 @@
     "article_link": "https://entropicthoughts.com/history-of-pdp-computers",
     "discussion_link": "https://lobste.rs/s/ldvd3n/extremely_brief_history_pdp_computers",
     "title": "Extremely brief history of PDP computers"
+  },
+  "@lobstersgram:1525": {
+    "telegraph_link": "https://telegra.ph/GitLab-security-incident-attempted-exploitation-of-CVE-2026-97229--Alpine-Linux-10-30",
+    "article_link": "https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html",
+    "discussion_link": "https://lobste.rs/s/2zsjwt/gitlab_security_incident_attempted",
+    "title": "GitLab security incident: attempted exploitation of CVE-2026-97229"
+  },
+  "@lobstersgram:1526": {
+    "telegraph_link": "https://telegra.ph/Building-NixOS-using-Nixtamal--Nixtamal-10-30-8",
+    "article_link": "https://nixtamal.toast.al/cookbook/nixos-using-nixtamal/",
+    "discussion_link": "https://lobste.rs/s/4x3ten/building_nixos_using_nixtamal",
+    "title": "Building NixOS using Nixtamal"
+  },
+  "@lobstersgram:1527": {
+    "telegraph_link": "https://telegra.ph/EMACS-turns-50--MIT-Technology-Review-10-30",
+    "article_link": "https://www.technologyreview.com/2026/10/20/1145399/emacs-turns-50/",
+    "discussion_link": "https://lobste.rs/s/uimyck/emacs_turns_50",
+    "title": "EMACS turns 50"
+  },
+  "@lobstersgram:1528": {
+    "telegraph_link": "https://telegra.ph/Qwenputer-a-fully-functioning-deterministic-RISC-V-CPU-inside-Qwen35---Divyansh-Agrawal-10-30",
+    "article_link": "https://divagr.com/blog/qwenputer",
+    "discussion_link": "https://lobste.rs/s/zftely/qwenputer_fully_functioning",
+    "title": "Qwenputer: a fully functioning, deterministic RISC-V CPU inside Qwen3.5"
   }
 }
