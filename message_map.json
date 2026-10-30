@@ -9046,5 +9046,35 @@
     "article_link": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
     "discussion_link": "https://lobste.rs/s/dqexzg/case_9_bit_aes_key",
     "title": "The case of the 9 bit AES key"
+  },
+  "@lobstersgram:1520": {
+    "telegraph_link": "https://telegra.ph/arm64e-pointer-authentication-PAC-keys-PACIASP-A12-10-30",
+    "article_link": "https://sigreturn.com/blog/pointer-authentication-arm64e/",
+    "discussion_link": "https://lobste.rs/s/ruq2us/arm64e_pointer_authentication_pac_keys",
+    "title": "arm64e pointer authentication: PAC keys, PACIASP, A12"
+  },
+  "@lobstersgram:1521": {
+    "telegraph_link": "https://telegra.ph/The-Missing-Future-State---Yosh-Wuyts---Blog-10-30",
+    "article_link": "https://blog.yoshuawuyts.com/the-future-trait-has-a-missing-state",
+    "discussion_link": "https://lobste.rs/s/jmbjlu/future_trait_has_missing_state",
+    "title": "The Future Trait Has A Missing State"
+  },
+  "@lobstersgram:1522": {
+    "telegraph_link": "https://telegra.ph/How-curl-was-accidentally-Turing-complete-for-nine-months-10-30",
+    "article_link": "https://seriot.ch/computation/curl.html",
+    "discussion_link": "https://lobste.rs/s/f4aqog/how_curl_was_accidentally_turing",
+    "title": "How curl was accidentally Turing-complete for nine months"
+  },
+  "@lobstersgram:1523": {
+    "telegraph_link": "https://telegra.ph/XSS-in-yarr---Matthew-Hogg-10-30",
+    "article_link": "https://0x67673068.me/xss-in-yarr/",
+    "discussion_link": "https://lobste.rs/s/1r7enm/xss_yarr_rss_reader",
+    "title": "XSS in yarr RSS reader"
+  },
+  "@lobstersgram:1524": {
+    "telegraph_link": "https://telegra.ph/Extremely-brief-history-of-PDP-computers-10-30-7",
+    "article_link": "https://entropicthoughts.com/history-of-pdp-computers",
+    "discussion_link": "https://lobste.rs/s/ldvd3n/extremely_brief_history_pdp_computers",
+    "title": "Extremely brief history of PDP computers"
   }
 }
