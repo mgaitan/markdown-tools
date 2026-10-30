@@ -9022,5 +9022,29 @@
     "article_link": "https://slcr.dev/announcements#2026-10-29-slcr-launches",
     "discussion_link": "https://lobste.rs/s/nexvnc/open_format_for_writing_agent_native",
     "title": "An open format for writing agent-native software requirements"
+  },
+  "@lobstersgram:1516": {
+    "telegraph_link": "https://telegra.ph/Ring-Buffers-Project-Summary---Redox---Your-NextGen-OS-10-30",
+    "article_link": "https://www.redox-os.org/news/nlnet-rb-summary/",
+    "discussion_link": "https://lobste.rs/s/brdwr2/redox_ring_buffers_project_summary",
+    "title": "Redox Ring Buffers Project Summary"
+  },
+  "@lobstersgram:1517": {
+    "telegraph_link": "https://telegra.ph/GOTO-Considered-Totally-Sick-for-error-handling-in-C-10-30",
+    "article_link": "https://thestateofinahaze.net/blog/c-goto-considered-totally-sick/",
+    "discussion_link": "https://lobste.rs/s/exwlmn/goto_considered_totally_sick_for_error",
+    "title": "GOTO Considered Totally Sick (for error handling in C)"
+  },
+  "@lobstersgram:1518": {
+    "telegraph_link": "https://telegra.ph/AlpineBSD-wiki-10-30",
+    "article_link": "https://wiki.alpinebsd.org/",
+    "discussion_link": "https://lobste.rs/s/yxuvie/alpinebsd",
+    "title": "AlpineBSD"
+  },
+  "@lobstersgram:1519": {
+    "telegraph_link": "https://telegra.ph/The-case-of-the-9-bit-AES-key--V12-10-30",
+    "article_link": "https://v12.sh/blog/the-case-of-the-9bit-aes-key",
+    "discussion_link": "https://lobste.rs/s/dqexzg/case_9_bit_aes_key",
+    "title": "The case of the 9 bit AES key"
   }
 }
