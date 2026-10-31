@@ -9214,5 +9214,29 @@
     "article_link": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
     "discussion_link": "https://lobste.rs/s/6ole9g/if_you_love_website_back_it_up",
     "title": "If you love a website, back it up"
+  },
+  "@lobstersgram:1548": {
+    "telegraph_link": "https://telegra.ph/Speeding-up-GPU-copies-by-permuting-iteration-spaces-or-optimising-the-identity-function-10-31",
+    "article_link": "https://futhark-lang.org/blog/2026-10-31-faster-copying.html",
+    "discussion_link": "https://lobste.rs/s/1abkzu/speeding_up_gpu_copies_by_permuting",
+    "title": "Speeding up GPU copies by permuting iteration spaces, or, optimising the identity function"
+  },
+  "@lobstersgram:1549": {
+    "telegraph_link": "https://telegra.ph/Lets-Build-a-Brain-10-31-3",
+    "article_link": "https://aatishb.com/myriad/lets-build-a-brain/",
+    "discussion_link": "https://lobste.rs/s/bmmj1e/let_s_build_brain",
+    "title": "Let’s Build a Brain"
+  },
+  "@lobstersgram:1550": {
+    "telegraph_link": "https://telegra.ph/Xoranths-musings-10-31-5",
+    "article_link": "https://xoranth.net/gcc-switch/",
+    "discussion_link": "https://lobste.rs/s/ncclwy/switch_lowering_gcc",
+    "title": "Switch lowering in GCC"
+  },
+  "@lobstersgram:1551": {
+    "telegraph_link": "https://telegra.ph/Tangled-hire-a-front-end-accessibility-expert---David-Bushell---Web-Dev-UK-10-31",
+    "article_link": "https://dbushell.com/2026/11/01/tangled-accessibility/",
+    "discussion_link": "https://lobste.rs/s/ymqjuj/tangled_hire_front_end_accessibility",
+    "title": "Tangled, hire a front-end accessibility expert"
   }
 }
