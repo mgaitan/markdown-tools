@@ -9160,5 +9160,29 @@
     "article_link": "https://www.da.vidbuchanan.co.uk/blog/c2pa-four.html",
     "discussion_link": "https://lobste.rs/s/2matgw/c2pa_s_emudhra_moment",
     "title": "C2PA's eMudhra Moment"
+  },
+  "@lobstersgram:1539": {
+    "telegraph_link": "https://telegra.ph/Go-128-HTTP2-Parking-Measuring-Memory-Savings--Mohammad-Abdolirad-10-31",
+    "article_link": "https://abdolirad.me/articles/go-1-28-http2-parking-memory/",
+    "discussion_link": "https://lobste.rs/s/mhmqky/go_1_28_s_http_2_parking_measuring_memory",
+    "title": "Go 1.28's HTTP/2 Parking: Measuring Memory Savings"
+  },
+  "@lobstersgram:1540": {
+    "telegraph_link": "https://telegra.ph/Defending-the-patch-gap-against-automated-attackers-10-31",
+    "article_link": "https://blog.mozilla.org/en/firefox/privacy-security/defending-patch-gap/",
+    "discussion_link": "https://lobste.rs/s/dtvr7y/defending_patch_gap_against_automated",
+    "title": "Defending the patch gap against automated attackers"
+  },
+  "@lobstersgram:1541": {
+    "telegraph_link": "https://telegra.ph/London-meetup--Lobsters-10-31",
+    "article_link": "https://lobste.rs/s/dsrruj/london_meetup",
+    "discussion_link": "https://lobste.rs/s/dsrruj/london_meetup",
+    "title": "London meetup"
+  },
+  "@lobstersgram:1542": {
+    "telegraph_link": "https://telegra.ph/Tactical-Retreat-10-31",
+    "article_link": "https://www.frag-net.com/project_tacticalretreat.html",
+    "discussion_link": "https://lobste.rs/s/95quqz/tactical_retreat_freely_available_multi",
+    "title": "Tactical-Retreat: a freely available, multi-platform QuakeC-based Counter-Strike v1.5 port"
   }
 }
