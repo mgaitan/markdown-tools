@@ -9238,5 +9238,29 @@
     "article_link": "https://dbushell.com/2026/11/01/tangled-accessibility/",
     "discussion_link": "https://lobste.rs/s/ymqjuj/tangled_hire_front_end_accessibility",
     "title": "Tangled, hire a front-end accessibility expert"
+  },
+  "@lobstersgram:1552": {
+    "telegraph_link": "https://telegra.ph/Martin-Uecker-10-31",
+    "article_link": "https://uecker.codeberg.page/2026-10-31.html",
+    "discussion_link": "https://lobste.rs/s/ukcfap/effective_type_part_1",
+    "title": "Effective Type: Part 1"
+  },
+  "@lobstersgram:1553": {
+    "telegraph_link": "https://telegra.ph/Marelleo-a-story-box-I-built-for-my-kids--Zebra-Rodeo-10-31",
+    "article_link": "https://zebra.rodeo/en/blog/marelleo/",
+    "discussion_link": "https://lobste.rs/s/hgx46o/marelleo_story_box_i_built_for_my_kids",
+    "title": "Marelleo, a story box I built for my kids"
+  },
+  "@lobstersgram:1554": {
+    "telegraph_link": "https://telegra.ph/The-federated-code-forge--The-Tangled-Blog-10-31",
+    "article_link": "https://tangled.org/blog/forge/",
+    "discussion_link": "https://lobste.rs/s/ukj8mm/federated_code_forge",
+    "title": "The federated code forge"
+  },
+  "@lobstersgram:1555": {
+    "telegraph_link": "https://telegra.ph/Do-At-Proto-Users-Know-This-Is-Public--melanie-kat-10-31",
+    "article_link": "https://melaniekat.com/blog/public-on-pds/",
+    "discussion_link": "https://lobste.rs/s/htgcuc/do_at_proto_users_know_this_is_public",
+    "title": "Do At-Proto Users Know This Is Public?"
   }
 }
