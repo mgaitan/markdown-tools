@@ -9184,5 +9184,35 @@
     "article_link": "https://www.frag-net.com/project_tacticalretreat.html",
     "discussion_link": "https://lobste.rs/s/95quqz/tactical_retreat_freely_available_multi",
     "title": "Tactical-Retreat: a freely available, multi-platform QuakeC-based Counter-Strike v1.5 port"
+  },
+  "@lobstersgram:1543": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-10-31",
+    "article_link": "https://lobste.rs/s/u7dsbx/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/u7dsbx/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:1544": {
+    "telegraph_link": "https://telegra.ph/security-Protecting-against-CVE-2026-98432-10-31",
+    "article_link": "https://groups.google.com/g/golang-announce/c/PCoQcdxoScw",
+    "discussion_link": "https://lobste.rs/s/mp8yqt/protecting_against_cve_2026_98432",
+    "title": "Protecting against CVE-2026-98432"
+  },
+  "@lobstersgram:1545": {
+    "telegraph_link": "https://telegra.ph/nixos-on-512mb-ram---LowEndSpirit-10-31",
+    "article_link": "https://lowendspirit.com/discussion/11543/shrinking-nixos-ram-footprint-and-resource-requirements-to-the-bare-minimum",
+    "discussion_link": "https://lobste.rs/s/o1z9mm/shrinking_nixos_ram_footprint_resource",
+    "title": "Shrinking NixOS Ram footprint and resource requirements to the bare minimum"
+  },
+  "@lobstersgram:1546": {
+    "telegraph_link": "https://telegra.ph/The-Secret-of-Fast-Programming-Stop-Thinking--Code-Simplicity-10-31",
+    "article_link": "https://www.codesimplicity.com/post/the-secret-of-fast-programming-stop-thinking/",
+    "discussion_link": "https://lobste.rs/s/mzqjdm/secret_fast_programming_stop_thinking",
+    "title": "The Secret of Fast Programming: Stop Thinking »"
+  },
+  "@lobstersgram:1547": {
+    "telegraph_link": "https://telegra.ph/If-you-love-a-website-back-it-up---The-Future-Is-Now-10-31",
+    "article_link": "https://blog.mistys-internet.website/post/2026/10/29/if-you-love-a-website-back-it-up/",
+    "discussion_link": "https://lobste.rs/s/6ole9g/if_you_love_website_back_it_up",
+    "title": "If you love a website, back it up"
   }
 }
