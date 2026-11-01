@@ -9292,5 +9292,23 @@
     "article_link": "https://cyberplace.social/@GossiTheDog/117528831681803563",
     "discussion_link": "https://lobste.rs/s/ttp7aq/backdoors_claude_code_for_vs_cursor",
     "title": "Backdoors in Claude Code for VS, Cursor official extensions"
+  },
+  "@lobstersgram:1561": {
+    "telegraph_link": "https://telegra.ph/XKCD-and-Fourier---All-this-11-01",
+    "article_link": "https://leancrew.com/all-this/2026/10/xkcd-and-fourier/",
+    "discussion_link": "https://lobste.rs/s/mni8ri/xkcd_fourier",
+    "title": "XKCD and Fourier"
+  },
+  "@lobstersgram:1562": {
+    "telegraph_link": "https://telegra.ph/How-hard-is-it-to-check-for-whitespace-11-01-2",
+    "article_link": "https://serce.me/posts/2026-10-30-how-hard-is-it-to-check-for-whitespace",
+    "discussion_link": "https://lobste.rs/s/1pmuy7/how_hard_is_it_check_for_whitespace",
+    "title": "How hard is it to check for whitespace?"
+  },
+  "@lobstersgram:1563": {
+    "telegraph_link": "https://telegra.ph/Enlightenment-0280-Release-11-01-6",
+    "article_link": "https://www.enlightenment.org/news/2026-10-31-enlightenment-0.28.0",
+    "discussion_link": "https://lobste.rs/s/fmawla/enlightenment_0_28_0_release",
+    "title": "Enlightenment 0.28.0 Release"
   }
 }
