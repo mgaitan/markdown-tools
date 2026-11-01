@@ -9310,5 +9310,29 @@
     "article_link": "https://www.enlightenment.org/news/2026-10-31-enlightenment-0.28.0",
     "discussion_link": "https://lobste.rs/s/fmawla/enlightenment_0_28_0_release",
     "title": "Enlightenment 0.28.0 Release"
+  },
+  "@lobstersgram:1564": {
+    "telegraph_link": "https://telegra.ph/No-AI-52-min-Build-all-Linux-Files-utils-in-C-by-Hand-11-01",
+    "article_link": "https://www.youtube.com/watch?v=gQRmSlcTq9c",
+    "discussion_link": "https://lobste.rs/s/daouvo/no_ai_52_min_build_all_linux_files_utils_c_by",
+    "title": "No AI, 52 min. Build all Linux Files utils in C by Hand"
+  },
+  "@lobstersgram:1565": {
+    "telegraph_link": "https://telegra.ph/The-support-case-of-a-customer-who-said-that-all-they-could-see-was-a-black-screen---The-Old-New-Thing-11-01",
+    "article_link": "https://devblogs.microsoft.com/oldnewthing/20261029-00/?p=112808/",
+    "discussion_link": "https://lobste.rs/s/soosuu/support_case_customer_who_said_all_they",
+    "title": "The support case of a customer who said that all they could see was a black screen"
+  },
+  "@lobstersgram:1566": {
+    "telegraph_link": "https://telegra.ph/Zig-From-Beginner-to-Slightly-Less-Beginner-by-Sawyer-X-11-01",
+    "article_link": "https://www.youtube.com/watch?v=jWCQXBVIyrY",
+    "discussion_link": "https://lobste.rs/s/uhlnqx/zig_from_beginner_slightly_less_beginner",
+    "title": "Zig: From Beginner to Slightly Less Beginner"
+  },
+  "@lobstersgram:1567": {
+    "telegraph_link": "https://telegra.ph/Beating-the-compiler-at-signed-32-bit-division---Daniel-Lemires-blog-11-01",
+    "article_link": "https://lemire.me/blog/2026/10/31/beating-the-compiler-at-signed-32-bit-division/",
+    "discussion_link": "https://lobste.rs/s/ep5vsq/beating_compiler_at_signed_32_bit",
+    "title": "Beating the compiler at signed 32-bit division"
   }
 }
