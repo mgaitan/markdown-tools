@@ -9262,5 +9262,35 @@
     "article_link": "https://melaniekat.com/blog/public-on-pds/",
     "discussion_link": "https://lobste.rs/s/htgcuc/do_at_proto_users_know_this_is_public",
     "title": "Do At-Proto Users Know This Is Public?"
+  },
+  "@lobstersgram:1556": {
+    "telegraph_link": "https://telegra.ph/The-Duty-of-a-Scholar-11-01-11",
+    "article_link": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
+    "discussion_link": "https://lobste.rs/s/vo4337/duty_scholar",
+    "title": "The Duty of a Scholar"
+  },
+  "@lobstersgram:1557": {
+    "telegraph_link": "https://telegra.ph/smooresdev---No-npm-estee-is-not-a-typo-of-testem-11-01",
+    "article_link": "https://smoores.dev/post/no_npm_estee_is_not_a_typo/",
+    "discussion_link": "https://lobste.rs/s/xudbqx/no_npm_estee_is_not_typo_testem",
+    "title": "No, npm, “estee” is not a typo of “testem”"
+  },
+  "@lobstersgram:1558": {
+    "telegraph_link": "https://telegra.ph/Introducing-Kwi-a-new-KDE-terminal-emulator---KDE-Blogs-11-01",
+    "article_link": "https://blogs.kde.org/2026/11/01/introducing-kwi/",
+    "discussion_link": "https://lobste.rs/s/lt44rt/introducing_kwi_new_kde_terminal",
+    "title": "Introducing Kwi, a new KDE terminal emulator"
+  },
+  "@lobstersgram:1559": {
+    "telegraph_link": "https://telegra.ph/Digital-minimalism-11-01",
+    "article_link": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+    "discussion_link": "https://lobste.rs/s/y81ppi/digital_minimalism",
+    "title": "Digital minimalism"
+  },
+  "@lobstersgram:1560": {
+    "telegraph_link": "https://telegra.ph/Kevin-Beaumont-Anthropic-Visual-Studio-Claude-Code-extension-on----Cyberplace-11-01",
+    "article_link": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+    "discussion_link": "https://lobste.rs/s/ttp7aq/backdoors_claude_code_for_vs_cursor",
+    "title": "Backdoors in Claude Code for VS, Cursor official extensions"
   }
 }
