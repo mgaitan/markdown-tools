@@ -9352,5 +9352,29 @@
     "article_link": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
     "discussion_link": "https://lobste.rs/s/54xwm8/novellas_with_groff",
     "title": "Novellas with groff"
+  },
+  "@lobstersgram:1571": {
+    "telegraph_link": "https://telegra.ph/Groff-Macros-11-02",
+    "article_link": "https://www.stephenlindholm.com/groff_macros.html",
+    "discussion_link": "https://lobste.rs/s/dbwbvr/groff_troff_macros_ms_mm_me_mom",
+    "title": "groff/troff macros: ms, mm, me or mom"
+  },
+  "@lobstersgram:1572": {
+    "telegraph_link": "https://telegra.ph/The-Kluever-Maneuver---The-Scribbler-of-the-Rueful-Countenance-11-02",
+    "article_link": "https://jordi.inversethought.com/blog/the-kluever-maneuver/",
+    "discussion_link": "https://lobste.rs/s/rpiu3w/kluever_maneuver",
+    "title": "The Kluever Maneuver"
+  },
+  "@lobstersgram:1573": {
+    "telegraph_link": "https://telegra.ph/Avoid-Public-Functions-Calling-Other-Public-Functions-11-02",
+    "article_link": "https://matklad.github.io/2026/10/29/pub-calls-pub.html",
+    "discussion_link": "https://lobste.rs/s/k508we/avoid_public_functions_calling_other",
+    "title": "Avoid Public Functions Calling Other Public Functions"
+  },
+  "@lobstersgram:1574": {
+    "telegraph_link": "https://telegra.ph/Mystery-of-60-Second-Fluctuations-in-Power-Grids-Solved-11-02",
+    "article_link": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
+    "discussion_link": "https://lobste.rs/s/qwou15/mystery_60_second_fluctuations_power",
+    "title": "Mystery of 60-Second Fluctuations in Power Grids Solved"
   }
 }
