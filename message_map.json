@@ -9376,5 +9376,23 @@
     "article_link": "https://www.fz-juelich.de/en/news/archive/press-release/2026/mystery-of-60-second-fluctuations-in-power-grids-solved",
     "discussion_link": "https://lobste.rs/s/qwou15/mystery_60_second_fluctuations_power",
     "title": "Mystery of 60-Second Fluctuations in Power Grids Solved"
+  },
+  "@lobstersgram:1575": {
+    "telegraph_link": "https://telegra.ph/The-Problem-with-C-Safety-Part-2-Modern-C-Is-a-Mindset-Not-a-Standard---MC-BLOG-11-02",
+    "article_link": "https://www.modernescpp.com/index.php/cpp-and-memory-safety-part-2/",
+    "discussion_link": "https://lobste.rs/s/wq34n7/problem_with_c_safety_modern_c_is_mindset",
+    "title": "The Problem with C++ Safety: Modern C++ Is a Mindset, Not a Standard"
+  },
+  "@lobstersgram:1576": {
+    "telegraph_link": "https://telegra.ph/13-BSD-Unix-Part-3---The-Beginning-of-BSD-Unix-11-02-5",
+    "article_link": "https://fosscomics.com/posts/13.%20BSD%20Unix%20Part%203%20-%20The%20Beginning%20of%20BSD%20Unix/",
+    "discussion_link": "https://lobste.rs/s/3nasb5/beginning_bsd_unix",
+    "title": "The Beginning of BSD Unix"
+  },
+  "@lobstersgram:1577": {
+    "telegraph_link": "https://telegra.ph/Introduction-to-Programming-in-ATS-11-02",
+    "article_link": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
+    "discussion_link": "https://lobste.rs/s/oqj2zo/introduction_programming_ats",
+    "title": "Introduction to Programming in ATS"
   }
 }
