@@ -9394,5 +9394,29 @@
     "article_link": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
     "discussion_link": "https://lobste.rs/s/oqj2zo/introduction_programming_ats",
     "title": "Introduction to Programming in ATS"
+  },
+  "@lobstersgram:1578": {
+    "telegraph_link": "https://telegra.ph/Theres-a-Microchip-in-My-Toothbrush-But-WHY-11-02",
+    "article_link": "https://www.youtube.com/watch?v=aq0aTRG8YTE&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/drdxcw/there_s_microchip_my_toothbrush_why",
+    "title": "There’s a microchip in my toothbrush. But WHY?"
+  },
+  "@lobstersgram:1579": {
+    "telegraph_link": "https://telegra.ph/New-Release-Tor-Browser-160--The-Tor-Project-11-02",
+    "article_link": "https://blog.torproject.org/new-release-tor-browser-160/",
+    "discussion_link": "https://lobste.rs/s/ifznly/new_release_tor_browser_16_0",
+    "title": "New Release: Tor Browser 16.0"
+  },
+  "@lobstersgram:1580": {
+    "telegraph_link": "https://telegra.ph/Securing-Internet-Critical-Software-How-We-Could-Have-Backdoored-Bash--Hacktron-AI-11-02",
+    "article_link": "https://www.hacktron.ai/blog/hacking-gnu-savannah",
+    "discussion_link": "https://lobste.rs/s/0mdf8w/securing_internet_critical_software_how",
+    "title": "Securing Internet-Critical Software: How We Could Have Backdoored Bash"
+  },
+  "@lobstersgram:1581": {
+    "telegraph_link": "https://telegra.ph/gohawk--Resource-focused-static-analysis-for-Go-11-02",
+    "article_link": "https://gohawk.dev/",
+    "discussion_link": "https://lobste.rs/s/xrqppo/gohawk_resource_focused_static_analysis",
+    "title": "gohawk | Resource-focused static analysis for Go"
   }
 }
