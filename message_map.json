@@ -9472,5 +9472,23 @@
     "article_link": "https://typesanitizer.com/blog/scion.html",
     "discussion_link": "https://lobste.rs/s/s2qeww/outsider_s_perspective_on_scion_mononoke",
     "title": "An outsider's perspective on Scion and Mononoke"
+  },
+  "@lobstersgram:1591": {
+    "telegraph_link": "https://telegra.ph/macOS-27-Golden-Gate-does-not-actually-support-CoreStorage-volumes---Wade-Tregaskis-11-03-2",
+    "article_link": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/",
+    "discussion_link": "https://lobste.rs/s/1zetje/macos_27_golden_gate_does_not_actually",
+    "title": "macOS 27 Golden Gate does not actually support CoreStorage volumes"
+  },
+  "@lobstersgram:1592": {
+    "telegraph_link": "https://telegra.ph/An-Introduction-to-Bε-trees-and-Write-Optimization--USENIX-11-03-5",
+    "article_link": "https://www.usenix.org/publications/login/oct15/bender",
+    "discussion_link": "https://lobste.rs/s/0ec9yk/introduction_b_trees_write_optimization",
+    "title": "An Introduction to Bε-trees and Write-Optimization"
+  },
+  "@lobstersgram:1593": {
+    "telegraph_link": "https://telegra.ph/Postgres-19-REPACK-Built-In-Online-Table-Bloat-Cleanup-11-03",
+    "article_link": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
+    "discussion_link": "https://lobste.rs/s/uutnr5/postgres_19_repack_built_online_table",
+    "title": "Postgres 19 REPACK: Built-In Online Table Bloat Cleanup"
   }
 }
