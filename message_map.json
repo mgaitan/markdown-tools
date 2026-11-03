@@ -9442,5 +9442,17 @@
     "article_link": "https://oeis.org/wiki/A400K_Winners",
     "discussion_link": "https://lobste.rs/s/reerrq/a400000_winners",
     "title": "A400000 Winners"
+  },
+  "@lobstersgram:1586": {
+    "telegraph_link": "https://telegra.ph/Union-Types-and-Option-Types---Marc-Kerbiquet-11-03",
+    "article_link": "https://tibleiz.net/blog/2025-03-16-union-types-and-option-types.html",
+    "discussion_link": "https://lobste.rs/s/mwqrct/union_types_option_types",
+    "title": "Union Types and Option Types"
+  },
+  "@lobstersgram:1587": {
+    "telegraph_link": "https://telegra.ph/SuperVote-15-year-retrospective-on-an-app-for-sharing-political-endorsements--Augusto-Callejas-11-03",
+    "article_link": "https://callejas.com/a/supervote/",
+    "discussion_link": "https://lobste.rs/s/jo8vaj/supervote_15_year_retrospective_on_app",
+    "title": "SuperVote: 15 year retrospective on an app for sharing political endorsements"
   }
 }
