@@ -9418,5 +9418,29 @@
     "article_link": "https://gohawk.dev/",
     "discussion_link": "https://lobste.rs/s/xrqppo/gohawk_resource_focused_static_analysis",
     "title": "gohawk | Resource-focused static analysis for Go"
+  },
+  "@lobstersgram:1582": {
+    "telegraph_link": "https://telegra.ph/London-Meetup---Nov-2026--Lobsters-11-03",
+    "article_link": "https://lobste.rs/s/cqzwwg/london_meetup_nov_2026",
+    "discussion_link": "https://lobste.rs/s/cqzwwg/london_meetup_nov_2026",
+    "title": "London Meetup - Nov 2026"
+  },
+  "@lobstersgram:1583": {
+    "telegraph_link": "https://telegra.ph/We-have-lift-off--building-a-gemini-server-in-python--right-click-inspect-11-03",
+    "article_link": "https://www.willmunn.xyz/gemini/python/2026/10/16/we-have-lift-off.html",
+    "discussion_link": "https://lobste.rs/s/yreydk/building_gemini_server_python",
+    "title": "Building a gemini server in python"
+  },
+  "@lobstersgram:1584": {
+    "telegraph_link": "https://telegra.ph/Virtual-museum-for-my-wifes-artworks--Sculpture-added---dostoynikov-11-03",
+    "article_link": "https://dostoynikov.bearblog.dev/virtual-museum-for-my-wifes-artworks/",
+    "discussion_link": "https://lobste.rs/s/c8ayyw/virtual_art_museum_built_with_three_js",
+    "title": "Virtual Art Museum built with Three js"
+  },
+  "@lobstersgram:1585": {
+    "telegraph_link": "https://telegra.ph/A400K-Winners---OeisWiki-11-03",
+    "article_link": "https://oeis.org/wiki/A400K_Winners",
+    "discussion_link": "https://lobste.rs/s/reerrq/a400000_winners",
+    "title": "A400000 Winners"
   }
 }
