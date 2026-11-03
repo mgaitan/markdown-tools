@@ -9454,5 +9454,23 @@
     "article_link": "https://callejas.com/a/supervote/",
     "discussion_link": "https://lobste.rs/s/jo8vaj/supervote_15_year_retrospective_on_app",
     "title": "SuperVote: 15 year retrospective on an app for sharing political endorsements"
+  },
+  "@lobstersgram:1588": {
+    "telegraph_link": "https://telegra.ph/the-lost-malloc---gardenweb-11-03",
+    "article_link": "https://napcakes.nekoweb.org/posts/malloc/",
+    "discussion_link": "https://lobste.rs/s/ihqhia/lost_malloc",
+    "title": "the lost malloc()"
+  },
+  "@lobstersgram:1589": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-week--Lobsters-11-03",
+    "article_link": "https://lobste.rs/s/maqsgl/what_are_you_doing_this_week",
+    "discussion_link": "https://lobste.rs/s/maqsgl/what_are_you_doing_this_week",
+    "title": "What are you doing this week?"
+  },
+  "@lobstersgram:1590": {
+    "telegraph_link": "https://telegra.ph/An-outsiders-perspective-on-Scion-and-Mononoke-11-03-4",
+    "article_link": "https://typesanitizer.com/blog/scion.html",
+    "discussion_link": "https://lobste.rs/s/s2qeww/outsider_s_perspective_on_scion_mononoke",
+    "title": "An outsider's perspective on Scion and Mononoke"
   }
 }
