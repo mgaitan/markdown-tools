@@ -9550,5 +9550,23 @@
     "article_link": "https://lobste.rs/s/7fcuxz/why_did_you_choose_nix_you_nix",
     "discussion_link": "https://lobste.rs/s/7fcuxz/why_did_you_choose_nix_you_nix",
     "title": "Why did you choose the nix you nix?"
+  },
+  "@lobstersgram:1604": {
+    "telegraph_link": "https://telegra.ph/A-Decade-of-Kill-Bugs-11-04",
+    "article_link": "https://alangrow.com/blog/a-decade-of-kill-bugs",
+    "discussion_link": "https://lobste.rs/s/wgoato/decade_kill_bugs",
+    "title": "A Decade of Kill Bugs"
+  },
+  "@lobstersgram:1605": {
+    "telegraph_link": "https://telegra.ph/Your-terminal-manipulationnavigation-setups--Lobsters-11-04",
+    "article_link": "https://lobste.rs/s/r3gton/your_terminal_manipulation_navigation",
+    "discussion_link": "https://lobste.rs/s/r3gton/your_terminal_manipulation_navigation",
+    "title": "Your terminal manipulation/navigation setups"
+  },
+  "@lobstersgram:1606": {
+    "telegraph_link": "https://telegra.ph/Fraction-comparison-trick-revisited-11-04",
+    "article_link": "https://www.johndcook.com/blog/2026/11/03/fraction-comparison-trick-revisited/",
+    "discussion_link": "https://lobste.rs/s/fcfoqq/fraction_comparison_trick_revisited",
+    "title": "Fraction comparison trick revisited"
   }
 }
