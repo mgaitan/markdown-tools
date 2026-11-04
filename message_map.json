@@ -9490,5 +9490,35 @@
     "article_link": "https://www.snowflake.com/en/blog/engineering/postgres-19-repack-table-bloat/",
     "discussion_link": "https://lobste.rs/s/uutnr5/postgres_19_repack_built_online_table",
     "title": "Postgres 19 REPACK: Built-In Online Table Bloat Cleanup"
+  },
+  "@lobstersgram:1594": {
+    "telegraph_link": "https://telegra.ph/Some-ideas-Ive-had-for-social-networks--Raphael-Kabo-11-04",
+    "article_link": "https://raphaelkabo.com/blog/social-network-ideas",
+    "discussion_link": "https://lobste.rs/s/yes2hc/ideas_for_social_networks",
+    "title": "Ideas for social networks"
+  },
+  "@lobstersgram:1595": {
+    "telegraph_link": "https://telegra.ph/Common-Beliefs-About-DNSSEC-Put-to-the-Test-An-Invitation-to-Fact-Check-Your-Assumptions-11-04",
+    "article_link": "https://circleid.com/posts/common-beliefs-about-dnssec-put-to-the-test-an-invitation-to-fact-check-your-assumptions",
+    "discussion_link": "https://lobste.rs/s/qvpzfa/common_beliefs_about_dnssec_put_test",
+    "title": "Common Beliefs About DNSSEC Put to the Test: An Invitation to Fact-Check Your Assumptions"
+  },
+  "@lobstersgram:1596": {
+    "telegraph_link": "https://telegra.ph/Planning-with-open-variable-lists-in-Gecode---zayenzse-11-04",
+    "article_link": "https://zayenz.se/blog/post/open-cp-in-gecode/",
+    "discussion_link": "https://lobste.rs/s/rwlg3h/planning_with_open_variable_lists_gecode",
+    "title": "Planning with open variable lists in Gecode"
+  },
+  "@lobstersgram:1597": {
+    "telegraph_link": "https://telegra.ph/Mac-at-any-scale--Namespace-11-04",
+    "article_link": "https://namespace.so/blog/mac-at-any-scale",
+    "discussion_link": "https://lobste.rs/s/j1twhe/mac_at_any_scale",
+    "title": "Mac at any scale"
+  },
+  "@lobstersgram:1598": {
+    "telegraph_link": "https://telegra.ph/Gist-of-Go-Concurrency-11-04-2",
+    "article_link": "https://antonz.org/go-concurrency/",
+    "discussion_link": "https://lobste.rs/s/erkjnx/gist_go_concurrency",
+    "title": "Gist of Go: Concurrency"
   }
 }
