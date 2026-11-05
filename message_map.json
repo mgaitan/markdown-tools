@@ -9568,5 +9568,35 @@
     "article_link": "https://www.johndcook.com/blog/2026/11/03/fraction-comparison-trick-revisited/",
     "discussion_link": "https://lobste.rs/s/fcfoqq/fraction_comparison_trick_revisited",
     "title": "Fraction comparison trick revisited"
+  },
+  "@lobstersgram:1607": {
+    "telegraph_link": "https://telegra.ph/The-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential---The-Trail-of-Bits-Blog-11-05",
+    "article_link": "https://blog.trailofbits.com/2026/11/03/the-cryptography-behind-electronic-voting-and-why-paper-ballots-are-still-essential/",
+    "discussion_link": "https://lobste.rs/s/6omthz/cryptography_behind_electronic_voting",
+    "title": "The cryptography behind electronic voting (and why paper ballots are still essential)"
+  },
+  "@lobstersgram:1608": {
+    "telegraph_link": "https://telegra.ph/Would-you-believe-its-jank---Jeaye-Wilkerson-ClojureConj-2026-11-05",
+    "article_link": "https://www.youtube.com/watch?v=tHgApFhevrQ",
+    "discussion_link": "https://lobste.rs/s/xbmjlj/would_you_believe_it_s_jank",
+    "title": "Would you believe it's jank?"
+  },
+  "@lobstersgram:1609": {
+    "telegraph_link": "https://telegra.ph/Announcing-NetBSD-111-November-2-2026-11-05",
+    "article_link": "https://www.netbsd.org/releases/formal-11/NetBSD-11.1.html",
+    "discussion_link": "https://lobste.rs/s/siqsg7/announcing_netbsd_11_1",
+    "title": "Announcing NetBSD 11.1"
+  },
+  "@lobstersgram:1610": {
+    "telegraph_link": "https://telegra.ph/Could-a-modern-chess-engine-on-a-Pentium-have-defeated-Kasparov-in-1996-11-05",
+    "article_link": "https://nicholas.carlini.com/writing/2026/algorithmic-improvements-chess.html",
+    "discussion_link": "https://lobste.rs/s/1gndxr/could_modern_chess_engine_on_pentium_have",
+    "title": "Could a modern chess engine on a Pentium have defeated Kasparov in 1996?"
+  },
+  "@lobstersgram:1611": {
+    "telegraph_link": "https://telegra.ph/Python-on-my-wrist--Blog-11-05",
+    "article_link": "https://tildeweb.nl/~michiel/python-on-my-wrist.html",
+    "discussion_link": "https://lobste.rs/s/0vis9y/python_on_my_wrist",
+    "title": "Python on my wrist"
   }
 }
