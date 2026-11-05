@@ -9616,5 +9616,35 @@
     "article_link": "https://blog.cryptographyengineering.com/2015/07/20/a-history-of-backdoors/",
     "discussion_link": "https://lobste.rs/s/x1wkwe/history_backdoors_2015",
     "title": "A history of backdoors (2015)"
+  },
+  "@lobstersgram:1615": {
+    "telegraph_link": "https://telegra.ph/Gleam-Language-Update---Louis-Pilfold--Code-BEAM-Europe-2026-11-05",
+    "article_link": "https://www.youtube.com/watch?v=Jm2HZhwreNs",
+    "discussion_link": "https://lobste.rs/s/afjqpg/gleam_programming_language_update",
+    "title": "Gleam Programming Language Update October 2026"
+  },
+  "@lobstersgram:1616": {
+    "telegraph_link": "https://telegra.ph/How-Flinks-Kafka-connector-commits-offsets-to-Kafka--dale-lane-11-05",
+    "article_link": "https://dalelane.co.uk/blog/?p=6161",
+    "discussion_link": "https://lobste.rs/s/wfw32o/how_flink_s_kafka_connector_commits",
+    "title": "How Flink's Kafka connector commits offsets to Kafka"
+  },
+  "@lobstersgram:1617": {
+    "telegraph_link": "https://telegra.ph/The-Hub-of-Heliopolis---The-State-of-Python-Profiling-in-2026-11-05-5",
+    "article_link": "https://p403n1x87.github.io/the-state-of-python-profiling-in-2026.html",
+    "discussion_link": "https://lobste.rs/s/ehtpx8/state_python_profiling_2026",
+    "title": "The State of Python Profiling in 2026"
+  },
+  "@lobstersgram:1618": {
+    "telegraph_link": "https://telegra.ph/Can-23000-quantum-qubits-break-RSA-2048---by-JP-Aumasson-11-05",
+    "article_link": "https://www.bfswa.blog/p/can-23000-quantum-qubits-break-rsa",
+    "discussion_link": "https://lobste.rs/s/cpwy05/can_23_000_quantum_qubits_break_rsa_2048",
+    "title": "Can 23,000 quantum qubits break RSA-2048?"
+  },
+  "@lobstersgram:1619": {
+    "telegraph_link": "https://telegra.ph/Code-Matters-Reflections-on-Rust-in-the-LLM-Age--Bryan-Cantrill--Rust-NYC-11-05",
+    "article_link": "https://www.youtube.com/watch?v=5D7QPOIZ7gY",
+    "discussion_link": "https://lobste.rs/s/yomksa/reflections_on_rust_llm_age_bryan",
+    "title": "Reflections on Rust in the LLM Age — Bryan Cantrill | Rust NYC"
   }
 }
