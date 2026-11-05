@@ -9646,5 +9646,35 @@
     "article_link": "https://www.youtube.com/watch?v=5D7QPOIZ7gY",
     "discussion_link": "https://lobste.rs/s/yomksa/reflections_on_rust_llm_age_bryan",
     "title": "Reflections on Rust in the LLM Age — Bryan Cantrill | Rust NYC"
+  },
+  "@lobstersgram:1620": {
+    "telegraph_link": "https://telegra.ph/PhobosLab-11-05-8",
+    "article_link": "https://phoboslab.org/log/2026/11/n64-ulc-codec",
+    "discussion_link": "https://lobste.rs/s/cm9b92/ulc_audio_codec_is_perfect_fit_for_n64",
+    "title": "The ULC Audio Codec is a Perfect Fit for the N64"
+  },
+  "@lobstersgram:1621": {
+    "telegraph_link": "https://telegra.ph/C26-DIS-failed-how-does-C-survive---Andreas-Fertigs-Blog-11-05",
+    "article_link": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
+    "discussion_link": "https://lobste.rs/s/xvtufg/c_26_disapproved",
+    "title": "C++26 Disapproved"
+  },
+  "@lobstersgram:1622": {
+    "telegraph_link": "https://telegra.ph/How-to-speed-up-the-Rust-compiler-in-November-2026--Nicholas-Nethercote-11-05",
+    "article_link": "https://nnethercote.github.io/2026/11/04/how-to-speed-up-the-rust-compiler-in-november-2026.html",
+    "discussion_link": "https://lobste.rs/s/ecrqpy/how_speed_up_rust_compiler_november_2026",
+    "title": "How to speed up the Rust compiler in November 2026"
+  },
+  "@lobstersgram:1623": {
+    "telegraph_link": "https://telegra.ph/A-Quick-Guide-to-Gos-Assembler---The-Go-Programming-Language-11-05",
+    "article_link": "https://go.dev/doc/asm",
+    "discussion_link": "https://lobste.rs/s/o0e2wj/quick_guide_go_s_assembler",
+    "title": "A Quick Guide to Go's Assembler"
+  },
+  "@lobstersgram:1624": {
+    "telegraph_link": "https://telegra.ph/Why-working-with-AI-agents-is-so-tiring-and-what-to-do-about-it--Constant-Thinking-11-05",
+    "article_link": "https://constantin.glez.de/posts/2026-07-16-why-working-with-ai-agents-is-so-tiring-and-what-to-do-about-it/",
+    "discussion_link": "https://lobste.rs/s/xzmotx/why_working_with_ai_agents_is_so_tiring",
+    "title": "Why working with AI agents is so tiring (and what to do about it) – Tech, work, and what comes next"
   }
 }
