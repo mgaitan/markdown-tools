@@ -9700,5 +9700,35 @@
     "article_link": "https://www.youtube.com/watch?v=mxj7z6WqK14",
     "discussion_link": "https://lobste.rs/s/ml83td/how_windows_bootloader_starts_kernel",
     "title": "How Windows Bootloader Starts the Kernel"
+  },
+  "@lobstersgram:1629": {
+    "telegraph_link": "https://telegra.ph/A-new-Go-API-for-JSON---The-Go-Programming-Language-11-06",
+    "article_link": "https://go.dev/blog/jsonv2",
+    "discussion_link": "https://lobste.rs/s/gfm0xn/new_go_api_for_json",
+    "title": "A new Go API for JSON"
+  },
+  "@lobstersgram:1630": {
+    "telegraph_link": "https://telegra.ph/Why-is-there-an-Anubis-gate-in-front-of-Search-for-logged-in-users--Lobsters-11-06",
+    "article_link": "https://lobste.rs/s/y4poxs/why_is_there_anubis_gate_front_search_for",
+    "discussion_link": "https://lobste.rs/s/y4poxs/why_is_there_anubis_gate_front_search_for",
+    "title": "Why is there an Anubis gate in front of Search for logged-in users?"
+  },
+  "@lobstersgram:1631": {
+    "telegraph_link": "https://telegra.ph/GitHub-Inbox-unread-count-is-missing-digits-11-06",
+    "article_link": "https://nlopes.dev/writing/i-need-the-missing-digits-github",
+    "discussion_link": "https://lobste.rs/s/o5rebw/github_inbox_unread_count_is_missing",
+    "title": "GitHub Inbox unread count is missing digits"
+  },
+  "@lobstersgram:1632": {
+    "telegraph_link": "https://telegra.ph/Your-Cryptography-Conspiracy-Theory-Is-Wrong---Dhole-Moments-11-06",
+    "article_link": "https://soatok.blog/2026/10/29/your-cryptography-conspiracy-theory-is-wrong/",
+    "discussion_link": "https://lobste.rs/s/bqllfe/your_cryptography_conspiracy_theory_is",
+    "title": "Your Cryptography Conspiracy Theory Is Wrong"
+  },
+  "@lobstersgram:1633": {
+    "telegraph_link": "https://telegra.ph/Shlemiel-the-Painter-Is-Back-How-Zigs-libc-Rewrite-Made-SQLite-12000-Slower---Dennis-Forbes-11-06",
+    "article_link": "https://dennisforbes.ca/blog/microblog/2026/10/the_accidental_12000x_sqlite_slowdown/",
+    "discussion_link": "https://lobste.rs/s/lh1j0e/shlemiel_painter_is_back_how_zig_s_libc",
+    "title": "Shlemiel the Painter Is Back: How Zig’s libc Rewrite Made SQLite Slower"
   }
 }
