@@ -9730,5 +9730,23 @@
     "article_link": "https://dennisforbes.ca/blog/microblog/2026/10/the_accidental_12000x_sqlite_slowdown/",
     "discussion_link": "https://lobste.rs/s/lh1j0e/shlemiel_painter_is_back_how_zig_s_libc",
     "title": "Shlemiel the Painter Is Back: How Zig’s libc Rewrite Made SQLite Slower"
+  },
+  "@lobstersgram:1634": {
+    "telegraph_link": "https://telegra.ph/Ekaitzs-tech-blog-11-06",
+    "article_link": "https://ekaitz.elenq.tech/fasterMes10.html",
+    "discussion_link": "https://lobste.rs/s/pqzdyt/gnu_mes_0_28_release",
+    "title": "GNU Mes and the 0.28 release"
+  },
+  "@lobstersgram:1635": {
+    "telegraph_link": "https://telegra.ph/Bug-Finding-Considered-Harmful-11-06",
+    "article_link": "https://alperenkeles.com/posts/bug-finding-considered-harmful/",
+    "discussion_link": "https://lobste.rs/s/8qalfk/bug_finding_considered_harmful",
+    "title": "Bug Finding Considered Harmful?"
+  },
+  "@lobstersgram:1636": {
+    "telegraph_link": "https://telegra.ph/Kevin-Boone-First-steps-in-bare-metal-programming-using-UEFI---series-index-11-06",
+    "article_link": "https://kevinboone.me/efitest_index.html",
+    "discussion_link": "https://lobste.rs/s/id3f9d/kevin_boone_firststeps_bare_metal",
+    "title": "Kevin Boone: Firststeps in bare-metal programming using UEFI – series index"
   }
 }
