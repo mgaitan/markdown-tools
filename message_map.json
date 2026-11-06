@@ -9676,5 +9676,29 @@
     "article_link": "https://constantin.glez.de/posts/2026-07-16-why-working-with-ai-agents-is-so-tiring-and-what-to-do-about-it/",
     "discussion_link": "https://lobste.rs/s/xzmotx/why_working_with_ai_agents_is_so_tiring",
     "title": "Why working with AI agents is so tiring (and what to do about it) – Tech, work, and what comes next"
+  },
+  "@lobstersgram:1625": {
+    "telegraph_link": "https://telegra.ph/Introducing-Adaptive-Dark-Mode--WebKit-11-06",
+    "article_link": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
+    "discussion_link": "https://lobste.rs/s/yba0yg/introducing_adaptive_dark_mode",
+    "title": "Introducing Adaptive Dark Mode"
+  },
+  "@lobstersgram:1626": {
+    "telegraph_link": "https://telegra.ph/Residential-Proxies-Detected-on-White-House-Network-11-06",
+    "article_link": "https://layer3intel.com/blog/residential-proxies-white-house-network",
+    "discussion_link": "https://lobste.rs/s/253two/residential_proxies_detected_on_white",
+    "title": "Residential Proxies Detected on White House Network"
+  },
+  "@lobstersgram:1627": {
+    "telegraph_link": "https://telegra.ph/SECURITY-DSA-6607-1-apt-security-update-11-06",
+    "article_link": "https://lists.debian.org/debian-security-announce/2026/msg00526.html",
+    "discussion_link": "https://lobste.rs/s/h7bvma/man_middle_arbitrary_code_execution",
+    "title": "Man-in-the-middle arbitrary code execution in Debian’s apt"
+  },
+  "@lobstersgram:1628": {
+    "telegraph_link": "https://telegra.ph/How-Windows-Bootloader-Starts-the-Kernel-11-06",
+    "article_link": "https://www.youtube.com/watch?v=mxj7z6WqK14",
+    "discussion_link": "https://lobste.rs/s/ml83td/how_windows_bootloader_starts_kernel",
+    "title": "How Windows Bootloader Starts the Kernel"
   }
 }
