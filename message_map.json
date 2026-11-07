@@ -9748,5 +9748,17 @@
     "article_link": "https://kevinboone.me/efitest_index.html",
     "discussion_link": "https://lobste.rs/s/id3f9d/kevin_boone_firststeps_bare_metal",
     "title": "Kevin Boone: Firststeps in bare-metal programming using UEFI – series index"
+  },
+  "@lobstersgram:1637": {
+    "telegraph_link": "https://telegra.ph/A-Look-at-Datastar---Noteflakes-11-07",
+    "article_link": "https://noteflakes.com/articles/2026-11-04-datastar",
+    "discussion_link": "https://lobste.rs/s/vbx0g4/look_at_datastar",
+    "title": "A Look at Datastar"
+  },
+  "@lobstersgram:1638": {
+    "telegraph_link": "https://telegra.ph/SourceHut-disabled-registration-bypass--CVE-2026-121728--Arusekk-blog-11-07",
+    "article_link": "https://blog.arusekk.pl/posts/srht-disabled-registration-bypass/",
+    "discussion_link": "https://lobste.rs/s/x2hcss/sourcehut_disabled_registration_bypass",
+    "title": "SourceHut disabled registration bypass | CVE-2026-121728"
   }
 }
