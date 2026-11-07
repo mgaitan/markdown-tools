@@ -9790,5 +9790,23 @@
     "article_link": "https://acid.vegas/blog/pushing-the-limits-with-getaddrinfo/",
     "discussion_link": "https://lobste.rs/s/5cwnpu/pushing_limits_with_getaddrinfo",
     "title": "Pushing the Limits with getaddrinfo"
+  },
+  "@lobstersgram:1644": {
+    "telegraph_link": "https://telegra.ph/Software-Line-Specialist---Lovro-Bikić-11-07",
+    "article_link": "https://lovro-bikic.github.io/software-line-specialist/",
+    "discussion_link": "https://lobste.rs/s/yoywed/software_line_specialist",
+    "title": "Software Line Specialist"
+  },
+  "@lobstersgram:1645": {
+    "telegraph_link": "https://telegra.ph/sshole--sshholecom-11-07",
+    "article_link": "https://sshhole.com/",
+    "discussion_link": "https://lobste.rs/s/oq5pem/sshhole",
+    "title": "sshhole"
+  },
+  "@lobstersgram:1646": {
+    "telegraph_link": "https://telegra.ph/Nondeterminism-in-Futhark-11-07-2",
+    "article_link": "https://futhark-lang.org/blog/2026-11-04-nondeterminism.html",
+    "discussion_link": "https://lobste.rs/s/4lgvnf/nondeterminism_futhark",
+    "title": "Nondeterminism in Futhark"
   }
 }
