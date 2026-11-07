@@ -9760,5 +9760,35 @@
     "article_link": "https://blog.arusekk.pl/posts/srht-disabled-registration-bypass/",
     "discussion_link": "https://lobste.rs/s/x2hcss/sourcehut_disabled_registration_bypass",
     "title": "SourceHut disabled registration bypass | CVE-2026-121728"
+  },
+  "@lobstersgram:1639": {
+    "telegraph_link": "https://telegra.ph/Forwarded-Without-Question-How-Web-Frameworks-Overtrust-the-Forwarded-Header-11-07",
+    "article_link": "https://www.lkoskela.fi/blog/2026-11-05-forwarded-without-question/",
+    "discussion_link": "https://lobste.rs/s/m5kism/forwarded_without_question_how_web",
+    "title": "Forwarded Without Question: How Web Frameworks Overtrust the Forwarded Header"
+  },
+  "@lobstersgram:1640": {
+    "telegraph_link": "https://telegra.ph/X-87---DOS-256-bytes-11-07",
+    "article_link": "https://www.onirom.fr/wiki/codegolf/x-87/",
+    "discussion_link": "https://lobste.rs/s/q0ld7f/x_87_dos_256_bytes",
+    "title": "X-87 - DOS 256 bytes"
+  },
+  "@lobstersgram:1641": {
+    "telegraph_link": "https://telegra.ph/A-Maintainers-Advice-on-Contributing-to-Open-Source-in-2026--Wasp-11-07",
+    "article_link": "https://wasp.sh/blog/2026/08/13/advice-for-contributing-in-2026",
+    "discussion_link": "https://lobste.rs/s/5mnquy/maintainer_s_advice_on_contributing_open",
+    "title": "A Maintainer's Advice on Contributing to Open Source in 2026"
+  },
+  "@lobstersgram:1642": {
+    "telegraph_link": "https://telegra.ph/How-we-continuously-validate-formal-specifications-in-production--Datadog-11-07",
+    "article_link": "https://www.datadoghq.com/blog/engineering/continuous-formal-spec-validation/",
+    "discussion_link": "https://lobste.rs/s/gzdimd/how_we_continuously_validate_formal",
+    "title": "How we continuously validate formal specifications in production"
+  },
+  "@lobstersgram:1643": {
+    "telegraph_link": "https://telegra.ph/acidvegas-x-blog---pushing-the-limits-with-getaddrinfo-11-07",
+    "article_link": "https://acid.vegas/blog/pushing-the-limits-with-getaddrinfo/",
+    "discussion_link": "https://lobste.rs/s/5cwnpu/pushing_limits_with_getaddrinfo",
+    "title": "Pushing the Limits with getaddrinfo"
   }
 }
