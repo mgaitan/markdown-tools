@@ -9808,5 +9808,35 @@
     "article_link": "https://futhark-lang.org/blog/2026-11-04-nondeterminism.html",
     "discussion_link": "https://lobste.rs/s/4lgvnf/nondeterminism_futhark",
     "title": "Nondeterminism in Futhark"
+  },
+  "@lobstersgram:1647": {
+    "telegraph_link": "https://telegra.ph/Upgrading-NetBSD-from-110-to-111--Daniel-Wayne-Armstrong-11-07",
+    "article_link": "https://www.dwarmstrong.org/netbsd-upgrade/",
+    "discussion_link": "https://lobste.rs/s/0agusd/upgrading_netbsd_from_11_0_11_1",
+    "title": "Upgrading NetBSD from 11.0 to 11.1"
+  },
+  "@lobstersgram:1648": {
+    "telegraph_link": "https://telegra.ph/Exploring-Janet-and-the-httpf-web-framework---Nicks-Blog---Nicks-Site-11-07",
+    "article_link": "https://nick.gs/blog/2026-11/exploring-janet-and-the-httpf-web-framework/",
+    "discussion_link": "https://lobste.rs/s/ydzlvp/exploring_janet_httpf_web_framework",
+    "title": "Exploring Janet and the httpf web framework"
+  },
+  "@lobstersgram:1649": {
+    "telegraph_link": "https://telegra.ph/Workflow-dependency-lockfiles---GitHub-Docs-11-07",
+    "article_link": "https://docs.github.com/en/actions/concepts/security/workflow-dependency-lockfiles",
+    "discussion_link": "https://lobste.rs/s/nft1s2/workflow_dependency_lockfiles",
+    "title": "Workflow dependency lockfiles"
+  },
+  "@lobstersgram:1650": {
+    "telegraph_link": "https://telegra.ph/Hacking-the-meta-ray-ban-smartglasses---pamoutaf-11-07",
+    "article_link": "https://p0pcycle.com/2026/11/06/hacking-the-meta-ray-ban-smartglasses/",
+    "discussion_link": "https://lobste.rs/s/xhrab6/hacking_meta_ray_ban_smartglasses",
+    "title": "Hacking the meta ray-ban smartglasses"
+  },
+  "@lobstersgram:1651": {
+    "telegraph_link": "https://telegra.ph/Security-advisory-openssh-server-password-authentication-bypass--Alpine-Linux-11-07",
+    "article_link": "https://www.alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+    "discussion_link": "https://lobste.rs/s/7dbarm/alpine_linux_openssh_server_password",
+    "title": "Alpine Linux : openssh-server password authentication bypass"
   }
 }
