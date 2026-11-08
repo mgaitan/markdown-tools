@@ -9880,5 +9880,35 @@
     "article_link": "https://tomclancy.info/joshua-judges-ruth.html",
     "discussion_link": "https://lobste.rs/s/hreu0b/catching_prompt_injections_hidden_pdfs",
     "title": "Catching prompt injections hidden in PDFs"
+  },
+  "@lobstersgram:1659": {
+    "telegraph_link": "https://telegra.ph/Two-Dimensional-Version-Control-11-08-4",
+    "article_link": "https://www.redblobgames.com/blog/2026-09-27-jujutsu-experience/",
+    "discussion_link": "https://lobste.rs/s/49o9f3/two_dimensional_version_control",
+    "title": "Two Dimensional Version Control"
+  },
+  "@lobstersgram:1660": {
+    "telegraph_link": "https://telegra.ph/acidvegas-x-blog---the-port-that-does-not-exist-11-08-2",
+    "article_link": "https://acid.vegas/blog/the-port-that-does-not-exist/",
+    "discussion_link": "https://lobste.rs/s/osqswf/port_does_not_exist",
+    "title": "The Port That Does Not Exist"
+  },
+  "@lobstersgram:1661": {
+    "telegraph_link": "https://telegra.ph/Client-Challenge-11-08-2",
+    "article_link": "https://link.springer.com/article/10.1007/s10664-026-10988-z",
+    "discussion_link": "https://lobste.rs/s/b6ebju/following_breadcrumbs_code_what",
+    "title": "Following breadcrumbs in code - What accidentally committed Ad-Hoc logs reveal about developer comprehension"
+  },
+  "@lobstersgram:1662": {
+    "telegraph_link": "https://telegra.ph/Progress-Report-Linux-73---Asahi-Linux-11-08",
+    "article_link": "https://asahilinux.org/2026/11/progress-report-7-3/",
+    "discussion_link": "https://lobste.rs/s/4qiair/progress_report_linux_7_3_asahi_linux",
+    "title": "Progress Report: Linux 7.3 - Asahi Linux"
+  },
+  "@lobstersgram:1663": {
+    "telegraph_link": "https://telegra.ph/Scriptable-GeoDNS-leaving-AWS-for-Bunny-11-08",
+    "article_link": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
+    "discussion_link": "https://lobste.rs/s/jsvlfm/scriptable_geodns_leaving_aws_for_bunny",
+    "title": "Scriptable GeoDNS: leaving AWS for Bunny"
   }
 }
