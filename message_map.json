@@ -9838,5 +9838,29 @@
     "article_link": "https://www.alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
     "discussion_link": "https://lobste.rs/s/7dbarm/alpine_linux_openssh_server_password",
     "title": "Alpine Linux : openssh-server password authentication bypass"
+  },
+  "@lobstersgram:1652": {
+    "telegraph_link": "https://telegra.ph/Amutable-Foundations-A-Technical-Overview---Amutable-11-08",
+    "article_link": "https://amutable.com/blog/amutable-foundations-technical-overview",
+    "discussion_link": "https://lobste.rs/s/soxqxp/amutable_foundations_technical",
+    "title": "Amutable Foundations: A Technical Overview"
+  },
+  "@lobstersgram:1653": {
+    "telegraph_link": "https://telegra.ph/CHIMERA-11-08-6",
+    "article_link": "https://chimera-vocal-synth.vercel.app/",
+    "discussion_link": "https://lobste.rs/s/ngkqj1/chimera_simulates_organic_sound_with",
+    "title": "CHIMERA simulates organic sound with acoustic tubes"
+  },
+  "@lobstersgram:1654": {
+    "telegraph_link": "https://telegra.ph/Inside-GitHubs-new-Git-storage-architecture---The-GitHub-Blog-11-08",
+    "article_link": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "discussion_link": "https://lobste.rs/s/y3hvme/inside_github_s_new_git_storage",
+    "title": "Inside GitHub's new Git storage architecture"
+  },
+  "@lobstersgram:1655": {
+    "telegraph_link": "https://telegra.ph/The-MustCreate-Pattern-for-Go-Tests--mtlynchio-11-08",
+    "article_link": "https://mtlynch.io/notes/go-must-create-pattern/",
+    "discussion_link": "https://lobste.rs/s/i96uyr/mustcreate_pattern_for_go_tests",
+    "title": "The MustCreate Pattern for Go Tests"
   }
 }
