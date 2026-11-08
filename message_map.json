@@ -9910,5 +9910,35 @@
     "article_link": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
     "discussion_link": "https://lobste.rs/s/jsvlfm/scriptable_geodns_leaving_aws_for_bunny",
     "title": "Scriptable GeoDNS: leaving AWS for Bunny"
+  },
+  "@lobstersgram:1664": {
+    "telegraph_link": "https://telegra.ph/SFLCin-Statement-Regarding-the-Takedown-Requests-Against-Its-X-Account-and-Posts-11-08-8",
+    "article_link": "https://sflc.in/sflc-in-statement-regarding-the-takedown-requests-against-its-x-account-and-posts/",
+    "discussion_link": "https://lobste.rs/s/smx0fn/sflc_statement_regarding_takedown",
+    "title": "SFLC.in Statement Regarding the Takedown Requests Against Its X Account and Posts"
+  },
+  "@lobstersgram:1665": {
+    "telegraph_link": "https://telegra.ph/OpenBSD-top1-adds-flag-to-show-chroot-pledge-and-unveil-status-11-08-2",
+    "article_link": "https://undeadly.org/cgi?action=article;sid=20261106104957",
+    "discussion_link": "https://lobste.rs/s/tfywf1/openbsd_top_1_adds_flag_show_chroot_pledge",
+    "title": "OpenBSD top(1) adds flag to show chroot, pledge and unveil status"
+  },
+  "@lobstersgram:1666": {
+    "telegraph_link": "https://telegra.ph/Libghostty-10---Mitchell-Hashimoto-11-08",
+    "article_link": "https://mitchellh.com/writing/libghostty-1-0",
+    "discussion_link": "https://lobste.rs/s/0ouxwf/libghostty_1_0",
+    "title": "Libghostty 1.0"
+  },
+  "@lobstersgram:1667": {
+    "telegraph_link": "https://telegra.ph/Virtualized-Redox-from-Virtio-FS-to-Cloud-Hypervisor-and-beyond---Redox---Your-NextGen-OS-11-08",
+    "article_link": "https://www.redox-os.org/news/virtualized-redox/",
+    "discussion_link": "https://lobste.rs/s/zozcwa/virtualized_redox_from_virtio_fs_cloud",
+    "title": "Virtualized Redox: from Virtio-FS to Cloud Hypervisor, and beyond"
+  },
+  "@lobstersgram:1668": {
+    "telegraph_link": "https://telegra.ph/How-to-prove-equations-using-diagrams-part-3---Evans-Blog-11-08",
+    "article_link": "https://www.epatters.org/post/e-graphs-3/",
+    "discussion_link": "https://lobste.rs/s/dr5zrz/how_prove_equations_using_diagrams_part_3",
+    "title": "How to prove equations using diagrams, part 3"
   }
 }
