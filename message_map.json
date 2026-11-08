@@ -9862,5 +9862,23 @@
     "article_link": "https://mtlynch.io/notes/go-must-create-pattern/",
     "discussion_link": "https://lobste.rs/s/i96uyr/mustcreate_pattern_for_go_tests",
     "title": "The MustCreate Pattern for Go Tests"
+  },
+  "@lobstersgram:1656": {
+    "telegraph_link": "https://telegra.ph/Making-musl-and-proprietary-NVIDIA-drivers-work-together-11-08",
+    "article_link": "https://chimera-linux.org/news/2026/11/musl-nvidia.html",
+    "discussion_link": "https://lobste.rs/s/hvxjbb/making_musl_proprietary_nvidia_drivers",
+    "title": "Making musl and proprietary NVIDIA drivers work together"
+  },
+  "@lobstersgram:1657": {
+    "telegraph_link": "https://telegra.ph/How-to-prove-equations-using-diagrams-part-1---Evans-Blog-11-08",
+    "article_link": "https://www.epatters.org/post/e-graphs-1/",
+    "discussion_link": "https://lobste.rs/s/jvicvb/how_prove_equations_using_diagrams_part_1",
+    "title": "How to prove equations using diagrams, part 1"
+  },
+  "@lobstersgram:1658": {
+    "telegraph_link": "https://telegra.ph/Joshua-Judges-Ruth---Tom-Clancy-11-08",
+    "article_link": "https://tomclancy.info/joshua-judges-ruth.html",
+    "discussion_link": "https://lobste.rs/s/hreu0b/catching_prompt_injections_hidden_pdfs",
+    "title": "Catching prompt injections hidden in PDFs"
   }
 }
