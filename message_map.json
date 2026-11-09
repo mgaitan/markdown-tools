@@ -9970,5 +9970,35 @@
     "article_link": "https://lobste.rs/s/ipplhe/how_are_you_dealing_with_all_negative_side",
     "discussion_link": "https://lobste.rs/s/ipplhe/how_are_you_dealing_with_all_negative_side",
     "title": "How are you dealing with all the negative side effects of AI on the web?"
+  },
+  "@lobstersgram:1674": {
+    "telegraph_link": "https://telegra.ph/Message-Queues---Alex-Ewerlöf-Notes-11-09",
+    "article_link": "https://blog.alexewerlof.com/p/message-queues",
+    "discussion_link": "https://lobste.rs/s/deutqp/message_queues",
+    "title": "Message Queues"
+  },
+  "@lobstersgram:1675": {
+    "telegraph_link": "https://telegra.ph/Introducing-Project-Steadfast---Noteflakes-11-09",
+    "article_link": "https://noteflakes.com/articles/2026-11-07-introducing-project-steadfast",
+    "discussion_link": "https://lobste.rs/s/5cavvx/introducing_project_steadfast",
+    "title": "Introducing Project Steadfast"
+  },
+  "@lobstersgram:1676": {
+    "telegraph_link": "https://telegra.ph/Playing-with-the-STM32MP2-11-09-5",
+    "article_link": "https://serd.es///2026/11/08/playing-with-stm32mp2.html",
+    "discussion_link": "https://lobste.rs/s/cwmxea/playing_with_stm32mp2",
+    "title": "Playing with the STM32MP2"
+  },
+  "@lobstersgram:1677": {
+    "telegraph_link": "https://telegra.ph/Who-wants-to-crowdsource-LLM-scans-of-articles-submitted-to-Lobsters--Lobsters-11-09",
+    "article_link": "https://lobste.rs/s/jbdtim/who_wants_crowdsource_llm_scans_articles",
+    "discussion_link": "https://lobste.rs/s/jbdtim/who_wants_crowdsource_llm_scans_articles",
+    "title": "Who wants to crowdsource LLM scans of articles submitted to Lobste.rs?"
+  },
+  "@lobstersgram:1678": {
+    "telegraph_link": "https://telegra.ph/Im-not-a-fan-of-Denos-security-model--maxs-place-11-09",
+    "article_link": "https://goldstein.lol/posts/deno-security/",
+    "discussion_link": "https://lobste.rs/s/sh62d1/i_m_not_fan_deno_s_security_model_2024",
+    "title": "I’m not a fan of Deno’s security model (2024)"
   }
 }
