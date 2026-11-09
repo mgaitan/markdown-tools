@@ -10000,5 +10000,29 @@
     "article_link": "https://goldstein.lol/posts/deno-security/",
     "discussion_link": "https://lobste.rs/s/sh62d1/i_m_not_fan_deno_s_security_model_2024",
     "title": "I’m not a fan of Deno’s security model (2024)"
+  },
+  "@lobstersgram:1679": {
+    "telegraph_link": "https://telegra.ph/A-Critique-of-GPUI-11-09-11",
+    "article_link": "https://blog.zortax.de/posts/a-critique-of-gpui",
+    "discussion_link": "https://lobste.rs/s/kcyhhj/critique_gpui",
+    "title": "A Critique of GPUI"
+  },
+  "@lobstersgram:1680": {
+    "telegraph_link": "https://telegra.ph/Optimizing-reference-deletions-in-Git-11-09-2",
+    "article_link": "https://nayak.im/posts/optimizing-reference-deletion/",
+    "discussion_link": "https://lobste.rs/s/ic1ora/optimizing_reference_deletions_git",
+    "title": "Optimizing reference deletions in Git"
+  },
+  "@lobstersgram:1681": {
+    "telegraph_link": "https://telegra.ph/What-can-I-realistically-do-with-local-AI-on-a-Mac-mini-M5-Pro-48GB--Lobsters-11-09",
+    "article_link": "https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai",
+    "discussion_link": "https://lobste.rs/s/umsitb/what_can_i_realistically_do_with_local_ai",
+    "title": "What can I realistically do with local AI on a Mac mini M5 Pro (48GB)?"
+  },
+  "@lobstersgram:1682": {
+    "telegraph_link": "https://telegra.ph/Sem86---A-full-system-emulator-without-hardcoded-semantics-11-09-6",
+    "article_link": "https://liblisa.nl/sem86/",
+    "discussion_link": "https://lobste.rs/s/a7byol/sem86_full_system_x86_emulator_without",
+    "title": "Sem86: a full-system x86 emulator without hardcoded semantics"
   }
 }
