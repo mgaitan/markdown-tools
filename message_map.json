@@ -9940,5 +9940,35 @@
     "article_link": "https://www.epatters.org/post/e-graphs-3/",
     "discussion_link": "https://lobste.rs/s/dr5zrz/how_prove_equations_using_diagrams_part_3",
     "title": "How to prove equations using diagrams, part 3"
+  },
+  "@lobstersgram:1669": {
+    "telegraph_link": "https://telegra.ph/Meridian-11-09-7",
+    "article_link": "https://op.tngl.io/meridian/",
+    "discussion_link": "https://lobste.rs/s/j63dme/meridian_experimental_web_browser_built",
+    "title": "Meridian — an experimental web browser built on Servo and GPUI"
+  },
+  "@lobstersgram:1670": {
+    "telegraph_link": "https://telegra.ph/sshole-or-when-are-we-finally-going-to-get-rid-of-C--sunshowers-11-09",
+    "article_link": "https://sunshowers.io/posts/sshole/",
+    "discussion_link": "https://lobste.rs/s/owsnms/sshole_when_are_we_finally_going_get_rid_c",
+    "title": "*sshole, or when are we finally going to get rid of C?"
+  },
+  "@lobstersgram:1671": {
+    "telegraph_link": "https://telegra.ph/Hacking-the-T-Mobile-Sidekick-20-Years-Too-Late-11-09",
+    "article_link": "https://x86.cx/blog/redanger",
+    "discussion_link": "https://lobste.rs/s/f1nsnm/hacking_t_mobile_sidekick_20_years_too",
+    "title": "Hacking the T-Mobile Sidekick, 20 Years Too Late"
+  },
+  "@lobstersgram:1672": {
+    "telegraph_link": "https://telegra.ph/Blog---Dear-Open-Source-Developers-Its-OK-not-to-embargo--Open-Source-Security-11-09",
+    "article_link": "https://opensourcesecurity.io/2026/10-embargo/",
+    "discussion_link": "https://lobste.rs/s/lhovnm/dear_open_source_developers_it_s_ok_not",
+    "title": "Dear Open Source Developers: It's OK not to embargo"
+  },
+  "@lobstersgram:1673": {
+    "telegraph_link": "https://telegra.ph/How-are-you-dealing-with-all-the-negative-side-effects-of-AI-on-the-web--Lobsters-11-09",
+    "article_link": "https://lobste.rs/s/ipplhe/how_are_you_dealing_with_all_negative_side",
+    "discussion_link": "https://lobste.rs/s/ipplhe/how_are_you_dealing_with_all_negative_side",
+    "title": "How are you dealing with all the negative side effects of AI on the web?"
   }
 }
