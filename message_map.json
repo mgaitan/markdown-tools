@@ -10072,5 +10072,35 @@
     "article_link": "https://www.youtube.com/watch?v=Vp16LLOvegw",
     "discussion_link": "https://lobste.rs/s/xf23r4/playing_classical_music_on_classic_pc",
     "title": "Playing classical music on a classic PC with GentleOS"
+  },
+  "@lobstersgram:1691": {
+    "telegraph_link": "https://telegra.ph/Beyond-the-compiler-Making-IBM-i-run-modified-native-code---Program-Validation-Value---Silent-Signal-Techblog-11-10",
+    "article_link": "https://blog.silentsignal.eu/2026/11/10/Beyond-the-compiler-Making-IBM-i-run-modified-native-code-PVV/",
+    "discussion_link": "https://lobste.rs/s/kymztn/beyond_compiler_making_ibm_i_run_modified",
+    "title": "Beyond the compiler: Making IBM i run modified native code - Program Validation Value"
+  },
+  "@lobstersgram:1692": {
+    "telegraph_link": "https://telegra.ph/Sure-mate-buy-me-a-bloody-coffee---PTC-software-and-science-11-10",
+    "article_link": "https://peateasea.de/sure-mate-buy-me-a-bloody-coffee/",
+    "discussion_link": "https://lobste.rs/s/eeclwg/sure_mate_buy_me_bloody_coffee",
+    "title": "Sure mate, buy me a bloody coffee"
+  },
+  "@lobstersgram:1693": {
+    "telegraph_link": "https://telegra.ph/unlocking-any-car-from-X-brand-in-most-of-the-world-11-10",
+    "article_link": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world/",
+    "discussion_link": "https://lobste.rs/s/kbrpx3/unlocking_any_car_from_x_brand_most_world",
+    "title": "unlocking any car from X brand in most of the world"
+  },
+  "@lobstersgram:1694": {
+    "telegraph_link": "https://telegra.ph/I-was-wrong-about-dark-mode---David-Bushell---Web-Dev-UK-11-10",
+    "article_link": "https://dbushell.com/2026/11/09/dark-mode/",
+    "discussion_link": "https://lobste.rs/s/iqhxz6/i_was_wrong_about_dark_mode",
+    "title": "I was wrong about dark mode"
+  },
+  "@lobstersgram:1695": {
+    "telegraph_link": "https://telegra.ph/Two-apps-one-process-11-10-3",
+    "article_link": "https://andersmurphy.com/2026/11/09/two-apps-one-process.html",
+    "discussion_link": "https://lobste.rs/s/sifkms/two_apps_one_process",
+    "title": "Two apps one process"
   }
 }
