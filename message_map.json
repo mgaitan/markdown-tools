@@ -10024,5 +10024,35 @@
     "article_link": "https://liblisa.nl/sem86/",
     "discussion_link": "https://lobste.rs/s/a7byol/sem86_full_system_x86_emulator_without",
     "title": "Sem86: a full-system x86 emulator without hardcoded semantics"
+  },
+  "@lobstersgram:1683": {
+    "telegraph_link": "https://telegra.ph/Docker-has-always-used-microVMs---Dave-Scott-11-10",
+    "article_link": "https://dave.recoil.org/docker-has-always-used-microvms/",
+    "discussion_link": "https://lobste.rs/s/drozos/docker_has_always_used_microvms_well",
+    "title": "Docker has always used microVMs (well, since 2016)"
+  },
+  "@lobstersgram:1684": {
+    "telegraph_link": "https://telegra.ph/systemd--Rust---Amutable-11-10",
+    "article_link": "https://amutable.com/blog/systemd-loves-rust",
+    "discussion_link": "https://lobste.rs/s/62loik/systemd_loves_rust",
+    "title": "systemd loves Rust"
+  },
+  "@lobstersgram:1685": {
+    "telegraph_link": "https://telegra.ph/You-should-try-Gleam--Nicolas-Chagnets-Homepage-11-10",
+    "article_link": "https://nchagnet.eu/blog/you-should-try-gleam",
+    "discussion_link": "https://lobste.rs/s/4yqgpu/you_should_try_gleam",
+    "title": "You should try Gleam"
+  },
+  "@lobstersgram:1686": {
+    "telegraph_link": "https://telegra.ph/Microsecond-accurate-NTP-with-a-Raspberry-Pi-and-PPS-GPS---Austins-Nerdy-Things-11-10",
+    "article_link": "https://austinsnerdythings.com/2021/04/19/microsecond-accurate-ntp-with-a-raspberry-pi-and-pps-gps/",
+    "discussion_link": "https://lobste.rs/s/jdsu1z/microsecond_accurate_ntp_with_raspberry",
+    "title": "Microsecond accurate NTP with a Raspberry Pi and PPS GPS(2021)"
+  },
+  "@lobstersgram:1687": {
+    "telegraph_link": "https://telegra.ph/Reverse-engineering-a-vintage-diode-transistor-logic-chip-11-10",
+    "article_link": "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
+    "discussion_link": "https://lobste.rs/s/jqvofw/reverse_engineering_vintage_diode",
+    "title": "Reverse engineering a vintage diode-transistor logic chip"
   }
 }
