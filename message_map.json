@@ -10054,5 +10054,23 @@
     "article_link": "http://www.righto.com/2026/11/signetics-st680a-dtl-nand.html",
     "discussion_link": "https://lobste.rs/s/jqvofw/reverse_engineering_vintage_diode",
     "title": "Reverse engineering a vintage diode-transistor logic chip"
+  },
+  "@lobstersgram:1688": {
+    "telegraph_link": "https://telegra.ph/What-is-malloc-doing-anyway--Ben-M-Andrew-11-10",
+    "article_link": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
+    "discussion_link": "https://lobste.rs/s/l75lxf/what_is_malloc_doing_anyway",
+    "title": "What is malloc doing, anyway?"
+  },
+  "@lobstersgram:1689": {
+    "telegraph_link": "https://telegra.ph/Slightly-better-interpolating-spline---Aurimas-Gasiulis-11-10",
+    "article_link": "https://gasiulis.name/new-spline/",
+    "discussion_link": "https://lobste.rs/s/t5bmg5/slightly_better_interpolating_spline",
+    "title": "Slightly better interpolating spline"
+  },
+  "@lobstersgram:1690": {
+    "telegraph_link": "https://telegra.ph/Playing-classical-music-on-a-classic-PC-with-GentleOS-11-10-2",
+    "article_link": "https://www.youtube.com/watch?v=Vp16LLOvegw",
+    "discussion_link": "https://lobste.rs/s/xf23r4/playing_classical_music_on_classic_pc",
+    "title": "Playing classical music on a classic PC with GentleOS"
   }
 }
