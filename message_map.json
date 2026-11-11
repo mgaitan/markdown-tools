@@ -10120,5 +10120,35 @@
     "article_link": "https://tisiphone.net/2026/11/08/lets-talk-about-why-all-this-ot-stuff-is-connected/",
     "discussion_link": "https://lobste.rs/s/jxigk6/let_s_talk_about_why_all_this_ot_stuff_is",
     "title": "Let’s Talk About Why all This OT Stuff is Connected"
+  },
+  "@lobstersgram:1699": {
+    "telegraph_link": "https://telegra.ph/Horrible-public-key-tricks-11-11",
+    "article_link": "https://maurycyz.com/projects/badcert/",
+    "discussion_link": "https://lobste.rs/s/txkq8s/horrible_public_key_tricks",
+    "title": "Horrible public key tricks"
+  },
+  "@lobstersgram:1700": {
+    "telegraph_link": "https://telegra.ph/Revisiting-Leander-v-Sweden-and-Big-Brother-Watch---Bert-Huberts-writings-11-11",
+    "article_link": "https://berthub.eu/articles/posts/revisiting-leander-and-big-brother/",
+    "discussion_link": "https://lobste.rs/s/7ehnxt/revisiting_leander_v_sweden_big_brother",
+    "title": "Revisiting Leander v Sweden and Big Brother Watch"
+  },
+  "@lobstersgram:1701": {
+    "telegraph_link": "https://telegra.ph/Blunt-Banhammer-Blocks-Basic-Bots-Ballistically---Terence-Edens-Blog-11-11",
+    "article_link": "https://shkspr.mobi/blog/2026/11/blunt-banhammer-blocks-basic-bots-ballistically/",
+    "discussion_link": "https://lobste.rs/s/bubqox/blunt_banhammer_blocks_basic_bots",
+    "title": "Blunt Banhammer Blocks Basic Bots Ballistically"
+  },
+  "@lobstersgram:1702": {
+    "telegraph_link": "https://telegra.ph/Performance-evolution-of-route-lookup-on-Linux-11-11",
+    "article_link": "https://vincent.bernat.ch/en/blog/2026-linux-performance-ipv4-ipv6-route-lookup",
+    "discussion_link": "https://lobste.rs/s/vzpcnd/performance_evolution_route_lookup_on",
+    "title": "Performance evolution of route lookup on Linux"
+  },
+  "@lobstersgram:1703": {
+    "telegraph_link": "https://telegra.ph/Microsoft-are-rejecting-your-mail---Mythic-Beasts-11-11",
+    "article_link": "https://www.mythic-beasts.com/blog/2026/11/09/microsoft-are-rejecting-your-mail/",
+    "discussion_link": "https://lobste.rs/s/ynik5s/microsoft_are_rejecting_your_mail",
+    "title": "Microsoft are rejecting your mail"
   }
 }
