@@ -10102,5 +10102,23 @@
     "article_link": "https://andersmurphy.com/2026/11/09/two-apps-one-process.html",
     "discussion_link": "https://lobste.rs/s/sifkms/two_apps_one_process",
     "title": "Two apps one process"
+  },
+  "@lobstersgram:1696": {
+    "telegraph_link": "https://telegra.ph/Large-Scale-Measurement-and-Real-World-Mitigation-of-Web-Browser-Fingerprinting-in-the-Wild-11-11",
+    "article_link": "https://fingerprinting.study/",
+    "discussion_link": "https://lobste.rs/s/zu8tdw/large_scale_measurement_real_world",
+    "title": "Large-Scale Measurement and Real-World Mitigation of Web Browser Fingerprinting in the Wild"
+  },
+  "@lobstersgram:1697": {
+    "telegraph_link": "https://telegra.ph/Dyalog-11-What-is-Functional-Programming-11-11",
+    "article_link": "https://www.youtube.com/watch?v=bQlH49krwbk",
+    "discussion_link": "https://lobste.rs/s/k5oycn/what_is_functional_programming",
+    "title": "What is Functional Programming?"
+  },
+  "@lobstersgram:1698": {
+    "telegraph_link": "https://telegra.ph/Lets-Talk-About-Why-all-This-OT-Stuff-is-Connected---Lesley-Carharts-Cybersecurity-Blog-11-11",
+    "article_link": "https://tisiphone.net/2026/11/08/lets-talk-about-why-all-this-ot-stuff-is-connected/",
+    "discussion_link": "https://lobste.rs/s/jxigk6/let_s_talk_about_why_all_this_ot_stuff_is",
+    "title": "Let’s Talk About Why all This OT Stuff is Connected"
   }
 }
