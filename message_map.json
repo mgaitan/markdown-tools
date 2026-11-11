@@ -10150,5 +10150,23 @@
     "article_link": "https://www.mythic-beasts.com/blog/2026/11/09/microsoft-are-rejecting-your-mail/",
     "discussion_link": "https://lobste.rs/s/ynik5s/microsoft_are_rejecting_your_mail",
     "title": "Microsoft are rejecting your mail"
+  },
+  "@lobstersgram:1704": {
+    "telegraph_link": "https://telegra.ph/Monads-in-Lean---Eli-Benderskys-website-11-11-2",
+    "article_link": "https://eli.thegreenplace.net/2026/monads-in-lean/",
+    "discussion_link": "https://lobste.rs/s/quicny/monads_lean",
+    "title": "Monads in Lean"
+  },
+  "@lobstersgram:1705": {
+    "telegraph_link": "https://telegra.ph/Searching-for-pedagogical-materials-on-memory-models--Lobsters-11-11",
+    "article_link": "https://lobste.rs/s/odnnzh/searching_for_pedagogical_materials_on",
+    "discussion_link": "https://lobste.rs/s/odnnzh/searching_for_pedagogical_materials_on",
+    "title": "Searching for pedagogical materials on memory models"
+  },
+  "@lobstersgram:1706": {
+    "telegraph_link": "https://telegra.ph/iterate-think-thoughts-Rendering-in-batches-with-glimmer-and-Datastar-11-11",
+    "article_link": "https://yogthos.net/posts/2026-11-10-glimmer-datastar.html",
+    "discussion_link": "https://lobste.rs/s/zi6dg1/rendering_batches_with_glimmer_datastar",
+    "title": "Rendering in batches with glimmer and Datastar"
   }
 }
