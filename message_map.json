@@ -10168,5 +10168,35 @@
     "article_link": "https://yogthos.net/posts/2026-11-10-glimmer-datastar.html",
     "discussion_link": "https://lobste.rs/s/zi6dg1/rendering_batches_with_glimmer_datastar",
     "title": "Rendering in batches with glimmer and Datastar"
+  },
+  "@lobstersgram:1707": {
+    "telegraph_link": "https://telegra.ph/Open-Graph-images-with-Astro-and-Typst--Erik-André-Jakobsen-11-11",
+    "article_link": "https://eaj.no/posts/open-graph-images-with-typst/",
+    "discussion_link": "https://lobste.rs/s/gj5obq/open_graph_images_with_astro_typst",
+    "title": "Open Graph images with Astro and Typst"
+  },
+  "@lobstersgram:1708": {
+    "telegraph_link": "https://telegra.ph/No-Effect-Before-Its-Cause-From-Einstein-to-Lamport---It-Works-Locally-11-11",
+    "article_link": "https://www.itworkslocally.dev/posts/no-effect-before-its-cause",
+    "discussion_link": "https://lobste.rs/s/3rydtk/no_effect_before_its_cause_from_einstein",
+    "title": "No Effect Before Its Cause: From Einstein to Lamport"
+  },
+  "@lobstersgram:1709": {
+    "telegraph_link": "https://telegra.ph/What-if-any-process-could-handle-SIGKILL---VulpineCitrus-11-11-2",
+    "article_link": "https://vulpinecitrus.info/blog/what-if-you-could-handle-sigkill/",
+    "discussion_link": "https://lobste.rs/s/5wrucm/modding_linux_use_sigkill_on_every",
+    "title": "Modding Linux to use SIGKILL on every process"
+  },
+  "@lobstersgram:1710": {
+    "telegraph_link": "https://telegra.ph/Announcing-NET-11---NET-Blog-11-11",
+    "article_link": "https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/",
+    "discussion_link": "https://lobste.rs/s/zingk1/announcing_net_11",
+    "title": "Announcing .NET 11"
+  },
+  "@lobstersgram:1711": {
+    "telegraph_link": "https://telegra.ph/eMudhra-Statement-on-Recent-Certificate-Security-Incident--eMudhra-11-11",
+    "article_link": "https://emudhra.com/en/post/certificate-security-incident",
+    "discussion_link": "https://lobste.rs/s/pfscsm/emudhra_statement_on_recent_certificate",
+    "title": "eMudhra Statement on Recent Certificate Security Incident"
   }
 }
