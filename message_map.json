@@ -10228,5 +10228,23 @@
     "article_link": "https://foss.life/notes/2026/the-myth-of-neutral-code/",
     "discussion_link": "https://lobste.rs/s/sc7qkv/myth_neutral_code",
     "title": "The Myth of Neutral Code"
+  },
+  "@lobstersgram:1717": {
+    "telegraph_link": "https://telegra.ph/London-meetup---update--Lobsters-11-12",
+    "article_link": "https://lobste.rs/s/miyll7/london_meetup_update",
+    "discussion_link": "https://lobste.rs/s/miyll7/london_meetup_update",
+    "title": "London meetup - update"
+  },
+  "@lobstersgram:1718": {
+    "telegraph_link": "https://telegra.ph/I-deleted-all-my-SSH-keys-11-12",
+    "article_link": "https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/",
+    "discussion_link": "https://lobste.rs/s/sdtcvv/i_deleted_all_my_ssh_keys",
+    "title": "I deleted all my SSH keys"
+  },
+  "@lobstersgram:1719": {
+    "telegraph_link": "https://telegra.ph/XSTPepoch---Global-coordination-requirements-for-2038-class-rollover-events-including-but-not-limited-to-2036-2038-2106---June-2-11-12",
+    "article_link": "https://www.itu.int/pub/T-TUT-ICTS-2026-6",
+    "discussion_link": "https://lobste.rs/s/vwta8g/global_coordination_requirements_for",
+    "title": "Global coordination requirements for 2038-class rollover events"
   }
 }
