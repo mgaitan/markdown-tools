@@ -10246,5 +10246,35 @@
     "article_link": "https://www.itu.int/pub/T-TUT-ICTS-2026-6",
     "discussion_link": "https://lobste.rs/s/vwta8g/global_coordination_requirements_for",
     "title": "Global coordination requirements for 2038-class rollover events"
+  },
+  "@lobstersgram:1720": {
+    "telegraph_link": "https://telegra.ph/Neil-Fraser-News-name-Grandfathered-11-12-2",
+    "article_link": "https://neil.fraser.name/news/2026/11/10/",
+    "discussion_link": "https://lobste.rs/s/vkkbwo/name_grandfathered",
+    "title": ".name grandfathered"
+  },
+  "@lobstersgram:1721": {
+    "telegraph_link": "https://telegra.ph/Andrew-Kenslers-permute---Helmers-Blog-11-12",
+    "article_link": "https://andrew-helmer.github.io/permute/",
+    "discussion_link": "https://lobste.rs/s/pdzud6/andrew_kensler_s_permute_function_for",
+    "title": "Andrew Kensler's permute(), a function for stateless, constant-time pseudorandom-order array iteration"
+  },
+  "@lobstersgram:1722": {
+    "telegraph_link": "https://telegra.ph/Using-voltage-glitching-to-unleash-the-A100-in-my-mining-card--Kates-blog-11-12",
+    "article_link": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
+    "discussion_link": "https://lobste.rs/s/zy4p7f/using_voltage_glitching_unleash_a100_my",
+    "title": "Using voltage glitching to unleash the A100 in my mining card"
+  },
+  "@lobstersgram:1723": {
+    "telegraph_link": "https://telegra.ph/Lock-your-GitHub-Actions--Hugo-van-Kemenade-11-12",
+    "article_link": "https://hugovk.dev/blog/2026/lock-github-actions/",
+    "discussion_link": "https://lobste.rs/s/v3uidx/lock_your_github_actions",
+    "title": "Lock your GitHub Actions"
+  },
+  "@lobstersgram:1724": {
+    "telegraph_link": "https://telegra.ph/Creating-Diagrams-and-Graphs-Using-Modern-CSS---Masterdev-Blog-11-12",
+    "article_link": "https://blog.master.dev/creating-diagrams-and-graphs-using-modern-css/",
+    "discussion_link": "https://lobste.rs/s/itpaba/creating_diagrams_graphs_using_modern",
+    "title": "Creating Diagrams and Graphs Using Modern CSS"
   }
 }
