@@ -10276,5 +10276,23 @@
     "article_link": "https://blog.master.dev/creating-diagrams-and-graphs-using-modern-css/",
     "discussion_link": "https://lobste.rs/s/itpaba/creating_diagrams_graphs_using_modern",
     "title": "Creating Diagrams and Graphs Using Modern CSS"
+  },
+  "@lobstersgram:1725": {
+    "telegraph_link": "https://telegra.ph/Announcing-the-GraphQL-over-HTTP-specification--GraphQL-11-13",
+    "article_link": "https://graphql.org/blog/2026-11-12-announcing-the-graphql-over-http-spec/",
+    "discussion_link": "https://lobste.rs/s/klmtb1/announcing_graphql_over_http",
+    "title": "Announcing the GraphQL over HTTP specification"
+  },
+  "@lobstersgram:1726": {
+    "telegraph_link": "https://telegra.ph/Futhark-J-Bridge-11-13",
+    "article_link": "https://chen.cat/j/futhark/",
+    "discussion_link": "https://lobste.rs/s/slkmnx/futhark_j_bridge",
+    "title": "Futhark-J Bridge"
+  },
+  "@lobstersgram:1727": {
+    "telegraph_link": "https://telegra.ph/Building-my-own-ADS-B-receiver-with-a-Raspberry-Pi--kewonit-11-13",
+    "article_link": "https://kew.edbn.me/blog/adsb-receiver/",
+    "discussion_link": "https://lobste.rs/s/49c859/building_my_own_ads_b_receiver",
+    "title": "Building my own ADS-B receiver"
   }
 }
