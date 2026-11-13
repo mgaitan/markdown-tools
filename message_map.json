@@ -10294,5 +10294,35 @@
     "article_link": "https://kew.edbn.me/blog/adsb-receiver/",
     "discussion_link": "https://lobste.rs/s/49c859/building_my_own_ads_b_receiver",
     "title": "Building my own ADS-B receiver"
+  },
+  "@lobstersgram:1728": {
+    "telegraph_link": "https://telegra.ph/Running-a-law-firm-on-Free-software-2026-edition--decodedlegals-blog-11-13",
+    "article_link": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
+    "discussion_link": "https://lobste.rs/s/ezl1sa/running_law_firm_on_free_software_2026",
+    "title": "Running a law firm on Free software (2026 edition)"
+  },
+  "@lobstersgram:1729": {
+    "telegraph_link": "https://telegra.ph/ML-Modules-for-Mere-Mortals--Thunderseethes-Devlog-11-13",
+    "article_link": "https://thunderseethe.dev/posts/ml-modules-for-mere-mortals/intro/",
+    "discussion_link": "https://lobste.rs/s/mgiv0i/ml_modules_for_mere_mortals",
+    "title": "ML Modules for Mere Mortals"
+  },
+  "@lobstersgram:1730": {
+    "telegraph_link": "https://telegra.ph/Dyalog-Version-210---Dyalog-11-13",
+    "article_link": "https://dyalog.com/dyalog/dyalog-versions/210.htm",
+    "discussion_link": "https://lobste.rs/s/pbc1ke/dyalog_version_21_0",
+    "title": "Dyalog Version 21.0"
+  },
+  "@lobstersgram:1731": {
+    "telegraph_link": "https://telegra.ph/How-a-false-smoke-alarm-almost-drowned-Jane-Streets-only-NYC-datacenter--Michael-Bacarella-11-13",
+    "article_link": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
+    "discussion_link": "https://lobste.rs/s/ii1gzp/how_false_smoke_alarm_almost_drowned_jane",
+    "title": "How a false smoke alarm almost drowned Jane Street's only NYC datacenter"
+  },
+  "@lobstersgram:1732": {
+    "telegraph_link": "https://telegra.ph/From-digital-mischief-to-outright-destruction---Unsung-11-13",
+    "article_link": "https://unsung.aresluna.org/from-digital-mischief-to-outright-destruction/",
+    "discussion_link": "https://lobste.rs/s/cjnwcg/from_digital_mischief_outright",
+    "title": "“From digital mischief to outright destruction”"
   }
 }
