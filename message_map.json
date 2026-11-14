@@ -10324,5 +10324,23 @@
     "article_link": "https://unsung.aresluna.org/from-digital-mischief-to-outright-destruction/",
     "discussion_link": "https://lobste.rs/s/cjnwcg/from_digital_mischief_outright",
     "title": "“From digital mischief to outright destruction”"
+  },
+  "@lobstersgram:1733": {
+    "telegraph_link": "https://telegra.ph/Jane-Street-Blog---Writing-a-DSL-for-high-performance-parallel-programming-in-OxCaml-11-14",
+    "article_link": "https://blog.janestreet.com/writing-a-dsl-for-high-performance-parallel-programming-in-oxcaml/",
+    "discussion_link": "https://lobste.rs/s/kh9fri/writing_dsl_for_high_performance",
+    "title": "Writing a DSL for high performance parallel programming in OxCaml"
+  },
+  "@lobstersgram:1734": {
+    "telegraph_link": "https://telegra.ph/You-could-have-invented-transformers-from-memory--Alex-Wang-11-14",
+    "article_link": "https://alexwang.ai/posts/associative-memory/",
+    "discussion_link": "https://lobste.rs/s/u2h9as/you_could_have_invented_transformers",
+    "title": "You could have invented transformers from memory"
+  },
+  "@lobstersgram:1735": {
+    "telegraph_link": "https://telegra.ph/Let-Over-Lambda-11-14",
+    "article_link": "https://letoverlambda.com/",
+    "discussion_link": "https://lobste.rs/s/ooshl8/entirety_let_over_lambda_is_now_freely",
+    "title": "The entirety of \"Let Over Lambda\" is now freely available online"
   }
 }
