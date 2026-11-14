@@ -38,6 +38,8 @@ def _fusion_element_html(element: dict[str, Any]) -> str:
         case "text":
             return f"<p>{content}</p>" if content.strip() else ""
         case "header":
+            if len(BeautifulSoup(content, "html.parser").get_text(" ", strip=True)) > 120:
+                return f"<p>{content}</p>"
             level = str(element.get("level"))
             level = level if level in {"2", "3", "4", "5", "6"} else "2"
             return f"<h{level}>{content}</h{level}>" if content.strip() else ""
