@@ -10390,5 +10390,35 @@
     "article_link": "https://antonz.org/probabilistic-data-structures/",
     "discussion_link": "https://lobste.rs/s/xca2qj/probabilistic_data_structures_go",
     "title": "Probabilistic data structures in Go"
+  },
+  "@lobstersgram:1744": {
+    "telegraph_link": "https://telegra.ph/Terminal-borders-that-dont-cost-a-cell--Joshkanet-11-15",
+    "article_link": "https://www.joshka.net/cell-borders/",
+    "discussion_link": "https://lobste.rs/s/akdy9z/terminal_borders_don_t_cost_cell",
+    "title": "Terminal borders that don't cost a cell"
+  },
+  "@lobstersgram:1745": {
+    "telegraph_link": "https://telegra.ph/goliath32com---Creating-a-self-booting-ZIP-archive-11-15",
+    "article_link": "https://goliath32.com/blog/ziphead.html",
+    "discussion_link": "https://lobste.rs/s/ebahfz/creating_self_booting_zip_archive",
+    "title": "Creating a self booting ZIP archive"
+  },
+  "@lobstersgram:1746": {
+    "telegraph_link": "https://telegra.ph/The-need-for-at-least-a-third-option---Gonçalo-Valério-11-15",
+    "article_link": "https://blog.ovalerio.net/archives/3359",
+    "discussion_link": "https://lobste.rs/s/9oq6fr/need_for_at_least_third_option",
+    "title": "The need for at least a third option"
+  },
+  "@lobstersgram:1747": {
+    "telegraph_link": "https://telegra.ph/How-Not-to-Build-a-Music-Player-11-15",
+    "article_link": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
+    "discussion_link": "https://lobste.rs/s/lh9pwf/how_not_build_music_player",
+    "title": "How Not to Build a Music Player"
+  },
+  "@lobstersgram:1748": {
+    "telegraph_link": "https://telegra.ph/Steinar-H-Gunderson-11-15",
+    "article_link": "https://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
+    "discussion_link": "https://lobste.rs/s/q81fi4/solving_fox_game",
+    "title": "Solving the fox game"
   }
 }
