@@ -10372,5 +10372,23 @@
     "article_link": "https://alistair.sh/thenables",
     "discussion_link": "https://lobste.rs/s/yxvn7j/fixing_webkit_bug_see_if_promises_are_made",
     "title": "Fixing a WebKit bug to see if promises are made of train tracks"
+  },
+  "@lobstersgram:1741": {
+    "telegraph_link": "https://telegra.ph/The-Little-Book-of-Generative-AI-Foundations-An-Intuitive-Mathematical-Primer-11-15",
+    "article_link": "https://arxiv.org/abs/2605.29713",
+    "discussion_link": "https://lobste.rs/s/0aungk/little_book_generative_ai_foundations",
+    "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer"
+  },
+  "@lobstersgram:1742": {
+    "telegraph_link": "https://telegra.ph/Someones-impersonating-this-blog---A-Lovely-Harmless-Monster---Blog-11-15",
+    "article_link": "https://mattbee.mataroa.blog/p/someones-impersonating-this-blog/",
+    "discussion_link": "https://lobste.rs/s/wqml56/someone_s_impersonating_this_blog",
+    "title": "Someone's impersonating this blog"
+  },
+  "@lobstersgram:1743": {
+    "telegraph_link": "https://telegra.ph/Probabilistic-data-structures-in-Go-11-15",
+    "article_link": "https://antonz.org/probabilistic-data-structures/",
+    "discussion_link": "https://lobste.rs/s/xca2qj/probabilistic_data_structures_go",
+    "title": "Probabilistic data structures in Go"
   }
 }
