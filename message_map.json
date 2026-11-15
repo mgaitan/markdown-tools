@@ -10354,5 +10354,23 @@
     "article_link": "https://sofiabelen.github.io/projects/pointer-provenance-in-rust-vs-cpp/",
     "discussion_link": "https://lobste.rs/s/xmtjzq/pointer_provenance_rust_vs_c",
     "title": "Pointer Provenance in Rust vs C++"
+  },
+  "@lobstersgram:1738": {
+    "telegraph_link": "https://telegra.ph/Contra-Glue-work-considered-harmful--sunshowers-11-15",
+    "article_link": "https://sunshowers.io/posts/glue-work/",
+    "discussion_link": "https://lobste.rs/s/f6u0cg/contra_glue_work_considered_harmful",
+    "title": "Contra \"Glue work considered harmful\""
+  },
+  "@lobstersgram:1739": {
+    "telegraph_link": "https://telegra.ph/Kildalls-algorithm-11-15",
+    "article_link": "https://bike.github.io/posts/kildall.html",
+    "discussion_link": "https://lobste.rs/s/1nmzz6/kildall_s_algorithm",
+    "title": "Kildall's algorithm"
+  },
+  "@lobstersgram:1740": {
+    "telegraph_link": "https://telegra.ph/Fixing-a-WebKit-bug-to-see-if-promises-are-made-of-train-tracks-11-15",
+    "article_link": "https://alistair.sh/thenables",
+    "discussion_link": "https://lobste.rs/s/yxvn7j/fixing_webkit_bug_see_if_promises_are_made",
+    "title": "Fixing a WebKit bug to see if promises are made of train tracks"
   }
 }
