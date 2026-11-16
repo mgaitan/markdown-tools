@@ -10480,5 +10480,29 @@
     "article_link": "https://jack.cab/blog/siterate",
     "discussion_link": "https://lobste.rs/s/dgvb5g/what_is_w2rt6byl5nf1opmc_com",
     "title": "What is w2rt6byl5nf1opmc-a[.]com?"
+  },
+  "@lobstersgram:1759": {
+    "telegraph_link": "https://telegra.ph/clice-v10-Released-Welcome-to-Modern-C--ykikos-blog-11-16",
+    "article_link": "https://ykiko.me/en/articles/2105384023094834022/",
+    "discussion_link": "https://lobste.rs/s/9haygb/clice_v1_0_released_welcome_modern_c",
+    "title": "clice v1.0 Released: Welcome to Modern C++"
+  },
+  "@lobstersgram:1760": {
+    "telegraph_link": "https://telegra.ph/funkycache-a-Python-library-to-cache-functions-in-SQLite---alexwlchan-11-16",
+    "article_link": "https://alexwlchan.net/2026/funkycache/",
+    "discussion_link": "https://lobste.rs/s/lpqxqi/funkycache_python_library_cache",
+    "title": "funkycache: a Python library to cache functions in SQLite"
+  },
+  "@lobstersgram:1761": {
+    "telegraph_link": "https://telegra.ph/Local-Mirror-for-FreeBSD-pkgbase---Makefilefeld-11-16",
+    "article_link": "https://blog.feld.me/posts/2026/11/local-mirror-for-freebsd-pkgbase/",
+    "discussion_link": "https://lobste.rs/s/tebwei/local_mirror_for_freebsd_pkgbase",
+    "title": "Local Mirror for FreeBSD pkgbase"
+  },
+  "@lobstersgram:1762": {
+    "telegraph_link": "https://telegra.ph/Garys-hacking-stuff-Improving-the-Wii-Us-Wii-Mode-11-16",
+    "article_link": "https://garyodernichts.blogspot.com/2026/11/improving-wii-us-wii-mode.html",
+    "discussion_link": "https://lobste.rs/s/sz6o8w/improving_wii_u_s_wii_mode",
+    "title": "Improving the Wii U's Wii Mode"
   }
 }
