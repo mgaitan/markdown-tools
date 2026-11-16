@@ -10450,5 +10450,35 @@
     "article_link": "https://netbsd.org/~nia/disk-encrypt/",
     "discussion_link": "https://lobste.rs/s/6ovrdg/disk_encryption_on_netbsd_achieving",
     "title": "Disk encryption on NetBSD achieving secrecy"
+  },
+  "@lobstersgram:1754": {
+    "telegraph_link": "https://telegra.ph/lucyNES---Lucys-Save-Room-11-16",
+    "article_link": "https://lucypero.com/lucynes.html",
+    "discussion_link": "https://lobste.rs/s/dtjgmc/nes_emulator_written_odin",
+    "title": "A NES emulator written in Odin"
+  },
+  "@lobstersgram:1755": {
+    "telegraph_link": "https://telegra.ph/PicoLisp-Wiki-tpch-11-16",
+    "article_link": "https://picolisp.com/wiki/?tpc-h",
+    "discussion_link": "https://lobste.rs/s/nclsyw/tpc_h_benchmark_picolisp_db",
+    "title": "TPC-H Benchmark in PicoLisp DB"
+  },
+  "@lobstersgram:1756": {
+    "telegraph_link": "https://telegra.ph/Designing-nextests-install-scripts--sunshowers-11-16-5",
+    "article_link": "https://sunshowers.io/posts/nextest-install-scripts/",
+    "discussion_link": "https://lobste.rs/s/tbpfcn/designing_nextest_s_install_scripts",
+    "title": "Designing nextest's install scripts"
+  },
+  "@lobstersgram:1757": {
+    "telegraph_link": "https://telegra.ph/Blog-Preventing-Cross-Service-UDP-Loops-in-QUIC-11-16-3",
+    "article_link": "https://bughunters.google.com/blog/preventing-cross-service-udp-loops-in-quic",
+    "discussion_link": "https://lobste.rs/s/om6v89/blog_preventing_cross_service_udp_loops",
+    "title": "Blog: Preventing Cross-Service UDP Loops in QUIC"
+  },
+  "@lobstersgram:1758": {
+    "telegraph_link": "https://telegra.ph/What-the-fuck-is-w2rt6byl5nf1opmc-acom-11-16",
+    "article_link": "https://jack.cab/blog/siterate",
+    "discussion_link": "https://lobste.rs/s/dgvb5g/what_is_w2rt6byl5nf1opmc_com",
+    "title": "What is w2rt6byl5nf1opmc-a[.]com?"
   }
 }
