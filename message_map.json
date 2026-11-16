@@ -10420,5 +10420,35 @@
     "article_link": "https://blog.sesse.net/blog/tech/2026-11-13-19-51_solving_the_fox_game.html",
     "discussion_link": "https://lobste.rs/s/q81fi4/solving_fox_game",
     "title": "Solving the fox game"
+  },
+  "@lobstersgram:1749": {
+    "telegraph_link": "https://telegra.ph/What-Happened-to-3Com-From-Networking-Giant-to-Afterthought-11-16",
+    "article_link": "https://dfarq.homeip.net/what-happened-to-3com/",
+    "discussion_link": "https://lobste.rs/s/pgmw6b/what_happened_3com",
+    "title": "What happened to 3com?"
+  },
+  "@lobstersgram:1750": {
+    "telegraph_link": "https://telegra.ph/Parsing-nested-lists-in-BQN-11-16",
+    "article_link": "https://saltysylvi.github.io/blog/parsing-nested-lists-in-bqn.html",
+    "discussion_link": "https://lobste.rs/s/nbjckz/parsing_nested_lists_bqn",
+    "title": "Parsing nested lists in BQN"
+  },
+  "@lobstersgram:1751": {
+    "telegraph_link": "https://telegra.ph/Rust-Declarative-Macros-Organization-Scoping-and-Common-Use-Cases-11-16-4",
+    "article_link": "https://sigseis.dev/articles/2026/11/10",
+    "discussion_link": "https://lobste.rs/s/snorgi/rust_declarative_macros_organization",
+    "title": "Rust Declarative Macros: Organization, Scoping, and Common Use-Cases"
+  },
+  "@lobstersgram:1752": {
+    "telegraph_link": "https://telegra.ph/Reintroducing-Spaces---Daniels-Leaflets-11-16",
+    "article_link": "https://dholms.leaflet.pub/3mu3p3ldwrc26",
+    "discussion_link": "https://lobste.rs/s/dwd6xu/reintroducing_spaces",
+    "title": "Reintroducing Spaces"
+  },
+  "@lobstersgram:1753": {
+    "telegraph_link": "https://telegra.ph/Disk-encryption-on-NetBSD---achieving-secrecy-11-16",
+    "article_link": "https://netbsd.org/~nia/disk-encrypt/",
+    "discussion_link": "https://lobste.rs/s/6ovrdg/disk_encryption_on_netbsd_achieving",
+    "title": "Disk encryption on NetBSD achieving secrecy"
   }
 }
