@@ -10534,5 +10534,29 @@
     "article_link": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
     "discussion_link": "https://lobste.rs/s/ek4fkg/all_ai_generated_code_should_be_open",
     "title": "All AI-generated code should be Open Source"
+  },
+  "@lobstersgram:1768": {
+    "telegraph_link": "https://telegra.ph/you-wont-win-at-copyright--off-the-grid-11-17",
+    "article_link": "https://ingrids.space/posts/you-wont-win-at-copyright/",
+    "discussion_link": "https://lobste.rs/s/emdfap/you_won_t_win_at_copyright",
+    "title": "you won't win at copyright"
+  },
+  "@lobstersgram:1769": {
+    "telegraph_link": "https://telegra.ph/Cs-designated-initializers-give-us-named-arguments---Arthur-ODwyer---Stuff-mostly-about-C-11-17",
+    "article_link": "https://quuxplusone.github.io/blog/2026/11/16/named-arguments-in-c/",
+    "discussion_link": "https://lobste.rs/s/kktn5b/c_s_designated_initializers_give_us_named",
+    "title": "C’s designated initializers give us named arguments"
+  },
+  "@lobstersgram:1770": {
+    "telegraph_link": "https://telegra.ph/paint-in-the-memory-of-other-programs---citronsxyz-11-17",
+    "article_link": "https://citrons.xyz/journal/2026-04-13",
+    "discussion_link": "https://lobste.rs/s/thiekk/paint_memory_other_programs",
+    "title": "Paint in the memory of other programs"
+  },
+  "@lobstersgram:1771": {
+    "telegraph_link": "https://telegra.ph/Proof-of-use-as-a-requirement-for-open-source-contributions--Lobsters-11-17",
+    "article_link": "https://lobste.rs/s/ki1l5r/proof_use_as_requirement_for_open_source",
+    "discussion_link": "https://lobste.rs/s/ki1l5r/proof_use_as_requirement_for_open_source",
+    "title": "\"Proof of use\" as a requirement for open source contributions?"
   }
 }
