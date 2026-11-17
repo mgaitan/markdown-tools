@@ -10504,5 +10504,35 @@
     "article_link": "https://garyodernichts.blogspot.com/2026/11/improving-wii-us-wii-mode.html",
     "discussion_link": "https://lobste.rs/s/sz6o8w/improving_wii_u_s_wii_mode",
     "title": "Improving the Wii U's Wii Mode"
+  },
+  "@lobstersgram:1763": {
+    "telegraph_link": "https://telegra.ph/Software-is-breaking-down-at-a-systemic-level--Jimmy-Breck-McKye-11-17",
+    "article_link": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+    "discussion_link": "https://lobste.rs/s/wifhdc/software_is_breaking_down_at_systemic",
+    "title": "Software is breaking down at a systemic level"
+  },
+  "@lobstersgram:1764": {
+    "telegraph_link": "https://telegra.ph/Memory-management-in-40-major-C-projects-a-survey---The-Consensus-11-17",
+    "article_link": "https://theconsensus.dev/p/2026/11/08/c-memory-management-survey.html",
+    "discussion_link": "https://lobste.rs/s/vdxevp/memory_management_40_major_c_projects",
+    "title": "Memory management in 40 major C projects, a survey"
+  },
+  "@lobstersgram:1765": {
+    "telegraph_link": "https://telegra.ph/Nicolas-Rinaudo---Programming-a-language-11-17-2",
+    "article_link": "https://nrinaudo.github.io/articles/pl.html",
+    "discussion_link": "https://lobste.rs/s/aavjsr/programming_language",
+    "title": "Programming a language"
+  },
+  "@lobstersgram:1766": {
+    "telegraph_link": "https://telegra.ph/beerdrvdrvdrv--Farid-Zakarias-Blog-11-17",
+    "article_link": "https://fzakaria.com/2026/11/14/beer-drv-drv-drv",
+    "discussion_link": "https://lobste.rs/s/md0vco/beer_drv_drv_drv",
+    "title": "beer.drv.drv.drv"
+  },
+  "@lobstersgram:1767": {
+    "telegraph_link": "https://telegra.ph/All-AI-generated-code-should-be-Open-Source-11-17",
+    "article_link": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+    "discussion_link": "https://lobste.rs/s/ek4fkg/all_ai_generated_code_should_be_open",
+    "title": "All AI-generated code should be Open Source"
   }
 }
