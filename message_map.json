@@ -10558,5 +10558,23 @@
     "article_link": "https://lobste.rs/s/ki1l5r/proof_use_as_requirement_for_open_source",
     "discussion_link": "https://lobste.rs/s/ki1l5r/proof_use_as_requirement_for_open_source",
     "title": "\"Proof of use\" as a requirement for open source contributions?"
+  },
+  "@lobstersgram:1772": {
+    "telegraph_link": "https://telegra.ph/jQuery-410-and-380-Released-Passing-the-Torch--Official-jQuery-Blog-11-18",
+    "article_link": "https://blog.jquery.com/2026/11/17/jquery-4-1-0-and-3-8-0-released-passing-the-torch/",
+    "discussion_link": "https://lobste.rs/s/tp2qnr/jquery_4_1_0_released",
+    "title": "jQuery 4.1.0 Released"
+  },
+  "@lobstersgram:1773": {
+    "telegraph_link": "https://telegra.ph/Quality-IMAP-Part-1-Your-Mailbox-Is-A-Database--Aerogramme-blog-11-18",
+    "article_link": "https://aerogramme.deuxfleurs.fr/blog/2026-quality-imap-part-1/",
+    "discussion_link": "https://lobste.rs/s/gm4vao/quality_imap_part_1_your_mailbox_is",
+    "title": "Quality IMAP, Part 1: Your Mailbox Is A Database"
+  },
+  "@lobstersgram:1774": {
+    "telegraph_link": "https://telegra.ph/Migrating-from-GitHub-to-Codeberg-11-18",
+    "article_link": "https://yorickpeterse.com/articles/migrating-from-github-to-codeberg/",
+    "discussion_link": "https://lobste.rs/s/rhoopo/migrating_from_github_codeberg",
+    "title": "Migrating from GitHub to Codeberg"
   }
 }
