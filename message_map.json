@@ -10594,5 +10594,29 @@
     "article_link": "https://nimony.org/",
     "discussion_link": "https://lobste.rs/s/jm8vk1/nimony_next_version_nim",
     "title": "Nimony: The next version of Nim"
+  },
+  "@lobstersgram:1778": {
+    "telegraph_link": "https://telegra.ph/LZ-RDO-lands-in-ARMs-astc-encoder---Jon-Olick-11-18",
+    "article_link": "https://www.jonolick.com/home/lz-rdo-lands-in-arms-astc-encoder",
+    "discussion_link": "https://lobste.rs/s/tso5wr/lz_rdo_lands_arm_s_astc_encoder",
+    "title": "LZ-RDO lands in ARM's astc-encoder"
+  },
+  "@lobstersgram:1779": {
+    "telegraph_link": "https://telegra.ph/How-to-Bypass-Rusts-Orphan-Rule---Edmond-Vong-11-18",
+    "article_link": "https://edvong.com/bypass-orphan-rule/",
+    "discussion_link": "https://lobste.rs/s/oj87qu/how_bypass_rust_s_orphan_rule",
+    "title": "How to Bypass Rust's Orphan Rule"
+  },
+  "@lobstersgram:1780": {
+    "telegraph_link": "https://telegra.ph/Evil-Genius-Labs--Why-Fibonacci-11-18-2",
+    "article_link": "https://www.evilgeniuslabs.org/why-fibonacci",
+    "discussion_link": "https://lobste.rs/s/46nwql/why_fibonacci",
+    "title": "Why Fibonacci?"
+  },
+  "@lobstersgram:1781": {
+    "telegraph_link": "https://telegra.ph/Redesigning-Github-repository-page--tonskyme-11-18",
+    "article_link": "https://tonsky.me/blog/github-redesign/",
+    "discussion_link": "https://lobste.rs/s/kseyz1/github_redesign_2019",
+    "title": "Github Redesign (2019)"
   }
 }
