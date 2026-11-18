@@ -10576,5 +10576,23 @@
     "article_link": "https://yorickpeterse.com/articles/migrating-from-github-to-codeberg/",
     "discussion_link": "https://lobste.rs/s/rhoopo/migrating_from_github_codeberg",
     "title": "Migrating from GitHub to Codeberg"
+  },
+  "@lobstersgram:1775": {
+    "telegraph_link": "https://telegra.ph/Janet-Reno-was-talking-about-my-friend-Coolio-computer-criminal--Michael-Bacarella-11-18",
+    "article_link": "https://michael.bacarella.com/2026/11/16/janet-reno-vs-my-friend-coolio/",
+    "discussion_link": "https://lobste.rs/s/urcrqe/janet_reno_was_talking_about_my_friend",
+    "title": "Janet Reno was talking about my friend Coolio (computer criminal)"
+  },
+  "@lobstersgram:1776": {
+    "telegraph_link": "https://telegra.ph/Critical-Red-Hat-Quay-Flaw-Lets-Attackers-Read-and-Overwrite-All-Private-Container-Images-in-a-Registry-11-18-2",
+    "article_link": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+    "discussion_link": "https://lobste.rs/s/qmofba/critical_red_hat_quay_flaw_lets_attackers",
+    "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry"
+  },
+  "@lobstersgram:1777": {
+    "telegraph_link": "https://telegra.ph/Nimony-Manual-11-18-2",
+    "article_link": "https://nimony.org/",
+    "discussion_link": "https://lobste.rs/s/jm8vk1/nimony_next_version_nim",
+    "title": "Nimony: The next version of Nim"
   }
 }
