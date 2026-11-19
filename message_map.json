@@ -10618,5 +10618,29 @@
     "article_link": "https://tonsky.me/blog/github-redesign/",
     "discussion_link": "https://lobste.rs/s/kseyz1/github_redesign_2019",
     "title": "Github Redesign (2019)"
+  },
+  "@lobstersgram:1782": {
+    "telegraph_link": "https://telegra.ph/058---WWDC-2007---lucaslove-11-19",
+    "article_link": "https://lucas.love/100/058",
+    "discussion_link": "https://lobste.rs/s/yqmfzq/steve_jobs_core_animation_demo_from_wwdc",
+    "title": "Steve Jobs Core Animation demo from WWDC 2007"
+  },
+  "@lobstersgram:1783": {
+    "telegraph_link": "https://telegra.ph/Sarasa-Gothic-11-19",
+    "article_link": "https://picaq.github.io/sarasa/",
+    "discussion_link": "https://lobste.rs/s/de02yg/sarasa_gothic_mono",
+    "title": "Sarasa Gothic Mono"
+  },
+  "@lobstersgram:1784": {
+    "telegraph_link": "https://telegra.ph/マリウス--sysdeck-Raycast-for-Linux--BSD-11-19",
+    "article_link": "https://xn--gckvb8fzb.com/sysdeck-raycast-for-linux-bsd/",
+    "discussion_link": "https://lobste.rs/s/l70xc9/sysdeck_raycast_for_linux_bsd",
+    "title": "sysdeck: Raycast for Linux & BSD"
+  },
+  "@lobstersgram:1785": {
+    "telegraph_link": "https://telegra.ph/Reversing-the-Next-Page-Prefetcher-in-Skylake-X--Shannonigans-11-19",
+    "article_link": "https://devsh0.github.io/microarchitecture,/intel,/computer-architecture/2026/11/17/reversing-the-next-page-prefetcher-in-skylake-x.html",
+    "discussion_link": "https://lobste.rs/s/1tcjtd/reversing_next_page_prefetcher_skylake_x",
+    "title": "Reversing the Next-Page Prefetcher in Skylake-X"
   }
 }
