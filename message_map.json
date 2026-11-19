@@ -10642,5 +10642,29 @@
     "article_link": "https://devsh0.github.io/microarchitecture,/intel,/computer-architecture/2026/11/17/reversing-the-next-page-prefetcher-in-skylake-x.html",
     "discussion_link": "https://lobste.rs/s/1tcjtd/reversing_next_page_prefetcher_skylake_x",
     "title": "Reversing the Next-Page Prefetcher in Skylake-X"
+  },
+  "@lobstersgram:1786": {
+    "telegraph_link": "https://telegra.ph/Traffic-mix-matters---Marcs-Blog-11-19",
+    "article_link": "https://brooker.co.za/blog/2026/11/18/workload-mix.html",
+    "discussion_link": "https://lobste.rs/s/akg5in/traffic_mix_matters",
+    "title": "Traffic mix matters"
+  },
+  "@lobstersgram:1787": {
+    "telegraph_link": "https://telegra.ph/For-the-things-we-can-only-do-together-11-19",
+    "article_link": "https://bonfirenetworks.org/posts/for-the-things-we-can-only-do-together/",
+    "discussion_link": "https://lobste.rs/s/4j15up/for_things_we_can_only_do_together_bonfire",
+    "title": "For the things we can only do together - Bonfire 1.1 Release"
+  },
+  "@lobstersgram:1788": {
+    "telegraph_link": "https://telegra.ph/Incidents-in-the-news---Surfing-Complexity-11-19",
+    "article_link": "https://surfingcomplexity.blog/2026/11/18/incidents-in-the-news/",
+    "discussion_link": "https://lobste.rs/s/gpqw7o/incidents_news",
+    "title": "Incidents in the news"
+  },
+  "@lobstersgram:1789": {
+    "telegraph_link": "https://telegra.ph/Stacked-diffs-with-Maiao-11-19-15",
+    "article_link": "https://entropicthoughts.com/stacked-diffs-with-maiao",
+    "discussion_link": "https://lobste.rs/s/bjmwt6/stacked_diffs_with_maiao",
+    "title": "Stacked diffs with Maiao"
   }
 }
