@@ -24,6 +24,40 @@ def test_apply_domain_rule_selects_substack_available_content() -> None:
     assert "Expand image" not in result
 
 
+def test_openwall_extraction_uses_message_body_not_page_navigation() -> None:
+    html = """
+    <html>
+      <head><title>oss-security - Example</title></head>
+      <body>
+        <a href="17">[&lt;prev]</a>
+        <a href="19">[next&gt;]</a>
+        <pre>Subject: Example vulnerability
+
+The message body.
+        </pre>
+        <p>Powered by blists</p>
+      </body>
+    </html>
+    """
+
+    result = apply_domain_rule(html, "https://www.openwall.com/lists/oss-security/2026/10/21/18")
+
+    assert result is not None
+    assert "Subject: Example vulnerability" in result
+    assert "The message body." in result
+    assert "[&lt;prev]" not in result
+    assert "Powered by blists" not in result
+
+    _title, markdown, _fallback, _intro = extract_main_content(
+        html,
+        source_url="https://www.openwall.com/lists/oss-security/2026/10/21/18",
+    )
+
+    assert "The message body." in markdown
+    assert "[<prev]" not in markdown
+    assert "Powered by blists" not in markdown
+
+
 def test_apply_domain_rule_returns_none_without_matching_host_or_body() -> None:
     rule = DomainRule(hosts=("example.com",), body_selectors=(".missing",))
 

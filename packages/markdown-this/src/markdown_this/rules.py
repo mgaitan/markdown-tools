@@ -28,6 +28,10 @@ class DomainRule:
 
 DOMAIN_RULES: tuple[DomainRule, ...] = (
     DomainRule(
+        hosts=("openwall.com",),
+        body_selectors=("body > pre",),
+    ),
+    DomainRule(
         hosts=("substack.com",),
         body_selectors=(".available-content",),
         strip_selectors=(".image-link-expand:not(:has(img))",),
