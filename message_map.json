@@ -10666,5 +10666,35 @@
     "article_link": "https://entropicthoughts.com/stacked-diffs-with-maiao",
     "discussion_link": "https://lobste.rs/s/bjmwt6/stacked_diffs_with_maiao",
     "title": "Stacked diffs with Maiao"
+  },
+  "@lobstersgram:1790": {
+    "telegraph_link": "https://telegra.ph/The-New-Era-of-Wikimedia-Traffic-Thinking-Beyond-Pageviews---Diff-11-20",
+    "article_link": "https://diff.wikimedia.org/2026/11/19/the-new-era-of-wikimedia-traffic-thinking-beyond-pageviews/",
+    "discussion_link": "https://lobste.rs/s/nes79l/new_era_wikimedia_traffic_thinking",
+    "title": "The New Era of Wikimedia Traffic: Thinking Beyond Pageviews"
+  },
+  "@lobstersgram:1791": {
+    "telegraph_link": "https://telegra.ph/OpenRun-v10---declarative-deploys-for-internal-tools-on-Docker-or-Kubernetes-11-20",
+    "article_link": "https://openrun.dev/blog/openrun-1.0/",
+    "discussion_link": "https://lobste.rs/s/t9wxzg/openrun_v1_0_declarative_deployments_for",
+    "title": "OpenRun v1.0 - declarative deployments for internal tools on Docker or Kubernetes"
+  },
+  "@lobstersgram:1792": {
+    "telegraph_link": "https://telegra.ph/Windows-11-Is-Collecting-Data-on-Which-Coding-Agents-and-Developer-Tools-You-Use--Xusheng-Li-11-20",
+    "article_link": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "discussion_link": "https://lobste.rs/s/cwxmdw/windows_11_collects_data_on_which_coding",
+    "title": "Windows 11 collects data on which coding agents and dev tools you use"
+  },
+  "@lobstersgram:1793": {
+    "telegraph_link": "https://telegra.ph/How-I-made-a-custom-game-engine-for-Satelital-11-20",
+    "article_link": "https://spectralorbit.com/blog/satelital_game_engine",
+    "discussion_link": "https://lobste.rs/s/eklpkn/how_i_made_custom_game_engine_for",
+    "title": "How I made a custom game engine for Satelital"
+  },
+  "@lobstersgram:1794": {
+    "telegraph_link": "https://telegra.ph/PHP-11-20",
+    "article_link": "https://www.php.net/index.php#2026-11-18-1",
+    "discussion_link": "https://lobste.rs/s/zr0hkw/upcoming_critical_php_security_release",
+    "title": "Upcoming Critical PHP Security Release (18 Nov 2026)"
   }
 }
