@@ -10708,5 +10708,29 @@
     "article_link": "https://mccue.dev/pages/11-18-26-java4shell",
     "discussion_link": "https://lobste.rs/s/a1uff5/java4shell_is_reason_use_java",
     "title": "Java4Shell is a reason to use Java"
+  },
+  "@lobstersgram:1797": {
+    "telegraph_link": "https://telegra.ph/Visualizing-a-Ledger-with-pgledger-ui---Paul-Grosss-Blog-11-20-2",
+    "article_link": "https://www.pgrs.net/2026/11/19/visualizing-a-ledger-with-pgledger-ui/",
+    "discussion_link": "https://lobste.rs/s/gftix3/visualizing_ledger_with_pgledger_ui",
+    "title": "Visualizing a Ledger with pgledger-ui"
+  },
+  "@lobstersgram:1798": {
+    "telegraph_link": "https://telegra.ph/Codeberg-codebergorg-is-unfortunately-down-right-now-due----socialanoxinonde---Mastodon-11-20",
+    "article_link": "https://social.anoxinon.de/@Codeberg/117636454915265360",
+    "discussion_link": "https://lobste.rs/s/spmgsd/codeberg_s_domain_suddenly_disappeared",
+    "title": "Codeberg's domain suddenly disappeared from their account, site is unreachable"
+  },
+  "@lobstersgram:1799": {
+    "telegraph_link": "https://telegra.ph/Rebuilding-my-voice-assistant-pipeline-11-20-4",
+    "article_link": "https://blog.platypush.tech/article/Rewriting-my-voice-assistant-pipeline",
+    "discussion_link": "https://lobste.rs/s/gn5qb1/rebuilding_my_local_voice_assistant",
+    "title": "Rebuilding my local voice assistant pipeline"
+  },
+  "@lobstersgram:1800": {
+    "telegraph_link": "https://telegra.ph/Supporting-FOSS-projects-to-transition-to-memory-safe-tech---Tweede-golf-11-20",
+    "article_link": "https://tweedegolf.nl/en/blog/243/supporting-foss-projects-to-transition-to-memory-safe-tech/",
+    "discussion_link": "https://lobste.rs/s/naiy6x/supporting_foss_projects_transition",
+    "title": "Supporting FOSS projects to transition to memory safe tech"
   }
 }
