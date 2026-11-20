@@ -10696,5 +10696,17 @@
     "article_link": "https://www.php.net/index.php#2026-11-18-1",
     "discussion_link": "https://lobste.rs/s/zr0hkw/upcoming_critical_php_security_release",
     "title": "Upcoming Critical PHP Security Release (18 Nov 2026)"
+  },
+  "@lobstersgram:1795": {
+    "telegraph_link": "https://telegra.ph/Type-inference-and-narrowing-with-reverse-arrows--The-Elixir-programming-language-11-20-2",
+    "article_link": "https://elixir-lang.org/blog/2026/11/10/inference-narrowing-reverse-arrows/",
+    "discussion_link": "https://lobste.rs/s/z8f3vz/type_inference_narrowing_with_reverse",
+    "title": "Type inference and narrowing with reverse arrows"
+  },
+  "@lobstersgram:1796": {
+    "telegraph_link": "https://telegra.ph/Java4Shell-is-a-reason-to-use-Java-11-20",
+    "article_link": "https://mccue.dev/pages/11-18-26-java4shell",
+    "discussion_link": "https://lobste.rs/s/a1uff5/java4shell_is_reason_use_java",
+    "title": "Java4Shell is a reason to use Java"
   }
 }
