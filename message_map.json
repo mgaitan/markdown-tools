@@ -10756,5 +10756,23 @@
     "article_link": "https://www.dialup.net/farcall/",
     "discussion_link": "https://lobste.rs/s/lq9xuw/farcall_terminal_ready_rust_pc_dos",
     "title": "Farcall, a terminal-ready Rust PC+DOS emulator"
+  },
+  "@lobstersgram:1805": {
+    "telegraph_link": "https://telegra.ph/PostgreSQL-PostgreSQL-19-Released-11-21",
+    "article_link": "https://www.postgresql.org/about/news/postgresql-19-released-3449/",
+    "discussion_link": "https://lobste.rs/s/pqyuhk/postgresql_19_released",
+    "title": "PostgreSQL 19 Released"
+  },
+  "@lobstersgram:1806": {
+    "telegraph_link": "https://telegra.ph/Design-for-Understandability---Schuster-on-Software-11-21",
+    "article_link": "https://jschuster.org/blog/2026/11/19/design-for-understandability/",
+    "discussion_link": "https://lobste.rs/s/qsrnot/design_for_understandability",
+    "title": "Design for Understandability"
+  },
+  "@lobstersgram:1807": {
+    "telegraph_link": "https://telegra.ph/Lisp-Game-Jam-devlog-Polydraw---Spritely-Institute-11-21",
+    "article_link": "https://spritely.institute/news/lisp-game-jam-devlog-polydraw.html",
+    "discussion_link": "https://lobste.rs/s/irqtic/lisp_game_jam_devlog_polydraw",
+    "title": "Lisp Game Jam devlog: Polydraw"
   }
 }
