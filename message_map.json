@@ -10732,5 +10732,29 @@
     "article_link": "https://tweedegolf.nl/en/blog/243/supporting-foss-projects-to-transition-to-memory-safe-tech/",
     "discussion_link": "https://lobste.rs/s/naiy6x/supporting_foss_projects_transition",
     "title": "Supporting FOSS projects to transition to memory safe tech"
+  },
+  "@lobstersgram:1801": {
+    "telegraph_link": "https://telegra.ph/Hiring-a-Systems-Programmer-for-Boxem--Lobsters-11-21",
+    "article_link": "https://lobste.rs/s/pnfs5p/hiring_systems_programmer_for_boxem",
+    "discussion_link": "https://lobste.rs/s/pnfs5p/hiring_systems_programmer_for_boxem",
+    "title": "Hiring a Systems Programmer for Boxem"
+  },
+  "@lobstersgram:1802": {
+    "telegraph_link": "https://telegra.ph/15-million-web-servers-on-one-VM---smoltcp-DPDK-AF-XDP--kapteko-11-21",
+    "article_link": "https://kapteko.com/15-million-webservers/",
+    "discussion_link": "https://lobste.rs/s/elmy67/15_million_web_servers_on_one_vm_smoltcp",
+    "title": "15 million web servers on one VM - smoltcp, DPDK, AF_XDP"
+  },
+  "@lobstersgram:1803": {
+    "telegraph_link": "https://telegra.ph/Mutex-poisoning-is-not-for-everyone--bertptrsnl-11-21",
+    "article_link": "https://bertptrs.nl/2026/11/16/mutex-poisoning-is-not-for-everyone.html",
+    "discussion_link": "https://lobste.rs/s/uzn2t6/mutex_poisoning_is_not_for_everyone",
+    "title": "Mutex poisoning is not for everyone"
+  },
+  "@lobstersgram:1804": {
+    "telegraph_link": "https://telegra.ph/SSH-into-DOS-I-wrote-an-x86-emulator---Dialupnet-11-21",
+    "article_link": "https://www.dialup.net/farcall/",
+    "discussion_link": "https://lobste.rs/s/lq9xuw/farcall_terminal_ready_rust_pc_dos",
+    "title": "Farcall, a terminal-ready Rust PC+DOS emulator"
   }
 }
