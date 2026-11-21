@@ -10774,5 +10774,35 @@
     "article_link": "https://spritely.institute/news/lisp-game-jam-devlog-polydraw.html",
     "discussion_link": "https://lobste.rs/s/irqtic/lisp_game_jam_devlog_polydraw",
     "title": "Lisp Game Jam devlog: Polydraw"
+  },
+  "@lobstersgram:1808": {
+    "telegraph_link": "https://telegra.ph/Valkey--From-Skiplists-to-B-Trees-Making-Valkey-Sorted-Sets-More-Memory-Efficient-11-21",
+    "article_link": "https://valkey.io/blog/from-skiplist-to-b+tree/",
+    "discussion_link": "https://lobste.rs/s/ixhrac/from_skiplists_b_trees_making_valkey",
+    "title": "From Skiplists to B+ Trees: Making Valkey Sorted Sets More Memory Efficient"
+  },
+  "@lobstersgram:1809": {
+    "telegraph_link": "https://telegra.ph/Announce-GnuPG-Security-Advisory-for-GPGME-T8557CVE-2026-129975-11-21-23",
+    "article_link": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
+    "discussion_link": "https://lobste.rs/s/vxokkj/gnupg_security_advisory_for_gpgme_t8557",
+    "title": "GnuPG Security Advisory for GPGME (T8557,CVE-2026-129975)"
+  },
+  "@lobstersgram:1810": {
+    "telegraph_link": "https://telegra.ph/Jujutsu-Primer---Ethan-Lowman-11-21",
+    "article_link": "https://ethanlowman.com/posts/jj-primer/",
+    "discussion_link": "https://lobste.rs/s/i6dn7g/jujutsu_primer",
+    "title": "Jujutsu Primer"
+  },
+  "@lobstersgram:1811": {
+    "telegraph_link": "https://telegra.ph/HOW-2-SECURITY-RESEARCH-MLG-11-21",
+    "article_link": "https://www.youtube.com/watch?v=dXQ_9WN6KLQ",
+    "discussion_link": "https://lobste.rs/s/emymet/how_2_security_research_mlg",
+    "title": "How 2 Security Research (MLG)"
+  },
+  "@lobstersgram:1812": {
+    "telegraph_link": "https://telegra.ph/What-are-you-doing-this-weekend--Lobsters-11-21",
+    "article_link": "https://lobste.rs/s/hneb5m/what_are_you_doing_this_weekend",
+    "discussion_link": "https://lobste.rs/s/hneb5m/what_are_you_doing_this_weekend",
+    "title": "What are you doing this weekend?"
   }
 }
