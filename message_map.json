@@ -10804,5 +10804,29 @@
     "article_link": "https://lobste.rs/s/hneb5m/what_are_you_doing_this_weekend",
     "discussion_link": "https://lobste.rs/s/hneb5m/what_are_you_doing_this_weekend",
     "title": "What are you doing this weekend?"
+  },
+  "@lobstersgram:1813": {
+    "telegraph_link": "https://telegra.ph/Scaling-horizontally-how-we-moved-beyond-Multi-Raft--Enroute-11-21",
+    "article_link": "https://enroute.sh/blog/scaling-horizontally-how-we-moved-beyond-multi-raft",
+    "discussion_link": "https://lobste.rs/s/79x708/scaling_git_horizontally_how_we_moved",
+    "title": "Scaling Git horizontally: how we moved beyond Multi-Raft"
+  },
+  "@lobstersgram:1814": {
+    "telegraph_link": "https://telegra.ph/Garage-Door-Spam---Harrison-Was-Here-11-21",
+    "article_link": "https://blog.harrison.page/garage-door-spam/",
+    "discussion_link": "https://lobste.rs/s/tr5ghf/garage_door_spam",
+    "title": "Garage Door Spam"
+  },
+  "@lobstersgram:1815": {
+    "telegraph_link": "https://telegra.ph/Announcing-DreamCoder---Mastering-Emacs-11-21",
+    "article_link": "https://www.masteringemacs.org/article/announcing-dreamcoder",
+    "discussion_link": "https://lobste.rs/s/ocdhli/dreamcoder_coding_harness_ide_from",
+    "title": "DreamCoder: coding harness and IDE from the author of Mastering Emacs"
+  },
+  "@lobstersgram:1816": {
+    "telegraph_link": "https://telegra.ph/Visited-links-are-purple---David-Bushell---Web-Dev-UK-11-21",
+    "article_link": "https://dbushell.com/2026/11/16/visited-links/",
+    "discussion_link": "https://lobste.rs/s/hcahbx/visited_links_are_purple",
+    "title": "Visited links are purple"
   }
 }
