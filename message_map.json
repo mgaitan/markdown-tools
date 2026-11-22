@@ -10870,5 +10870,29 @@
     "article_link": "https://antonz.org/probabilistic-data-structures-2/",
     "discussion_link": "https://lobste.rs/s/hcofqi/probabilistic_data_structures_go_part_2",
     "title": "Probabilistic data structures in Go, part 2"
+  },
+  "@lobstersgram:1824": {
+    "telegraph_link": "https://telegra.ph/C26-is-done-again---Trip-report-November-2026-ISO-C-standards-meeting-Búzios-Brazil---Sutters-Mill-11-22",
+    "article_link": "https://herbsutter.com/2026/11/21/c26-is-done-again-trip-report-november-2026-iso-c-standards-meeting-buzios-brazil/",
+    "discussion_link": "https://lobste.rs/s/fjueso/c_26_is_done_again_trip_report_november",
+    "title": "C++26 is done (again)! — Trip report: November 2026 ISO C++ standards meeting (Búzios, Brazil)"
+  },
+  "@lobstersgram:1825": {
+    "telegraph_link": "https://telegra.ph/Gliver-completes-the-Guix-desktop----Dustycloud-Brainstorms-11-22",
+    "article_link": "https://dustycloud.org/blog/gliver-completes-the-guix-desktop/",
+    "discussion_link": "https://lobste.rs/s/wc8fla/gliver_completes_guix_desktop",
+    "title": "Gliver completes the Guix desktop"
+  },
+  "@lobstersgram:1826": {
+    "telegraph_link": "https://telegra.ph/scriptura-a-cozy-corner-for-your-scripts-11-22",
+    "article_link": "https://alanpearce.eu/post/scriptura/",
+    "discussion_link": "https://lobste.rs/s/oeamed/scriptura_cozy_corner_for_your_scripts",
+    "title": "scriptura: a cozy corner for your scripts"
+  },
+  "@lobstersgram:1827": {
+    "telegraph_link": "https://telegra.ph/How-I-Got-Postgres-into-a-Single-Binary--progrium-11-22",
+    "article_link": "https://progrium.xyz/articles/2026/single-binary-postgres/",
+    "discussion_link": "https://lobste.rs/s/pvylnk/how_i_got_postgres_into_single_binary",
+    "title": "How I Got Postgres into a Single Binary"
   }
 }
