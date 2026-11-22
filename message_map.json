@@ -10828,5 +10828,29 @@
     "article_link": "https://dbushell.com/2026/11/16/visited-links/",
     "discussion_link": "https://lobste.rs/s/hcahbx/visited_links_are_purple",
     "title": "Visited links are purple"
+  },
+  "@lobstersgram:1817": {
+    "telegraph_link": "https://telegra.ph/Removing-binderc-LWNnet-11-22",
+    "article_link": "https://lwn.net/Articles/1102982/",
+    "discussion_link": "https://lobste.rs/s/vo5jve/removing_binder_c",
+    "title": "Removing binder.c"
+  },
+  "@lobstersgram:1818": {
+    "telegraph_link": "https://telegra.ph/Internet-Archive-Workers-Launch-Union-Campaign-with-Communications-Workers-of-America--Communications-Workers-of-America-11-22",
+    "article_link": "https://cwa-union.org/news/releases/internet-archive-workers-launch-union-campaign-communications-workers-america",
+    "discussion_link": "https://lobste.rs/s/o5coeq/internet_archive_staffers_are",
+    "title": "Internet Archive Staffers Are Unionizing"
+  },
+  "@lobstersgram:1819": {
+    "telegraph_link": "https://telegra.ph/Announcing-jj-musubi-live-sync-for-Jujutsu--teideal-glic-deisbhéalach-11-22",
+    "article_link": "https://www.serpentine.com/posts/2026/announcing-jj-musubi/",
+    "discussion_link": "https://lobste.rs/s/tj1j4b/announcing_jj_musubi_live_sync_for",
+    "title": "Announcing jj-musubi: live sync for Jujutsu"
+  },
+  "@lobstersgram:1820": {
+    "telegraph_link": "https://telegra.ph/Vim-Classic-831-released-11-22",
+    "article_link": "https://vim-classic.org/news/vim-8.3.1-released.html",
+    "discussion_link": "https://lobste.rs/s/kkglbw/vim_classic_8_3_1_released",
+    "title": "Vim Classic 8.3.1 released"
   }
 }
