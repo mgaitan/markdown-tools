@@ -10852,5 +10852,23 @@
     "article_link": "https://vim-classic.org/news/vim-8.3.1-released.html",
     "discussion_link": "https://lobste.rs/s/kkglbw/vim_classic_8_3_1_released",
     "title": "Vim Classic 8.3.1 released"
+  },
+  "@lobstersgram:1821": {
+    "telegraph_link": "https://telegra.ph/Changes-on-freedesktoporg---Ximions-Blog-11-22",
+    "article_link": "https://blog.tenstral.net/2026/11/new-fdo-website.html",
+    "discussion_link": "https://lobste.rs/s/p5zsx4/changes_on_freedesktop_org",
+    "title": "Changes on freedesktop.org"
+  },
+  "@lobstersgram:1822": {
+    "telegraph_link": "https://telegra.ph/How-We-Hacked-the-Pipes---Upload2Shell---pwnai-11-22",
+    "article_link": "https://pwn.ai/upload2shell/research.html",
+    "discussion_link": "https://lobste.rs/s/n5i1ds/ghostscript_cve_2026_125396",
+    "title": "GhostScript CVE 2026-125396: \"Upload2Shell\""
+  },
+  "@lobstersgram:1823": {
+    "telegraph_link": "https://telegra.ph/Probabilistic-data-structures-in-Go-part-2-11-22",
+    "article_link": "https://antonz.org/probabilistic-data-structures-2/",
+    "discussion_link": "https://lobste.rs/s/hcofqi/probabilistic_data_structures_go_part_2",
+    "title": "Probabilistic data structures in Go, part 2"
   }
 }
