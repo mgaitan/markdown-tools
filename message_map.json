@@ -10894,5 +10894,23 @@
     "article_link": "https://progrium.xyz/articles/2026/single-binary-postgres/",
     "discussion_link": "https://lobste.rs/s/pvylnk/how_i_got_postgres_into_single_binary",
     "title": "How I Got Postgres into a Single Binary"
+  },
+  "@lobstersgram:1828": {
+    "telegraph_link": "https://telegra.ph/port-scanning-for-mojang---sipacid-11-23",
+    "article_link": "https://sipacid.com/blog/port-scanning-for-mojang/",
+    "discussion_link": "https://lobste.rs/s/et5q0q/port_scanning_for_mojang",
+    "title": "port scanning for mojang"
+  },
+  "@lobstersgram:1829": {
+    "telegraph_link": "https://telegra.ph/Fixing-Googles-Feedburner-problem-and-caching-that-half-works--Joshua-Rogers-Scribbles-11-23",
+    "article_link": "https://joshua.hu/fixing-google-feedburner-cache-problem-atom-rss",
+    "discussion_link": "https://lobste.rs/s/nbtm5j/fixing_google_s_feedburner_problem",
+    "title": "Fixing Google’s Feedburner problem, and caching that half works"
+  },
+  "@lobstersgram:1830": {
+    "telegraph_link": "https://telegra.ph/Testing-Terraform-with-AWS-Emulator-11-23-2",
+    "article_link": "https://notes.hatedabamboo.me/terraform-tests-with-aws-emulator/",
+    "discussion_link": "https://lobste.rs/s/g5msf2/testing_terraform_with_aws_emulator",
+    "title": "Testing Terraform with AWS Emulator"
   }
 }
