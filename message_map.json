@@ -10912,5 +10912,29 @@
     "article_link": "https://notes.hatedabamboo.me/terraform-tests-with-aws-emulator/",
     "discussion_link": "https://lobste.rs/s/g5msf2/testing_terraform_with_aws_emulator",
     "title": "Testing Terraform with AWS Emulator"
+  },
+  "@lobstersgram:1831": {
+    "telegraph_link": "https://telegra.ph/What-Happened-to-Silicon-Valley---OReilly-11-23",
+    "article_link": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+    "discussion_link": "https://lobste.rs/s/jagv1r/what_happened_silicon_valley",
+    "title": "What Happened to Silicon Valley?"
+  },
+  "@lobstersgram:1832": {
+    "telegraph_link": "https://telegra.ph/The-Bubs-Brothers-Server-List-11-23",
+    "article_link": "http://bubble.aiei.ch:8050/",
+    "discussion_link": "https://lobste.rs/s/bjqpyu/bub_n_bros_bubble_bobble_remake_was_based",
+    "title": "Bub-n-Bros a Bubble Bobble remake that was based on python2, up to 10 players over the network"
+  },
+  "@lobstersgram:1833": {
+    "telegraph_link": "https://telegra.ph/My-Monitor-Was-Cutting-My-Download-Speed-by-75--The-Tymscar-Blog-11-23",
+    "article_link": "https://blog.tymscar.com/posts/studiodisplayethernet/",
+    "discussion_link": "https://lobste.rs/s/qzerls/my_monitor_was_cutting_my_download_speed",
+    "title": "My Monitor Was Cutting My Download Speed by 75%"
+  },
+  "@lobstersgram:1834": {
+    "telegraph_link": "https://telegra.ph/NixOS-bring-up-on-an-Alibaba-RISC-V-board--George-Huebner-11-23",
+    "article_link": "https://feyor.sh/blog/nixos-bringup-on-an-alibaba-riscv-board/",
+    "discussion_link": "https://lobste.rs/s/6jloca/nixos_bring_up_on_alibaba_risc_v_board",
+    "title": "NixOS bring-up on an Alibaba RISC-V board"
   }
 }
