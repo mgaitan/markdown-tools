@@ -10990,5 +10990,23 @@
     "article_link": "https://danluu.com/no-slow/",
     "discussion_link": "https://lobste.rs/s/uf8vxo/there_s_no_reason_for_software_be_slow",
     "title": "There's no reason for software to be slow anymore"
+  },
+  "@lobstersgram:1844": {
+    "telegraph_link": "https://telegra.ph/Quality-IMAP-Part-2-Mailbox-Concurrency--Aerogramme-blog-11-24",
+    "article_link": "https://aerogramme.deuxfleurs.fr/blog/2026-quality-imap-part-2/",
+    "discussion_link": "https://lobste.rs/s/lnpwpu/quality_imap_part_2_mailbox_concurrency",
+    "title": "Quality IMAP, Part 2: Mailbox Concurrency"
+  },
+  "@lobstersgram:1845": {
+    "telegraph_link": "https://telegra.ph/Worshipping-at-the-altar-of-Brendan-Gregg--Farid-Zakarias-Blog-11-24-2",
+    "article_link": "https://fzakaria.com/2026/11/12/worshipping-at-the-altar-of-brendan-gregg",
+    "discussion_link": "https://lobste.rs/s/voxuev/worshipping_at_altar_brendan_gregg",
+    "title": "Worshipping at the altar of Brendan Gregg"
+  },
+  "@lobstersgram:1846": {
+    "telegraph_link": "https://telegra.ph/Metro-The-Documentary-on-Microsofts-Boldest-Design-11-24",
+    "article_link": "https://www.youtube.com/watch?v=MYyyhAhHgT8&feature=youtu.be",
+    "discussion_link": "https://lobste.rs/s/to5j9p/metro_documentary_on_microsoft_s_boldest",
+    "title": "metro: The Documentary on Microsoft's Boldest Design"
   }
 }
