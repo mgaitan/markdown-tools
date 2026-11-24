@@ -10960,5 +10960,35 @@
     "article_link": "https://theconsensus.dev/p/2026/11/15/cgos-pointer-check.html",
     "discussion_link": "https://lobste.rs/s/fgbvtt/cgo_s_pointer_check_is_all_over_place",
     "title": "cgo's pointer check is all over the place"
+  },
+  "@lobstersgram:1839": {
+    "telegraph_link": "https://telegra.ph/Simple-Sudoku-Solvers-SIII-EIII-Verilog--Veits-Blog-11-24",
+    "article_link": "https://blog.veitheller.de/Simple_Sudoku_Solvers_SIII%2C_EIII%3A_Verilog.html",
+    "discussion_link": "https://lobste.rs/s/nh5bob/simple_sudoku_solver_verilog",
+    "title": "Simple Sudoku Solver in Verilog"
+  },
+  "@lobstersgram:1840": {
+    "telegraph_link": "https://telegra.ph/On-self-healing-code-and-the-obvious-issue---gynvaelcoldwindvxlog-11-24",
+    "article_link": "https://gynvael.coldwind.pl/?id=766",
+    "discussion_link": "https://lobste.rs/s/zorlwr/on_self_healing_code_obvious_issue_2023",
+    "title": "On self-healing code and the obvious issue (2023)"
+  },
+  "@lobstersgram:1841": {
+    "telegraph_link": "https://telegra.ph/How-I-Reverse-Engineered-a-Board-Game---Wuemeli-11-24",
+    "article_link": "https://wuemeli.com/blog/reversing-hitster-game/",
+    "discussion_link": "https://lobste.rs/s/8g6qyx/reverse_engineering_board_game",
+    "title": "Reverse Engineering a Board Game"
+  },
+  "@lobstersgram:1842": {
+    "telegraph_link": "https://telegra.ph/Lets-Meet-in-the-Middle--George-Mandis-11-24",
+    "article_link": "https://george.mand.is/2026/11/lets-meet-in-the-middle/",
+    "discussion_link": "https://lobste.rs/s/7fscqs/let_s_meet_middle",
+    "title": "Let's Meet in the Middle"
+  },
+  "@lobstersgram:1843": {
+    "telegraph_link": "https://telegra.ph/Theres-no-reason-for-software-to-be-slow-anymore-11-24-2",
+    "article_link": "https://danluu.com/no-slow/",
+    "discussion_link": "https://lobste.rs/s/uf8vxo/there_s_no_reason_for_software_be_slow",
+    "title": "There's no reason for software to be slow anymore"
   }
 }
