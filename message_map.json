@@ -10936,5 +10936,29 @@
     "article_link": "https://feyor.sh/blog/nixos-bringup-on-an-alibaba-riscv-board/",
     "discussion_link": "https://lobste.rs/s/6jloca/nixos_bring_up_on_alibaba_risc_v_board",
     "title": "NixOS bring-up on an Alibaba RISC-V board"
+  },
+  "@lobstersgram:1835": {
+    "telegraph_link": "https://telegra.ph/Crux--The-Strength-of-the-Record-11-24",
+    "article_link": "https://web.archive.org/web/20210329070928/https://opencrux.com/blog/crux-strength-of-the-record.html",
+    "discussion_link": "https://lobste.rs/s/rz7m8a/strength_record",
+    "title": "The Strength of the Record"
+  },
+  "@lobstersgram:1836": {
+    "telegraph_link": "https://telegra.ph/Making-a-4B-model-feel-instant-on-a-MacBook-11-24",
+    "article_link": "https://homie-mac.vercel.app/fast",
+    "discussion_link": "https://lobste.rs/s/teifll/homie_local_voice_agent_for_macos_0_43s",
+    "title": "homie: a local voice agent for macOS, 0.43s commands from a 4B model"
+  },
+  "@lobstersgram:1837": {
+    "telegraph_link": "https://telegra.ph/Researcher-plants-2m-canaries-into-the-AI-supply-chain-A-privacy-disaster-surfaced---Ars-Technica-11-24",
+    "article_link": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+    "discussion_link": "https://lobste.rs/s/32rhzb/researcher_plants_2m_canaries_into_ai",
+    "title": "Researcher plants 2m canaries into the AI supply chain. A privacy disaster surfaced"
+  },
+  "@lobstersgram:1838": {
+    "telegraph_link": "https://telegra.ph/cgos-pointer-check-is-all-over-the-place---The-Consensus-11-24",
+    "article_link": "https://theconsensus.dev/p/2026/11/15/cgos-pointer-check.html",
+    "discussion_link": "https://lobste.rs/s/fgbvtt/cgo_s_pointer_check_is_all_over_place",
+    "title": "cgo's pointer check is all over the place"
   }
 }
