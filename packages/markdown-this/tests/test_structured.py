@@ -57,6 +57,26 @@ def test_fusion_fragments_share_link_and_image_normalization() -> None:
     assert "data:image" not in markdown
 
 
+def test_fusion_treats_long_headers_as_article_paragraphs() -> None:
+    long_header = (
+        "Varios intendentes peronistas dicen que, frente a la dispersión nacional, desdoblar como un mecanismo "
+        "para preservar la provincia y los municipios."
+    )
+    data = {
+        "content_elements": [
+            {"type": "header", "level": 2, "content": long_header},
+            {"type": "header", "level": 2, "content": "Section heading"},
+        ]
+    }
+    html = f"<script>Fusion.globalContent = {json.dumps(data)};</script>"
+
+    _title, markdown, _fallback, _intro = extract_main_content(html)
+
+    assert long_header in markdown
+    assert f"## {long_header}" not in markdown
+    assert "## Section heading" in markdown
+
+
 @pytest.mark.parametrize(
     "data",
     [
