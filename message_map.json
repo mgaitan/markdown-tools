@@ -11026,5 +11026,29 @@
     "article_link": "https://sneakernet.eu/",
     "discussion_link": "https://lobste.rs/s/pdecff/sneakernet",
     "title": "Sneakernet"
+  },
+  "@lobstersgram:1850": {
+    "telegraph_link": "https://telegra.ph/What-VP--VNP-Means-In-3-Minutes---Gil-11-25",
+    "article_link": "https://www.friedgil.com/vpvnp",
+    "discussion_link": "https://lobste.rs/s/2k95fs/what_vp_vnp_means_3_minutes",
+    "title": "What VP != VNP Means (In 3 Minutes)"
+  },
+  "@lobstersgram:1851": {
+    "telegraph_link": "https://telegra.ph/upki-funding-proposal-11-25-2",
+    "article_link": "https://upki.rustls.dev/funding.html",
+    "discussion_link": "https://lobste.rs/s/mcrzxl/fund_browser_grade_certificate_checking",
+    "title": "Fund browser-grade certificate checking for every TLS client"
+  },
+  "@lobstersgram:1852": {
+    "telegraph_link": "https://telegra.ph/Ladybird-is-now-in-alpha---Ladybird-11-25",
+    "article_link": "https://ladybird.org/posts/alpha/",
+    "discussion_link": "https://lobste.rs/s/h6webg/ladybird_is_now_alpha",
+    "title": "Ladybird is now in alpha"
+  },
+  "@lobstersgram:1853": {
+    "telegraph_link": "https://telegra.ph/Bypassing-iOS-Safaris-60-FPS-Limit-to-Build-Web-Applications-That-Feel-Native--Rida-Fkih-11-25-2",
+    "article_link": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+    "discussion_link": "https://lobste.rs/s/pxvmxo/bypassing_ios_safari_60_fps_limit",
+    "title": "Bypassing iOS Safari 60 FPS Limit"
   }
 }
