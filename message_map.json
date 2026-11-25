@@ -11008,5 +11008,23 @@
     "article_link": "https://www.youtube.com/watch?v=MYyyhAhHgT8&feature=youtu.be",
     "discussion_link": "https://lobste.rs/s/to5j9p/metro_documentary_on_microsoft_s_boldest",
     "title": "metro: The Documentary on Microsoft's Boldest Design"
+  },
+  "@lobstersgram:1847": {
+    "telegraph_link": "https://telegra.ph/AP-advises-against-purchasing-AI-camera-glasses-serious-risks-for-users-and-bystanders--Autoriteit-Persoonsgegevens-11-25",
+    "article_link": "https://autoriteitpersoonsgegevens.nl/en/current/ap-advises-against-purchasing-ai-camera-glasses-serious-risks-for-users-and-bystanders",
+    "discussion_link": "https://lobste.rs/s/l7fel2/dutch_data_protection_authority_advises",
+    "title": "Dutch data protection authority advises against purchasing AI camera glasses"
+  },
+  "@lobstersgram:1848": {
+    "telegraph_link": "https://telegra.ph/Showing-a-MessageBox-from-kernel-mode--VollRagm-11-25",
+    "article_link": "https://vollragm.github.io/posts/kernel-message-box/",
+    "discussion_link": "https://lobste.rs/s/zc12ap/showing_messagebox_from_kernel_mode",
+    "title": "Showing a MessageBox from kernel-mode"
+  },
+  "@lobstersgram:1849": {
+    "telegraph_link": "https://telegra.ph/Sneakernet-11-25",
+    "article_link": "https://sneakernet.eu/",
+    "discussion_link": "https://lobste.rs/s/pdecff/sneakernet",
+    "title": "Sneakernet"
   }
 }
