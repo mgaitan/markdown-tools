@@ -11080,5 +11080,23 @@
     "article_link": "https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top",
     "discussion_link": "https://lobste.rs/s/2kwjb4/qualcomm_s_oryon_3_reaches_top",
     "title": "Qualcomm’s Oryon 3 Reaches the Top"
+  },
+  "@lobstersgram:1859": {
+    "telegraph_link": "https://telegra.ph/Hints-and-hazards-pg-plan-advice-in-PG19--ClickHouse-11-26",
+    "article_link": "https://clickhouse.com/blog/pg-plan-advice-postgresql-19",
+    "discussion_link": "https://lobste.rs/s/nfce9x/hints_hazards_pg_plan_advice_pg19",
+    "title": "Hints and hazards: pg_plan_advice in PG19"
+  },
+  "@lobstersgram:1860": {
+    "telegraph_link": "https://telegra.ph/SSH-is-a-GUI-framework--ssh-zydrash-11-26",
+    "article_link": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
+    "discussion_link": "https://lobste.rs/s/rtde6f/ssh_is_gui_framework",
+    "title": "SSH is a GUI framework"
+  },
+  "@lobstersgram:1861": {
+    "telegraph_link": "https://telegra.ph/Marginalia-Search-Money-C-Rust-AI-stuff--marginalianu-11-26",
+    "article_link": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+    "discussion_link": "https://lobste.rs/s/srb0dp/marginalia_search_money_c_rust_ai_stuff",
+    "title": "Marginalia Search, Money, C++, Rust, AI, stuff"
   }
 }
