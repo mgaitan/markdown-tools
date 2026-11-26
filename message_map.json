@@ -11068,5 +11068,17 @@
     "article_link": "https://mastodon.social/@pervognsen/117668394962974183",
     "discussion_link": "https://lobste.rs/s/m7gqr6/per_vognsen_on_effect_avx_512_on_lexing",
     "title": "Per Vognsen on the effect of AVX-512 on lexing and parsing"
+  },
+  "@lobstersgram:1857": {
+    "telegraph_link": "https://telegra.ph/Getting-old-Java-phones-online-again--Antcatings-Chaos-Lab-11-26-2",
+    "article_link": "https://antcating.github.io/2026/11/23/getting-old-java-phones-online-again.html",
+    "discussion_link": "https://lobste.rs/s/7x2mrq/getting_old_java_phones_online_again",
+    "title": "Getting old Java phones online again"
+  },
+  "@lobstersgram:1858": {
+    "telegraph_link": "https://telegra.ph/Qualcomms-Oryon-3-Reaches-the-Top---by-Chester-Lam-11-26-2",
+    "article_link": "https://chipsandcheese.com/p/qualcomms-oryon-3-reaches-the-top",
+    "discussion_link": "https://lobste.rs/s/2kwjb4/qualcomm_s_oryon_3_reaches_top",
+    "title": "Qualcomm’s Oryon 3 Reaches the Top"
   }
 }
