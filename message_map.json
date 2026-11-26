@@ -11050,5 +11050,23 @@
     "article_link": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
     "discussion_link": "https://lobste.rs/s/pxvmxo/bypassing_ios_safari_60_fps_limit",
     "title": "Bypassing iOS Safari 60 FPS Limit"
+  },
+  "@lobstersgram:1854": {
+    "telegraph_link": "https://telegra.ph/Patrick---The-beauty-of-CSS-mixins-11-26",
+    "article_link": "https://patrickbrosset.com/articles/2026-11-25-the-beauty-of-css-mixins/",
+    "discussion_link": "https://lobste.rs/s/faqxns/beauty_css_mixins",
+    "title": "The beauty of CSS mixins"
+  },
+  "@lobstersgram:1855": {
+    "telegraph_link": "https://telegra.ph/Needles-Haystacks-and-Numbers-Between-0-and-1---The-Rust-Foundation-11-26",
+    "article_link": "https://rustfoundation.org/media/needles-haystacks-and-numbers-between-0-and-1/",
+    "discussion_link": "https://lobste.rs/s/5gefep/needles_haystacks_numbers_between_0_1",
+    "title": "Needles, Haystacks, and Numbers Between 0 and 1"
+  },
+  "@lobstersgram:1856": {
+    "telegraph_link": "https://telegra.ph/Per-Vognsen-Once-again-positively-surprised-how-well-single-p---Mastodonsocial-11-26",
+    "article_link": "https://mastodon.social/@pervognsen/117668394962974183",
+    "discussion_link": "https://lobste.rs/s/m7gqr6/per_vognsen_on_effect_avx_512_on_lexing",
+    "title": "Per Vognsen on the effect of AVX-512 on lexing and parsing"
   }
 }
