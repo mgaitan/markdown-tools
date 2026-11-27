@@ -11152,5 +11152,29 @@
     "article_link": "https://fzakaria.com/2026/11/25/browser-tabs-as-a-container-runtime",
     "discussion_link": "https://lobste.rs/s/hge0sd/browser_tabs_as_container_runtime",
     "title": "Browser tabs as a container runtime"
+  },
+  "@lobstersgram:1871": {
+    "telegraph_link": "https://telegra.ph/Entering-the-Geminispace---Julio-Merino-jmmvdev-11-27",
+    "article_link": "https://jmmv.dev/2026/11/entering-the-geminispace.html",
+    "discussion_link": "https://lobste.rs/s/8rgqmw/entering_geminispace",
+    "title": "Entering the Geminispace"
+  },
+  "@lobstersgram:1872": {
+    "telegraph_link": "https://telegra.ph/How-WinHelp-files-work---quinfyi-11-27",
+    "article_link": "https://quin.fyi/posts/how-winhelp-files-work.html",
+    "discussion_link": "https://lobste.rs/s/w4kxiz/how_winhelp_files_work",
+    "title": "How WinHelp files work"
+  },
+  "@lobstersgram:1873": {
+    "telegraph_link": "https://telegra.ph/ImperialViolet---Proof-automation-in-a-language-11-27",
+    "article_link": "https://www.imperialviolet.org/2026/11/15/proofauto2.html",
+    "discussion_link": "https://lobste.rs/s/ohmjfv/proof_automation_language",
+    "title": "Proof automation in a language"
+  },
+  "@lobstersgram:1874": {
+    "telegraph_link": "https://telegra.ph/In-defense-of-lock-poisoning-in-Rust--sunshowers-11-27",
+    "article_link": "https://sunshowers.io/posts/on-poisoning/",
+    "discussion_link": "https://lobste.rs/s/wpylec/defense_lock_poisoning_rust_2025",
+    "title": "In defense of lock poisoning in Rust (2025)"
   }
 }
