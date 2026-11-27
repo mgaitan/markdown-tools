@@ -11098,5 +11098,35 @@
     "article_link": "https://www.marginalia.nu/log/a_141_marginalia_update/",
     "discussion_link": "https://lobste.rs/s/srb0dp/marginalia_search_money_c_rust_ai_stuff",
     "title": "Marginalia Search, Money, C++, Rust, AI, stuff"
+  },
+  "@lobstersgram:1862": {
+    "telegraph_link": "https://telegra.ph/I-Booted-From-My-Tape-Backup-From-2002--The-Changelog-11-27",
+    "article_link": "https://changelog.complete.org/archives/45268-i-booted-from-my-tape-backup-from-2002",
+    "discussion_link": "https://lobste.rs/s/2thnmt/i_booted_from_my_tape_backup_from_2002",
+    "title": "I Booted From My Tape Backup From 2002"
+  },
+  "@lobstersgram:1863": {
+    "telegraph_link": "https://telegra.ph/Optimizing-Rustcs-next-trait-solver-11-27",
+    "article_link": "https://donsz.nl/blog/optimizing-rustcs-next-trait-solver",
+    "discussion_link": "https://lobste.rs/s/lyyksp/optimizing_rustc_s_next_trait_solver",
+    "title": "Optimizing Rustc's next trait solver"
+  },
+  "@lobstersgram:1864": {
+    "telegraph_link": "https://telegra.ph/UI-style-guides---Aresluna-11-27",
+    "article_link": "https://aresluna.org/ui-style-guides/",
+    "discussion_link": "https://lobste.rs/s/pbfhis/ui_style_guides",
+    "title": "UI style guides"
+  },
+  "@lobstersgram:1865": {
+    "telegraph_link": "https://telegra.ph/London-Meetup---13th-December-2026--Lobsters-11-27",
+    "article_link": "https://lobste.rs/s/l8cjcz/london_meetup_13th_december_2026",
+    "discussion_link": "https://lobste.rs/s/l8cjcz/london_meetup_13th_december_2026",
+    "title": "London Meetup - 13th December 2026"
+  },
+  "@lobstersgram:1866": {
+    "telegraph_link": "https://telegra.ph/Understanding-You-are-not-expected-to-understand-this-11-27-2",
+    "article_link": "https://www.taniwha.com/~paul/not.html",
+    "discussion_link": "https://lobste.rs/s/nkmtqk/understanding_you_are_not_expected",
+    "title": "Understanding \"You are not expected to understand this.\""
   }
 }
