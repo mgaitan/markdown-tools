@@ -468,8 +468,9 @@ async def image_upload(request: Request) -> JSONResponse:
     if not isinstance(upload, UploadFile):
         raise HTTPException(status_code=400, detail="Include an image in the file field")
     data = await upload.read(assets.MAX_IMAGE_UPLOAD_BYTES + 1)
+    client_ip = request.client.host if request.client else "unknown"
     try:
-        target = assets.upload_image(data, request.client.host if request.client else "unknown")
+        target = await run_in_threadpool(assets.upload_image, data, client_ip)
     except Exception as exc:
         raise _handle_image_error(exc) from exc
     return JSONResponse({"url": target})

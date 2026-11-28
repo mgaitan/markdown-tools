@@ -1,6 +1,7 @@
 import io
 
 import pytest
+import redis
 from markdown_web import assets
 from PIL import Image
 
@@ -70,3 +71,17 @@ def test_upload_image_rejects_empty_and_oversized_data(monkeypatch: pytest.Monke
         assets.upload_image(b"", "127.0.0.1")
     with pytest.raises(assets.InvalidImageError, match="20 MB"):
         assets.upload_image(b"x" * (assets.MAX_IMAGE_UPLOAD_BYTES + 1), "127.0.0.1")
+
+
+def test_image_quota_distinguishes_missing_and_unreachable_redis(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.delenv("REDIS_URL", raising=False)
+    with pytest.raises(assets.ImageUploadUnavailableError, match="REDIS_URL is missing"):
+        assets._reserve_quota("127.0.0.1", 100)
+
+    class UnreachableRedis:
+        def eval(self, *args: object) -> None:
+            raise redis.ConnectionError
+
+    monkeypatch.setattr(assets.jobs, "_redis_client", UnreachableRedis)
+    with pytest.raises(assets.ImageUploadUnavailableError, match="Redis quota check failed"):
+        assets._reserve_quota("127.0.0.1", 100)

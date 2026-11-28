@@ -42,10 +42,10 @@ class ImageUploadError(ValueError):
 
 
 class ImageUploadUnavailableError(ImageUploadError):
-    """Raised when Redis or R2 is not configured for image uploads."""
+    """Raised when image upload configuration or the quota backend is unavailable."""
 
-    def __init__(self) -> None:
-        super().__init__("Image uploads require REDIS_URL and R2 configuration")
+    def __init__(self, *, reason: str) -> None:
+        super().__init__(f"Image uploads are unavailable: {reason}")
 
 
 class ImageQuotaExceededError(ImageUploadError):
@@ -108,7 +108,7 @@ def _r2_settings() -> tuple[str, str, str, str, str]:
         or parsed_url.scheme not in {"http", "https"}
         or not parsed_url.netloc
     ):
-        raise ImageUploadUnavailableError
+        raise ImageUploadUnavailableError(reason="check the R2 configuration")
     return account_id, bucket_name, access_key_id, secret_access_key, public_base_url
 
 
@@ -135,7 +135,9 @@ def _reserve_quota(client_ip: str, size: int) -> None:
     try:
         client = jobs._redis_client()
     except jobs.JobsUnavailableError as exc:
-        raise ImageUploadUnavailableError from exc
+        raise ImageUploadUnavailableError(reason="REDIS_URL is missing") from exc
+    except ValueError as exc:
+        raise ImageUploadUnavailableError(reason="REDIS_URL is invalid") from exc
     daily_key, hourly_key, daily_ttl, hourly_ttl = _quota_keys(client_ip)
     try:
         reserved = client.eval(
@@ -150,7 +152,7 @@ def _reserve_quota(client_ip: str, size: int) -> None:
             str(MAX_IMAGE_UPLOADS_PER_IP_HOUR),
         )
     except redis.RedisError as exc:
-        raise ImageUploadUnavailableError from exc
+        raise ImageUploadUnavailableError(reason="the Redis quota check failed") from exc
     if int(reserved or 0) != 1:
         raise ImageQuotaExceededError
 
