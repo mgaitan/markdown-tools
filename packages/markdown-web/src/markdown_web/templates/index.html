@@ -26,12 +26,17 @@
     <link rel="apple-touch-icon" href="/static/logo.png">
     <link rel="manifest" href="/static/manifest.webmanifest?v=2">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="/static/styles.css?v=21">
+    <link rel="stylesheet" href="/static/styles.css?v=22">
   </head>
   <body>
     <main class="page">
       <section class="workspace" aria-labelledby="page-title">
-        <h1 id="page-title">Write, convert, and publish Markdown</h1>
+        <h1 id="page-title" class="editor-title">
+          <button id="new-logo" type="button" aria-label="New document" title="New document">
+            <img src="/static/icon-192.png" alt="" width="36" height="36">
+          </button>
+          <span>Write, convert, and publish Markdown</span>
+        </h1>
         <form id="process-form" class="source-form">
           <div id="source-entry" class="source-entry">
             <div id="drop-zone" class="source-dropzone">
@@ -169,6 +174,7 @@
       <a href="/about">About</a>
       <a href="/drafts/">Drafts</a>
       <a href="/bookmarklets/">Bookmarklets</a>
+      <a href="/telegraph/">Install Telegraph share target</a>
       <a href="/t/published/">Published</a>
       <a href="/docs">API</a>
       <a href="https://github.com/mgaitan/markdown-tools/tree/master/packages/markdown-web">GitHub</a>
@@ -1413,6 +1419,7 @@
         if (afterSave) afterSave();
       });
       newButton.addEventListener("click", () => requestReplacement(resetDocument, "Starting a new document"));
+      document.querySelector("#new-logo").addEventListener("click", () => newButton.click());
       confirmNew.addEventListener("click", () => {
         clearDraft();
         activeSavedDraftId = "";
@@ -1441,7 +1448,7 @@
       }
 
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=3"));
+        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=4"));
       }
 
     </script>

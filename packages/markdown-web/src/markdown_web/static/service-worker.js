@@ -1,8 +1,8 @@
-const CACHE_NAME = "markdown-web-shell-v6";
+const CACHE_NAME = "markdown-web-shell-v7";
 const APP_SHELL = [
   "/",
   "/static/manifest.webmanifest?v=2",
-  "/static/styles.css?v=21",
+  "/static/styles.css?v=22",
   "/static/logo.png",
   "/static/icon-192.png",
   "/static/microphone.svg"
@@ -27,11 +27,14 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
   if (event.request.mode === "navigate") {
+    if (url.pathname !== "/" || url.search) return;
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          const copy = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put("/", copy));
+          if (response.ok) {
+            const copy = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put("/", copy));
+          }
           return response;
         })
         .catch(() => caches.match("/"))

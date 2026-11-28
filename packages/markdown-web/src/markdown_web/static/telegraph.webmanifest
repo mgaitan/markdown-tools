@@ -1,0 +1,20 @@
+{
+  "id": "/telegraph/",
+  "name": "Send to Telegraph",
+  "short_name": "Send to Telegraph",
+  "start_url": "/telegraph/",
+  "scope": "/telegraph/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {"src": "/static/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "/static/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ],
+  "share_target": {
+    "action": "/telegraph/share",
+    "method": "POST",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {"title": "title", "text": "text", "url": "url"}
+  }
+}

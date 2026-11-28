@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Send to Telegraph</title>
+    <link rel="manifest" href="/static/telegraph.webmanifest">
+    <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/static/styles.css?v=22">
+  </head>
+  <body>
+    <main class="page">
+      <h1>Send to Telegraph</h1>
+      {% if error %}
+      <p class="status error" role="alert">{{ error }}</p>
+      {% else %}
+      <p>Install this app in Chrome on Android, then choose <strong>Send to Telegraph</strong> when sharing a link. The link is published immediately.</p>
+      <button id="install-telegraph" class="button button-primary" type="button" hidden>Install</button>
+      {% endif %}
+      <p><a href="/">Open the Markdown editor</a></p>
+    </main>
+    <script>
+      const install = document.querySelector("#install-telegraph");
+      if (install) {
+        window.addEventListener("beforeinstallprompt", (event) => {
+          event.preventDefault();
+          install.hidden = false;
+          install.onclick = async () => {
+            await event.prompt();
+            install.hidden = true;
+          };
+        });
+      }
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=4", {scope: "/"}));
+      }
+    </script>
+  </body>
+</html>

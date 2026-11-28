@@ -19,7 +19,7 @@ from markdown_this import is_html_source
 from md_to_epub import EpubBuildError
 from md_to_telegraph import TelegraphContentError
 from starlette.concurrency import run_in_threadpool
-from starlette.datastructures import UploadFile
+from starlette.datastructures import FormData, UploadFile
 
 from markdown_web import assets, jobs
 from markdown_web.bookmarklet import build_bookmarklets
@@ -349,6 +349,21 @@ async def _transcribe_upload(upload: UploadFile) -> str:
         raise _handle_transcription_error(exc) from exc
 
 
+def _shared_url(form: FormData) -> str:
+    if url := str(form.get("url", "")).strip():
+        return url
+    text = str(form.get("text", "")).strip()
+    try:
+        parsed = urlparse(text)
+    except ValueError:
+        return ""
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return text
+    if share_url := SHARE_GOOGLE_TEXT_URL_RE.fullmatch(text):
+        return share_url["url"]
+    return ""
+
+
 async def _shared_content(request: Request) -> tuple[str, str]:
     """Process a Web Share Target payload into Markdown for the home screen."""
     form = await request.form()
@@ -372,16 +387,9 @@ async def _shared_content(request: Request) -> tuple[str, str]:
             raise _handle_source_error(exc) from exc
         return prepared.markdown, filename
 
-    url = str(form.get("url", "")).strip()
     text = str(form.get("text", "")).strip()
     title = str(form.get("title", "")).strip()
-    if not url:
-        parsed_text_url = urlparse(text)
-        if parsed_text_url.scheme in {"http", "https"} and parsed_text_url.netloc:
-            url = text
-        elif share_url := SHARE_GOOGLE_TEXT_URL_RE.fullmatch(text):
-            url = share_url["url"]
-    if url:
+    if url := _shared_url(form):
         try:
             prepared = await run_in_threadpool(
                 prepare_content,
@@ -408,6 +416,29 @@ async def share_target(request: Request) -> HTMLResponse:
     except HTTPException as exc:
         return _home_response(request, share_error=str(exc.detail))
     return _home_response(request, shared_markdown=markdown, shared_label=label)
+
+
+@app.get("/telegraph/", response_class=HTMLResponse, include_in_schema=False)
+def telegraph_share_install(request: Request) -> HTMLResponse:
+    return templates.TemplateResponse(request, "telegraph_share.html")
+
+
+@app.post("/telegraph/share", include_in_schema=False)
+async def telegraph_share_target(request: Request) -> Response:
+    """Publish a URL shared to the separately installed Telegraph target."""
+    async with request.form() as form:
+        url = _shared_url(form)
+    if not url:
+        error = HTTPException(status_code=422, detail="Share a web link to publish it")
+    else:
+        try:
+            target = await run_in_threadpool(publish_content, SourceRequest(url=url), cache_key=url)
+            return RedirectResponse(target, status_code=303, headers={"Cache-Control": "no-store"})
+        except Exception as exc:  # noqa: BLE001 - render publication failures in the installed app
+            error = _handle_source_error(exc)
+    return templates.TemplateResponse(
+        request, "telegraph_share.html", {"error": error.detail}, status_code=error.status_code
+    )
 
 
 @app.get("/health/")
