@@ -9,6 +9,7 @@ from importlib.metadata import PackageNotFoundError, version
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
+import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -21,7 +22,7 @@ from md_to_telegraph import TelegraphContentError
 from starlette.concurrency import run_in_threadpool
 from starlette.datastructures import FormData, UploadFile
 
-from markdown_web import assets, jobs
+from markdown_web import assets, jobs, kindle
 from markdown_web.bookmarklet import build_bookmarklets
 from markdown_web.math import (
     FALLBACK_CACHE_CONTROL,
@@ -42,6 +43,7 @@ from markdown_web.schemas import (
 from markdown_web.service import (
     SourceError,
     build_epub_content,
+    epub_recipient,
     fetch_telegraph_preview,
     list_published_pages,
     ocr_image,
@@ -315,6 +317,8 @@ def _home_response(
             "shared_markdown": shared_markdown,
             "shared_label": shared_label,
             "share_error": share_error,
+            "kindle_client_id": os.getenv("KINDLE_GOOGLE_CLIENT_ID", ""),
+            "kindle_sender": os.getenv("KINDLE_GMAIL_SENDER", ""),
         },
     )
 
@@ -487,6 +491,31 @@ async def epub_from_post(request: Request) -> Response:
         media_type="application/epub+zip",
         headers={"Content-Disposition": f'attachment; filename="{filename}"', "Cache-Control": "no-store"},
     )
+
+
+@app.post("/epub/send", status_code=204)
+def send_epub_to_kindle(source: SourceRequest, request: Request) -> Response:
+    sender = os.getenv("KINDLE_GMAIL_SENDER", "")
+    if not sender or not os.getenv("KINDLE_GOOGLE_CLIENT_ID"):
+        raise HTTPException(status_code=503, detail="Kindle email is not configured")
+    if not (token := _authorization_token(request)):
+        raise HTTPException(status_code=401, detail="Authorize the configured Gmail sender first")
+    recipient = epub_recipient(source)
+    if not kindle.KINDLE_ADDRESS.fullmatch(recipient):
+        raise HTTPException(status_code=422, detail="Enter a valid Send to Kindle email address")
+    try:
+        kindle.verify_sender(token, sender)
+        data, filename = build_epub_content(source)
+        if len(data) > kindle.MAX_EPUB_EMAIL_BYTES:
+            raise HTTPException(status_code=422, detail="This EPUB exceeds the 24 MB email limit")
+        kindle.send_epub(token, sender, recipient, data, filename)
+    except kindle.GmailAuthorizationError as exc:
+        raise HTTPException(status_code=401, detail=str(exc)) from exc
+    except requests.RequestException as exc:
+        raise HTTPException(status_code=502, detail="Gmail could not send the EPUB") from exc
+    except (SourceError, EpubBuildError) as exc:
+        raise _handle_source_error(exc) from exc
+    return Response(status_code=204, headers={"Cache-Control": "no-store"})
 
 
 @app.post("/images", response_model=ImageUploadResponse, openapi_extra=_image_upload_openapi())

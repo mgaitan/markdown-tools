@@ -83,20 +83,29 @@ OCR_ERROR_TYPES = tuple(
 )
 
 
-def _front_matter_notify_telegram(markdown: str) -> str:
-    """Read the app-specific notification setting from Markdown front matter."""
+def _delivery_metadata(markdown: str) -> dict[str, str]:
+    """Read app-specific recipients from Markdown front matter."""
     lines = markdown.splitlines()
     if not lines or lines[0].strip() != "---":
-        return ""
+        return {}
     try:
         end = lines.index("---", 1)
         loaded = yaml.safe_load("\n".join(lines[1:end])) or {}
     except (ValueError, yaml.YAMLError):
-        return ""
+        return {}
     if not isinstance(loaded, Mapping):
-        return ""
-    value = loaded.get("notify_telegram")
-    return str(value).strip() if value is not None and not isinstance(value, (dict, list)) else ""
+        return {}
+    return {
+        field: str(value).strip()
+        for field in ("notify_telegram", "kindle_email")
+        if (value := loaded.get(field)) is not None and not isinstance(value, (dict, list))
+    }
+
+
+def epub_recipient(source: SourceRequest) -> str:
+    if recipient := source.metadata.kindle_email.strip():
+        return recipient
+    return _delivery_metadata((source.markdown or "").strip()).get("kindle_email", "")
 
 
 class SourceError(ValueError):
@@ -471,10 +480,12 @@ def fetch_telegraph_preview(url: str) -> str:
 
 def _merge_metadata(markdown: str, supplied: SourceMetadata) -> tuple[str, SourceMetadata]:
     existing, body = split_front_matter(markdown.strip())
-    merged = {**existing, **supplied.values()}
-    if notify_telegram := _front_matter_notify_telegram(markdown):
-        merged.setdefault("notify_telegram", notify_telegram)
-    return add_front_matter(body, merged), SourceMetadata.model_validate(merged)
+    merged = {**existing, **_delivery_metadata(markdown), **supplied.values()}
+    normalized = add_front_matter(body, merged)
+    if kindle_email := merged.get("kindle_email"):
+        field = yaml.safe_dump({"kindle_email": kindle_email}, allow_unicode=True).strip()
+        normalized = f"---\n{field}\n{normalized[4:]}" if normalized != body else f"---\n{field}\n---\n\n{body}"
+    return normalized, SourceMetadata.model_validate(merged)
 
 
 def prepare_content(request: SourceRequest) -> PreparedContent:

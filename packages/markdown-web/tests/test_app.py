@@ -1,4 +1,7 @@
+from email import policy
+from email.parser import BytesParser
 from pathlib import Path
+from unittest.mock import Mock
 
 import markdown_web.app as app_module
 import pytest
@@ -10,7 +13,9 @@ from md_to_telegraph import TelegraphContentError
 from starlette.status import (
     HTTP_200_OK,
     HTTP_202_ACCEPTED,
+    HTTP_204_NO_CONTENT,
     HTTP_303_SEE_OTHER,
+    HTTP_401_UNAUTHORIZED,
     HTTP_404_NOT_FOUND,
     HTTP_422_UNPROCESSABLE_CONTENT,
     HTTP_503_SERVICE_UNAVAILABLE,
@@ -579,6 +584,64 @@ def test_post_epub_returns_download(monkeypatch: pytest.MonkeyPatch) -> None:
     assert response.headers["content-disposition"] == 'attachment; filename="my-book.epub"'
     assert response.headers["cache-control"] == "no-store"
     assert seen["source"].markdown == "# Title"
+
+
+def test_kindle_send_requires_the_configured_gmail_account(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("KINDLE_GOOGLE_CLIENT_ID", "client-id")
+    monkeypatch.setenv("KINDLE_GMAIL_SENDER", "sender@gmail.com")
+    monkeypatch.setattr(app_module, "build_epub_content", Mock(side_effect=AssertionError("EPUB should not be built")))
+    profile = Mock(status_code=200, json=Mock(return_value={"email": "other@gmail.com", "email_verified": True}))
+    get = Mock(return_value=profile)
+    monkeypatch.setattr(app_module.kindle.requests, "get", get)
+
+    response = client.post(
+        "/epub/send",
+        headers={"Authorization": "Bearer token"},
+        json={"markdown": "# Book", "metadata": {"kindle_email": "reader@kindle.com"}},
+    )
+
+    assert response.status_code == HTTP_401_UNAUTHORIZED
+    assert get.call_args.kwargs["headers"] == {"Authorization": "Bearer token"}
+
+
+def test_kindle_send_uses_front_matter_and_attaches_the_epub(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("KINDLE_GOOGLE_CLIENT_ID", "client-id")
+    monkeypatch.setenv("KINDLE_GMAIL_SENDER", "sender@gmail.com")
+    profile = Mock(status_code=200, json=Mock(return_value={"email": "sender@gmail.com", "email_verified": True}))
+    monkeypatch.setattr(app_module.kindle.requests, "get", Mock(return_value=profile))
+    monkeypatch.setattr(app_module, "build_epub_content", lambda source: (b"book", "book.epub"))
+    post = Mock(return_value=Mock(status_code=200))
+    monkeypatch.setattr(app_module.kindle.requests, "post", post)
+    document = '---\nkindle_email: "reader+device@kindle.com"\n---\n\n# Book'
+
+    response = client.post("/epub/send", headers={"Authorization": "Bearer token"}, json={"markdown": document})
+
+    assert response.status_code == HTTP_204_NO_CONTENT
+    message = BytesParser(policy=policy.default).parsebytes(post.call_args.kwargs["data"])
+    assert message["From"] == "sender@gmail.com"
+    assert message["To"] == "reader+device@kindle.com"
+    attachment = next(message.iter_attachments())
+    assert attachment.get_content_type() == "application/epub+zip"
+    assert attachment.get_filename() == "book.epub"
+    assert attachment.get_payload(decode=True) == b"book"
+    prepared = app_module.prepare_content(SourceRequest(markdown=document))
+    assert "kindle_email: reader+device@kindle.com" in prepared.markdown
+
+
+def test_kindle_send_rejects_non_kindle_recipient(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("KINDLE_GOOGLE_CLIENT_ID", "client-id")
+    monkeypatch.setenv("KINDLE_GMAIL_SENDER", "sender@gmail.com")
+    verify = Mock()
+    monkeypatch.setattr(app_module.kindle, "verify_sender", verify)
+
+    response = client.post(
+        "/epub/send",
+        headers={"Authorization": "Bearer token"},
+        json={"markdown": "# Book", "metadata": {"kindle_email": "reader@example.com"}},
+    )
+
+    assert response.status_code == HTTP_422_UNPROCESSABLE_CONTENT
+    verify.assert_not_called()
 
 
 def test_post_markdown_accepts_raw_html_metadata(monkeypatch: pytest.MonkeyPatch) -> None:

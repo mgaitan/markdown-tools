@@ -101,6 +101,17 @@ it to Markdown. Shared text and URLs open in the editor too. The PWA needs an
 internet connection to process shared content.
 
 The editor action menu can download the current document as Markdown or EPUB.
+**Send EPUB to Kindle** emails the book to the address in `kindle_email` front
+matter. On first use for a document, the editor asks for the address and saves it
+in the document's metadata.
+
+To enable email, enable the Gmail API in a Google Cloud project and create a
+Web application OAuth client. Add the site's origin to the authorized JavaScript
+origins. Set `KINDLE_GOOGLE_CLIENT_ID` to the client ID and `KINDLE_GMAIL_SENDER`
+to the Gmail address allowed to send. If the Google app is in testing mode, add
+the sender as a test user. Approve the sender address in Amazon's Send to Kindle
+settings. The browser asks Google for a short-lived token with `gmail.send`
+and email identity scopes. The server checks the Gmail identity before sending.
 
 ```bash
 curl -X POST http://127.0.0.1:8000/transcriptions \
