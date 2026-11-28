@@ -27,6 +27,9 @@
     <link rel="manifest" href="/static/manifest.webmanifest?v=2">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="/static/styles.css?v=23">
+    {% if kindle_client_id and kindle_sender %}
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    {% endif %}
   </head>
   <body>
     <main class="page">
@@ -70,6 +73,7 @@
                   <button id="result-action-menu-button" class="source-action-menu-button" type="button" aria-label="Choose editor action" aria-haspopup="menu" aria-expanded="false"></button>
                   <div id="result-action-menu" class="source-action-menu" role="menu" hidden>
                     <button type="button" role="menuitem" data-result-action="epub">Download EPUB</button>
+                    <button type="button" role="menuitem" data-result-action="kindle">Send EPUB to Kindle{% if kindle_sender %}<br><small>From {{ kindle_sender }}</small>{% endif %}</button>
                     <button type="button" role="menuitem" data-result-action="markdown">Download Markdown</button>
                   </div>
                 </div>
@@ -160,11 +164,24 @@
           </select></label>
           <label class="metadata-field metadata-wide">Image URL<input id="metadata-image" name="image" type="url" autocomplete="off"></label>
           <label class="metadata-field metadata-wide">Telegram recipients<input id="metadata-telegram" name="notify_telegram" type="text" placeholder="390225349, -1001234567890" autocomplete="off"></label>
+          <label class="metadata-field metadata-wide">Kindle email<input name="kindle_email" type="email" placeholder="reader@kindle.com" autocomplete="off"></label>
         </div>
         <p class="metadata-note">Separate multiple Telegram recipients with commas.</p>
         <div class="dialog-actions">
           <button class="button button-secondary" value="cancel">Cancel</button>
           <button id="save-metadata" class="button button-primary" value="save">Apply</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="kindle-dialog" aria-labelledby="kindle-dialog-title">
+      <form id="kindle-form" method="dialog">
+        <h2 id="kindle-dialog-title">Send EPUB to Kindle</h2>
+        {% if kindle_sender %}<p>From {{ kindle_sender }}</p>{% endif %}
+        <label class="metadata-field">Send to Kindle email<input name="recipient" type="email" placeholder="reader@kindle.com" autocomplete="off" required></label>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel" formnovalidate>Cancel</button>
+          <button class="button button-primary" value="send">Send EPUB</button>
         </div>
       </form>
     </dialog>
@@ -230,7 +247,11 @@
       const installPrompt = document.querySelector("#install-prompt");
       const installButton = document.querySelector("#install-button");
       const dismissInstallPromptButton = document.querySelector("#dismiss-install-prompt");
-      const metadataFields = ["title", "author", "url", "date", "type", "image", "notify_telegram"];
+      const kindleDialog = document.querySelector("#kindle-dialog");
+      const kindleForm = document.querySelector("#kindle-form");
+      const kindleClientId = {{ kindle_client_id | tojson }};
+      const kindleSender = {{ kindle_sender | tojson }};
+      const metadataFields = ["title", "author", "url", "date", "type", "image", "notify_telegram", "kindle_email"];
       let currentUrl = "";
       let previewId = "";
       let previewing = false;
@@ -477,8 +498,8 @@
       function updateFrontmatter(values) {
         const parsed = parseFrontmatter(markdownValue());
         const lines = [...parsed.lines];
-        for (const field of metadataFields) {
-          const value = values[field].trim();
+        for (const [field, rawValue] of Object.entries(values)) {
+          const value = rawValue.trim();
           const index = lines.findIndex((line) => line.match(new RegExp(`^${field}:\\s*`)));
           if (index >= 0) {
             if (value) lines[index] = `${field}: ${yamlValue(value)}`;
@@ -1072,6 +1093,64 @@
         }
       }
 
+      function authorizeKindleSender() {
+        const oauth = window.google?.accounts?.oauth2;
+        if (!oauth) throw new Error("Google authorization could not load. Reload this page and try again.");
+        const sendScope = "https://www.googleapis.com/auth/gmail.send";
+        return new Promise((resolve, reject) => {
+          oauth.initTokenClient({
+            client_id: kindleClientId,
+            scope: `openid email ${sendScope}`,
+            include_granted_scopes: false,
+            hint: kindleSender,
+            callback: (result) => {
+              if (result.access_token && oauth.hasGrantedAllScopes(result, sendScope)) resolve(result.access_token);
+              else reject(new Error("Gmail did not grant permission to send the EPUB"));
+            },
+            error_callback: () => reject(new Error("Google authorization was interrupted")),
+          }).requestAccessToken({prompt: ""});
+        });
+      }
+
+      async function sendEpub() {
+        if (epubSubmitting) return;
+        if (!kindleClientId || !kindleSender) {
+          setPublishStatus("Kindle email is not configured", true);
+          return;
+        }
+        epubSubmitting = true;
+        resultActionMenuButton.disabled = true;
+        setPublishStatus(`Authorizing ${kindleSender}…`);
+        try {
+          const payload = {markdown: markdownValue()};
+          if (currentUrl) payload.metadata = {url: currentUrl};
+          const token = await authorizeKindleSender();
+          setPublishStatus("Building and sending EPUB…");
+          const response = await fetch("/epub/send", {
+            method: "POST",
+            headers: {"Content-Type": "application/json", "Authorization": `Bearer ${token}`},
+            body: JSON.stringify(payload)
+          });
+          if (!response.ok) throw new Error(await responseError(response, "EPUB email failed"));
+          setPublishStatus(`EPUB sent from ${kindleSender}`);
+        } catch (error) {
+          setPublishStatus(error.message, true);
+        } finally {
+          epubSubmitting = false;
+          resultActionMenuButton.disabled = false;
+        }
+      }
+
+      kindleForm.addEventListener("submit", (event) => {
+        if (event.submitter?.value === "cancel") return;
+        event.preventDefault();
+        const recipient = kindleForm.elements.recipient.value.trim();
+        kindleDialog.close();
+        updateFrontmatter({kindle_email: recipient});
+        saveDraft();
+        void sendEpub();
+      });
+
       function downloadMarkdown() {
         const markdown = markdownValue();
         const title = parseFrontmatter(markdown).fields.title || sourceLabel.textContent || "document";
@@ -1295,6 +1374,14 @@
         button.addEventListener("click", async () => {
           closeResultActionMenu();
           if (button.dataset.resultAction === "epub") await downloadEpub();
+          if (button.dataset.resultAction === "kindle") {
+            const recipient = parseFrontmatter(markdownValue()).fields.kindle_email;
+            if (recipient) await sendEpub();
+            else {
+              kindleForm.reset();
+              kindleDialog.showModal();
+            }
+          }
           if (button.dataset.resultAction === "markdown") downloadMarkdown();
         });
       });

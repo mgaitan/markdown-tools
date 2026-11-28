@@ -18,6 +18,7 @@ class SourceMetadata(BaseModel):
     type: str = ""
     extraction_scope: str = ""
     notify_telegram: str = ""
+    kindle_email: str = ""
 
     def values(self) -> dict[str, str]:
         return {key: value for key, value in self.model_dump().items() if value}
