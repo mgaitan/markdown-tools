@@ -6,7 +6,7 @@
     <title>Send to Telegraph</title>
     <link rel="manifest" href="/static/telegraph.webmanifest">
     <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/static/styles.css?v=22">
+    <link rel="stylesheet" href="/static/styles.css?v=23">
   </head>
   <body>
     <main class="page">
@@ -32,7 +32,7 @@
         });
       }
       if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=4", {scope: "/"}));
+        window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js?v=5", {scope: "/"}));
       }
     </script>
   </body>

@@ -1,8 +1,8 @@
-const CACHE_NAME = "markdown-web-shell-v7";
+const CACHE_NAME = "markdown-web-shell-v8";
 const APP_SHELL = [
   "/",
   "/static/manifest.webmanifest?v=2",
-  "/static/styles.css?v=22",
+  "/static/styles.css?v=23",
   "/static/logo.png",
   "/static/icon-192.png",
   "/static/microphone.svg"

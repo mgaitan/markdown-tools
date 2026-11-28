@@ -49,8 +49,8 @@ h1 {
 #new-logo {
   display: block;
   flex: none;
-  padding: 0;
-  border: 0;
+  padding: 3px;
+  border: 1px dotted #888;
   border-radius: 8px;
   background: none;
   cursor: pointer;

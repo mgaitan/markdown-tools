@@ -201,7 +201,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
     assert 'rel="manifest" href="/static/manifest.webmanifest?v=2"' in response.text
-    assert 'navigator.serviceWorker.register("/service-worker.js?v=4")' in response.text
+    assert 'navigator.serviceWorker.register("/service-worker.js?v=5")' in response.text
     assert 'id="new-logo" type="button" aria-label="New document"' in response.text
     assert 'href="/telegraph/">Install Telegraph share target' in response.text
     assert 'id="install-prompt"' in response.text
@@ -222,7 +222,7 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     service_worker = client.get("/service-worker.js")
     assert service_worker.status_code == HTTP_200_OK
     assert service_worker.headers["cache-control"] == "no-cache"
-    assert 'const CACHE_NAME = "markdown-web-shell-v7";' in service_worker.text
+    assert 'const CACHE_NAME = "markdown-web-shell-v8";' in service_worker.text
 
 
 def test_telegraph_share_target_has_its_own_installation() -> None:
