@@ -45,6 +45,18 @@ h1 {
   font-weight: 400;
 }
 
+.editor-title { display: flex; align-items: center; gap: 12px; }
+#new-logo {
+  display: block;
+  flex: none;
+  padding: 3px;
+  border: 1px dotted #888;
+  border-radius: 8px;
+  background: none;
+  cursor: pointer;
+}
+#new-logo img { display: block; border-radius: inherit; }
+
 .source-form { display: block; }
 .source-entry { display: flex; gap: 18px; align-items: center; }
 .source-dropzone {

@@ -201,7 +201,9 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     )
     assert 'rel="icon" href="/static/favicon.svg" type="image/svg+xml"' in response.text
     assert 'rel="manifest" href="/static/manifest.webmanifest?v=2"' in response.text
-    assert 'navigator.serviceWorker.register("/service-worker.js?v=3")' in response.text
+    assert 'navigator.serviceWorker.register("/service-worker.js?v=5")' in response.text
+    assert 'id="new-logo" type="button" aria-label="New document"' in response.text
+    assert 'href="/telegraph/">Install Telegraph share target' in response.text
     assert 'id="install-prompt"' in response.text
     assert 'id="install-button"' in response.text
     assert 'window.addEventListener("beforeinstallprompt"' in response.text
@@ -220,7 +222,39 @@ def test_home_and_static_assets() -> None:  # noqa: PLR0915
     service_worker = client.get("/service-worker.js")
     assert service_worker.status_code == HTTP_200_OK
     assert service_worker.headers["cache-control"] == "no-cache"
-    assert 'const CACHE_NAME = "markdown-web-shell-v6";' in service_worker.text
+    assert 'const CACHE_NAME = "markdown-web-shell-v8";' in service_worker.text
+
+
+def test_telegraph_share_target_has_its_own_installation() -> None:
+    response = client.get("/telegraph/")
+    assert response.status_code == HTTP_200_OK
+    assert 'rel="manifest" href="/static/telegraph.webmanifest"' in response.text
+    manifest = client.get("/static/telegraph.webmanifest").json()
+    assert manifest["id"] == manifest["start_url"] == manifest["scope"] == "/telegraph/"
+    assert manifest["share_target"]["action"] == "/telegraph/share"
+    assert manifest["share_target"]["method"] == "POST"
+
+
+@pytest.mark.parametrize("field", ("url", "text"))
+def test_telegraph_share_target_publishes_and_redirects(monkeypatch: pytest.MonkeyPatch, field: str) -> None:
+    def fake_publish(source: SourceRequest, *, cache_key: str) -> str:
+        assert source.url == cache_key == "https://example.com/article"
+        return "https://telegra.ph/Article-11-28"
+
+    monkeypatch.setattr(app_module, "publish_content", fake_publish)
+
+    response = client.post("/telegraph/share", data={field: "https://example.com/article"}, follow_redirects=False)
+
+    assert response.status_code == HTTP_303_SEE_OTHER
+    assert response.headers["location"] == "https://telegra.ph/Article-11-28"
+    assert response.headers["cache-control"] == "no-store"
+
+
+def test_telegraph_share_target_requires_a_link() -> None:
+    response = client.post("/telegraph/share", data={"text": "Just text"})
+
+    assert response.status_code == HTTP_422_UNPROCESSABLE_CONTENT
+    assert 'role="alert">Share a web link to publish it' in response.text
 
 
 def test_home_places_editor_control_in_toolbar() -> None:

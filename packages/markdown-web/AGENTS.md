@@ -89,6 +89,8 @@ hosted API receives the complete PDF because it does not support page selection.
 The web app is installable as a PWA. Its Web Share Target receives audio and
 supported documents through `POST /share`; the route processes the share before
 rendering the editor, so do not persist shared content in browser storage.
+The separate install at `/telegraph/` receives links through
+`POST /telegraph/share` and immediately publishes them to Telegraph.
 
 After changing a cloud environment variable, deploy again if the platform does
 not automatically restart the app. Check the public URL and deployment logs
