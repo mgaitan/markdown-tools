@@ -11176,5 +11176,29 @@
     "article_link": "https://sunshowers.io/posts/on-poisoning/",
     "discussion_link": "https://lobste.rs/s/wpylec/defense_lock_poisoning_rust_2025",
     "title": "In defense of lock poisoning in Rust (2025)"
+  },
+  "@lobstersgram:1875": {
+    "telegraph_link": "https://telegra.ph/My-Approach-to-Alt-Text---Adrian-Roselli-11-28",
+    "article_link": "http://adrianroselli.com/2024/05/my-approach-to-alt-text.html",
+    "discussion_link": "https://lobste.rs/s/cz9ecz/my_approach_alt_text_2024",
+    "title": "My Approach to Alt Text (2024)"
+  },
+  "@lobstersgram:1876": {
+    "telegraph_link": "https://telegra.ph/oss-security---Slow-Ubuntu-security-response-times-11-28",
+    "article_link": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
+    "discussion_link": "https://lobste.rs/s/wzlzlh/slow_ubuntu_security_response_times",
+    "title": "Slow Ubuntu security response times"
+  },
+  "@lobstersgram:1877": {
+    "telegraph_link": "https://telegra.ph/Garage-v260-released-with-web-admin-v1x-EoL--other-news--Garage-blog-11-28",
+    "article_link": "https://garagehq.deuxfleurs.fr/blog/2026-11-webadmin-release/",
+    "discussion_link": "https://lobste.rs/s/2gfpu3/garage_v2_6_0_released_with_web_admin_v1_x",
+    "title": "Garage v2.6.0 released with web admin, v1.x EoL & other news"
+  },
+  "@lobstersgram:1878": {
+    "telegraph_link": "https://telegra.ph/Company-Culture--Slack-Emoji--Headcount--liamg-11-28",
+    "article_link": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+    "discussion_link": "https://lobste.rs/s/fin7at/company_culture_slack_emoji_sqrt",
+    "title": "Company Culture = Slack Emoji ÷ sqrt(Headcount)"
   }
 }
